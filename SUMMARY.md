@@ -2,7 +2,11 @@
 
 * [Initial page](README.md)
 
-## Test Group
+## Clip's Plugins
 
-* [Wiki page](test-group/wiki-page.md)
+* [AutoSell](clips-plugins/autosell.md)
+
+## Funnycube's Plugins
+
+* [Untitled](funnycubes-plugins/untitled.md)
 
