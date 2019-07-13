@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Welcome](README.md)
 
 ## Clip's Plugins
 
@@ -9,4 +9,11 @@
 ## Funnycube's Plugins
 
 * [Untitled](funnycubes-plugins/untitled.md)
+
+## ADDITIONAL RESOURCES
+
+* [Discord](https://helpch.at/discord)
+* [Paste](https://paste.helpch.at/)
+* [YAML Parser](https://yaml.helpch.at/)
+* [Java Docs](https://helpch.at/docs)
 
