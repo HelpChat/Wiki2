@@ -8,7 +8,7 @@ description: >-
 
 ## Clip's Plugins
 
-{% page-ref page="clips-plugins/autosell.md" %}
+{% page-ref page="clips-plugins/autosell/" %}
 
 ## Funnycube's Plugins
 
