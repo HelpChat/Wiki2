@@ -51,24 +51,27 @@ If even just one requirement isn't met, then the entire check returns false and 
 * [String Equals Ignore case](requirements.md#string-equals-ignore-case)
 * [Comparators](requirements.md#comparators)
 
+----
 ### **Has permission**
 
 > ```yaml
 > type: has permission
 > permission: 'TEXT'
 > ```
->
-> Checks if the player has the required permission.
 
+Checks if the player has the required permission.
+
+----
 ### **Has money**
 
 > ```yaml
 > type: has money
 > amount: #
 > ```
->
-> Checks if the player has enough money \([Vault](https://www.spigotmc.org/resources/34315/) required\)
 
+Checks if the player has enough money \([Vault](https://www.spigotmc.org/resources/34315/) required\)
+
+----
 ### **Has item**
 
 > ```yaml
@@ -80,19 +83,21 @@ If even just one requirement isn't met, then the entire check returns false and 
 > lore:
 > - 'TEXT'
 > ```
->
-> Checks if the player has a certain item in its inventory.
 
+Checks if the player has a certain item in its inventory.
+
+----
 ### **Javascript**
 
 > ```yaml
 > type: javascript
 > expression: 'EXPRESSION'
 > ```
->
-> Evaluates a javascript expression that must return true or false.  
-> Example: `%vault_eco_balance% >= 100`
 
+Evaluates a javascript expression that must return true or false.  
+Example: `%vault_eco_balance% >= 100`
+
+----
 ### **String equals**
 
 > ```yaml
@@ -100,9 +105,10 @@ If even just one requirement isn't met, then the entire check returns false and 
 > input: 'TEXT'
 > output: 'TEXT'
 > ```
->
-> Checks if `input:` matches `output:` exactly \(Including case\).
 
+Checks if `input:` matches `output:` exactly \(Including case\).
+
+----
 ### **String equals ignore case**
 
 > ```yaml
@@ -110,9 +116,10 @@ If even just one requirement isn't met, then the entire check returns false and 
 > input: 'TEXT'
 > output: 'TEXT'
 > ```
->
-> Same as [String Equals](requirements.md#string-equals) but ignores the case.
 
+Same as [String Equals](requirements.md#string-equals) but ignores the case.
+
+----
 ### **String contains**
 
 > ```yaml
@@ -120,10 +127,11 @@ If even just one requirement isn't met, then the entire check returns false and 
 > input: '%player_name%'
 > output: 'A'
 > ```
->
-> Checks if `input:` contains `output:`.  
-> For example: Checks if `This is a text` contains `is`.
 
+Checks if `input:` contains `output:`.  
+For example: Checks if `This is a text` contains `is`.
+
+----
 ### **Comparators**
 
 > ```yaml
@@ -131,8 +139,8 @@ If even just one requirement isn't met, then the entire check returns false and 
 > input: #
 > output: #
 > ```
->
-> Compares `input:` with `output:` and returns true or false depending on what type of comparason you choosed.
+
+Compares `input:` with `output:` and returns true or false depending on what type of comparason you choosed.
 
 #### Available options
 
