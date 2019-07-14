@@ -9,6 +9,7 @@
   * [Configuration](clips-plugins/autosell/configuration.md)
 * [ActionAnnouncer](clips-plugins/actionannouncer/README.md)
   * [Commands & Permissions](clips-plugins/actionannouncer/commands-and-permissions.md)
+  * [Configuration](clips-plugins/actionannouncer/configuration.md)
 
 ## Funnycube's Plugins
 
