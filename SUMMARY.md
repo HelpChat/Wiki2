@@ -7,6 +7,7 @@
 * [AutoSell](clips-plugins/autosell/README.md)
   * [Commands & Permissions](clips-plugins/autosell/commands-and-permissions.md)
   * [Configuration](clips-plugins/autosell/configuration.md)
+* [ActionAnnouncer](clips-plugins/actionannouncer.md)
 
 ## Funnycube's Plugins
 

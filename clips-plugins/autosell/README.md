@@ -6,4 +6,5 @@ description: >-
 
 # AutoSell
 
-Autosell Plugin Info 
+Autosell Plugin Info
+
