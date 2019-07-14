@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# DeluxeChat
 
-Autosell Plugin Info 
+Autosell Plugin Info
+

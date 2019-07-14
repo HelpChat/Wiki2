@@ -25,6 +25,12 @@
 * [DeluxeTags](clips-plugins/deluxetags/README.md)
   * [Commands & Permissions](clips-plugins/deluxetags/commands-and-permissions.md)
   * [Configuration](clips-plugins/deluxetags/configuration.md)
+* [DeluxeMenus](clips-plugins/deluxemenus/README.md)
+  * [Arguments](clips-plugins/deluxemenus/arguments.md)
+  * [External-menus](clips-plugins/deluxemenus/external-menus.md)
+  * [GUI](clips-plugins/deluxemenus/gui.md)
+  * [Item](clips-plugins/deluxemenus/item.md)
+  * [Requirements](clips-plugins/deluxemenus/requirements.md)
 * [EzPrestige](clips-plugins/ezprestige/README.md)
   * [Commands & Permissions](clips-plugins/ezprestige/commands-and-permissions.md)
   * [Configuration](clips-plugins/ezprestige/configuration.md)
@@ -40,7 +46,7 @@
 * [NoFlyZone](clips-plugins/noflyzone/README.md)
   * [Commands & Permissions](clips-plugins/noflyzone/commands-and-permissions.md)
   * [Configuration](clips-plugins/noflyzone/configuration.md)
-  
+
 ## Funnycube's Plugins
 
 * [CowPunch](funnycubes-plugins/cowpunch/README.md)

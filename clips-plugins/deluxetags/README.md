@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# DeluxeTags
 
-Autosell Plugin Info 
+Autosell Plugin Info
+

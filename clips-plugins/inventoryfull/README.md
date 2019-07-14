@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# InventoryFull
 
-Autosell Plugin Info 
+Autosell Plugin Info
+

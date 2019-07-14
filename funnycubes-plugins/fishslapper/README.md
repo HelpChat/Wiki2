@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# Fish Slapper
 
-Autosell Plugin Info 
+Autosell Plugin Info
+

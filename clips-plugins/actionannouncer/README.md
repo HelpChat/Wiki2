@@ -4,7 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# ActionAnnouncer
 
 Autosell Plugin Info
 

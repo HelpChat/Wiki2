@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# MineCrates
 
-Autosell Plugin Info 
+Autosell Plugin Info
+
