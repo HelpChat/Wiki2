@@ -26,23 +26,24 @@ The page is divided into 2 sections, [**GUI**](https://github.com/help-chat/Delu
 |  |  |
 
 | **Command** | **Permission** | **Default** |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | /dm | - | yes |
-| /dm open \ | deluxemenus.open | yes |
+| /dm open \<menu> | deluxemenus.open | yes |
 | /dm list | deluxemenus.list | no |
 | /dm reload | deluxemenus.reload | no |
-| /dm open \ \ | deluxemenus.open.others | no |
+| /dm open \<menu> \<player> | deluxemenus.open.others | no |
 
 ## Example GUI Menus
 
-* [**Kits**](/help-chat/DeluxeMenus/blob/master/gui_menus/kits.yml)
+* [**Kits**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/kits.yml)
 
 To make this work fine you have to download [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/), [Essentials](https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/) and download the Essentials expansion using:
 
 > /papi ecloud download Essentials  
 > /papi reload
 
-* [**Mines**](/help-chat/DeluxeMenus/blob/master/gui_menus/mines.yml)
+----
+* [**Mines**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/mines.yml)
 
 Here I show a ranks example that was created by [@clip](https://github.com/extendedclip) and I am now bringing it live \(with a few modest changes\). This mines gui requires [EZRanksPro](https://www.spigotmc.org/resources/ezrankspro.10731/) in order to function properly, of course you can still edit what you need to. Hope you enjoy.
 
@@ -52,7 +53,8 @@ To make this work fine you have to download [PlaceholderAPI](https://www.spigotm
 > /papi ecloud download EzRanksPro  
 > /papi reload
 
-* [**Server Selector**](/help-chat/DeluxeMenus/blob/master/gui_menus/serverselector.yml)
+----
+* [**Server Selector**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/serverselector.yml)
 
 To make this work fine you have to download [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) and download the Pinger and \(optional\) Server expansion using:
 
@@ -77,7 +79,8 @@ We can fix that, by let the player execute **\[refresh\]**, if he clicks on the 
 
 The second item is easier. Because we are already connected, we just need to send a message. And we can show the amount of players on the server with the **%server\_online%** placeholder.
 
-* [**Store**](/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml)
+----
+* [**Store**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml)
 
 To make this work fine you have to download [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) and download the Player expansion using:
 
@@ -86,8 +89,8 @@ To make this work fine you have to download [PlaceholderAPI](https://www.spigotm
 > /papi ecloud download TokenEnchant \# optional  
 > /papi ecloud download PlayerPoints \# optional  
 > /papi reload
->
-> * [x] [**Vault**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L4)
-> * [x] [**Token Enchant**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L38)
-> * [x] [**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L73)
+
+* [x] [**Vault**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L4)
+* [x] [**Token Enchant**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L38)
+* [x] [**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L73)
 
