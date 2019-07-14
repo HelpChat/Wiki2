@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# Spit
 
-Autosell Plugin Info 
+Autosell Plugin Info
+

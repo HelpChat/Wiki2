@@ -40,7 +40,13 @@
 * [NoFlyZone](clips-plugins/noflyzone/README.md)
   * [Commands & Permissions](clips-plugins/noflyzone/commands-and-permissions.md)
   * [Configuration](clips-plugins/noflyzone/configuration.md)
-  
+* [DeluxeMenus](clips-plugins/deluxemenus/README.md)
+  * [Arguments](clips-plugins/deluxemenus/arguments.md)
+  * [External-menus](clips-plugins/deluxemenus/external-menus.md)
+  * [GUI](clips-plugins/deluxemenus/gui.md)
+  * [Item](clips-plugins/deluxemenus/item.md)
+  * [Requirements](clips-plugins/deluxemenus/requirements.md)
+
 ## Funnycube's Plugins
 
 * [CowPunch](funnycubes-plugins/cowpunch/README.md)

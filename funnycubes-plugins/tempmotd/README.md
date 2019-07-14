@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# Temp MOTD
 
-Autosell Plugin Info 
+Autosell Plugin Info
+

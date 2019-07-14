@@ -4,6 +4,7 @@ description: >-
   the original "AutoSell"
 ---
 
-# AutoSell
+# Firework Chests
 
-Autosell Plugin Info 
+Autosell Plugin Info
+
