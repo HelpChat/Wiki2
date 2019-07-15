@@ -23,8 +23,8 @@
 >     update_interval: #
 >     items:
 > ```
->
-> **Note:** If you're using an external GUI-file \(seperate .yml file\) your configuration will start at the **menu\_title:** option!
+
+**Note:** If you're using an external GUI-file \(seperate .yml file\) your configuration will start at the **menu\_title:** option!
 
 ## Navigation
 
@@ -43,16 +43,16 @@
 > ```yaml
 > menu_title: 'TEXT'
 > ```
->
-> This is the menu title that is shown at the top of the open GUI. You can use color and formatting codes in this area. You can also use Placeholders in this title \(Like %player\_name%\).
+
+This is the menu title that is shown at the top of the open GUI. You can use color and formatting codes in this area. You can also use Placeholders in this title \(Like %player\_name%\).
 
 ### Open Command
 
 > ```yaml
 > open_command: COMMAND
 > ```
->
-> This defines the command used to open the GUI. This can only be a single word \(No commands with arguments\).
+
+This defines the command used to open the GUI. This can only be a single word \(No commands with arguments\).
 
 You can define multiple commands by putting each command on a separate line.  
 **Example**:
@@ -71,8 +71,8 @@ You can define multiple commands by putting each command on a separate line.
 >    <TEXT>:
 >      type: <type>
 > ```
->
-> This allows you to restrict the inventory in a way to only let people open it, which match the defined \[\[requirements\]\].
+
+This allows you to restrict the inventory in a way to only let people open it, which match the defined \[\[requirements\]\].
 
 ### Open Commands
 
@@ -90,16 +90,16 @@ You can define multiple commands by putting each command on a separate line.
 > - '[sound] SOUND'
 > - '[takemoney] #'
 > ```
->
-> This will run the command\(s\) you set when player open the the menu.
+
+This will run the command\(s\) you set when player open the the menu.
 
 ### Inventory Type
 
 > ```yaml
 > inventory_type: 'TEXT'
 > ```
->
-> This is optional.
+
+This is optional.
 
 Allows you to define a different type of Inventory.  
 Supported types are `CHEST` \(default\), `ANVIL`, `DISPENSER`, `DROPPER`, `FURNACE`, `HOPPER` and `WORKBENCH`.
@@ -111,9 +111,9 @@ Supported types are `CHEST` \(default\), `ANVIL`, `DISPENSER`, `DROPPER`, `FURNA
 > ```yaml
 > size: #
 > ```
->
-> This option tells the plugin of how large the inventory should be.  
-> The size can be a multiple of 9 \(9, 18, 27, ...\) and be a max size of 54.
+
+This option tells the plugin of how large the inventory should be.  
+The size can be a multiple of 9 \(9, 18, 27, ...\) and be a max size of 54.
 
 ## This option is ignored if you use a different [Inventory Type](gui.md#inventory-type) that isn't `CHEST`.
 
@@ -126,32 +126,32 @@ Supported types are `CHEST` \(default\), `ANVIL`, `DISPENSER`, `DROPPER`, `FURNA
 >   reason: -1
 > args_usage_message: "Incorrect Usage! Usage:"
 > ```
->
-> This should only be set when using the arguments, if you are not using the arguments in your menu:
->
+
+This should only be set when using the arguments, if you are not using the arguments in your menu:
+
 > ```yaml
 > {target}
 > {time}
 > {reason}
 > ```
->
-> you should not include it. Arguments can be used to make custom displayable information menus for players. See the \[\[Arguments\]\] page for more information.
+
+you should not include it. Arguments can be used to make custom displayable information menus for players. See the [Arguments](arguments.md) page for more information.
 
 ### Update Interval
 
 > ```yaml
 > update_interval: #
 > ```
->
-> This is for any items that use the update: tag \(See \[\[Item\|Item\#update\]\]\). The number defines the delay \(in seconds\) between each refresh of the placeholders in an item's lore/display name.  
-> Note that DeluxeMenus **won't** update the item itself \(Change the item\). This is only possible by executing a `[refresh]` command in the items \[\[left/right-click commands\|Item\#leftright-click-commands\]\].
+
+This is for any items that use the update: tag \(See \[\[Item\|Item\#update\]\]\). The number defines the delay \(in seconds\) between each refresh of the placeholders in an item's lore/display name.  
+Note that DeluxeMenus **won't** update the item itself \(Change the item\). This is only possible by executing a `[refresh]` command in the items \[\[left/right-click commands\|Item\#leftright-click-commands\]\].
 
 ### Items
 
 > ```yaml
 > items:
 > ```
->
-> This line should be left as is. It is merely telling the plugin you are about to begin defining items.  
-> See the \[\[Item\]\] page for more information.
+
+This line should be left as is. It is merely telling the plugin you are about to begin defining items.  
+See the \[\[Item\]\] page for more information.
 
