@@ -31,7 +31,7 @@ The page is divided into 2 sections, [**GUI**](https://github.com/help-chat/Delu
 | /dm open \ | deluxemenus.open | yes |
 | /dm list | deluxemenus.list | no |
 | /dm reload | deluxemenus.reload | no |
-| /dm open \ \ | deluxemenus.open.others | no |
+| /dm open  \ | deluxemenus.open.others | no |
 
 ## Example GUI Menus
 
