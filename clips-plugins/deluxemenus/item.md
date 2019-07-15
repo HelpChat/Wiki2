@@ -15,24 +15,24 @@ Each item-name NEEDS to be unique! You can't have two items with the same name.
 
 ### Navigation
 
-* [Material](Item.md#material)
-* [Data](Item.md#data)
-* [Amount](Item.md#amount)
-* [Dynamic\_amount](Item.md#dynamic\_amount)
-* [RGB](Item.md#rgb)
-* [Slot](Item.md#slot)
-* [Priority](Item.md#priority)
-* [View Requirement](Item.md#view-requirement)
-* [Update](Item.md#update)
-* [Banner Meta](Item.md#banner-meta)
-* [Enchantments](Item.md#enchantments)
-* [Hide Enchantments](Item.md#hide-enchantments)
-* [Hide Attributes](Item.md#hide-attributes)
-* [Hide Effects](Item.md#hide-effects)
-* [Display Name](Item.md#display-name)
-* [Lore](Item.md#lore)
-* [(Shift) Left/Middle/Right click Commands](Item.md#shift-leftmiddleright-click-commands)
-* [(Shift) Left/Middle/Right click Requirements](Item.md#shift-leftmiddleright-click-requirement)
+* [Material](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#material)
+* [Data](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#data)
+* [Amount](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#amount)
+* [Dynamic\_amount](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#dynamic_amount)
+* [RGB](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#rgb)
+* [Slot](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#slot)
+* [Priority](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#priority)
+* [View Requirement](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#view-requirement)
+* [Update](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#update)
+* [Banner Meta](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#banner-meta)
+* [Enchantments](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#enchantments)
+* [Hide Enchantments](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#hide-enchantments)
+* [Hide Attributes](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#hide-attributes)
+* [Hide Effects](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#hide-effects)
+* [Display Name](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#display-name)
+* [Lore](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#lore)
+* [\(Shift\) Left/Middle/Right click Commands](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#shift-leftmiddleright-click-commands)
+* [\(Shift\) Left/Middle/Right click Requirements](https://github.com/help-chat/Wiki2/tree/65338947e0f3c92e111d8f5ec8d111bd6852b3a0/clips-plugins/deluxemenus/Item.md#shift-leftmiddleright-click-requirement)
 
 #### Material
 
@@ -40,7 +40,8 @@ Each item-name NEEDS to be unique! You can't have two items with the same name.
 > material: TEXT
 > ```
 
-This option tells what material should be used for the item \(The list of valid materials is available at the top of this page\). This corresponds directly with the "data" tag \(If you have something like potions or wool that have data\). It can also interact with the `banner-meta` tag if you use a banner material. You can also use a player head by doing `head;username`. The default config shows how you can use a player placeholder to create a dynamic item \(`head;%player_name%`\). Examples:  
+This option tells what material should be used for the item \(The list of valid materials is available at the top of this page\). This corresponds directly with the "data" tag \(If you have something like potions or wool that have data\). It can also interact with the `banner-meta` tag if you use a banner material. You can also use a player head by doing `head;username`. The default config shows how you can use a player placeholder to create a dynamic item \(`head;%player_name%`\). Examples:
+
 > `material: WOOL`  
 > `material: head;extended_clip`  
 > `material: head;%player_name%`  
@@ -54,7 +55,8 @@ This option tells what material should be used for the item \(The list of valid 
 > data: #
 > ```
 
-This corresponds with the material tag. It simply defines the data for any block or defines the damage value of an item. Wool is the most common example. You will need to find the data number using a page like [this](https://minecraft.gamepedia.com/Data_values). However, Doing a simple google search, you should easily find data values for anything you need. Examples:  
+This corresponds with the material tag. It simply defines the data for any block or defines the damage value of an item. Wool is the most common example. You will need to find the data number using a page like [this](https://minecraft.gamepedia.com/Data_values). However, Doing a simple google search, you should easily find data values for anything you need. Examples:
+
 > `data: 1`  
 > `data: 'placeholder-%player_item_in_hand_data%'` \(or any other placeholder that returns a valid number\) [![](https://img.shields.io/badge/Ver-1.10.4+-brightgreen.svg)](https://www.spigotmc.org/resources/11734/update?update=221012) This option is used in MC version 1.13+ to defines the damage value ONLY.
 
@@ -199,7 +201,7 @@ This tag defines what will be shown in the lore area of the item. You can use [p
 
 #### \(Shift\) Left/Middle/Right click Commands
 
-> ```yaml
+> \`\`\`yaml
 >
 > ## left\_click\_commands: or
 >

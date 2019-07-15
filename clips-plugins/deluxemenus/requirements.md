@@ -51,7 +51,6 @@ If even just one requirement isn't met, then the entire check returns false and 
 * [String Equals Ignore case](requirements.md#string-equals-ignore-case)
 * [Comparators](requirements.md#comparators)
 
-----
 ### **Has permission**
 
 > ```yaml
@@ -61,7 +60,6 @@ If even just one requirement isn't met, then the entire check returns false and 
 
 Checks if the player has the required permission.
 
-----
 ### **Has money**
 
 > ```yaml
@@ -71,7 +69,6 @@ Checks if the player has the required permission.
 
 Checks if the player has enough money \([Vault](https://www.spigotmc.org/resources/34315/) required\)
 
-----
 ### **Has item**
 
 > ```yaml
@@ -86,7 +83,6 @@ Checks if the player has enough money \([Vault](https://www.spigotmc.org/resourc
 
 Checks if the player has a certain item in its inventory.
 
-----
 ### **Javascript**
 
 > ```yaml
@@ -97,7 +93,6 @@ Checks if the player has a certain item in its inventory.
 Evaluates a javascript expression that must return true or false.  
 Example: `%vault_eco_balance% >= 100`
 
-----
 ### **String equals**
 
 > ```yaml
@@ -108,7 +103,6 @@ Example: `%vault_eco_balance% >= 100`
 
 Checks if `input:` matches `output:` exactly \(Including case\).
 
-----
 ### **String equals ignore case**
 
 > ```yaml
@@ -119,7 +113,6 @@ Checks if `input:` matches `output:` exactly \(Including case\).
 
 Same as [String Equals](requirements.md#string-equals) but ignores the case.
 
-----
 ### **String contains**
 
 > ```yaml
@@ -131,7 +124,6 @@ Same as [String Equals](requirements.md#string-equals) but ignores the case.
 Checks if `input:` contains `output:`.  
 For example: Checks if `This is a text` contains `is`.
 
-----
 ### **Comparators**
 
 > ```yaml
