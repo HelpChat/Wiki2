@@ -1,10 +1,7 @@
 ---
 description: >-
-  Ultimate prison mining and selling solution! /sellall + signs + blocks2inv +
-  the original "AutoSell"
+  Let your players spit like Llamas
 ---
 
 # Spit
-
-Autosell Plugin Info
-
+Let your players spit like Llamas using the /spit command, this will fire spit from the player in the direction they are looking in.
