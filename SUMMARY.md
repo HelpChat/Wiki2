@@ -51,7 +51,6 @@
 
 * [CowPunch](funnycubes-plugins/cowpunch/README.md)
   * [Commands & Permissions](funnycubes-plugins/cowpunch/commands-and-permissions.md)
-  * [Configuration](funnycubes-plugins/cowpunch/configuration.md)
 * [Firework Chests](funnycubes-plugins/fireworkchests/README.md)
   * [Commands & Permissions](funnycubes-plugins/fireworkchests/commands-and-permissions.md)
   * [Configuration](funnycubes-plugins/fireworkchests/configuration.md)
@@ -60,10 +59,8 @@
   * [Configuration](funnycubes-plugins/fishslapper/configuration.md)
 * [RawMsg](funnycubes-plugins/rawmsg/README.md)
   * [Commands & Permissions](funnycubes-plugins/rawmsg/commands-and-permissions.md)
-  * [Configuration](funnycubes-plugins/rawmsg/configuration.md)
 * [Spit](funnycubes-plugins/spit/README.md)
   * [Commands & Permissions](funnycubes-plugins/spit/commands-and-permissions.md)
-  * [Configuration](funnycubes-plugins/spit/configuration.md)
 * [Temp MOTD](funnycubes-plugins/tempmotd/README.md)
   * [Commands & Permissions](funnycubes-plugins/tempmotd/commands-and-permissions.md)
   * [Configuration](funnycubes-plugins/tempmotd/configuration.md)
