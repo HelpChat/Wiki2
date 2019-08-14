@@ -1,10 +1,7 @@
 ---
 description: >-
-  Ultimate prison mining and selling solution! /sellall + signs + blocks2inv +
-  the original "AutoSell"
+  Launch fireworks from any block
 ---
 
 # Firework Chests
-
-Autosell Plugin Info
-
+This is a fun little plugin that allows fireworks to come shooting out of any configured block clicked by a player. It also includes a configurable cooldown per block to stop pesky spammers.
