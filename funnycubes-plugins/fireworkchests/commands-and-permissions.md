@@ -6,5 +6,5 @@ description: List of commands and permissions for the plugin
 
 | Command | Permission | Description |
 | :--- | :--- | :--- |
-|  |  |  |
+|N/A|fireworkchests.use|Able to use the firework launchers.|
 
