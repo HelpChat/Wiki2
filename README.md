@@ -6,8 +6,6 @@ description: >-
 
 # Welcome
 
-![](.gitbook/assets/helpchatbanner.png)
-
 {% hint style="warning" %}
 This wiki is currently a work in progress, so some content will be missing!
 {% endhint %}
