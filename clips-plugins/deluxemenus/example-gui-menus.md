@@ -59,8 +59,8 @@ To make this work fine you have to download the Player and CheckItem expansions 
 > /papi ecloud download PlayerPoints  
 > /papi reload
 
-* [x] \*\*\*\*[**Vault**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L20)\*\*\*\*
-* [x] \*\*\*\*[**Token Enchant**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L59)\*\*\*\*
-* [x] \*\*\*\*[**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L102)\*\*\*\*
-* [x] [**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L142)\*\*\*\*
+* [x] \*\*\*\*[**Vault**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L18-L59)\*\*\*\*
+* [x] \*\*\*\*[**Token Enchant**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L61-L106)\*\*\*\*
+* [x] \*\*\*\*[**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L108-L150)\*\*\*\*
+* [x] [**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L152-L195)\*\*\*\*
 
