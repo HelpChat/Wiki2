@@ -136,9 +136,9 @@ Sets the item's lore \(the text shown under the item's name\). You can use [plac
 > >
 > > ```yaml
 > > slots:
-> >   - #
-> >   - #
-> >   - #
+> > - #
+> > - #
+> > - #
 > > ```
 
 Sets in which slot the item should be inside the menu.
@@ -188,11 +188,11 @@ Check the [update interval](gui.md#update-interval) GUI option to set the update
 
 > ```yaml
 > enchantments:
->   - enchantmentid;level
->   - enchantmentid;level
+> - enchantmentid;level
+> - enchantmentid;level
 > ```
 >
-> > * [Enchantments list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html).
+> > [Enchantments list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html).
 
 Enchants the item with the specified enchantments. \(Check the [hide enchantments](item.md#hide-enchantments) option to hide the enchantments\)
 
