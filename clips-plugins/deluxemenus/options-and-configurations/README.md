@@ -14,10 +14,11 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
   * [1.8.8](https://helpch.at/docs/1.8.8/org/bukkit/Material.html)
   * [1.12.2](https://helpch.at/docs/1.12.2/org/bukkit/Material.html)
   * [1.13.2](https://helpch.at/docs/1.13.2/org/bukkit/Material.html)
+  * [1.14.4](https://helpch.at/docs/1.14.4/org/bukkit/Material.html)
   * [Latest](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
-* [Enchantments](https://helpch.at/docs/1.12.2/org/bukkit/enchantments/Enchantment.html) \(Be aware that some enchantments are not available on some items.\)
-* [Dye Colors](https://helpch.at/docs/1.12.2/org/bukkit/DyeColor.html)
-* [Pattern Types](https://helpch.at/docs/1.12.2/org/bukkit/block/banner/PatternType.html)
+* [Enchantments](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html) \(Be aware that some enchantments are not available on some items.\)
+* [Dye Colors](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/DyeColor.html)
+* [Pattern Types](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/banner/PatternType.html)
 * [Sound Types](https://gist.github.com/Andre601/1ab3b4fabd0010ae241156333491c379)
 
 ## Values keywords

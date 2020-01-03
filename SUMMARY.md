@@ -72,6 +72,10 @@
   * [Commands & Permissions](funnycubes-plugins/tempmotd/commands-and-permissions.md)
   * [Configuration](funnycubes-plugins/tempmotd/configuration.md)
 
+## Glare's Resources
+
+* [VoteParty](glares-resources/voteparty.md)
+
 ## ADDITIONAL RESOURCES
 
 * [Discord](https://helpch.at/discord)
