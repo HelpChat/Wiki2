@@ -75,9 +75,9 @@
 ## Glare's Resources
 
 * [VoteParty](glares-resources/voteparty.md)
-  * [Configuration](glares-resources/voteparty/configuration.md)
   * [Commands & Permissions](glares-resources/voteparty/commands-and-permissions.md)
   * [Placeholders](glares-resources/voteparty/placeholders.md)
+  * [Configuration](glares-resources/voteparty/configuration.md)
 
 ## ADDITIONAL RESOURCES
 
