@@ -74,7 +74,8 @@
 
 ## Glare's Resources
 
-* [VoteParty](glares-resources/voteparty.md)
+* [VoteParty](glares-resources/voteparty/README.md)
+  * [Commands & Permissions](glares-resources/voteparty/commands-and-permissions.md)
 
 ## ADDITIONAL RESOURCES
 

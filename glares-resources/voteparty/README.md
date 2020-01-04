@@ -6,7 +6,7 @@ description: >-
 
 # VoteParty
 
-![](../.gitbook/assets/34e44bb3eab7c338bbcce4ee69ccd8f948f86c05.png)
+![](../../.gitbook/assets/34e44bb3eab7c338bbcce4ee69ccd8f948f86c05.png)
 
 ## Description
 
