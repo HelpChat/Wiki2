@@ -4,7 +4,7 @@ description: Detailed example of what the default config provides.
 
 # Configuration
 
-## 
+## Why does the config look different from a traditional plugin config?
 
 The reason why **VoteParty's** config file might look funny to you is because it does not utilize tradition YAML files. **VoteParty** utilizes an advanced Object-Relational Mapping \(**ORM**\) system in order to provide fast and efficient loading, saving, and utilizing of the data that it contains!
 
