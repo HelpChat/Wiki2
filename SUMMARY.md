@@ -72,12 +72,12 @@
   * [Commands & Permissions](funnycubes-plugins/tempmotd/commands-and-permissions.md)
   * [Configuration](funnycubes-plugins/tempmotd/configuration.md)
 
-## Glare's Resources
+## Glare's Plugins
 
-* [VoteParty](glares-resources/voteparty.md)
-  * [Commands & Permissions](glares-resources/voteparty/commands-and-permissions.md)
-  * [Placeholders](glares-resources/voteparty/placeholders.md)
-  * [Configuration](glares-resources/voteparty/configuration.md)
+* [VoteParty](glares-plugins/voteparty/README.md)
+  * [Commands & Permissions](glares-plugins/voteparty/commands-and-permissions.md)
+  * [Placeholders](glares-plugins/voteparty/placeholders.md)
+  * [Configuration](glares-plugins/voteparty/configuration.md)
 
 ## ADDITIONAL RESOURCES
 
