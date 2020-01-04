@@ -4,9 +4,9 @@ description: Detailed example of what the default config provides.
 
 # Configuration
 
-## Why does the config look different from a tradional plugin config?
+## 
 
-The reason why **VoteParty's** config file might look funny to you is because it does not utilizie tradition YAML files. **VoteParty** utilizes an advanced Object-Relational Mapping \(**ORM**\) system in order to provide fast and efficient loading, saving, and utilizing of the data that it contains!
+The reason why **VoteParty's** config file might look funny to you is because it does not utilize tradition YAML files. **VoteParty** utilizes an advanced Object-Relational Mapping \(**ORM**\) system in order to provide fast and efficient loading, saving, and utilizing of the data that it contains!
 
 ## Why does the config below look different than what I see in mine?
 
@@ -118,7 +118,7 @@ voting: {
       [70, "give %player_name% STEAK 10"]
     ]
     enabled: false
-# Max possible commands that will execute from the list above
+# Max possible commands that will execute from the list aboveWhy does the config look different from a traditional plugin config?
     max_possible: 1
   }
 }
