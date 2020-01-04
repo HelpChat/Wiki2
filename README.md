@@ -52,7 +52,3 @@ This wiki is currently a work in progress, so some content will be missing!
 
 {% page-ref page="funnycubes-plugins/tempmotd/" %}
 
-## Glare's Plugins
-
-{% page-ref page="glares-resources/voteparty/" %}
-
