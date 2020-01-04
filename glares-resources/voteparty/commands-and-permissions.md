@@ -19,6 +19,7 @@ description: List of commands and permissions for the plugin
 | /vp setcounter &lt;amount&gt; | voteparty.command.admin | Set the current vote counter. |
 | /vp startparty | voteparty.command.admin | Force launch a Vote Party. |
 | /vp giveparty &lt;player&gt; | voteparty.command.admin | Host a private Vote Party for a player. |
+| /vp reload | voteparty.command.admin | Reloads the config file. |
 
 ## Permissions
 
