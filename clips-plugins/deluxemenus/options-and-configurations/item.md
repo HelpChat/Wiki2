@@ -54,7 +54,7 @@ data: 5
 > > **Supported data values:**
 > >
 > > * Number \(`1`\).
-> > * Placeholder that returns a number \(`placeholder-player_item_in_hand_data%`\).
+> > * Placeholder that returns a number \(`placeholder-%player_item_in_hand_data%`\).
 
 Sets the durability of the item \(depends on the [Material](item.md#material) option\).
 
