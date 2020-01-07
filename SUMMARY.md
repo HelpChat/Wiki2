@@ -75,6 +75,7 @@
 ## Glare's Plugins
 
 * [VoteParty](glares-plugins/voteparty/README.md)
+  * [Configuration](glares-plugins/voteparty/configuration.md)
   * [Commands & Permissions](glares-plugins/voteparty/commands-and-permissions.md)
   * [Placeholders](glares-plugins/voteparty/placeholders.md)
 
