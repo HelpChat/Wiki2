@@ -77,7 +77,6 @@
 * [VoteParty](glares-plugins/voteparty/README.md)
   * [Commands & Permissions](glares-plugins/voteparty/commands-and-permissions.md)
   * [Placeholders](glares-plugins/voteparty/placeholders.md)
-  * [Configuration](glares-plugins/voteparty/configuration.md)
 
 ## ADDITIONAL RESOURCES
 
