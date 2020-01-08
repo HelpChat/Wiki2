@@ -16,7 +16,16 @@ settings:
     # The default language of the plugin
     language: en_US
     # The prefix of all the messages in the plugin
-    prefix: '&d&lV&dote&5&lP&5arty &7&l» '
+    prefix: '&d&lVote&5&lParty &7&l» '
+# The hook part of the config allows you to configure which plugins you would like to hook into for votes.
+# By default, the plugin will utilize NuVotifier and listen for it's vote events.
+# If you would like to use the plugin without NuVotifier, just disable the hook!
+# NOTE: Keep in mind that without being hooked into a vote plugin, the plugin will not automatically handle votes.
+# You will be required to do everything manually.
+# Over time, more plugins may become supported!
+hooks:
+    # Would you like to listen to NuVotifier for incoming votes?
+    nuvotifier: true
 crate:
     enabled: true
     lore: 
@@ -38,8 +47,8 @@ effects:
         offsetX: 0.0
         offsetY: 0.0
         offsetZ: 0.0
-        speed: 0.0
-        count: 3
+        speed: 0.1
+        count: 2
     # Configuration for particles when a party starts
     party_start:
         enable: true
@@ -49,8 +58,8 @@ effects:
         offsetX: 0.0
         offsetY: 0.0
         offsetZ: 0.0
-        speed: 0.0
-        count: 3
+        speed: 0.1
+        count: 2
     # Configuration for particles when a player votes
     vote:
         enable: true
@@ -60,8 +69,8 @@ effects:
         offsetX: 0.0
         offsetY: 0.0
         offsetZ: 0.0
-        speed: 0.0
-        count: 3
+        speed: 0.1
+        count: 2
 party:
     # The amount of votes needed for a party to occur
     votes_needed: 50
@@ -73,18 +82,18 @@ party:
     # The amount of time (in seconds) the server will wait to start the party after the amount needed has been achieved
     start_delay: 15
     # The amount of time (in seconds) the server will wait between executing reward commands
-    command_delay: 5
+    command_delay: 1
     # Configuration for chance rewards to be given during a party.
     # Add as many commands as you want, set their chance, and choose the max amount a player can earn!
     reward_commands:
         enabled: true
-        max_possible: 3
+        max_possible: 1
         commands: 
-        - chance: 90
+        - chance: 50
           command: eco give %player_name% 100
-        - chance: 90
+        - chance: 50
           command: give %player_name% DIAMOND 6
-        - chance: 90
+        - chance: 50
           command: give %player_name% IRON_INGOT 12
     # A list of rewards that will ALWAYS be given to a player during a party
     guaranteed_rewards:
@@ -101,7 +110,7 @@ party:
     party_commands:
         enabled: true
         commands: 
-        - broadcast Party will start soon!
+        - broadcast A Vote Party has started!
 voting:
     # Configuration for chance rewards to be given for voting.
     # Add as many commands as you want, set their chance, and choose the max amount a player can earn!
@@ -123,6 +132,8 @@ voting:
     global_commands:
         enabled: true
         commands: 
-        - broadcast Only %voteparty_votes_required_party% more votes until a VoteParty!
+        - broadcast %player_name% just voted! Only %voteparty_votes_required_party% more votes
+          until a VoteParty!
+
 ```
 
