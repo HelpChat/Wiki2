@@ -24,7 +24,7 @@ description: >-
 ## Dependencies
 
 * [PlaceholderAPI](https://placeholderapi.com)
-* [NuVotifier](https://www.spigotmc.org/resources/13449/)
+* [NuVotifier](https://www.spigotmc.org/resources/13449/) \(soft\)
 
 ## Setup
 
@@ -33,7 +33,7 @@ description: >-
 3. Download the [**PlaceholderAPI**](https://placeholderapi.com) dependency.
 4. Download the [**NuVotifier**](https://www.spigotmc.org/resources/nuvotifier.13449/) dependency.
 5. **Start** your server.
-6. Modify the **conf.korm** and **language files** that were generated to fit your server's layout \(Both found in `/plugins/VoteParty/`\).
+6. Modify the **config.yml** and **language files** that were generated to fit your server's layout \(Both found in `/plugins/VoteParty/`\).
 7. Check the [Commands & Permissions](commands-and-permissions.md) page to familiarize yourself with the plugin.
 8. That's it! You're good to go!
 
