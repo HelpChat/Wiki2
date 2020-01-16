@@ -12,7 +12,6 @@ You can also use any [**PlaceholderAPI**](https://placeholderapi.com) ****placeh
 | %voteparty\_votes\_recorded% | Text | Returns the current amount of votes towards a Vote Party. |
 | %voteparty\_votes\_required\_party% | Text | Returns the amount of votes left that are needed for a Vote Party to happen. |
 | %voteparty\_votes\_required\_total% | Text | Returns the total amount of votes needed for a Vote Party to happen. |
-| %voteparty\_player\_votes% | Text | Returns the total amount of votes a player has. |
 
 ## Download
 

@@ -34,8 +34,9 @@ description: >-
 4. Download the [**NuVotifier**](https://www.spigotmc.org/resources/nuvotifier.13449/) dependency.
 5. **Start** your server.
 6. Modify the **config.yml** and **language files** that were generated to fit your server's layout \(Both found in `/plugins/VoteParty/`\).
-7. Check the [Commands & Permissions](commands-and-permissions.md) page to familiarize yourself with the plugin.
-8. That's it! You're good to go!
+7. Download the **PlaceholderAPI Player Expansion** \(/papi ecloud download Player\)
+8. Check the [Commands & Permissions](commands-and-permissions.md) page to familiarize yourself with the plugin.
+9. That's it! You're good to go!
 
 
 

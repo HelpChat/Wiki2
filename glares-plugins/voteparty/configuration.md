@@ -17,13 +17,6 @@ settings:
     language: en_US
     # The prefix of all the messages in the plugin
     prefix: '&d&lVote&5&lParty &7&l» '
-    counter:
-        # It is suggested that you don't modify this value manually.
-        # Every X seconds, this value will update to the latest known amount of votes.
-        # This allows you to persist vote counts through reboots.
-        votes: 0
-        # How often to save the current amount of votes (in seconds)
-        save-interval: 60
 # The hook part of the config allows you to configure which plugins you would like to hook into for votes.
 # By default, the plugin will utilize NuVotifier and listen for it's vote events.
 # If you would like to use the plugin without NuVotifier, just disable the hook!

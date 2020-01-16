@@ -13,8 +13,8 @@ description: All item related options & configurations
 >     slot: #
 > ```
 
-**Note:**  
-Each item will have a name, in this example our item is called **\*\*`ItemName`. This name** should\*\* be unique, so there won't be two or more items with the same name.
+**Note:**   
+Each item will have a name, in this example our item is called ****`ItemName`. This name **should** be unique, so there won't be two or more items with the same name.
 
 ## Material
 
@@ -255,7 +255,7 @@ Check [this](./#action-tags) for all action types and action tags.
 > ```
 
 Sets the requirements the player should have to click the item \(Check the [Requirements](requirements.md) page for more info about the `EXPRESSION` value\).  
-Deny commands \(optional\) are the actions that are going to be executed if the player doesn't have the required requirements. But if \(s\)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
-
+Deny commands \(optional\) are the actions that are going to be executed if the player doesn't have the required requirements. But if \(s\)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.  
+  
 Check [this](./#action-tags) for all action types and action tags.
 
