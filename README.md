@@ -54,7 +54,7 @@ This wiki is currently a work in progress, so some content will be missing!
 
 ## Glare's Plugins
 
-{% page-ref page="glares-plugins/voteparty/" %}
-
 {% page-ref page="glares-plugins/deluxequeues/" %}
+
+{% page-ref page="glares-plugins/voteparty/" %}
 
