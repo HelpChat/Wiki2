@@ -74,6 +74,9 @@
 
 ## Glare's Plugins
 
+* [DeluxeQueues](glares-plugins/deluxequeues/README.md)
+  * [Commands & Permissions](glares-plugins/deluxequeues/commands-and-permissions.md)
+  * [Configuration](glares-plugins/deluxequeues/configuration.md)
 * [VoteParty](glares-plugins/voteparty/README.md)
   * [Commands & Permissions](glares-plugins/voteparty/commands-and-permissions.md)
   * [Placeholders](glares-plugins/voteparty/placeholders.md)
