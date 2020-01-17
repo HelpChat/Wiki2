@@ -56,3 +56,5 @@ This wiki is currently a work in progress, so some content will be missing!
 
 {% page-ref page="glares-plugins/voteparty/" %}
 
+{% page-ref page="glares-plugins/deluxequeues/" %}
+
