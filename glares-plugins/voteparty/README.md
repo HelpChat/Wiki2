@@ -26,6 +26,10 @@ description: >-
 * [PlaceholderAPI](https://placeholderapi.com)
 * [NuVotifier](https://www.spigotmc.org/resources/13449/) \(soft\)
 
+## Translations
+
+In **VoteParty**, we strive to support as many languages we can in order to support more people! Currently we only support Dutch, English, and French. If you speak a language besides this fluently and are interested in translating, please join our [discord](https://helpch.at/discord) and let us know and we can give you information on how to do that!
+
 ## Setup
 
 1. **Stop** your server.

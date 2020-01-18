@@ -10,7 +10,6 @@ description: List of commands and permissions for the plugin
 | :--- | :--- | :--- |
 | /vp | none | Shows how many votes needed for a Vote Party. |
 | /vp help | none | Helpful commands for VoteParty. |
-| /vp claim | voteparty.command.claim | Claim offline voting rewards. |
 
 ## Admin Commands
 
