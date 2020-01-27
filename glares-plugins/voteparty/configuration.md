@@ -14,16 +14,16 @@ description: The plugin's configuration file!
 # Discord: https://helpch.at/discord
 settings:
     # The default language of the plugin
-    language: en_US
+    language: en-US
     # The prefix of all the messages in the plugin
     prefix: '&d&lVote&5&lParty &7&l» '
     counter:
         # It is suggested that you don't modify this value manually.
         # Every X seconds, this value will update to the latest known amount of votes.
         # This allows you to persist vote counts through reboots.
-        votes: 0
+        votes: 3
         # How often to save the current amount of votes (in seconds)
-        save-interval: 60
+        save-interval: 300
 # The hook part of the config allows you to configure which plugins you would like to hook into for votes.
 # By default, the plugin will utilize NuVotifier and listen for it's vote events.
 # If you would like to use the plugin without NuVotifier, just disable the hook!
@@ -129,6 +129,16 @@ voting:
           command: eco give %player_name% 100
         - chance: 70
           command: give %player_name% STEAK 10
+    # Configuration for extra commands to be executed on players who have specific permission nodes
+    permission-rewards:
+        enabled: true
+        permCommands: 
+        - permission: my.special.permission
+          commands:
+          - eco give %player_name% 500
+        - permission: my.special.permission2
+          commands:
+          - eco give %player_name% 1000
     # A list of rewards that will ALWAYS be given to a player for voting
     guaranteed_rewards:
         enabled: true
@@ -141,6 +151,12 @@ voting:
         commands: 
         - broadcast %player_name% just voted! Only %voteparty_votes_required_party% more votes
           until a VoteParty!
+    offline_vote_claiming:
+        # Would you like players to be able to claim rewards for offline votes?
+        # Note: They will only be able to get credit for rewards if you have `offline_votes` enabled
+        enabled: false
+        # Would you like to notify the player when they login that they have votes to claim?
+        notify: false
 
 ```
 
