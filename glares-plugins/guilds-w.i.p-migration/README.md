@@ -12,7 +12,7 @@ description: 'RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!'
 
 ## **Features**
 
-* Per-Guild Heirarchy \(Roles\)
+* Per-Guild Hierarchy \(Roles\)
 * Tiers \(Includes perks of your choosing\)
 * Claims \(via WorldGuard\)
 * Banks
