@@ -21,7 +21,7 @@ settings:
         # It is suggested that you don't modify this value manually.
         # Every X seconds, this value will update to the latest known amount of votes.
         # This allows you to persist vote counts through reboots.
-        votes: 3
+        votes: 0
         # How often to save the current amount of votes (in seconds)
         save-interval: 300
 # The hook part of the config allows you to configure which plugins you would like to hook into for votes.
@@ -102,6 +102,13 @@ party:
           command: give %player_name% DIAMOND 6
         - chance: 50
           command: give %player_name% IRON_INGOT 12
+    # Configuration for extra commands to be executed on players who have specific permission nodes when a party happens
+    permission-rewards:
+        enabled: true
+        permCommands: 
+        - permission: my.special.permission
+          commands:
+          - eco give %player_name% 500
     # A list of rewards that will ALWAYS be given to a player during a party
     guaranteed_rewards:
         enabled: true
@@ -136,9 +143,6 @@ voting:
         - permission: my.special.permission
           commands:
           - eco give %player_name% 500
-        - permission: my.special.permission2
-          commands:
-          - eco give %player_name% 1000
     # A list of rewards that will ALWAYS be given to a player for voting
     guaranteed_rewards:
         enabled: true
