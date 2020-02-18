@@ -20,10 +20,10 @@ description: >-
 
 ### DeluxeChat
 
-* <displaying prestige info using papi placeholders>
+* displaying prestige info using papi placeholders
   
 ### Essentials Chat
 
-* <displaying prestige info using ess chat>
+* displaying prestige info using ess chat
 
 
