@@ -23,7 +23,7 @@ description: >-
 
 * To display the prestige tag within your deluxechat chat format, use the placeholder provided by the ezprestige expansion
 * download the expansion using /papi ecloud download ezprestige (make sure to reload PlaceholderAPI afterwards)
-* set the prestige placeholder (%ezprestige_prestige%) within your format
+* set the prestige placeholder `%ezprestige_prestige%` within your format
 * Other placeholders (https://api.extendedclip.com/expansions/ezprestige/)
   
 ### Essentials Chat
