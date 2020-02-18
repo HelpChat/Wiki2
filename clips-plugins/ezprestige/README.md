@@ -34,6 +34,6 @@ description: >-
 
 ### Useful Guides
 
-* https://www.youtube.com/watch?time_continue=2&v=ZMFpLnxRGW0&feature=emb_logo
+* [koz4christ - Minecraft Server Admin Guide](https://www.youtube.com/watch?time_continue=2&v=ZMFpLnxRGW0&feature=emb_logo)
 
 
