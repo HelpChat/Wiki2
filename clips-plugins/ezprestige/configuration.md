@@ -1,19 +1,19 @@
 # Configuration
 
-> # EZPrestige version: 1.2.2 Main Configuration
-> # Via config.helpch.at
-> # 
-> # prestige_rank: <rank players are able to /prestige>
-> # confirm_to_prestige: <true/false>
-> # chat_integration: <true/false>
-> # messages: <-customize your messages
-> # valid placeholders: 
-> # %cost% - cost to prestige
-> # %balance% - players balance
-> # %prestige% - next prestige number
-> # %displaytag% - next prestige displaytag
-> # %prestigerank% - rank player needs to be to use /prestige
-> # %rank% - players permission group
+> EZPrestige version: 1.2.2 Main Configuration
+> Via config.helpch.at
+> 
+> prestige_rank: <rank players are able to /prestige>
+> confirm_to_prestige: <true/false>
+> chat_integration: <true/false>
+> messages: <-customize your messages
+> valid placeholders: 
+> %cost% - cost to prestige
+> %balance% - players balance
+> %prestige% - next prestige number
+> %displaytag% - next prestige displaytag
+> %prestigerank% - rank player needs to be to use /prestige
+> %rank% - players permission group
 > prestige_rank: Free
 > confirm_to_prestige: true
 > chat_integration: true
