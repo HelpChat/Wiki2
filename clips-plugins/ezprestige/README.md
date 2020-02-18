@@ -1,10 +1,9 @@
 ---
 description: >-
-  Ultimate prison mining and selling solution! /sellall + signs + blocks2inv +
-  the original "AutoSell"
+  Let players /prestige the EZ way
 ---
 
 # EzPrestige
 
-Autosell Plugin Info
+EzPrestige plugin info
 
