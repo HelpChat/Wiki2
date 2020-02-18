@@ -32,4 +32,8 @@ description: >-
 * Open the Essentials config and find the EssentialsChat section
 * Place the prestige placeholder for essentials chat `{prestige}` inside the format
 
+### Useful Guides
+
+* https://www.youtube.com/watch?time_continue=2&v=ZMFpLnxRGW0&feature=emb_logo
+
 
