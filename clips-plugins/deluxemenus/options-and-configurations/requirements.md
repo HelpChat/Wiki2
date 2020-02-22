@@ -45,7 +45,7 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 
 > ```yaml
 > type: has permission
-> permission: "TEXT"
+> permission: TEXT
 > ```
 
 Checks if the player has the specified permission.
