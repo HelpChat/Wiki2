@@ -1,9 +1,8 @@
 ---
-description: >-
-  Let players /prestige the EZ way
+description: Let players /prestige the EZ way
 ---
 
-#EzPrestige
+# EzPrestige
 
 ## Description
 
@@ -14,7 +13,7 @@ description: >-
 * Ability for players to prestige
 * Highly customizable.
 * Placeholders to display prestige info
-* Compatible with rankup plugins (EzRanksPro, etc)
+* Compatible with rankup plugins \(EzRanksPro, etc\)
 * Permission based
 
 ## Setup
@@ -22,10 +21,10 @@ description: >-
 ### DeluxeChat
 
 * To display the prestige tag within your deluxechat chat format, use the placeholder provided by the ezprestige expansion
-* download the expansion using /papi ecloud download ezprestige (make sure to reload PlaceholderAPI afterwards)
+* download the expansion using /papi ecloud download ezprestige \(make sure to reload PlaceholderAPI afterwards\)
 * set the prestige placeholder `%ezprestige_prestige%` within your format
-* Other placeholders (https://api.extendedclip.com/expansions/ezprestige/)
-  
+* Other placeholders \([https://api.extendedclip.com/expansions/ezprestige/](https://api.extendedclip.com/expansions/ezprestige/)\)
+
 ### Essentials Chat
 
 * If you are using Essentials Chat you will need to do the following
@@ -35,5 +34,4 @@ description: >-
 ### Useful Guides
 
 * [koz4christ - Minecraft Server Admin Guide](https://www.youtube.com/watch?time_continue=2&v=ZMFpLnxRGW0&feature=emb_logo)
-
 

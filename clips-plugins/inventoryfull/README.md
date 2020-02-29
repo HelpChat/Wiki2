@@ -6,5 +6,3 @@ description: >-
 
 # InventoryFull
 
-Autosell Plugin Info
-
