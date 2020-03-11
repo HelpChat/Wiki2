@@ -38,7 +38,7 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
 | :--- | :--- |
 | `[player] <command>` | Executes a command as the player. |
 | `[console] <command>` | Executes a command from the console. |
-| `[commandevent] <command>` | Executes an unregistered command ad the player. |
+| `[commandevent] <command>` | Executes an unregistered command as the player. |
 | `[message] <text>` | Sends a message to the player. You can use [placeholders](https://helpch.at/placeholders) and color/format codes here. |
 | `[openguimenu] <menu-name>` | Opens another GUI from DeluxeMenus. |
 | `[connect] <server-name>` | Connects the player to a server on the same BungeeCord. |
