@@ -14,7 +14,7 @@ description: All item related options & configurations
 > ```
 
 **Note:**  
-Each item will have a name, in this example our item is called **\*\*`ItemName`. This name** should\*\* be unique, so there won't be two or more items with the same name.
+Each item will have a name, in this example our item is called **`ItemName`.** This name **should** be unique, so there won't be two or more items with the same name.
 
 ## Material
 
