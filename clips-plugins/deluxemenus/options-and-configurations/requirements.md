@@ -70,6 +70,11 @@ Checks if the player has the specified amount of money \([Vault](https://www.spi
 > lore:
 >   - "TEXT"
 > ```
+>
+> > **Required fields:**
+> >
+> > * Material
+> > * Amount
 
 Checks if the player has the specified item in the inventory.
 
