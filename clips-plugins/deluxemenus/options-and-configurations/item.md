@@ -124,7 +124,7 @@ Sets the item's display name. You can use [placeholders](https://helpch.at/place
 >   - "TEXT"
 > ```
 
-Sets the item's lore \(the text shown under the item's name\). You can use [placeholders](https://helpch.at/placeholders) and color/format codes in this area.
+Sets the item's lore \(the text shown under the item's name\). You can use [placeholders](https://helpch.at/placeholders) and color/format codes and the new line character \(`\n`\) in this option.
 
 ## Slot
 
