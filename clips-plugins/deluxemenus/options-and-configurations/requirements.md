@@ -50,7 +50,7 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 
 Checks if the player has the specified permission.  
   
-To invert the requirement \(Check if the player doesn't have the permission\) you can simply add the exclamation mark before the type name \(like this `type: !has permission`\).
+To invert the requirement \(Check if the player doesn't have the permission\) you can simply add the exclamation mark before the type name \(like this `type: "!has permission"`\).
 
 ### **Has money**
 
@@ -61,7 +61,7 @@ To invert the requirement \(Check if the player doesn't have the permission\) yo
 
 Checks if the player has the specified amount of money \([Vault](https://www.spigotmc.org/resources/34315/) is required\).  
   
-To invert the requirement \(Check if the player doesn't have the amount of money\) you can simply add the exclamation mark before the type name \(like this `type: !has money`\).
+To invert the requirement \(Check if the player doesn't have the amount of money\) you can simply add the exclamation mark before the type name \(like this `type: "!has money"`\).
 
 ### **Has item**
 
@@ -82,7 +82,7 @@ To invert the requirement \(Check if the player doesn't have the amount of money
 
 Checks if the player has the specified item in the inventory.  
   
-To invert the requirement \(Check if the player doesn't have the item\) you can simply add the exclamation mark before the type name \(like this `type: !has item`\).
+To invert the requirement \(Check if the player doesn't have the item\) you can simply add the exclamation mark before the type name \(like this `type: "!has item"`\).
 
 {% hint style="info" %}
 You can use color/format codes in name and lore fields, but using `§` character instead of `&` character.
@@ -122,7 +122,7 @@ Evaluates a JavaScript expression that must return true or false.
 
 Checks if `input:` matches `output:` \(Case sensitive\).  
   
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: !string equals`\).
+To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string equals"`\).
 
 ### **String Equals Ignore Case**
 
@@ -142,7 +142,7 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 
 Checks if `input:` matches `output:` \(Case insensitive\).  
   
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: !string equals ignorecase`\).
+To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string equals ignorecase"`\).
 
 ### **String Contains**
 
@@ -162,7 +162,7 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 
 Checks if `input:` contains `output:` \(Case sensitive\).  
   
-To invert the requirement \(Check if the input doesn't contain the output\) you can simply add the exclamation mark before the type name \(like this `type: !string contains`\).
+To invert the requirement \(Check if the input doesn't contain the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string contains"`\).
 
 ### Regex matches
 
@@ -175,7 +175,7 @@ To invert the requirement \(Check if the input doesn't contain the output\) you 
 Checks if `input:` contains the regular expression in `regex:`.  
 Visit [this site](https://regexr.com/) to create regular expressions easily.  
   
-To invert the requirement \(Check if the input doesn't contain the regular expression\) you can simply add the exclamation mark before the type name \(like this `type: !regex matches`\).
+To invert the requirement \(Check if the input doesn't contain the regular expression\) you can simply add the exclamation mark before the type name \(like this `type: "!regex matches"`\).
 
 ### **Comparators**
 
