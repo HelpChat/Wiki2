@@ -48,6 +48,7 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
 | `[broadcastsound] <sound>` | Broadcast a sound to all players on the server. |
 | `[sound] <sound>` | Play a sound for the player. |
 | `[takemoney] <amount>` | Take a certain amount of money from the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
+| \[givemoney\] &lt;amount&gt; | Give a certain amount of money to the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
 
 ### **Action tags**
 

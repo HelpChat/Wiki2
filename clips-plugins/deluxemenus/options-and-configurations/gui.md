@@ -49,6 +49,10 @@ The menu title that is shown at the top of the GUI. You can use color and format
 
 The command used to open the GUI menu. It can only be a single word. \(The menu will not work without it\)
 
+{% hint style="info" %}
+To do disable the open command, simply delete the line of this option.
+{% endhint %}
+
 ## Open Requirements
 
 > ```yaml

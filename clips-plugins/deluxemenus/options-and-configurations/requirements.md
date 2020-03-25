@@ -63,6 +63,10 @@ Checks if the player has the specified amount of money \([Vault](https://www.spi
   
 To invert the requirement \(Check if the player doesn't have the amount of money\) you can simply add the exclamation mark before the type name \(like this `type: "!has money"`\).
 
+{% hint style="info" %}
+To use a placeholder as a value for the amount, replace the `amount:` field with `placeholder:`.
+{% endhint %}
+
 ### **Has item**
 
 > ```yaml
