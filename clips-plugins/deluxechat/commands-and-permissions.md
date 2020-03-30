@@ -23,7 +23,7 @@ description: List of commands and permissions for the plugin
 | /DChat Test &lt;Format&gt; &lt;Message&gt; | deluxechat.admin/\* | Tests the specified format. |
 | /SocialSpy | deluxechat.socialspy | Toggles social spy mode. |
 
-#### Command Aliases
+### Command Aliases
 
 1. DChat:
    * DeluxeChat 

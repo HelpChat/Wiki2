@@ -5,7 +5,11 @@ description: VoteParty's placeholders
 # Placeholders
 
 **VoteParty** provides [**PlaceholderAPI**](https://placeholderapi.com) placeholders that you can utilize inside any plugin that supports [**PlaceholderAPI**](https://placeholderapi.com).  
-You can also use any [**PlaceholderAPI**](https://placeholderapi.com) ****placeholder inside of **VoteParty**. \([PlaceholderAPI placeholders list](https://helpch.at/placeholders)\)
+You can also use any [**PlaceholderAPI**](https://placeholderapi.com) ****placeholder inside of **VoteParty**. \([PlaceholderAPI placeholders list](https://helpch.at/placeholders)\)  
+  
+To utilize with plugins such as FeatherBoard, change the below placeholders from %% to {placeholderapi\_&lt;placeholder&gt;}.  
+  
+Example: {placeholderapi\_voteparty\_votes\_recorded}
 
 | Placeholder | Return Value | Description |
 | :--- | :--- | :--- |
