@@ -27,7 +27,7 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [Material name](./#useful-links) \(`STONE`\).
 > > * Player head \(`head-extended_clip`\).
 > > * Placeholder head \(`head-%player_name%`\).
-> > * Argument placeholder head \(`head;{target}`\).
+> > * Argument placeholder head \(`head-{target}`\).
 > > * [BaseHead](https://minecraft-heads.com) \(`basehead-<base64 (Value field in the head's give command)>`\).
 > > * [EpicHeads](https://songoda.com/marketplace/product/26) \(`heads-<ID>`\).
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) \(`hdb-<ID>`\).
