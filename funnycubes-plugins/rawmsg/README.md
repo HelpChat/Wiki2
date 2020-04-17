@@ -1,7 +1,5 @@
 ---
-description: >-
-  Ultimate prison mining and selling solution! /sellall + signs + blocks2inv +
-  the original "AutoSell"
+description: Send Raw Messages to a player or the server with PlaceholderApi Support
 ---
 
 # RawMsg
