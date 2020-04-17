@@ -9,3 +9,7 @@ NumberOfFireworks: 3
 LauncherBlock: TRAPPED_CHEST
 ```
 
+{% hint style="info" %}
+Make sure `LauncherBlock` is valid material type!
+{% endhint %}
+

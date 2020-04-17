@@ -4,6 +4,8 @@ description: The all in one GUI menu plugin!
 
 # DeluxeMenus
 
+![](../../.gitbook/assets/deluxemenus-banner.png)
+
 ## Description
 
 **DeluxeMenus** is the all in one inventory GUI menu plugin!  

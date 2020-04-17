@@ -19,8 +19,10 @@ description: Plugin's placeholders
 ## Download
 
 To use these placeholders, you have to download **DeluxeTags Expansion**. You can download it automatically by running:  
-`/papi ecloud download DeluxeTags  
-/papi reload`
+
+
+> `/papi ecloud download DeluxeTags  
+> /papi reload`
 
 Or you can download it manually from the [eCloud](https://api.extendedclip.com/expansions/deluxetags/), and put it inside the `expansions` folder \(folder path: `/plugins/PlaceholderAPI/expansions/`\). 
 

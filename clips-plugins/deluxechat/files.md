@@ -8,7 +8,7 @@ description: The plugin's configuration files
 
 {% code title="config.yml" %}
 ```yaml
-# DeluxeChat version 1.14.4 config file
+# DeluxeChat version 1.15.0 config file
 # Created by extended_clip
 # List as many format configurations you in the formats: config section.
 # Each format configuration requires a specific layout which can be seen below.
@@ -69,8 +69,13 @@ description: The plugin's configuration files
 check_updates: true
 bungeecord:
   enabled: false
-  servername: '&8[&cServer&8]'
+  server_name: Server
+  server_prefix: '&8[&cServer&8]'
   join_global: true
+  use_server_whitelist: true
+  server_whitelist:
+  - Server2
+  - Server3
 relation_placeholders_enabled: true
 timestamp_format: MM/dd/yy HH:mm:ss
 boolean:
@@ -129,7 +134,6 @@ formats:
 
 {% code title="messages.yml" %}
 ```yaml
-
 # DeluxeChat language file
 # You can edit all the messages here!
 # You must restart for changes to take affect when editing this file!

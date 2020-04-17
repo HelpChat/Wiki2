@@ -6,6 +6,8 @@ description: >-
 
 # AutoSell
 
+![](../../.gitbook/assets/autosell-banner.png)
+
 ## Description
 
 **AutoSell** is the selling solution for all prison servers, allows server owners to create permission-based shops were players are able to sell their items. **AutoSell** is also fully equipped with a wide range of extra features.

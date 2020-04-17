@@ -21,9 +21,10 @@ description: Plugin's placeholders
 
 ## Download
 
-To use these placeholders, you have to download **AutoSell Expansion**. You can download it automatically by running:  
-`/papi ecloud download AutoSell  
-/papi reload`
+To use these placeholders, you have to download **AutoSell Expansion**. You can download it automatically by running:
+
+> `/papi ecloud download AutoSell  
+> /papi reload`
 
 Or you can download it manually from the [eCloud](https://api.extendedclip.com/expansions/autosell/), and put it inside the `expansions` folder \(folder path: `/plugins/PlaceholderAPI/expansions/`\). 
 
