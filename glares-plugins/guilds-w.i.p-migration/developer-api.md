@@ -1,5 +1,38 @@
 # Developer API
 
+## Build Tool Stuff <a id="hooking-into-the-api"></a>
+
+{% tabs %}
+{% tab title="Maven" %}
+```markup
+        <repository>
+            <id>glares-repo</id>
+            <url>https://repo.glaremasters.me/repository/public/</url>
+        </repository>
+        
+        <dependency>
+            <groupId>me.glaremasters</groupId>
+            <artifactId>guilds</artifactId>
+            <version>VERSION</version>
+        </dependency>
+```
+{% endtab %}
+
+{% tab title="Gradle" %}
+```groovy
+repositories {
+    maven { 
+        url = 'https://repo.glaremasters.me/repository/public/' 
+    }
+}
+
+dependencies {
+    implementation 'me.glaremasters:guilds:VERSION'
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ## Hooking Into the API <a id="hooking-into-the-api"></a>
 
 Obtaining the instance of the API is pretty simple by using the singleton that provides static access to the class. You can obtain the instance of the API through the main `Guilds` class.
