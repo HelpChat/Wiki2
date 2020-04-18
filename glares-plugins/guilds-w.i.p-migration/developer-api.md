@@ -51,40 +51,41 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
 
 {% tabs %}
 {% tab title="OfflinePlayer" %}
-```java
+```kotlin
     /**
+     *
      * Get the guild of a player
      * @param player the players you're getting the guild of
      * @return the guild that the player is in
      */
-    public Guild getGuild(@NotNull OfflinePlayer player) {
-        return guildHandler.getGuild(player);
+    fun getGuild(player: OfflinePlayer): Guild? {
+        return guildHandler.getGuild(player)
     }
 ```
 {% endtab %}
 
 {% tab title="Guild UUID" %}
-```java
+```kotlin
     /**
      * Get a guild by it's uuid
      * @param uuid uuid of the guild
      * @return the guild the uuid belong to
      */
-    public Guild getGuild(@NotNull UUID uuid) {
-        return guildHandler.getGuild(uuid);
+    fun getGuild(uuid: UUID): Guild? {
+        return guildHandler.getGuild(uuid)
     }
 ```
 {% endtab %}
 
 {% tab title="Guild Name" %}
-```java
+```kotlin
     /**
      * Get a guild by it's name
      * @param name the name of the guild
      * @return the guild object
      */
-    public Guild getGuild(@NotNull String name) {
-        return guildHandler.getGuild(name);
+    fun getGuild(name: String): Guild? {
+        return guildHandler.getGuild(name)
     }
 ```
 {% endtab %}
@@ -92,28 +93,28 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
 
 ### Getting a Guild Vault <a id="getting-a-guild-vault"></a>
 
-```java
-    /**
+```kotlin
+   /**
      * Get a copy of one of a guild's vaults
      * @param guild the guild to get the vault of
      * @param vaultNumber which vault to get
      * @return guild vault
      */
-    public Inventory getGuildVault(@NotNull Guild guild, int vaultNumber) {
-        return guildHandler.getGuildVault(guild, vaultNumber);
+    fun getGuildVault(guild: Guild, vaultNumber: Int): Inventory {
+        return guildHandler.getGuildVault(guild, vaultNumber)
     }
 ```
 
 ### Getting a GuildRole <a id="getting-a-guildrole"></a>
 
-```java
+```kotlin
     /**
      * Get the role of a player
      * @param player role
      * @return the role of a player
      */
-    public GuildRole getGuildRole(@NotNull Player player) {
-        return getGuild(player).getMember(player.getUniqueId()).getRole();
+    fun getGuildRole(player: Player): GuildRole? {
+        return getGuild(player)?.getMember(player.uniqueId)?.role
     }
 ```
 
@@ -227,18 +228,27 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
      * Called a when a player leaves the guild
      * @param player the player leaving the guild
      * @param guild the guild the player was leaving
-     * @param cause the reason the event was called
      */
-    public GuildLeaveEvent(Player player, Guild guild, Cause cause) {
+    public GuildLeaveEvent(Player player, Guild guild) {
         super(player, guild);
-        this.cause = cause;
     }
+```
 
-    public enum Cause {
-        PLAYER_LEFT,
-        PLAYER_KICKED,
-        ADMIN_REMOVED
+### GuildKickEvent
+
+```java
+/**
+* Called when a player is kicked from the guild
+* @param player the player executing the event
+* @param kicked the player being kicked from the guild
+* @param cause the cause for being kicked
+*/
+class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, val cause: Cause) : GuildEvent(player, guild) {
+
+    enum class Cause {
+        PLAYER_KICKED, ADMIN_KICKED
     }
+}
 ```
 
 ### GuildPrefixEvent <a id="guildprefixevent"></a>
