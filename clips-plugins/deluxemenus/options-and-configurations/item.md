@@ -238,7 +238,7 @@ If set to true, it will hide the potion's effect text beneath the item name.
 > ```
 
 Sets the actions/commands that should be executed once the player clicks the item. they get executed in order from top to bottom.  
-Check [this](./#action-tags) for all action types and action tags.
+Check [this](./#action-types) for all action types and action tags.
 
 ## \(Shift\) Left/Middle/Right click Requirement
 
@@ -257,5 +257,5 @@ Check [this](./#action-tags) for all action types and action tags.
 Sets the requirements the player should have to click the item \(Check the [Requirements](requirements.md) page for more info about the `EXPRESSION` value\).  
 Deny commands \(optional\) are the actions that are going to be executed if the player doesn't have the required requirements. But if \(s\)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
 
-Check [this](./#action-tags) for all action types and action tags.
+Check [this](./#action-types) for all action types and action tags.
 
