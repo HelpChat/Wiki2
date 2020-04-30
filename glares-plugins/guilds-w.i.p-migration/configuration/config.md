@@ -114,6 +114,8 @@ guis:
         previous-page-item-name: '&fPrevious Page'
         # What should be the default texture url for textures that fail to load in? Refer to the Guild Manage settings to see how to change the texture!
         head-default-url: 7a2df315b43583b1896231b77bae1a507dbd7e43ad86c1cfbe3b2b8ef3430e9e
+        # Do we want to try to use skull textures or just ignore them and use the one provided?
+        use-default-texture: false
         # You are free to design this to your liking
         # This is just an example of all the available placeholders that you can use for the lore!
         # Note: With v3.6.7 and on, you can now use {guild-tier-name} for the name of the tier.
@@ -378,8 +380,6 @@ timers:
         home: 60
         # How often (in seconds) can a player request to join a guild?
         request: 60
-        # How often (in seconds) can a guild buy a buff?
-        buff: 60
         # How long should a user have to wait before joining a new guild after leaving one?
         join: 120
     warmups:
