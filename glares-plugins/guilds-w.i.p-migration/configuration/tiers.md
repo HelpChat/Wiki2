@@ -32,6 +32,8 @@ tiers:
             max-bank-balance: 10000.0
             # How many members should be in a guild for it to be able to rankup?
             members-to-rankup: 0
+            # What is the max amount of allies a guild with this tier can have?
+            max-allies: 5
             # Would you like this tier to be able to open the buff GUI?
             use-buffs: true
             # If you wish to give this tier extra permissions, put them here.
@@ -56,6 +58,8 @@ tiers:
             max-bank-balance: 20000.0
             # How many members should be in a guild for it to be able to rankup?
             members-to-rankup: 0
+            # What is the max amount of allies a guild with this tier can have?
+            max-allies: 10
             # Would you like this tier to be able to open the buff GUI?
             use-buffs: true
             # If you wish to give this tier extra permissions, put them here.
@@ -80,6 +84,8 @@ tiers:
             max-bank-balance: 30000.0
             # How many members should be in a guild for it to be able to rankup?
             members-to-rankup: 0
+            # What is the max amount of allies a guild with this tier can have?
+            max-allies: 15
             # Would you like this tier to be able to open the buff GUI?
             use-buffs: true
             # If you wish to give this tier extra permissions, put them here.
