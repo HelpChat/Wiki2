@@ -147,8 +147,8 @@ Size option should be always set, but it doesn't work for all [inventory types](
 > > * **TEXT** The argument name \(Should be unique\).
 > > * **\#** The number of word \(amount of spaces\) the argument can handle \(The value of `-1` should only be used in the last argument. It will make the argument handles all the world until the last one\).
 
-Gives you the ability to set arguments after the [open command](gui.md#open-command), and use them inside the menu by adding the argument placeholder \(the argument name inside curly braces `{TEXT}`\).  
-  
+Gives you the ability to set arguments after the [open command](gui.md#open-command), and use them inside the menu by adding the argument placeholder \(the argument name inside curly braces `{TEXT}`\).
+
 You can have multiple arguments, and they will be set in the same order in the open command.
 
 ```text
@@ -185,15 +185,15 @@ Sets the usage message for the menu. If the player didn't set the required argum
 > update_interval: #
 > ```
 
-This is for any items that use the `update:` option \(Check it [here](item.md#update)\).   
-The number defines the delay \(in seconds\) between each refresh of the placeholders in an item's lore/display name.  
-  
+This is for any items that use the `update:` option \(Check it [here](item.md#update)\).  
+The number defines the delay \(in seconds\) between each refresh of the placeholders in an item's lore/display name.
+
 **Note:** This refreshes/updates the placeholders only.
 
 ## Items
 
 > ```yaml
-> items: 
+> items:
 > ```
 
 This line should be left as is. It is merely telling the plugin you are about to begin defining items.  
