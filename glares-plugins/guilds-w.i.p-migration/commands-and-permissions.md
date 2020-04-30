@@ -89,7 +89,19 @@ Allows you to remove a player from their guild by force.
 
 `/guild admin rename <guild> <new name>`   
 **Permission**: guilds.command.admin   
-Allows you change the current name of a guild by force.
+Allows you change the current name of a guild by force.  
+  
+`/guild admin score resetall`  
+**Permission:** guilds.command.admin  
+Allows you to reset the score of all guilds  
+  
+`/guild admin score setwins <guild> <amount>`  
+**Permission:** guilds.command.admin  
+Allows you to set the wins of a guild  
+  
+`/guild admin score setloses <guild> <amount>`  
+**Permission:** guilds.command.admin  
+Allows you to set the loses of a guild
 
 `/guild admin sethome`   
 **Permission**: guilds.command.admin   
