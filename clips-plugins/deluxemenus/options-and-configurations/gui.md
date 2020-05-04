@@ -140,12 +140,12 @@ Size option should be always set, but it doesn't work for all [inventory types](
 
 > ```yaml
 > args:
->   TEXT: #
->   TEXT: #
+> - "TEXT"
+> - "TEXT"
+> - "TEXT"
 > ```
 >
 > > * **TEXT** The argument name \(Should be unique\).
-> > * **\#** The number of word \(amount of spaces\) the argument can handle \(The value of `-1` should only be used in the last argument. It will make the argument handles all the world until the last one\).
 
 Gives you the ability to set arguments after the [open command](gui.md#open-command), and use them inside the menu by adding the argument placeholder \(the argument name inside curly braces `{TEXT}`\).
 
@@ -157,9 +157,9 @@ You can have multiple arguments, and they will be set in the same order in the o
 
 ```yaml
 args:
-  first: 1
-  second: 1
-  last: -1
+- first
+- second
+- last
 ```
 
 * `{first}` returns `FirstArg`
@@ -167,8 +167,8 @@ args:
 * `{last}` returns `And the rest`
 
 {% hint style="info" %}
-* Argument placeholders can be used in [Material](item.md#material), [Display Name](item.md#display-name), [Lore](item.md#lore) and [Click Commands](item.md#shift-left-middle-right-click-commands) only.
-* This option will not work without [Args Usage Message](gui.md#args-usage-message) option.
+* Argument placeholders can be used in [Placeholder-Material](item.md#material), [Display Name](item.md#display-name), [Lore](item.md#lore), and [Actions](item.md#shift-left-middle-right-click-commands) only.
+* It's highly recommended to add [Args Usage Message](gui.md#args-usage-message) option.
 {% endhint %}
 
 ## Args Usage Message
