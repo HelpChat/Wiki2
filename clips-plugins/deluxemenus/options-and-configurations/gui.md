@@ -148,7 +148,7 @@ Registers the open command with the server.
 Must be manually added to the menu.
 {% endhint %}
 
-## Args \(Arguments\) <a id="args"></a>
+### Args \(Arguments\) <a id="args"></a>
 
 > ```yaml
 > args:
@@ -184,7 +184,7 @@ args:
 * Requires [Register Command](gui.md#register-command) to be true.
 {% endhint %}
 
-## Args Usage Message
+### Args Usage Message
 
 > ```yaml
 > args_usage_message: "TEXT"
