@@ -13,7 +13,7 @@ description: List of commands and permissions for the plugin
 | /DM Open  &lt;Menu&gt; &lt;Player&gt; | DeluxeMenus.Open.Others | Opens the specified menu to the specified player. |
 | /DM Open &lt;Menu&gt; -p:&lt;Player&gt; | DeluxeMenus.PlaceholdersFor | Opens the specified menu for you, but the placeholders in it will be parsed as the specified player. |
 | /DM List | DeluxeMenus.List | Lists loaded menus. |
-| /DM Execute <Player> <Action> | DeluxeMenus.Admin | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info.
+| /DM Execute &lt;Player&gt; &lt;Action&gt; | DeluxeMenus.Admin | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info.
 | /DM Reload | DeluxeMenus.Reload | Reloads the plugin's files. |
 
 #### Command Aliases
