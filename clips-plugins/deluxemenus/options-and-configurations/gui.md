@@ -136,6 +136,18 @@ Sets the inventory size.
 Size option should be always set, but it doesn't work for all [inventory types](gui.md#inventory-type).
 {% endhint %}
 
+## Register Command
+
+> ```yaml
+> register_command: true
+> ```
+
+Registers the open command with the server.
+
+{% hint style="info" %}
+Must be manually added to the menu.
+{% endhint %}
+
 ## Args \(Arguments\) <a id="args"></a>
 
 > ```yaml
@@ -168,8 +180,8 @@ args:
 
 {% hint style="info" %}
 * Argument placeholders can be used in [Placeholder-Material](item.md#material), [Display Name](item.md#display-name), [Lore](item.md#lore), and [Actions](item.md#shift-left-middle-right-click-commands) only.
-* It's highly recommended to add [Args Usage Message](gui.md#args-usage-message) option.
-
+* It's highly recommended to add the [Args Usage Message](gui.md#args-usage-message) option.
+* Requires [Arguments](gui.md#args) to be defined.
 {% endhint %}
 
 ## Args Usage Message
@@ -178,7 +190,7 @@ args:
 > args_usage_message: "TEXT"
 > ```
 
-Sets the usage message for the menu. If the player didn't set the required arguments. It will be sent to the player if he didn't set the arguments. You can use color and formatting codes here.
+Sets the usage message for the menu. If the player didn't set the required arguments. It will be sent to the player if he didn't set the arguments. You can use color and formatting codes here. Requires [Arguments](gui.md#args) to be defined.
 
 ## Update Interval
 
