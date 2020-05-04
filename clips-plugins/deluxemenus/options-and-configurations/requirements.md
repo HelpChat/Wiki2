@@ -67,7 +67,7 @@ To invert the requirement \(Check if the player doesn't have the amount of money
 To use a placeholder as a value for the amount, replace the `amount:` field with `placeholder:`.
 {% endhint %}
 
-### **Has item**
+### **Has Item**
 
 > ```yaml
 > type: has item
@@ -91,6 +91,44 @@ To invert the requirement \(Check if the player doesn't have the item\) you can 
 {% hint style="info" %}
 You can use color/format codes in name and lore fields, but using `§` character instead of `&` character.
 {% endhint %}
+
+### **Has Meta**
+
+> ```yaml
+> type: has meta
+> key: "TEXT"
+> meta_type: <STRING, BOOLEAN, DOUBLE, LONG, INTEGER>
+> value: EXPECTED VALUE
+> ```
+>
+> > **Required fields:**
+> >
+> > * key
+> > * meta_type
+> > * value
+
+Checks if the player has the specified meta. 
+  
+If the `meta_type` is a number format (DOUBLE, LONG, INTEGER) it will check if the player's meta value is greater than or equal to the `value`
+
+To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!has meta"`\).
+
+### **Is Near**
+
+> ```yaml
+> type: is near
+> location: "WORLDNAME,X,Y,Z"
+> distance: #
+> ```
+>
+> > **Required fields:**
+> >
+> > * location
+> > * distance
+
+Checks if the player is within `distance` of `location`.
+
+To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!is near"`\).
 
 ### **JavaScript**
 
