@@ -48,8 +48,8 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 > permission: TEXT
 > ```
 
-Checks if the player has the specified permission.  
-  
+Checks if the player has the specified permission.
+
 To invert the requirement \(Check if the player doesn't have the permission\) you can simply add the exclamation mark before the type name \(like this `type: "!has permission"`\).
 
 ### **Has money**
@@ -59,8 +59,8 @@ To invert the requirement \(Check if the player doesn't have the permission\) yo
 > amount: #
 > ```
 
-Checks if the player has the specified amount of money \([Vault](https://www.spigotmc.org/resources/34315/) is required\).  
-  
+Checks if the player has the specified amount of money \([Vault](https://www.spigotmc.org/resources/34315/) is required\).
+
 To invert the requirement \(Check if the player doesn't have the amount of money\) you can simply add the exclamation mark before the type name \(like this `type: "!has money"`\).
 
 {% hint style="info" %}
@@ -84,8 +84,8 @@ To use a placeholder as a value for the amount, replace the `amount:` field with
 > > * Material
 > > * Amount
 
-Checks if the player has the specified item in the inventory.  
-  
+Checks if the player has the specified item in the inventory.
+
 To invert the requirement \(Check if the player doesn't have the item\) you can simply add the exclamation mark before the type name \(like this `type: "!has item"`\).
 
 {% hint style="info" %}
@@ -104,12 +104,12 @@ You can use color/format codes in name and lore fields, but using `§` character
 > > **Required fields:**
 > >
 > > * key
-> > * meta_type
+> > * meta\_type
 > > * value
 
-Checks if the player has the specified meta. 
-  
-If the `meta_type` is a number format (DOUBLE, LONG, INTEGER) it will check if the player's meta value is greater than or equal to the `value`
+Checks if the player has the specified meta.
+
+If the `meta_type` is a number format \(DOUBLE, LONG, INTEGER\) it will check if the player's meta value is greater than or equal to the `value`
 
 To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!has meta"`\).
 
@@ -162,8 +162,8 @@ Evaluates a JavaScript expression that must return true or false.
 > > output: "HelpChat"
 > > ```
 
-Checks if `input:` matches `output:` \(Case sensitive\).  
-  
+Checks if `input:` matches `output:` \(Case sensitive\).
+
 To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string equals"`\).
 
 ### **String Equals Ignore Case**
@@ -182,8 +182,8 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 > > output: "helpchat"
 > > ```
 
-Checks if `input:` matches `output:` \(Case insensitive\).  
-  
+Checks if `input:` matches `output:` \(Case insensitive\).
+
 To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string equals ignorecase"`\).
 
 ### **String Contains**
@@ -202,8 +202,8 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 > > output: "chat"
 > > ```
 
-Checks if `input:` contains `output:` \(Case sensitive\).  
-  
+Checks if `input:` contains `output:` \(Case sensitive\).
+
 To invert the requirement \(Check if the input doesn't contain the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string contains"`\).
 
 ### Regex matches
@@ -215,8 +215,8 @@ To invert the requirement \(Check if the input doesn't contain the output\) you 
 > ```
 
 Checks if `input:` contains the regular expression in `regex:`.  
-Visit [this site](https://regexr.com/) to create regular expressions easily.  
-  
+Visit [this site](https://regexr.com/) to create regular expressions easily.
+
 To invert the requirement \(Check if the input doesn't contain the regular expression\) you can simply add the exclamation mark before the type name \(like this `type: "!regex matches"`\).
 
 ### **Comparators**
