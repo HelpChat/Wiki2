@@ -34,6 +34,12 @@ description: 'RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!'
 
 You can read more about the dependencies in the plugin on the next page, or by clicking [here](../../clips-plugins/deluxemenus/options-and-configurations/requirements.md).
 
+## Supported Platforms
+
+* Spigot
+* Paper
+* CatServer? \(I'm leaving this here because I've been told by multiple sources that this plugin seems to be working on whatever this is\).
+
 ## Translations
 
 In **Guilds**, we always try to support as many languages as we can in order to support more people! The plugin currently supports 20 languages, but not all of them are always up-to-date on the translations. If you speak a language fluently other than English and are interested in translating, please join our [discord](https://helpch.at/discord) and let us know so that we can give you information on how to do that!
