@@ -38,7 +38,7 @@ You can read more about the dependencies in the plugin on the next page, or by c
 
 * Spigot
 * Paper
-* CatServer? \(I'm leaving this here because I've been told by multiple sources that this plugin seems to be working on whatever this is\).
+* CatServer? \(I'm leaving this here because I've been told by multiple sources that this plugin seems to be working on whatever this is\).  Note: I've been told this works on cracked servers to an extend but it is not tested, nor is it fully supported.
 
 ## Translations
 
