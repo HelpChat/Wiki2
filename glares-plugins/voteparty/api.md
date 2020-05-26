@@ -20,3 +20,33 @@ Inside of VoteParty, we offer a custom event that is listened to inside the plug
     }
 ```
 
+### PrePartyEvent
+
+```java
+	/**
+	 * This event takes place when a party is preparing to start
+	 */
+	public PrePartyEvent() {
+	}
+```
+
+### PartyStartEvent
+
+```java
+	/**
+	 * This event takes place when a party is starting
+	 */
+	public PartyStartEvent() {
+	}
+```
+
+### PartyEndEvent
+
+```java
+	/**
+	 * This event takes place when a party is finished
+	 */
+	public PartyEndEvent() {
+	}
+```
+
