@@ -23,6 +23,9 @@ description: The plugin's configuration files
 # placeholders you want to use. The example below uses Player placeholders, so
 # we need to download the player expansion: /papi ecloud download Player, /papi reload
 # 
+# [URL] and [EXECUTE] are actions you can add to your click commands.
+# [URL] will open the link after the action name.
+# [EXECUTE] will execute the command that comes after the action name.
 # 
 # example format template:
 # formats: 
@@ -55,11 +58,11 @@ description: The plugin's configuration files
 #     suffix: '&7> '
 #     chat_color: '&f'
 #     channel_tooltip:
-#     - '&7%player_name% &bis a Member'
+#     - '[URL]https://www.spigotmc.org/resources/deluxetags.4390/'
 #     prefix_tooltip:
 #     - '&7%player_name% &bis a Member'
 #     name_tooltip:
-#     - ''
+#     - '[EXECUTE]/msg %player_name%'
 #     suffix_tooltip:
 #     - ''
 #     channel_click_command: '
