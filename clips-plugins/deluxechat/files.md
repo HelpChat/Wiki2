@@ -58,17 +58,17 @@ description: The plugin's configuration files
 #     suffix: '&7> '
 #     chat_color: '&f'
 #     channel_tooltip:
-#     - '[URL]https://www.spigotmc.org/resources/deluxetags.4390/'
+#     - ''
 #     prefix_tooltip:
 #     - '&7%player_name% &bis a Member'
 #     name_tooltip:
-#     - '[EXECUTE]/msg %player_name%'
+#     - '/msg %player_name%'
 #     suffix_tooltip:
 #     - ''
-#     channel_click_command: '
-#     prefix_click_command: '/ranks
-#     name_click_command: '/msg %player_name% 
-#     suffix_click_command: '
+#     channel_click_command: '[URL]https://www.spigotmc.org/resources/deluxetags.4390'
+#     prefix_click_command: '/ranks'
+#     name_click_command: '/msg %player_name%'
+#     suffix_click_command: '[EXECUTE]/tags'
 check_updates: true
 bungeecord:
   enabled: false
