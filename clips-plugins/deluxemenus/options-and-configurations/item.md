@@ -82,8 +82,8 @@ Sets the item's amount in the menu using a [placeholder](https://helpch.at/place
 ## Custom Model Data
 
 > ```yaml
-> nbt_string: <Key>;<StringValue>
-> nbt_int: <Key>;<IntegerValue>
+> nbt_string: <Key>:<StringValue>
+> nbt_int: <Key>:<IntegerValue>
 > ```
 
 Allows you to use your custom models from your resource pack, to display custom items provided from your resource pack.
