@@ -60,7 +60,9 @@ Example: {placeholderapi\_voteparty\_votes\_recorded}
       <td style="text-align:left">Returns the total votes of a player in the time-frame of the type provided.</td>
     </tr>
   </tbody>
-</table>**Type**  
+</table>
+
+**Type**  
 The type placeholder refers to the list of placeholders above that contain `TYPE` in them. The options for these are `daily`, `weekly`, `monthly`, and `alltime`.
 
 **Info**  

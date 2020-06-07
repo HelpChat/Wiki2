@@ -92,6 +92,19 @@
   * [Placeholders](glares-plugins/voteparty/placeholders.md)
   * [Configuration](glares-plugins/voteparty/configuration.md)
   * [API](glares-plugins/voteparty/api.md)
+  * [Changelogs](glares-plugins/voteparty/changelogs/README.md)
+    * [v2.12](glares-plugins/voteparty/changelogs/v2.12.md)
+    * [v2.11](glares-plugins/voteparty/changelogs/v2.11.md)
+    * [v2.10](glares-plugins/voteparty/changelogs/v2.10.md)
+    * [v2.9](glares-plugins/voteparty/changelogs/v2.9.md)
+    * [v2.8](glares-plugins/voteparty/changelogs/v2.8.md)
+    * [v2.7](glares-plugins/voteparty/changelogs/v2.7.md)
+    * [v2.6](glares-plugins/voteparty/changelogs/v2.6.md)
+    * [v2.5](glares-plugins/voteparty/changelogs/v2.5.md)
+    * [v2.4](glares-plugins/voteparty/changelogs/v2.4.md)
+    * [v2.3](glares-plugins/voteparty/changelogs/v2.3.md)
+    * [v2.2](glares-plugins/voteparty/changelogs/v2.2.md)
+    * [v2.1](glares-plugins/voteparty/changelogs/v2.1.md)
 
 ## ADDITIONAL RESOURCES
 
