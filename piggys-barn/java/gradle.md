@@ -8,6 +8,12 @@ Gradle is a build tool, especially common among JVM languages as an alternative 
 * Simpler and more concise configuration
 * Easier and more intuitive to extend
 
+{% hint style="info" %}
+#### Wait a second, what's a build tool, and why should I use one?
+
+A build tool as the name suggests, is a tool that helps you build your projects. Gradle in particular, offers a plethora of features, including dependency management, automation, testing, and of course, the actual compilation of your source code. We use build tools as they allow us to do really cool stuff, like merging two projects together, so they can use each other's code, and automatically running tests on your code to ensure semantics didn't break with your latest build.
+{% endhint %}
+
 ### Installation
 
 First, ensure that you've got the JDK. If not, head over to [AdoptOpenJDK](https://adoptopenjdk.net/), download it, and install it. From here on out, the guide will split into 3 sections, for Windows, Linux, and MacOS.
