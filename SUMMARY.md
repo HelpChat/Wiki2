@@ -107,6 +107,10 @@
     * [v2.2](glares-plugins/voteparty/changelogs/v2.2.md)
     * [v2.1](glares-plugins/voteparty/changelogs/v2.1.md)
 
+## piggy's barn
+
+* [How to run your minecraft server\(s\) in IntelliJ](piggys-barn/how-to-run-your-minecraft-server-s-in-intellij.md)
+
 ## ADDITIONAL RESOURCES
 
 * [Discord](https://helpch.at/discord)
