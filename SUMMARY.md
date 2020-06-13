@@ -109,7 +109,7 @@
 
 ## piggy's barn
 
-* [IntelliJ](piggys-barn/how-to-run-your-minecraft-server-s-in-intellij/README.md)
+* [Java](piggys-barn/how-to-run-your-minecraft-server-s-in-intellij/README.md)
   * [How to run your minecraft server\(s\) in IntelliJ](piggys-barn/how-to-run-your-minecraft-server-s-in-intellij/how-to-run-your-minecraft-server-s-in-intellij.md)
 
 ## ADDITIONAL RESOURCES
