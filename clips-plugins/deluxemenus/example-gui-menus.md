@@ -65,6 +65,6 @@ To make this work fine you have to download the Player and CheckItem expansions 
 * [x] [**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L152-L195)\*\*\*\*
 
 
-## [**Meta**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml)
+## [**Meta**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/meta.yml)
 
 A simple example to show you how [meta](options-and-configurations/#actions-types) works.
