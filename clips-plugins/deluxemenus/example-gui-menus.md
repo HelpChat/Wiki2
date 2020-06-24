@@ -6,8 +6,8 @@ description: Few examples to help you make your own!
 
 ## [**Kits**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/kits.yml)
 
-A simple example to show you how you can make a Kits menu that displays 3 different items for each kit, when the kit is available to claim, when it's on cooldown and when it's unavailable \(Locked\).  
-  
+A simple example to show you how you can make a Kits menu that displays 3 different items for each kit, when the kit is available to claim, when it's on cooldown and when it's unavailable \(Locked\).
+
 To make this work fine you have to download [Essentials](https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/) and download the Essentials expansion using:
 
 > /papi ecloud download Essentials  
@@ -15,8 +15,8 @@ To make this work fine you have to download [Essentials](https://ci.ender.zone/j
 
 ## [**Mines**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/mines.yml)
 
-A simple example to show you how you can make a Mines menu that displays 3 items for each mine, when the mine is unlocked, when it's the current mine and when it's locked.  
-  
+A simple example to show you how you can make a Mines menu that displays 3 items for each mine, when the mine is unlocked, when it's the current mine and when it's locked.
+
 To make this work fine you have to download [EzRanksPro](https://www.spigotmc.org/resources/10731/) and download Player and EzRanksPro expansions using:
 
 > /papi ecloud download Player  
@@ -25,8 +25,8 @@ To make this work fine you have to download [EzRanksPro](https://www.spigotmc.or
 
 ## [**Server Selector**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/serverselector.yml)
 
-A simple example to show you how you can make a Server Selector menu that displays 2 different items for each server, when the server is online and when it's offline.  
-  
+A simple example to show you how you can make a Server Selector menu that displays 2 different items for each server, when the server is online and when it's offline.
+
 To make this work fine you have to download Pinger and \(optional\) Server expansions using:
 
 > /papi ecloud download Pinger  
@@ -35,7 +35,7 @@ To make this work fine you have to download Pinger and \(optional\) Server expan
 
 In this example, we have 2 different servers on one BungeeCord: **vanilla** and **games**. We are on the server **games** in this example.
 
-If we want the player to connect to the **vanilla** server, we need to setup the right functions in the `left_click_commands:` ****section   
+If we want the player to connect to the **vanilla** server, we need to setup the right functions in the `left_click_commands:` _\*\*_section  
 In our example, we will first close the menu with `[close]`, send a message to the player with `[message]` and finally connect him to the server with `[connect]`.
 
 To show, how many players are on the server vanilla, we will use the placeholder **%pinger\_players\_&lt;ip&gt;:&lt;port&gt;%**  
@@ -48,8 +48,8 @@ The second item is easier. Because we are already connected, so we just need to 
 
 ## [**Store**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml)
 
-A simple example to show you how you can make a Store/Shop menu that you can buy/sell items from using various economic systems.  
-  
+A simple example to show you how you can make a Store/Shop menu that you can buy/sell items from using various economic systems.
+
 To make this work fine you have to download the Player and CheckItem expansions and the expansion of the economic system that you'll use using:
 
 > /papi ecloud download Player  
@@ -64,7 +64,7 @@ To make this work fine you have to download the Player and CheckItem expansions 
 * [x] \*\*\*\*[**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L108-L150)\*\*\*\*
 * [x] [**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/store.yml#L152-L195)\*\*\*\*
 
-
 ## [**Meta**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/meta.yml)
 
 A simple example to show you how [meta](options-and-configurations/#actions-types) works.
+

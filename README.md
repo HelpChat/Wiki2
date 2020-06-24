@@ -1,7 +1,7 @@
 ---
 description: >-
-  Here you can find all the various information for all of clip and funnycube's
-  Spigot plugins!
+  Here you can find all the various information for all of our plugins and some
+  other useful guides!
 ---
 
 # Welcome
