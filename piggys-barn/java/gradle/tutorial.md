@@ -179,7 +179,7 @@ implementation group: 'com.google.inject', name: 'guice', version: '+'
 ```
 
 {% hint style="info" %}
-`+` can be used in the version, to retrieve the latest version of that dependency. Keep in mind though, using it is bad practice, as api's may change, resulting in your project breaking.
+`+` can be used in the version, to retrieve the latest version of that dependency. Keep in mind though, using it solely as the version is bad practice, as api's may change, resulting in your project breaking. Consider using it only on the minor-part of the version. For example, `com.destroystokyo.paper:paper-api:1.15.2+`
 {% endhint %}
 
 Seeing as flatfile was discussed earlier, here's the format for that:
