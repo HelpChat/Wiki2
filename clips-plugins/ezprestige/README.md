@@ -6,13 +6,9 @@ description: Let players /prestige the EZ way
 
 ## Description
 
-## Description
-
 Keep it going! **EZPrestige** gives you the ability to add prestige levels to your server's rank up system, where players can start over as a prestige player when they reach a certain rank.
 
 **EzPrestige** gives players the ability to prestige using /prestige. Features plenty of configurable requirements for prestiging, as well as placeholders to display the prestige info such as prefix, next prestige and much more.
-
-## Features
 
 ## Features
 
