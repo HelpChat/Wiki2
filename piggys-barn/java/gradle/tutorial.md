@@ -61,7 +61,7 @@ There's also another piece of syntax that people find confusing, which you often
 {% code title="build.gradle" %}
 ```groovy
 plugins {
-  id 'java
+  id 'java'
 }
 
 subprojects {
