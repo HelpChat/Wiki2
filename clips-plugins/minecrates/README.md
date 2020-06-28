@@ -1,6 +1,9 @@
+---
+description: Get lucky and find a chest full of rewards while mining! Best 'Lucky Blocks' plugin available
+---
+
 # MineCrates
 
-  Get lucky and find a chest full of rewards while mining! Best 'Lucky Blocks' plugin available
 
 ## Description
 
