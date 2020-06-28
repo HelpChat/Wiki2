@@ -70,7 +70,7 @@ subprojects {
 ```
 {% endcode %}
 
-`apply plugin: 'java'`, is actually a method, like `group`, and `version`. `apply` is the function here, and `plugin: 'java'` is a key/pair value you're passing as the parameter. Like an entry from a java map.
+`apply plugin: 'java'`, is actually a method, like `group`, and `version`. `apply` is the function here, and `plugin: 'java'` is a key/pair value you're passing as the parameter. Like an entry from a java map \(You can also think of it as a named parameter\).
 
 ## Usage
 
