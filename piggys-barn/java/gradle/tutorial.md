@@ -84,8 +84,8 @@ plugins {
 
 group 'me.piggypiglet'
 version '1.0.0'
-sourceCompatibility = JavaVersion.VERSION_1_8
 
+sourceCompatibility = JavaVersion.VERSION_1_8
 compileJava.options.encoding = java.nio.charset.StandardCharsets.UTF_8
 
 repositories {
