@@ -171,3 +171,7 @@ apply from: 'https://cdn.piggypiglet.me/gradle/paper.gradle'
 
 As you can see, I've got a gradle script hosted on my cdn, with the paper dependency configuration. This can then be applied using the apply keyword in gradle. AFAIK anything can be configured in these applied configs, so you should be able to emulate that super parent pom behaviour from maven without issue.
 
+{% hint style="info" %}
+[More examples](https://github.com/VoxMcNetwork/gradle)
+{% endhint %}
+
