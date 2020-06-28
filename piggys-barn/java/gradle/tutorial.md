@@ -96,7 +96,7 @@ repositories {
 }
 
 dependencies {
-	compileOnly 'org.bukkit:bukkit:1.15.2-R0.1-SNAPSHOT'
+	compileOnly 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT'
 }
 ```
 {% endcode %}
