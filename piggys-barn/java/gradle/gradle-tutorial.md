@@ -1,4 +1,4 @@
-# Gradle Tutorial
+# Tutorial
 
 ## Skeleton Setup
 

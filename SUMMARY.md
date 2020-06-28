@@ -111,7 +111,7 @@
 
 * [Java](piggys-barn/java/README.md)
   * [Gradle](piggys-barn/java/gradle/README.md)
-    * [Gradle Tutorial](piggys-barn/java/gradle/gradle-tutorial.md)
+    * [Tutorial](piggys-barn/java/gradle/gradle-tutorial.md)
   * [How to run your minecraft server\(s\) in IntelliJ](piggys-barn/java/how-to-run-your-minecraft-server-s-in-intellij.md)
 
 ## ADDITIONAL RESOURCES
