@@ -17,7 +17,7 @@ description: List of commands and permissions for the plugin
 
 **Commands aliases**
 
-* **/messageannouncer:** /msgannouncer /msadmin
+* **/messageannouncer:** /msgannouncer: /msadmin
 
 ## Permissions
 
