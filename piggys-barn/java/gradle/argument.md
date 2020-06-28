@@ -30,6 +30,7 @@ Pros:
 | Faster than maven | Widely used; i.e. has good community support, and you'll be able to find resources online with ease. |
 | More concise configuration language, leading to simpler & smaller configuration files. |  |
 | Portable |  |
+| Groovy is a fully functional language, meaning you can easily extend your build process with custom logic. |  |
 
 Cons:
 
@@ -122,7 +123,7 @@ dependencies {
 </project>
 ```
 
-When comparing line counts, the maven config has 12 more lines, or is ~63% bigger. This different becomes even more drastic on large projects, where maven plugin configurations are present. Not to mention, which one is easier to remember? I could most certainly right the former from memory, but I highly doubt people actually remember what the XML namespaces are.
+When comparing line counts, the maven config has 12 more lines, or is ~63% bigger. This different becomes even more drastic on large projects, where maven plugin configurations are present. Not to mention, which one is easier to remember? I could most certainly write the former from memory, but I highly doubt people actually remember what the XML namespaces are.
 
 ## Responses
 
