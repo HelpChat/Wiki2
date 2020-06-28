@@ -1,10 +1,27 @@
 ---
 description: >-
-  Ultimate prison mining and selling solution! /sellall + signs + blocks2inv +
-  the original "AutoSell"
+  Get lucky and find a chest full of rewards while mining! Best 'Lucky Blocks' plugin available
 ---
 
 # MineCrates
 
-Autosell Plugin Info
+MineCrates Plugin Info
 
+## Description
+
+## Description
+
+**MineCrates** allows server owners to define areas where crates will spawn. Blocks that are mined in the area contribute to the reward counters, once reached the last block the player broke will switch into a reward crate. Areas, rewards and tiers can all be edited within the config.
+
+## Features
+
+## Features
+
+* Ability to define "crate areas"
+* You can define unlimited "areas" and even "reward tiers"
+* MineCrates supports: WorldGuard, WorldEdit, PrisonMines & MineResetLite
+* Highly customizable.
+* Rewards can be items or commands
+* Highly customizable.
+* PlaceholderAPI support
+* Permission based
