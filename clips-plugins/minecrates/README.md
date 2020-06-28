@@ -9,11 +9,7 @@ MineCrates Plugin Info
 
 ## Description
 
-## Description
-
 **MineCrates** allows server owners to define areas where crates will spawn. Blocks that are mined in the area contribute to the reward counters, once reached the last block the player broke will switch into a reward crate. Areas, rewards and tiers can all be edited within the config.
-
-## Features
 
 ## Features
 
