@@ -56,7 +56,7 @@ example:
 * %rankup% - players next rank (if they have one)
 * %cost% - cost to rankup
 * %cost_formatted% - formatted cost to rankup
-* * %balance% - players balance
+* %balance% - players balance
 * %balance_formatted% - players formatted balance
 * %difference% - amount still needed
 * %difference_formatted% - formatted amount still needed
