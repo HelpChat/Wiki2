@@ -20,7 +20,6 @@ Simply enable any of the following ways to alert players in the config file and 
 
 Types of alerts:
 
-
 * ChatMessage - send an inventory full message through chat!
 * Actionbar \(Requires [ActionAnnouncer](https://www.spigotmc.org/resources/actionannouncer.1320/)\) - send an inventory full message through the actionbar!
 * Title and subtitle \(Requires [TitleManager](https://www.spigotmc.org/resources/titlemanager.1049/)\) - send an inventory full message through the Title and subtitle!
@@ -36,11 +35,13 @@ Here is an example:
 ```yaml
 @EventHandler
 public void onFull(InventoryFullEvent e) {
- 
+
     //player with full inventory
     Player p = e.getPlayer();
 
     //item that does not fit in players inventory
     ItemStack i = e.getItem();
-    
-}```
+
+}
+```
+

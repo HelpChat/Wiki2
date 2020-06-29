@@ -21,3 +21,4 @@ description: List of commands and permissions for the plugin
 | :--- | :--- | :--- |
 | inventoryfull.alert | Alert players when their inventory is full and they mine a block that won't fit! | default |
 | inventoryfull.admin | Ability to use /inventoryfull and /inventoryfull reload. | op |
+

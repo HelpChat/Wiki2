@@ -1,6 +1,6 @@
 # Configuration
 
-##Config
+## Config
 
 {% code title="config.yml" %}
 ```yaml
@@ -42,5 +42,7 @@ holographicdisplays:
   message:
   - '&cYour inventory'
   - '&cis full!'
-  display_time: 3```
+  display_time: 3
+```
 {% endcode %}
+
