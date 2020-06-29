@@ -1,5 +1,7 @@
 ---
-description: Totally customizable alert plugin to inform players when they don't have inventory space!way
+description: >-
+  Totally customizable alert plugin to inform players when they don't have
+  inventory space!way
 ---
 
 # InventoryFull
