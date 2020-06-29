@@ -32,35 +32,51 @@ example:
 
 [consolecommand] <command>
 - perform a console command
+
 [playercommand] <command>
 - make the player perform a command
+
 [message] <message>
 - send the player a message
+  
 [broadcast] <message>
 - send the server a message
+  
 [jsonmessage] <json>
 - send the player a json message
+  
 [jsonbroadcast] <json>
 - send the server a json message
+  
 [actionbarmessage] <message>
 - send the player an actionbar message
+  
 [actionbarbroadcast] <message>
 - send the server an actionbar message
+  
 [addgroup] <group> (world)
 - add the player to a permissions group
+  
 [removegroup] <group> (world)
 - remove the player from a permissions group
+  
 [addpermission] <permission> (world)
 - add a permission node to the player
+  
 [removepermission] <permission> (world)
 - remove a permission node from a player
+  
 [setprefix] <prefix>
 - set the players prefix
+  
 [setsuffix] <suffix>
 - set the players suffix
+
 [effect] <effect>
 - play an effect at the players location
+
 [sound] <sound> <volume> <pitch>
+- play a sound at the players location
 
 # Placeholders list
 
