@@ -1,6 +1,6 @@
 # Configuration
 
-##Config
+## Config
 
 {% code title="config.yml" %}
 ```yaml
@@ -24,5 +24,7 @@ announcements:
   vote:
   - '{"text": "--------"}'
   - '{"text": "Be sure to vote for the server!"}'
-  - '{"text": "--------"}'```
+  - '{"text": "--------"}'
+```
 {% endcode %}
+

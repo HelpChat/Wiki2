@@ -26,5 +26,6 @@ description: List of commands and permissions for the plugin
 
 | Permission | Description |
 | :--- | :--- |
-| minecrates.get | Ability to break blocks to get crates  |
-| minecrates.cooldown.exempt | Exempt from MineCrates cooldowns  |
+| minecrates.get | Ability to break blocks to get crates |
+| minecrates.cooldown.exempt | Exempt from MineCrates cooldowns |
+

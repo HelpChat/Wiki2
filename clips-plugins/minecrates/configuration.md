@@ -1,6 +1,6 @@
 # Configuration
 
-##Config
+## Config
 
 {% code title="config.yml" %}
 ```yaml
@@ -329,5 +329,7 @@ areas:
             chance: 85.0
             commands:
             - '[command] eco give @p 250'
-            - '[msg] You got 250 dollars!'```
+            - '[msg] You got 250 dollars!'
+```
 {% endcode %}
+

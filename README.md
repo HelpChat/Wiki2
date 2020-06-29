@@ -30,8 +30,6 @@ This wiki is currently a work in progress, so some content will be missing!
 
 {% page-ref page="clips-plugins/ezprestige/" %}
 
-{% page-ref page="clips-plugins/inventoryfull/" %}
-
 {% page-ref page="clips-plugins/messageannouncer/" %}
 
 {% page-ref page="clips-plugins/minecrates/" %}

@@ -1,9 +1,10 @@
 ---
-description: JSON message interval announcements with multiple lines and support for tons of placeholders!
+description: >-
+  JSON message interval announcements with multiple lines and support for tons
+  of placeholders!
 ---
 
 # MessageAnnouncer
-
 
 ## Description
 
@@ -19,3 +20,4 @@ description: JSON message interval announcements with multiple lines and support
 * You can create unlimited announcements
 * Highly customizable.
 * PlaceholderAPI support
+

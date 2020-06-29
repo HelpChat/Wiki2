@@ -38,15 +38,14 @@ Keep it going! **EZPrestige** gives you the ability to add prestige levels to yo
 * download the expansion using /papi ecloud download ezprestige \(make sure to reload PlaceholderAPI afterwards\)
 * set the prestige placeholder `%ezprestige_prestige%` within your format
 * Other placeholders \([https://api.extendedclip.com/expansions/ezprestige/](https://api.extendedclip.com/expansions/ezprestige/)\)
-
-1. Put the **EZPrestige jar** file you downloaded in your **plugins** folder.
-2. Download a rank up plugin \(such as [**EZRanksPro**](https://www.spigotmc.org/resources/10731/)\) or set up your own.
-3. Restart the server.
-4. Modify the **config.yml** file that was generated to fit your server's layout \(File path: `/plugins/EZPrestige/`\).
-5. Create your prestige levels in **prestiges.yml** file. Don't forget to give the players the prestige permission \(`ezprestige.prestige.<Prestige Number>`\) in the `prestige_commands` section!
-6. Reload **EZPrestige** `/prestige reload`.
-7. Check the [Commands & Permissions](commands-and-permissions.md) page, to give players access to the commands you want them to use.
-8. And you're done!
+* Put the **EZPrestige jar** file you downloaded in your **plugins** folder.
+* Download a rank up plugin \(such as [**EZRanksPro**](https://www.spigotmc.org/resources/10731/)\) or set up your own.
+* Restart the server.
+* Modify the **config.yml** file that was generated to fit your server's layout \(File path: `/plugins/EZPrestige/`\).
+* Create your prestige levels in **prestiges.yml** file. Don't forget to give the players the prestige permission \(`ezprestige.prestige.<Prestige Number>`\) in the `prestige_commands` section!
+* Reload **EZPrestige** `/prestige reload`.
+* Check the [Commands & Permissions](commands-and-permissions.md) page, to give players access to the commands you want them to use.
+* And you're done!
 
 ### Essentials Chat
 
