@@ -18,7 +18,7 @@ For a player to be considered the last rank, they need to have the permission no
 
 Inside of your rankups.yml you will see a section with each rankup named rankup\_actions. In this section you may list many actions that the plugin will perform when a player ranks up. The format for actions are:
 
- \-'&lt;action&gt; &lt;arguments&gt;'
+ -'&lt;action&gt; &lt;arguments&gt;'
 
 You must include required arguments :
 
@@ -26,7 +26,7 @@ You must include required arguments :
 
 You may delay any rankup action by ending the action String with  example: 
 
-\-'\[consolecommand\] eco give %player% 100 '
+-'\[consolecommand\] eco give %player% 100 '
 
 ### Rankup action list
 
