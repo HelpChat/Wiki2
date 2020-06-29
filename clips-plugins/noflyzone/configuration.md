@@ -1,6 +1,6 @@
 # Configuration
 
-##Config
+## Config
 
 {% code title="config.yml" %}
 ```yaml
@@ -18,3 +18,4 @@ no_fly_message: '&cNo flying here!'
 auto_fly_message: '&aYour flight has been toggled on!'
 ```
 {% endcode %}
+

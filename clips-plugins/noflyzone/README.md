@@ -1,5 +1,7 @@
 ---
-description: Block flying in specific WorldGuard regions + Auto flying in specific WorldGuard regions
+description: >-
+  Block flying in specific WorldGuard regions + Auto flying in specific
+  WorldGuard regions
 ---
 
 # NoFlyZone
@@ -16,4 +18,5 @@ You NEED WorldGuard 6.x + WorldEdit for this plugin to work!
 
 ## Source
 
-This plugin is open source. You can get the source code from here: https://github.com/extendedclip/NoFlyZone
+This plugin is open source. You can get the source code from here: [https://github.com/extendedclip/NoFlyZone](https://github.com/extendedclip/NoFlyZone)
+
