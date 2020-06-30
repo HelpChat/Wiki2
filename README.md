@@ -56,7 +56,7 @@ description: >-
 
 {% hint style="info" %}
 **Something Missing?**  
-Let us know shooting us a message on our _Discord_.
+Let us know shooting us a message on our [_Discord_](https://helpch.at/discord).
 
 **Did you know our wiki is open source?**  
 [Contribute Here!](https://github.com/helpchat/wiki2)
