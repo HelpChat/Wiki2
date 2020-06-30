@@ -4,7 +4,7 @@ description: The plugin's configuration files
 
 # Configuration
 
-## Config 
+## Config
 
 {% code title="config.yml" %}
 ```yaml

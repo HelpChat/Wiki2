@@ -4,7 +4,7 @@ description: The plugin's configuration files
 
 # Configuration
 
-## Config 
+## Config
 
 {% code title="config.yml" %}
 ```yaml
@@ -191,7 +191,6 @@ rankups:
 ```
 {% endcode %}
 
-
 ## Messages
 
 {% code title="messages.yml" %}
@@ -215,3 +214,4 @@ autorankup_no_rankups: '&cYou do not have a rankup at your current rank and will
   be able to autorankup!'
 ```
 {% endcode %}
+

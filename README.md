@@ -6,10 +6,6 @@ description: >-
 
 # Welcome
 
-{% hint style="warning" %}
-This wiki is currently a work in progress, so some content will be missing!
-{% endhint %}
-
 ## Clip's Plugins
 
 {% page-ref page="clips-plugins/autosell/" %}
@@ -57,4 +53,12 @@ This wiki is currently a work in progress, so some content will be missing!
 {% page-ref page="glares-plugins/guilds-w.i.p-migration/" %}
 
 {% page-ref page="glares-plugins/voteparty/" %}
+
+{% hint style="info" %}
+**Something Missing?**  
+Let us know shooting us a message on our _Discord_.
+
+**Did you know our wiki is open source?**  
+[Contribute Here!](https://github.com/helpchat/wiki2)
+{% endhint %}
 
