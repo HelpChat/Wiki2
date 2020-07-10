@@ -26,6 +26,8 @@ description: >-
 
 {% page-ref page="clips-plugins/ezprestige/" %}
 
+{% page-ref page="clips-plugins/ezrankspro/" %}
+
 {% page-ref page="clips-plugins/messageannouncer/" %}
 
 {% page-ref page="clips-plugins/minecrates/" %}
