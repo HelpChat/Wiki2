@@ -153,6 +153,7 @@ Sets the item's lore \(the text shown under the item's name\). You can use [plac
 > >   - #
 > >   - #
 > > ```
+> > Can also be written as `slots: [#, #, #]`
 
 Sets in which slot the item should be inside the menu.
 
@@ -269,14 +270,15 @@ Check [this](./#action-types) for all action types and action tags.
 > # middle_click_requirement: or
 > # shift_left_click_requirement: or
 > shift_right_click_requirement:
->   requirements: 'EXPRESSION'
+>   requirements: # See Below*
 >   deny_commands:
 >     - "[ACTIONTYPE] ACTION"
 >     - "[ACTIONTYPE] ACTION"
 > ```
 
-Sets the requirements the player should have to click the item \(Check the [Requirements](requirements.md) page for more info about the `EXPRESSION` value\).  
+Sets the requirements the player should have to click the item.  
 Deny commands \(optional\) are the actions that are going to be executed if the player doesn't have the required requirements. But if \(s\)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
 
-Check [this](./#action-types) for all action types and action tags.
+Check [this](./#action-types) for all action types and action tags.  
+*Check the [Requirements](requirements.md) page for more info.
 
