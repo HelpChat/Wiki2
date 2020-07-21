@@ -277,7 +277,7 @@ Check [this](./#action-types) for all action types and action tags.
 > ```
 
 Sets the requirements the player should have to click the item.  
-Deny commands \(optional\) are the actions that are going to be executed if the player doesn't have the required requirements. But if \(s\)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
+Deny commands \(optional\) are the actions that are going to be executed if the player doesn't meet the requirements. But if they do, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
 
 Check [this](./#action-types) for all action types and action tags.  
 *Check the [Requirements](requirements.md) page for more info.
