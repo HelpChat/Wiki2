@@ -34,7 +34,7 @@ description: List of commands and permissions for the plugin
 
 | Permission | Description |
 | :--- | :--- |
-| deluxechat.&lt;FormatName&gt; | Gives access to the specified format. |
+| chatformat.&lt;FormatName&gt; | Gives access to the specified format. |
 | deluxechat.color | Gives the ability to use color codes in chat. |
 | deluxechat.formatting | Gives the ability to use formatting codes in chat. |
 | deluxechat.utf | Gives the ability to use special UTF characters in chat. |
