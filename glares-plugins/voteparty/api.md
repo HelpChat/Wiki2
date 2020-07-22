@@ -15,8 +15,9 @@ Inside of VoteParty, we offer a custom event that is listened to inside the plug
      * This event takes place when a hooked plugin receives a vote
      * @param player The player that voted
      */
-    public VoteReceivedEvent(OfflinePlayer player) {
+    public VoteReceivedEvent(OfflinePlayer player Vote vote) {
         this.player = player;
+        this.vote = vote;
     }
 ```
 
