@@ -123,7 +123,7 @@ dependencies {
 </project>
 ```
 
-When comparing line counts, the maven config has 12 more lines, or is ~63% bigger. This different becomes even more drastic on large projects, where maven plugin configurations are present. Not to mention, which one is easier to remember? I could most certainly write the former from memory, but I highly doubt people actually remember what the XML namespaces are.
+When comparing line counts, the maven config has 12 more lines, or is ~63% bigger. This difference becomes even more drastic on large projects, where maven plugin configurations are present. Not to mention, which one is easier to remember? I could most certainly write the former from memory, but I highly doubt people actually remember what the XML namespaces are.
 
 ## Responses
 
