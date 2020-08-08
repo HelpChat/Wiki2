@@ -6,7 +6,7 @@ description: Gradle vs Maven
 
 ## Introduction
 
-Sadly, Gradle isn't very commonly used in the minecraft community, mainly due to misconceptions spread around the community by notable members, as far as I can tell. The main arguments are the following:
+Sadly, Gradle isn't very commonly used in the spigot community, mainly due to misconceptions spread around the community by notable members, as far as I can tell. The main arguments are the following:
 
 * Gradle isn't faster than Maven
 * Gradle is confusing
