@@ -154,7 +154,7 @@ Sets the item's lore \(the text shown under the item's name\). You can use [plac
 > >   - #
 > > ```
 > > 
-> > Can also be written as `slots: [#, #, #]`
+Alternatively, it can be written as `slots: [#, #, #]` or `slots: #-#`
 
 Sets in which slot the item should be inside the menu.
 
@@ -239,6 +239,17 @@ If set to true, it will hide the vanilla attributes of an item/armor \(e.g. **7 
 > ```
 
 If set to true, it will hide the potion's effect text beneath the item name.
+
+## Potion Effects
+
+> ```yaml
+> potion_effects: 
+> - 'PotionEffectType;duration;amplifier'
+> ```
+> > * [Potion Effect Types List](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html).
+
+Gives a potion effect to the specified item.
+
 
 ## Unbreakable
 
