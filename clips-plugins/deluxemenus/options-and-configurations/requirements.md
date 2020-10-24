@@ -39,8 +39,7 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 | :--- | :--- |
 | [Open Requirement](gui.md#open-requirements) | Defines the requirements to open the menu. |
 | [View Requirement](item.md#view-requirement) | Defines the requirements to see an item in the menu. |
-| [Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to left/right click an item. |
-| [Shift Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to shift+ left/right click an item. |
+| [\(Shift\) Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to \(shift\) left/right click an item. |
 
 {% hint style="info" %}
 * Placeholders can be used in the requirements.
