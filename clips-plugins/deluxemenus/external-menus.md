@@ -17,6 +17,8 @@ description: Modify each menu in its own file!
 > > * `<MenuName>` is the menu's name \(should be unique\) .
 > > * `<FileName>` is the menu's file name, it's preferred to use the menu's name to prevent confusion \(should be unique\).
 
+_**Note! You can also use file: &lt;Directory&gt;/&lt;FileName&gt;.yml to put menus in Sub Directories\(Folders\).**_
+
 So it will be like this:
 
 ```yaml
