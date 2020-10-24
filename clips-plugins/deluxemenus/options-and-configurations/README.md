@@ -50,7 +50,7 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
 | `[takemoney] <amount>` | Take a certain amount of money from the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
 | `[givemoney] <amount>` | Give a certain amount of money to the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
 | `[meta] <set/remove/add/subtract/switch> <key> <type> <value>` | Modifies the player's meta. `add/subtract` are for number types. `switch` is for boolean, it will swap it from true/false. Check [here](requirements.md#has-meta) for more detail. |
-| `[chat] <message>`| Allows a player to talk in chat |
+| \[chat\] &lt;message&gt; | Send a message in chat as the player who this action got executed for. |
 
 ### **Action tags**
 
