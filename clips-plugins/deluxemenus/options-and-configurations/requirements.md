@@ -9,9 +9,16 @@ description: Everything about DeluxeMenus requirements!
 > ```yaml
 > # This option can also be:
 > # open_requirement:
+> # click_requirement:
 > # left_click_requirement:
 > # right_click_requirement:
+> # shift_left_click_requirement:
+> # shift_right_click_requirement:
 > view_requirement:
+>   # This option is not needed.
+>   # If you use this, only one of the
+>   # requirements needs to be meet.
+>   minimum_requirements: 1
 >   requirements:
 >     # You can define multiple requirements.
 >     # Each requiremnt should have a unique name.
@@ -33,10 +40,11 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 | [Open Requirement](gui.md#open-requirements) | Defines the requirements to open the menu. |
 | [View Requirement](item.md#view-requirement) | Defines the requirements to see an item in the menu. |
 | [Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to left/right click an item. |
+| [Shift Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to shift+ left/right click an item. |
 
 {% hint style="info" %}
 * Placeholders can be used in the requirements.
-* If you set multiple requirements, all of them should be met \(Use [JavaScript type](requirements.md#javascript) to add optional requirements\).
+* If you set multiple requirements, all of them should be met \(Use [JavaScript type](requirements.md#javascript) or minimum\_requirements to add optional requirements\).
 {% endhint %}
 
 ## Requirement types
