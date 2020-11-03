@@ -131,7 +131,7 @@ Allows you to set effects \(Used if the [material](item.md#material) is a potion
 > >
 > > ![Image of what will be displayed](https://img.aboodyy.net/19.06.19_01-07.png)
 
-Sets the RGB \(Red, Green, Blue\) color for leather armor, potions and splash\_potions.
+Sets the RGB \(Red, Green, Blue\) color for leather armor, potions and splash\_potions \(For rgb to work on potions you also need to give it a potion\_effect\).
 
 ## Display Name
 
