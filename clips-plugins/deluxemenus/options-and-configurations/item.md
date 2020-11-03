@@ -105,6 +105,18 @@ This option also allows specifying other NBT data if you have any use from them.
 
 Allows you to create your custom banner \(Used if the [material](item.md#material) is a banner\).
 
+## Potion Effects
+
+> ```yaml
+> potion_effect:
+> - <effect_name>;<durability>;<level>
+> - <effect_name>;<durability>;<level>
+> ```
+>
+> > * [Potion effects list.](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
+
+Allows you to set effects \(Used if the [material](item.md#material) is a potion or splash\_potion\).
+
 ## RGB <a id="rgb"></a>
 
 > ```yaml
@@ -119,7 +131,7 @@ Allows you to create your custom banner \(Used if the [material](item.md#materia
 > >
 > > ![Image of what will be displayed](https://img.aboodyy.net/19.06.19_01-07.png)
 
-Sets the RGB \(Red, Green, Blue\) color for leather armor.
+Sets the RGB \(Red, Green, Blue\) color for leather armor, potions and splash\_potions.
 
 ## Display Name
 
@@ -153,8 +165,6 @@ Sets the item's lore \(the text shown under the item's name\). You can use [plac
 > >   - #
 > >   - #
 > > ```
-> > 
-Alternatively, it can be written as `slots: [#, #, #]` or `slots: #-#`
 
 Sets in which slot the item should be inside the menu.
 
@@ -240,17 +250,6 @@ If set to true, it will hide the vanilla attributes of an item/armor \(e.g. **7 
 
 If set to true, it will hide the potion's effect text beneath the item name.
 
-## Potion Effects
-
-> ```yaml
-> potion_effects: 
-> - 'PotionEffectType;duration;amplifier'
-> ```
-> > * [Potion Effect Types List](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html).
-
-Gives a potion effect to the specified item.
-
-
 ## Unbreakable
 
 > ```yaml
@@ -282,15 +281,14 @@ Check [this](./#action-types) for all action types and action tags.
 > # middle_click_requirement: or
 > # shift_left_click_requirement: or
 > shift_right_click_requirement:
->   requirements: # See Below*
+>   requirements: 'EXPRESSION'
 >   deny_commands:
 >     - "[ACTIONTYPE] ACTION"
 >     - "[ACTIONTYPE] ACTION"
 > ```
 
-Sets the requirements the player should have to click the item.  
-Deny commands \(optional\) are the actions that are going to be executed if the player doesn't meet the requirements. But if they do, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
+Sets the requirements the player should have to click the item \(Check the [Requirements](requirements.md) page for more info about the `EXPRESSION` value\).  
+Deny commands \(optional\) are the actions that are going to be executed if the player doesn't have the required requirements. But if \(s\)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
 
-Check [this](./#action-types) for all action types and action tags.  
-*Check the [Requirements](requirements.md) page for more info.
+Check [this](./#action-types) for all action types and action tags.
 
