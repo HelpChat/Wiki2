@@ -61,6 +61,10 @@ These tags can be added with the action \(e.g. `- '[message] example<delay=20>'`
 | `<delay=<time>>` | Executes the action after the specified delay \(in ticks, 20 ticks = 1 second\). |
 | `<chance=<chance>>` | Sets a chance to execute the action. |
 
+## RGB/Hex
+
+If you want to use RGB/Hex colors in DeluxeMenus on 1.16+ you can use the following format: "&\#aaFF00"
+
 ## General options
 
 ### Debug
