@@ -109,8 +109,8 @@ Allows you to create your custom banner \(Used if the [material](item.md#materia
 
 > ```yaml
 > potion_effect:
-> - <effect_name>;<durability>;<level>
-> - <effect_name>;<durability>;<level>
+> - <PotionEffectType>;<duration>;<amplifier>
+> - <PotionEffectType>;<duration>;<amplifier>
 > ```
 >
 > > * [Potion effects list.](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
