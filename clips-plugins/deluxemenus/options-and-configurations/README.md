@@ -65,6 +65,12 @@ These tags can be added with the action \(e.g. `- '[message] example<delay=20>'`
 
 If you want to use RGB/Hex colors in DeluxeMenus on 1.16+ you can use the following format: "&\#aaFF00"
 
+## Placeholders
+
+There is one available placeholder from DeluxeMenus:
+
+* `%deluxemenus_meta_<key>_<dataType>_<default_value>%`
+
 ## General options
 
 ### Debug
