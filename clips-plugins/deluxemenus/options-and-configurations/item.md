@@ -115,7 +115,7 @@ Allows you to create your custom banner \(Used if the [material](item.md#materia
 >
 > > * [Potion effects list.](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 
-Allows you to set effects \(Used if the [material](item.md#material) is a potion or splash\_potion\).
+Allows you to set effects \(Used if the [material](item.md#material) is a potion or splash\_potion\). For potion\_effects to work on potions you also need to give it a rgb value.
 
 ## RGB <a id="rgb"></a>
 
