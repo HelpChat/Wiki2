@@ -108,7 +108,7 @@ Allows you to create your custom banner \(Used if the [material](item.md#materia
 ## Potion Effects
 
 > ```yaml
-> potion_effect:
+> potion_effects:
 > - <PotionEffectType>;<duration>;<amplifier>
 > - <PotionEffectType>;<duration>;<amplifier>
 > ```
