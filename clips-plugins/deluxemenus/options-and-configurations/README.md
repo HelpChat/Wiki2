@@ -45,8 +45,8 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
 | `[close]` | Closes the currently opened GUI. |
 | `[json] <JSON-text>` | Send a json message to the player. Use [this](https://minecraftjson.com/) website to easily generate the JSON text. |
 | `[refresh]` | Refresh items in the current menu view. This updates the shown Items themselves. |
-| `[broadcastsound] <sound>` | Broadcast a sound to all players on the server. |
-| `[sound] <sound>` | Play a sound for the player. |
+| `[broadcastsound] <sound> <pitch> <volume>` | Broadcast a sound to all players on the server. |
+| `[sound] <sound> <pitch> <volume>` | Play a sound for the player. |
 | `[takemoney] <amount>` | Take a certain amount of money from the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
 | `[givemoney] <amount>` | Give a certain amount of money to the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
 | `[meta] <set/remove/add/subtract/switch> <key> <type> <value>` | Modifies the player's meta. `add/subtract` are for number types. `switch` is for boolean, it will swap it from true/false. Check [here](requirements.md#has-meta) for more detail. |

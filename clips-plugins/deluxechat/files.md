@@ -88,11 +88,9 @@ ops_use_group_format: false
 chat_filter:
   enabled: false
   ignore_case: true
-  # In the examples bellow if you type . it will be replaced with a space or if you type the word fuck it will be replaced ***. So you put the word you want to filter on the
-  # left and the word that it will be changed to on the right.
   list:
   - '.; '
-  - fuck;***
+  - fuck;fuck
 private_message:
   enabled: true
   bungeecord: false
