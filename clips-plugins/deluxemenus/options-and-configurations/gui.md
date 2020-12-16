@@ -133,7 +133,7 @@ Allows you to define a different type of Inventory.
 Sets the inventory size.
 
 {% hint style="info" %}
-Size option should be always set, but it doesn't work for all [inventory types](gui.md#inventory-type).
+Size option only works for CHEST [inventory types](gui.md#inventory-type). Even for that it is optional and will default to 54.
 {% endhint %}
 
 ## Register Command

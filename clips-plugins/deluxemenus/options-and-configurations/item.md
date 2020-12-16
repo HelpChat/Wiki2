@@ -164,6 +164,12 @@ Sets the item's lore \(the text shown under the item's name\). You can use [plac
 > >   - #
 > >   - #
 > >   - #
+> >   
+> > # OR
+> >   
+> > slots:
+> >   - #-#
+> >   - #-#
 > > ```
 
 Sets in which slot the item should be inside the menu.
