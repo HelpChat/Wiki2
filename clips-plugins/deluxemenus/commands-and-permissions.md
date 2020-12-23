@@ -31,6 +31,10 @@ description: List of commands and permissions for the plugin
 | DeluxeMenus.PlaceholdersFor.Exempt | Blocks other players from using you in this command `/DM Open <Menu> -p:<You>`. |
 
 {% hint style="info" %}
+OP players will bypass all requirements!
+{% endhint %}
+
+{% hint style="info" %}
 All text between the less-than and greater-than signs \(**&lt;&gt;**\) is a placeholder/variable, replace it with the requested value without the less-than and greater-than signs \(**&lt;&gt;**\).
 {% endhint %}
 
