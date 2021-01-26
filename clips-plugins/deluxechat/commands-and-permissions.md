@@ -39,6 +39,7 @@ description: List of commands and permissions for the plugin
 | deluxechat.formatting | Gives the ability to use formatting codes in chat. |
 | deluxechat.utf | Gives the ability to use special UTF characters in chat. |
 | deluxechat.url | Gives the ability to send clickable links in chat. |
+| deluxechat.hex | Gives the ability to use rgb colors in messages sent in chat. |
 | deluxechat.pm.color | Gives the ability to use color codes in private messages. |
 | deluxechat.pm.formatting | Gives the ability to use formatting codes in private messages. |
 | deluxechat.pm.url | Gives the ability to send clickable links in private messages. |
