@@ -18,6 +18,7 @@
 * [DeluxeChat](clips-plugins/deluxechat/README.md)
   * [Commands & Permissions](clips-plugins/deluxechat/commands-and-permissions.md)
   * [Placeholders](clips-plugins/deluxechat/placeholders.md)
+  * [Config.yml explained](clips-plugins/deluxechat/config.yml-explained.md)
   * [Plugin's files](clips-plugins/deluxechat/files.md)
 * [DeluxeCommands](clips-plugins/deluxecommands/README.md)
   * [Commands & Permissions](clips-plugins/deluxecommands/commands-and-permissions.md)
