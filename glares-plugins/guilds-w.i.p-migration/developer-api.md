@@ -2,6 +2,8 @@
 
 ## Build Tool Stuff <a id="hooking-into-the-api"></a>
 
+![version](https://img.shields.io/badge/version-3.5.5.5-green)
+
 {% tabs %}
 {% tab title="Maven" %}
 ```markup
