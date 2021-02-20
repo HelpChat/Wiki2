@@ -18,12 +18,10 @@ settings:
     # The prefix of all the messages in the plugin
     prefix: '&d&lVote&5&lParty &7&l» '
     counter:
-        # It is suggested that you don't modify this value manually.
-        # Every X seconds, this value will update to the latest known amount of votes.
-        # This allows you to persist vote counts through reboots.
-        votes: 0
         # How often to save the current amount of votes (in seconds)
         save-interval: 300
+    # Would you like to enable Brigadier command support? (I think it does more than just pretty colors) 1.13+
+    brigadier: false
 # The hook part of the config allows you to configure which plugins you would like to hook into for votes.
 # By default, the plugin will utilize NuVotifier and listen for it's vote events.
 # If you would like to use the plugin without NuVotifier, just disable the hook!
@@ -81,6 +79,8 @@ effects:
 party:
     # The amount of votes needed for a party to occur
     votes_needed: 50
+    # Would you like to use a crate for the rewards?
+    use_crate: false
     # The list of worlds where party rewards won't be given
     disabled_worlds: 
     - ''
@@ -97,11 +97,14 @@ party:
         max_possible: 1
         commands: 
         - chance: 50
-          command: eco give %player_name% 100
+          command:
+          - eco give %player_name% 100
         - chance: 50
-          command: give %player_name% DIAMOND 6
+          command:
+          - give %player_name% DIAMOND 6
         - chance: 50
-          command: give %player_name% IRON_INGOT 12
+          command:
+          - give %player_name% IRON_INGOT 12
     # Configuration for extra commands to be executed on players who have specific permission nodes when a party happens
     permission-rewards:
         enabled: true
@@ -133,9 +136,11 @@ voting:
         max_possible: 1
         commands: 
         - chance: 50
-          command: eco give %player_name% 100
+          command:
+          - eco give %player_name% 100
         - chance: 70
-          command: give %player_name% STEAK 10
+          command:
+          - give %player_name% STEAK 10
     # Configuration for extra commands to be executed on players who have specific permission nodes
     permission-rewards:
         enabled: true
@@ -149,6 +154,25 @@ voting:
         commands: 
         - eco give %player_name% 10
         - give %player_name% STEAK 8
+    # A list of commands to run when it's the first time a player has voted (only works for online players)
+    first_time_rewards:
+        enabled: false
+        commands: 
+        - eco give %player_name% 100
+        - give %player_name% STEAK 10
+    # Configuration for extra commands to be executed on players who voted on a specific website (only works for online players)
+    # Known Service Names:
+    # TopG.com
+    # PlanetMinecraft.com
+    # Minecraft-MP.com
+    # MinecraftServers.org
+    # Minecraft-Server.net
+    votesite-rewards:
+        enabled: false
+        votesiteCommands: 
+        - serviceName: TestVote
+          commands:
+          - eco give %player_name% 500
     # Global commands (such as a broadcast message) to be executed when a player votes
     global_commands:
         enabled: true
@@ -161,6 +185,38 @@ voting:
         enabled: false
         # Would you like to notify the player when they login that they have votes to claim?
         notify: false
+    # Configuration for extra commands to be executed on players who have voted a specific amount of times in the past day, week, month, year, and all time.
+    cumulative-rewards:
+        daily:
+            enabled: false
+            entries: 
+            - votes: 5
+              commands:
+              - give %player_name% STEAK 10
+        weekly:
+            enabled: false
+            entries: 
+            - votes: 5
+              commands:
+              - give %player_name% STEAK 10
+        monthly:
+            enabled: false
+            entries: 
+            - votes: 5
+              commands:
+              - give %player_name% STEAK 10
+        yearly:
+            enabled: false
+            entries: 
+            - votes: 5
+              commands:
+              - give %player_name% STEAK 10
+        total:
+            enabled: false
+            entries: 
+            - votes: 5
+              commands:
+              - give %player_name% STEAK 10
 
 ```
 
