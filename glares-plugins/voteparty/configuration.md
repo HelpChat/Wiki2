@@ -99,12 +99,15 @@ party:
         - chance: 50
           command:
           - eco give %player_name% 100
+          - eco give %player_name% 50
         - chance: 50
           command:
           - give %player_name% DIAMOND 6
+          - eco give %player_name% 50
         - chance: 50
           command:
           - give %player_name% IRON_INGOT 12
+          - eco give %player_name% 50
     # Configuration for extra commands to be executed on players who have specific permission nodes when a party happens
     permission-rewards:
         enabled: true
@@ -112,6 +115,7 @@ party:
         - permission: my.special.permission
           commands:
           - eco give %player_name% 500
+          - eco give %player_name% 50
     # A list of rewards that will ALWAYS be given to a player during a party
     guaranteed_rewards:
         enabled: true
@@ -138,9 +142,11 @@ voting:
         - chance: 50
           command:
           - eco give %player_name% 100
+          - eco give %player_name% 50
         - chance: 70
           command:
           - give %player_name% STEAK 10
+          - eco give %player_name% 50
     # Configuration for extra commands to be executed on players who have specific permission nodes
     permission-rewards:
         enabled: true
@@ -148,6 +154,7 @@ voting:
         - permission: my.special.permission
           commands:
           - eco give %player_name% 500
+          - eco give %player_name% 50
     # A list of rewards that will ALWAYS be given to a player for voting
     guaranteed_rewards:
         enabled: true
@@ -173,6 +180,7 @@ voting:
         - serviceName: TestVote
           commands:
           - eco give %player_name% 500
+          - eco give %player_name% 50
     # Global commands (such as a broadcast message) to be executed when a player votes
     global_commands:
         enabled: true
@@ -193,30 +201,35 @@ voting:
             - votes: 5
               commands:
               - give %player_name% STEAK 10
+              - eco give %player_name% 50
         weekly:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
+              - eco give %player_name% 50
         monthly:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
+              - eco give %player_name% 50
         yearly:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
+              - eco give %player_name% 50
         total:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
+              - eco give %player_name% 50
 
 ```
 
