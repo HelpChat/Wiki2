@@ -2,6 +2,8 @@
 
 ## VoteParty Changelogs
 
+{% page-ref page="./" %}
+
 {% page-ref page="v2.13.md" %}
 
 {% page-ref page="v2.12.md" %}

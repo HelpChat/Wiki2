@@ -97,6 +97,8 @@
   * [Configuration](glares-plugins/voteparty/configuration.md)
   * [API](glares-plugins/voteparty/api.md)
   * [Changelogs](glares-plugins/voteparty/changelogs/README.md)
+    * [v2.15](glares-plugins/voteparty/changelogs/v2.15.md)
+    * [v2.14](glares-plugins/voteparty/changelogs/v2.14.md)
     * [v2.13](glares-plugins/voteparty/changelogs/v2.13.md)
     * [v2.12](glares-plugins/voteparty/changelogs/v2.12.md)
     * [v2.11](glares-plugins/voteparty/changelogs/v2.11.md)
