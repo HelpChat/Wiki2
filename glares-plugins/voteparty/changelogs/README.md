@@ -2,7 +2,27 @@
 
 ## VoteParty Changelogs
 
-{% page-ref page="./" %}
+{% page-ref page="v2.24.md" %}
+
+{% page-ref page="v2.23.md" %}
+
+{% page-ref page="v2.22.md" %}
+
+{% page-ref page="v2.21.md" %}
+
+{% page-ref page="v2.20.md" %}
+
+{% page-ref page="v2.19.md" %}
+
+{% page-ref page="v2.18.md" %}
+
+{% page-ref page="v2.17.md" %}
+
+{% page-ref page="v2.16.md" %}
+
+{% page-ref page="v2.15.md" %}
+
+{% page-ref page="v2.14.md" %}
 
 {% page-ref page="v2.13.md" %}
 
