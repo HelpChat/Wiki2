@@ -9,12 +9,12 @@ description: Everything about DeluxeMenus requirements!
 > ```yaml
 > # This option can also be:
 > # open_requirement:
-> # click_requirement:
+> # view_requirement:
 > # left_click_requirement:
 > # right_click_requirement:
 > # shift_left_click_requirement:
 > # shift_right_click_requirement:
-> view_requirement:
+> click_requirement:
 >   # This option is not needed.
 >   # If you use this, only one of the
 >   # requirements needs to be meet.
@@ -33,6 +33,17 @@ description: Everything about DeluxeMenus requirements!
 >       success_commands:
 >       - "[ACTIONTYPE] ACTION"
 >       - "[ACTIONTYPE] ACTION"
+>       # These commands will be executed if
+>       # the requirement they're set for is
+>       # not met even if the others are.
+>       deny_commands:
+>       - "[ACTIONTYPE] ACTION"
+>       - "[ACTIONTYPE] ACTION"
+>       # This option is not needed.
+>       # It makes it so if the other requirements
+>       # are met and this one is not, it will
+>       # not execute the general deny commands.
+>       optional: true
 >   # This can only be defined for open and
 >   # left/right click requirement
 >   deny_commands:
