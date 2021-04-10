@@ -81,18 +81,16 @@ Sets the item's amount in the menu.
 
 Sets the item's amount in the menu using a [placeholder](https://helpch.at/placeholders).
 
-## Custom Model Data
+## NBT Tags / CustomModelData
 
 > ```yaml
 > nbt_string: <Key>:<StringValue>
 > nbt_int: <Key>:<IntegerValue>
 > ```
+>
+> Custom Model Data Example: `nbt_int: CustomModelData:1`
 
-Allows you to use your custom models from your resource pack, to display custom items provided from your resource pack.
-
-{% hint style="info" %}
-This option also allows specifying other NBT data if you have any use from them.
-{% endhint %}
+Allows you to add custom nbt tags to your items like model data so you can display custom models provided by your server resource pack.
 
 ## Banner Meta
 
