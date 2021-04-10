@@ -32,6 +32,8 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [EpicHeads](https://songoda.com/marketplace/product/26) \(`heads-<ID>`\).
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) \(`hdb-<ID>`\).
 > > * [Placeholder](https://helpch.at/placeholders) material \(`placeholder-%player_item_in_hand%`\).
+> > * Item in main hand \(`main_hand`\).
+> > * Item in off hand \(`off-hand`\).
 
 Sets the material of the item in the menu.
 
