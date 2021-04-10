@@ -19,11 +19,20 @@ description: Everything about DeluxeMenus requirements!
 >   # If you use this, only one of the
 >   # requirements needs to be meet.
 >   minimum_requirements: 1
+>   # This option is needed if you
+>   # want to use minimum_requirements.
+>   stop_at_success: true
 >   requirements:
 >     # You can define multiple requirements.
 >     # Each requiremnt should have a unique name.
 >     requirement_name:
 >       type: TYPE
+>       # These commands will be exeucted if
+>       # the requirement they're set for is
+>       # met even if the others are not.
+>       success_commands:
+>       - "[ACTIONTYPE] ACTION"
+>       - "[ACTIONTYPE] ACTION"
 >   # This can only be defined for open and
 >   # left/right click requirement
 >   deny_commands:
@@ -283,5 +292,24 @@ right_click_requirement:
       amount: 100
   deny_commands:
     - "[message] &7You don't have enough money."
+```
+
+### Minimum Requirements
+
+```yaml
+click_requirement:
+  minimum_requirements: 1
+  stop_at_success: true
+  deny_commands:
+    - "[message] &7You don't have 1 of the 2 permissions required."
+  requirements:
+    perm1:
+      type: has permission
+      permission: perm.1
+    perm2:
+      type: has permission
+      permission: perm.2
+click_commands:
+- "[message] &7You have 1 of the 2 permissions required."
 ```
 
