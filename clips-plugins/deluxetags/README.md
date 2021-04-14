@@ -30,7 +30,7 @@ description: Allow players to select chat tags that can be awarded by permission
 7. Give tag permissions to your players `DeluxeTags.Tag.Name`.
 8. Select your tag from `/Tags` and enjoy!!
 
-### Another chat plugin
+### Essentials Chat
 
 1. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
 2. Restart the server.
