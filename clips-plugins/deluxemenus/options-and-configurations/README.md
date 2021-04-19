@@ -34,23 +34,112 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
 
 ## Actions types
 
-| Tag | Description |
-| :--- | :--- |
-| `[player] <command>` | Executes a command as the player. |
-| `[console] <command>` | Executes a command from the console. |
-| `[commandevent] <command>` | Executes an unregistered command as the player. |
-| `[message] <text>` | Sends a message to the player. You can use [placeholders](https://helpch.at/placeholders) and color/format codes here. |
-| `[openguimenu] <menu-name>` | Opens another GUI from DeluxeMenus. |
-| `[connect] <server-name>` | Connects the player to a server on the same BungeeCord. |
-| `[close]` | Closes the currently opened GUI. |
-| `[json] <JSON-text>` | Send a json message to the player. Use [this](https://minecraftjson.com/) website to easily generate the JSON text. |
-| `[refresh]` | Refresh items in the current menu view. This updates the shown Items themselves. |
-| `[broadcastsound] <sound> <pitch> <volume>` | Broadcast a sound to all players on the server. |
-| `[sound] <sound> <pitch> <volume>` | Play a sound for the player. |
-| `[takemoney] <amount>` | Take a certain amount of money from the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
-| `[givemoney] <amount>` | Give a certain amount of money to the player. [Vault](https://www.spigotmc.org/resources/34315/) is required for this action to work. |
-| `[meta] <set/remove/add/subtract/switch> <key> <type> <value>` | Modifies the player's meta. `add/subtract` are for number types. `switch` is for boolean, it will swap it from true/false. Check [here](requirements.md#has-meta) for more detail. |
-| `[chat] <message>` | Send a message in chat as the player who this action got executed for. |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Tag</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>[player] &lt;command&gt;</code>
+      </td>
+      <td style="text-align:left">Executes a command as the player.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[console] &lt;command&gt;</code>
+      </td>
+      <td style="text-align:left">Executes a command from the console.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[commandevent] &lt;command&gt;</code>
+      </td>
+      <td style="text-align:left">Executes an unregistered command as the player.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[message] &lt;text&gt;</code>
+      </td>
+      <td style="text-align:left">Sends a message to the player. You can use <a href="https://helpch.at/placeholders">placeholders</a> and
+        color/format codes here.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[broadcast] &lt;text&gt;</code>
+      </td>
+      <td style="text-align:left">
+        <p>Sends a message to everyone online including the console.</p>
+        <p>You can use <a href="https://helpch.at/placeholders">placeholders</a> and
+          color/format codes here.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[openguimenu] &lt;menu-name&gt;</code>
+      </td>
+      <td style="text-align:left">Opens another GUI from DeluxeMenus.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[connect] &lt;server-name&gt;</code>
+      </td>
+      <td style="text-align:left">Connects the player to a server on the same BungeeCord.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[close]</code>
+      </td>
+      <td style="text-align:left">Closes the currently opened GUI.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[json] &lt;JSON-text&gt;</code>
+      </td>
+      <td style="text-align:left">Send a json message to the player. Use <a href="https://minecraftjson.com/">this</a> website
+        to easily generate the JSON text.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[jsonbroadcast] &lt;JSON-text&gt;</code>
+      </td>
+      <td style="text-align:left">Send a json message to everyone online. Use <a href="https://minecraftjson.com/">this</a> website
+        to easily generate the JSON text.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[refresh]</code>
+      </td>
+      <td style="text-align:left">Refresh items in the current menu view. This updates the shown Items themselves.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[broadcastsound] &lt;sound&gt; &lt;pitch&gt; &lt;volume&gt;</code>
+      </td>
+      <td style="text-align:left">Broadcast a sound to all players on the server.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[sound] &lt;sound&gt; &lt;pitch&gt; &lt;volume&gt;</code>
+      </td>
+      <td style="text-align:left">Play a sound for the player.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[takemoney] &lt;amount&gt;</code>
+      </td>
+      <td style="text-align:left">Take a certain amount of money from the player. <a href="https://www.spigotmc.org/resources/34315/">Vault</a> is
+        required for this action to work.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[givemoney] &lt;amount&gt;</code>
+      </td>
+      <td style="text-align:left">Give a certain amount of money to the player. <a href="https://www.spigotmc.org/resources/34315/">Vault</a> is
+        required for this action to work.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[meta] &lt;set/remove/add/subtract/switch&gt; &lt;key&gt; &lt;type&gt; &lt;value&gt;</code>
+      </td>
+      <td style="text-align:left">Modifies the player&apos;s meta. <code>add/subtract</code> are for number
+        types. <code>switch</code> is for boolean, it will swap it from true/false.
+        Check <a href="requirements.md#has-meta">here</a> for more detail.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>[chat] &lt;message&gt;</code>
+      </td>
+      <td style="text-align:left">Send a message in chat as the player who this action got executed for.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### **Action tags**
 
