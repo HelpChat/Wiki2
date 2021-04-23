@@ -84,8 +84,14 @@ Sets the item's amount in the menu using a [placeholder](https://helpch.at/place
 ## NBT Tags / CustomModelData
 
 > ```yaml
-> nbt_string: <Key>:<StringValue>
-> nbt_int: <Key>:<IntegerValue>
+> nbt_string: '<Key>:<StringValue>'
+> nbt_strings:
+> - '<Key>:<StringValue>'
+> - '<Key>:<StringValue>'
+> nbt_int: '<Key>:<IntegerValue>'
+> nbt_ints:
+> - '<Key>:<IntegerValue>'
+> - '<Key>:<IntegerValue>'
 > ```
 >
 > Custom Model Data Example: `nbt_int: CustomModelData:1`
