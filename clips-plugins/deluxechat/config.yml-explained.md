@@ -51,7 +51,9 @@ description: Explanation of most options in config.yml
 | suffix\_click_\__commands | Actions that will be executed when clicking on the suffix. |
 
 {% hint style="info" %}
-The click commands you can use one of the following actions: \[EXECUTE\] /command  - Will execute the command when clicked \[URL\] https://url-here.com - Will open the url when clicked
+The click commands you can use one of the following actions:   
+\[EXECUTE\] /command  - Will execute the command when clicked   
+\[URL\] https://url-here.com - Will open the url when clicked
 {% endhint %}
 
 {% hint style="info" %}

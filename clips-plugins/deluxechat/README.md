@@ -28,3 +28,7 @@ description: The original "JSON" chat formatting plugin
 
 * [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
+## Incompatible plugins
+
+* [EssentialsChat/EssentialsXChat](https://www.spigotmc.org/resources/essentialsx.9089/)
+
