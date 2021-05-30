@@ -16,6 +16,7 @@
   * [Commands & Permissions](clips-plugins/chatreaction/commands-and-permissions.md)
   * [Plugin's files](clips-plugins/chatreaction/files.md)
 * [DeluxeChat](clips-plugins/deluxechat/README.md)
+  * [Installation](clips-plugins/deluxechat/installation.md)
   * [Commands & Permissions](clips-plugins/deluxechat/commands-and-permissions.md)
   * [Placeholders](clips-plugins/deluxechat/placeholders.md)
   * [Config options](clips-plugins/deluxechat/config.yml-explained.md)
