@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'me.glaremasters:guilds:VERSION'
+    compileOnly 'me.glaremasters:guilds:VERSION'
 }
 ```
 {% endtab %}
