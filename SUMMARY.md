@@ -79,9 +79,6 @@
 
 ## Glare's Plugins
 
-* [DeluxeQueues](glares-plugins/deluxequeues/README.md)
-  * [Commands & Permissions](glares-plugins/deluxequeues/commands-and-permissions.md)
-  * [Configuration](glares-plugins/deluxequeues/configuration.md)
 * [Guilds \[W.I.P Migration\]](glares-plugins/guilds-w.i.p-migration/README.md)
   * [Installation](glares-plugins/guilds-w.i.p-migration/installation.md)
   * [Configuration](glares-plugins/guilds-w.i.p-migration/configuration/README.md)

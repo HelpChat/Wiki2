@@ -50,8 +50,6 @@ description: >-
 
 ## Glare's Plugins
 
-{% page-ref page="glares-plugins/deluxequeues/" %}
-
 {% page-ref page="glares-plugins/guilds-w.i.p-migration/" %}
 
 {% page-ref page="glares-plugins/voteparty/" %}
