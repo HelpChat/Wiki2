@@ -2,7 +2,7 @@
 
 ## Build Tool Stuff <a id="hooking-into-the-api"></a>
 
-![version](https://img.shields.io/badge/version-3.5.5.5-green)
+![](https://img.shields.io/badge/version-3.5.5.9-green)
 
 {% tabs %}
 {% tab title="Maven" %}
@@ -361,6 +361,85 @@ private Player newMaster;
     public GuildWithdrawMoneyEvent(Player player, Guild guild, double amount) {
         super(player, guild);
         this.amount = amount;
+    }a
+```
+
+### GuildWarAcceptEvent
+
+```kotlin
+/**
+ * Called when a guild war has been accepted
+ * @param player the player that accepted the war challenge
+ * @param challenger the challenging guild for the war
+ * @param defender the defending guild for the war
+ */
+class GuildWarAcceptEvent(player: Player, val challenger: Guild, val defender: Guild) : GuildEvent(player, defender)
+```
+
+### GuildWarChallengeEvent
+
+```kotlin
+/**
+ * Called when a guild war challenge has been sent from one guild to another
+ * @param player the player that sent the war challenge
+ * @param challenger the challenging guild for the war
+ * @param defender the defending guild for the war
+ */
+class GuildWarChallengeEvent(player: Player, val challenger: Guild, val defender: Guild) : GuildEvent(player, challenger)
+```
+
+### GuildWarDeclineEvent
+
+```kotlin
+/**
+ * Called when a guild war has been declined
+ * @param player the player that declined the challenge
+ * @param challenger the challenging guild for the war
+ * @param defender the defending guild for the war
+ */
+class GuildWarDeclineEvent(player: Player, val challenger: Guild, val defender: Guild) : GuildEvent(player, defender)
+```
+
+### GuildWarEndEvent
+
+```kotlin
+/**
+ * Called when a guild war has ended
+ * @param challenger the challenging guild for the war
+ * @param defender the defending guild for the war
+ * @param winner the winner of the guild war
+ */
+class GuildWarEndEvent(val challenger: Guild, val defender: Guild, val winner: Guild) : Event() {
+
+    override fun getHandlers(): HandlerList {
+        return handlerList
     }
+
+    companion object {
+        val handlerList = HandlerList()
+    }
+}
+
+```
+
+### GuildWarStartEvent
+
+```kotlin
+/**
+ * Called when a guild war has started
+ * @param challenger the challenging guild for the war
+ * @param defender the defending guild for the war
+ */
+class GuildWarStartEvent(val challenger: Guild, val defender: Guild) : Event() {
+
+    override fun getHandlers(): HandlerList {
+        return handlerList
+    }
+
+    companion object {
+        val handlerList = HandlerList()
+    }
+}
+
 ```
 
