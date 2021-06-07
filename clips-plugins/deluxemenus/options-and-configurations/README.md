@@ -127,12 +127,14 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
         required for this action to work.</td>
     </tr>
     <tr>
-      <td style="text-align:left">`[takeexp] #L`</td>
+      <td style="text-align:left"><code>[takeexp] #L</code>
+      </td>
       <td style="text-align:left">Take a certain amount of exp levels or points from a player. To give levels,
         add <code>L</code> at the end, otherwise remove it.</td>
     </tr>
     <tr>
-      <td style="text-align:left">`[giveexp] #L`</td>
+      <td style="text-align:left"><code>[giveexp] #L</code>
+      </td>
       <td style="text-align:left">Give a certain amount of exp levels or points to a player. To give levels,
         add <code>L</code> at the end, otherwise remove it</td>
     </tr>
