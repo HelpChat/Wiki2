@@ -5,7 +5,7 @@ description: Everything about DeluxeMenus requirements!
 # Requirements
 
 {% hint style="info" %}
-**IMPORTANTA!  
+**IMPORTANT!  
 `left/right/shift_left/shift_right/middle`** click requirements won't work unless you also have their respective click commands. This is true even if you have set the **`success_commands`** option
 {% endhint %}
 
@@ -144,6 +144,24 @@ Checks if the player has the specified meta.
 If the `meta_type` is a number format \(DOUBLE, LONG, INTEGER\) it will check if the player's meta value is greater than or equal to the `value`
 
 To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!has meta"`\).
+
+### **Has Exp**
+
+> ```yaml
+> type: has exp
+> amount: #
+> level: boolean # true if you want to check for exp levels, false for exp points
+> ```
+>
+> > **Required fields:**
+> >
+> > * amount
+
+Checks if the player has the exp level or points.
+
+If the `level` option does not exist, it will check for exp points by default
+
+To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!has exp"`\).
 
 ### **Is Near**
 
