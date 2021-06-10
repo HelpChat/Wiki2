@@ -300,7 +300,7 @@ Create a new guild!
 Deletes your current guild.
 
 `/guild kick <player>`   
-**Permission**: guilds.command.kick   
+**Permission**: guilds.command.boot   
 Kicks a player from your guild.
 
 `/guild prefix <prefix>`   
