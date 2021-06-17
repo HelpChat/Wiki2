@@ -34,6 +34,7 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [Placeholder](https://helpch.at/placeholders) material \(`placeholder-%player_item_in_hand%`\).
 > > * Item in main hand \(`main_hand`\).
 > > * Item in off hand \(`off-hand`\).
+> > * Water bottle material is: `water_bottle`
 
 Sets the material of the item in the menu.
 

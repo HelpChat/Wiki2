@@ -110,6 +110,11 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
       <td style="text-align:left">Broadcast a sound to all players on the server.</td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>[broadcastsoundworld] &lt;sound&gt; &lt;pitch&gt; &lt;volume&gt;</code>
+      </td>
+      <td style="text-align:left">Broadcast a sound to all players in the world.</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>[sound] &lt;sound&gt; &lt;pitch&gt; &lt;volume&gt;</code>
       </td>
       <td style="text-align:left">Play a sound for the player.</td>

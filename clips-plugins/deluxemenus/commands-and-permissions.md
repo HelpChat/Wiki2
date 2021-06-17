@@ -8,27 +8,28 @@ description: List of commands and permissions for the plugin
 
 | **Command** | **Permission** | Description |
 | :--- | :--- | :--- |
-| /DM | - | Displays some info about the plugin. |
-| /DM Open &lt;Menu&gt; | DeluxeMenus.Open | Opens the specified menu. |
-| /DM Open  &lt;Menu&gt; &lt;Player&gt; | DeluxeMenus.Open.Others | Opens the specified menu to the specified player. |
-| /DM Open &lt;Menu&gt; -p:&lt;Player&gt; | DeluxeMenus.PlaceholdersFor | Opens the specified menu for you, but the placeholders in it will be parsed as the specified player. |
-| /DM List | DeluxeMenus.List | Lists loaded menus. |
-| /DM Execute &lt;Player&gt; &lt;Action&gt; | Player needs to be Op | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info. |
-| /DM Reload | DeluxeMenus.Reload | Reloads the plugin's files. |
+| /dm | - | Displays some info about the plugin. |
+| /dm open &lt;menu&gt; | deluxemenus.open | Opens the specified menu. |
+| /dm open &lt;menu&gt; &lt;player&gt; | deluxemenus.open.others | Opens the specified menu to the specified player. |
+| /dm open &lt;menu&gt; -p:&lt;player&gt; | deluxemenus.placeholdersfor | Opens the specified menu for you, but the placeholders in it will be parsed as the specified player. |
+| /dm list | deluxemenus.list | Lists loaded menus. |
+| /dm execute &lt;player&gt; &lt;action&gt; | Player needs to be Op | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info. |
+| /dm reload | deluxemenus.reload | Reloads the plugin's files. |
+| /dm reload &lt;menu&gt; | deluxemenus.reload | Reload a menu. |
 
 ### Command Aliases
 
-* /DeluxeMenus
-* /DeluxeMenu
-* /DMenu
+* /deluxemenus
+* /deluxemenu
+* /dmenu
 
 ## Permissions
 
 | Permission | Description |
 | :--- | :--- |
-| DeluxeMenus.OpenRequirement.Bypass.\* | Bypasses all menu's open requirements. |
-| DeluxeMenus.OpenRequirement.Bypass.&lt;Menu&gt; | Bypasses the specified menu's open requirements. |
-| DeluxeMenus.PlaceholdersFor.Exempt | Blocks other players from using you in this command `/DM Open <Menu> -p:<You>`. |
+| deluxemenus.openrequirement.bypass.\* | Bypasses all menu's open requirements. |
+| deluxemenus.openrequirement.bypass.&lt;menu&gt; | Bypasses the specified menu's open requirements. |
+| deluxemenus.placeholdersfor.exempt | Blocks other players from using you in this command `/DM Open <Menu> -p:<You>`. |
 
 {% hint style="info" %}
 OP players will bypass all requirements!
