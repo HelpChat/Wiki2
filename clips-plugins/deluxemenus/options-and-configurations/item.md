@@ -29,6 +29,7 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * Placeholder head \(`head-%player_name%`\).
 > > * Argument placeholder head \(`head-{target}`\).
 > > * [BaseHead](https://minecraft-heads.com) \(`basehead-<base64 (Value field in the head's give command)>`\).
+> > * Minecraft Texture \(`texture-<id>`\) - The `id` is what's after `https://textures.minecraft.net/textures/`
 > > * [EpicHeads](https://songoda.com/marketplace/product/26) \(`heads-<ID>`\).
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) \(`hdb-<ID>`\).
 > > * [Placeholder](https://helpch.at/placeholders) material \(`placeholder-%player_item_in_hand%`\).
