@@ -12,7 +12,7 @@ description: Everything about DeluxeMenus requirements!
 ## Syntax
 
 > ```yaml
-> # This option can also be:
+> # Other available requirement types:
 > # open_requirement:
 > # view_requirement:
 > # left_click_requirement:
@@ -20,12 +20,15 @@ description: Everything about DeluxeMenus requirements!
 > # shift_left_click_requirement:
 > # shift_right_click_requirement:
 > click_requirement:
->   # This option is not needed.
->   # If you use this, only one of the
->   # requirements needs to be meet.
+>   # Minimum requirements are optional.
+>   # If they are not set, then all
+>   # requirements will be needed for the
+>   # click commands to be executed.
+>   # In this example, only one of the
+>   # requirements will be needed.
 >   minimum_requirements: 1
->   # This option is needed if you
->   # want to use minimum_requirements.
+>   # This option is needed for
+>   # minimum requirements to work.
 >   stop_at_success: true
 >   requirements:
 >     # You can define multiple requirements.
@@ -35,6 +38,8 @@ description: Everything about DeluxeMenus requirements!
 >       # These commands will be exeucted if
 >       # the requirement they're set for is
 >       # met even if the others are not.
+>       # You should be careful and not confuse
+>       # these with click_commands: !!!
 >       success_commands:
 >       - "[ACTIONTYPE] ACTION"
 >       - "[ACTIONTYPE] ACTION"
@@ -44,10 +49,10 @@ description: Everything about DeluxeMenus requirements!
 >       deny_commands:
 >       - "[ACTIONTYPE] ACTION"
 >       - "[ACTIONTYPE] ACTION"
->       # This option is not needed.
->       # It makes it so if the other requirements
->       # are met and this one is not, it will
->       # not execute the general deny commands.
+>       # This option is only required if you
+>       # want ot use minimum_requirements:
+>       # Minimum requirements will only work
+>       # for the optional requirements
 >       optional: true
 >   # This can only be defined for open and
 >   # left/right click requirement
