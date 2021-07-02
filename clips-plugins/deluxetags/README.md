@@ -43,8 +43,6 @@ description: Allow players to select chat tags that can be awarded by permission
 9. Give tag permissions to your players `DeluxeTags.Tag.Name`.
 10. Select your tag from `/Tags` and enjoy!!
 
-
-
 ### Other Chat Plugins \(As long as they support PlaceholderAPI\)
 
 1. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
