@@ -43,3 +43,18 @@ description: Allow players to select chat tags that can be awarded by permission
 9. Give tag permissions to your players `DeluxeTags.Tag.Name`.
 10. Select your tag from `/Tags` and enjoy!!
 
+
+
+### Other Chat Plugins \(As long as they support PlaceholderAPI\)
+
+1. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
+2. Restart the server.
+3. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout \(Files path: `/plugins/DeluxeTags/`\).
+4. Disable **DeluxeChat** option in `config.yml` file. `deluxe_chat: false`
+5. Disable **Format Chat** option in `config.yml` file. `format_chat:   enabled: false`
+6. Change all the placeholder in `config.yml` file from `%placeholder%` to `{placeholder}` \(e.g. from `%deluxetags_amount%` to `{deluxetags_amount}`\).
+7. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).
+8. Restart the server.
+9. Give tag permissions to your players `DeluxeTags.Tag.Name`.
+10. Select your tag from `/Tags` and enjoy!!
+
