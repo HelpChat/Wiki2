@@ -245,7 +245,7 @@ items:
 #       input
 #       output
 #
-#   stringequalsignorecase - Checks if a string equals another string ignoring case
+#   string equals ignorecase - Checks if a string equals another string ignoring case
 #     configuration options:
 #       input
 #       output
