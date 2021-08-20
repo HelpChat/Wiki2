@@ -23,6 +23,16 @@ To make this work fine you have to download [EzRanksPro](https://www.spigotmc.or
 > /papi ecloud download EzRanksPro  
 > /papi reload
 
+## \*\*\*\*[**Ranks**](https://github.com/HelpChat/DeluxeMenus/blob/master/gui_menus/ranks.yml)\*\*\*\*
+
+A simple example to show you how you can make a Ranks menu that displays 2 items for each rank, when the rank is not purchased and when the rank or a higher rank is purchased
+
+To make this work fine you have to download [LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/) and download Player and LuckPerms expansions using:
+
+> /papi ecloud download Player  
+> /papi ecloud download LuckPerms  
+> /papi reload
+
 ## [**Server Selector**](https://github.com/help-chat/DeluxeMenus/blob/master/gui_menus/serverselector.yml)
 
 A simple example to show you how you can make a Server Selector menu that displays 2 different items for each server, when the server is online and when it's offline.
