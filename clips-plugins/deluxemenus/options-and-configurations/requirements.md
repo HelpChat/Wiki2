@@ -27,8 +27,9 @@ description: Everything about DeluxeMenus requirements!
 >   # In this example, only one of the
 >   # requirements will be needed.
 >   minimum_requirements: 1
->   # This option is needed for
->   # minimum requirements to work.
+>   # This option is good for when you use minimum_requirements.
+>   # Instead of the plugin checking all the requirements,
+>   # it will stop when it has enough.
 >   stop_at_success: true
 >   requirements:
 >     # You can define multiple requirements.
