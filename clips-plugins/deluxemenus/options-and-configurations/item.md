@@ -264,6 +264,14 @@ If set to true, it will hide the vanilla attributes of an item/armor \(e.g. **7 
 
 If set to true, it will hide the potion's effect text beneath the item name.
 
+## Hide Unbreakable
+
+> ```yaml
+> hide_unbreakable: BOOLEAN # true or false
+> ```
+
+If set to true, it will hide the unbreakable tag if the "unbreakable:" option is enabled.
+
 ## Unbreakable
 
 > ```yaml
