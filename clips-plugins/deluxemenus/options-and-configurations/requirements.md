@@ -73,7 +73,7 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 | [(Shift) Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to (shift) left/right click an item. |
 
 {% hint style="info" %}
-* Placeholders can be used in the requirements.
+* Placeholders and [arguments](gui.md#args) can be used in the requirements.
 * If you set multiple requirements, all of them should be met (Use [JavaScript type](requirements.md#javascript) or minimum\_requirements to add optional requirements).
 {% endhint %}
 
