@@ -77,7 +77,7 @@ Runs the command(s) you set when the player opens the menu.
 >   - "[ACTIONTYPE] ACTION"
 > ```
 
-Runs the command(s) you set when the player close the menu by clicking an item with close action (`[close]`).
+Runs the command(s) you set when the player close the menu by clicking an item that have the close action (`[close]`).
 
 ## Inventory Type
 
