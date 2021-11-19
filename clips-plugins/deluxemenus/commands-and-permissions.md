@@ -4,6 +4,10 @@ description: List of commands and permissions for the plugin
 
 # Commands & Permissions
 
+{% hint style="info" %}
+"/dm open" is meant to be an admin command. its not what players should use to open menus. instead you should set up "[open\_command](options-and-configurations/gui.md#open-command)"s for each menu.
+{% endhint %}
+
 ## Commands
 
 | **Command**                             | **Permission**              | Description                                                                                                                                                             |
