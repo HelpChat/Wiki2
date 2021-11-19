@@ -321,4 +321,8 @@ Check [this](./#action-types) for all action types and action tags.
 Sets the requirements the player should have to click the item (Check the [Requirements](requirements.md) page for more info about the `EXPRESSION` value).\
 Deny commands (optional) are the actions that are going to be executed if the player doesn't have the required requirements. But if (s)he does, it will execute the actions specified in the [click commands](item.md#shift-left-middle-right-click-commands) option.
 
+{% hint style="info" %}
+You can have deny commands per requirement. Check [this page](requirements.md#syntax) for more information.
+{% endhint %}
+
 Check [this](./#action-types) for all action types and action tags.

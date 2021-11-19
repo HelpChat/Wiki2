@@ -4,7 +4,7 @@ description: Everything about DeluxeMenus requirements!
 
 # Requirements
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **IMPORTANT!**\
 **`left/right/shift_left/shift_right/middle` **click requirements won't work unless you also have their respective click commands. This is true even if you have set the **`success_commands`** option
 {% endhint %}
