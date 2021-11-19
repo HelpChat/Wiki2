@@ -290,6 +290,7 @@ If set to true, it will show the item to be at full durability.
 ## (Shift) Left/Middle/Right click Commands
 
 > ```yaml
+> # click_commands: or
 > # left_click_commands: or
 > # right_click_commands: or
 > # middle_click_commands: or
@@ -305,6 +306,7 @@ Check [this](./#action-types) for all action types and action tags.
 ## (Shift) Left/Middle/Right click Requirement
 
 > ```yaml
+> # click_requirement: or
 > # left_click_requirement: or
 > # right_click_requirement: or
 > # middle_click_requirement: or
