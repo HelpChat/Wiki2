@@ -79,6 +79,12 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 
 ## Requirement types
 
+{% hint style="warning" %}
+When inverting requirements, make sure you put the type in quotation marks. This is because "!" is a special symbol in YAML so it will break the syntax.
+
+ex: `type: "!has permission"`
+{% endhint %}
+
 ### **Has permission**
 
 > ```yaml
