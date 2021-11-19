@@ -5,8 +5,8 @@ description: Everything about DeluxeMenus requirements!
 # Requirements
 
 {% hint style="info" %}
-**IMPORTANT!  
-`left/right/shift_left/shift_right/middle`** click requirements won't work unless you also have their respective click commands. This is true even if you have set the **`success_commands`** option
+**IMPORTANT!**\
+**`left/right/shift_left/shift_right/middle` **click requirements won't work unless you also have their respective click commands. This is true even if you have set the **`success_commands`** option
 {% endhint %}
 
 ## Syntax
@@ -66,15 +66,15 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 
 ## Requirements
 
-| Type | Description |
-| :--- | :--- |
-| [Open Requirement](gui.md#open-requirements) | Defines the requirements to open the menu. |
-| [View Requirement](item.md#view-requirement) | Defines the requirements to see an item in the menu. |
-| [\(Shift\) Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to \(shift\) left/right click an item. |
+| Type                                                                                       | Description                                                   |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| [Open Requirement](gui.md#open-requirements)                                               | Defines the requirements to open the menu.                    |
+| [View Requirement](item.md#view-requirement)                                               | Defines the requirements to see an item in the menu.          |
+| [(Shift) Left/Right Click Requirements](item.md#shift-left-middle-right-click-requirement) | Defines the requirements to (shift) left/right click an item. |
 
 {% hint style="info" %}
 * Placeholders can be used in the requirements.
-* If you set multiple requirements, all of them should be met \(Use [JavaScript type](requirements.md#javascript) or minimum\_requirements to add optional requirements\).
+* If you set multiple requirements, all of them should be met (Use [JavaScript type](requirements.md#javascript) or minimum\_requirements to add optional requirements).
 {% endhint %}
 
 ## Requirement types
@@ -88,7 +88,7 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 
 Checks if the player has the specified permission.
 
-To invert the requirement \(Check if the player doesn't have the permission\) you can simply add the exclamation mark before the type name \(like this `type: "!has permission"`\).
+To invert the requirement (Check if the player doesn't have the permission) you can simply add the exclamation mark before the type name (like this `type: "!has permission"`).
 
 ### **Has money**
 
@@ -97,9 +97,9 @@ To invert the requirement \(Check if the player doesn't have the permission\) yo
 > amount: #
 > ```
 
-Checks if the player has the specified amount of money \([Vault](https://www.spigotmc.org/resources/34315/) is required\).
+Checks if the player has the specified amount of money ([Vault](https://www.spigotmc.org/resources/34315/) is required).
 
-To invert the requirement \(Check if the player doesn't have the amount of money\) you can simply add the exclamation mark before the type name \(like this `type: "!has money"`\).
+To invert the requirement (Check if the player doesn't have the amount of money) you can simply add the exclamation mark before the type name (like this `type: "!has money"`).
 
 {% hint style="info" %}
 To use a placeholder as a value for the amount, replace the `amount:` field with `placeholder:`.
@@ -124,13 +124,17 @@ To use a placeholder as a value for the amount, replace the `amount:` field with
 
 Checks if the player has the specified item in the inventory.
 
-To invert the requirement \(Check if the player doesn't have the item\) you can simply add the exclamation mark before the type name \(like this `type: "!has item"`\).
+To invert the requirement (Check if the player doesn't have the item) you can simply add the exclamation mark before the type name (like this `type: "!has item"`).
 
 {% hint style="info" %}
 You can use color/format codes in name and lore fields, but using `§` character instead of `&` character.
 {% endhint %}
 
 ### **Has Meta**
+
+{% hint style="warning" %}
+Meta uses Persistent Data Containers which means this feature will only work on servers that are 1.14 or newer!
+{% endhint %}
 
 > ```yaml
 > type: has meta
@@ -147,9 +151,9 @@ You can use color/format codes in name and lore fields, but using `§` character
 
 Checks if the player has the specified meta.
 
-If the `meta_type` is a number format \(DOUBLE, LONG, INTEGER\) it will check if the player's meta value is greater than or equal to the `value`
+If the `meta_type` is a number format (DOUBLE, LONG, INTEGER) it will check if the player's meta value is greater than or equal to the `value`
 
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!has meta"`\).
+To invert the requirement (Check if the input doesn't match the output) you can simply add the exclamation mark before the type name (like this `type: "!has meta"`).
 
 ### **Has Exp**
 
@@ -167,7 +171,7 @@ Checks if the player has the exp level or points.
 
 If the `level` option does not exist, it will check for exp points by default
 
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!has exp"`\).
+To invert the requirement (Check if the input doesn't match the output) you can simply add the exclamation mark before the type name (like this `type: "!has exp"`).
 
 ### **Is Near**
 
@@ -184,7 +188,7 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 
 Checks if the player is within `distance` of `location`.
 
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!is near"`\).
+To invert the requirement (Check if the input doesn't match the output) you can simply add the exclamation mark before the type name (like this `type: "!is near"`).
 
 ### **JavaScript**
 
@@ -218,9 +222,9 @@ Evaluates a JavaScript expression that must return true or false.
 > > output: "HelpChat"
 > > ```
 
-Checks if `input:` matches `output:` \(Case sensitive\).
+Checks if `input:` matches `output:` (Case sensitive).
 
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string equals"`\).
+To invert the requirement (Check if the input doesn't match the output) you can simply add the exclamation mark before the type name (like this `type: "!string equals"`).
 
 ### **String Equals Ignore Case**
 
@@ -238,9 +242,9 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 > > output: "helpchat"
 > > ```
 
-Checks if `input:` matches `output:` \(Case insensitive\).
+Checks if `input:` matches `output:` (Case insensitive).
 
-To invert the requirement \(Check if the input doesn't match the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string equals ignorecase"`\).
+To invert the requirement (Check if the input doesn't match the output) you can simply add the exclamation mark before the type name (like this `type: "!string equals ignorecase"`).
 
 ### **String Contains**
 
@@ -258,9 +262,9 @@ To invert the requirement \(Check if the input doesn't match the output\) you ca
 > > output: "chat"
 > > ```
 
-Checks if `input:` contains `output:` \(Case sensitive\).
+Checks if `input:` contains `output:` (Case sensitive).
 
-To invert the requirement \(Check if the input doesn't contain the output\) you can simply add the exclamation mark before the type name \(like this `type: "!string contains"`\).
+To invert the requirement (Check if the input doesn't contain the output) you can simply add the exclamation mark before the type name (like this `type: "!string contains"`).
 
 ### Regex matches
 
@@ -270,10 +274,10 @@ To invert the requirement \(Check if the input doesn't contain the output\) you 
 > regex: "EXPRESSION"
 > ```
 
-Checks if `input:` contains the regular expression in `regex:`.  
-Visit [this site](https://regexr.com/) to create regular expressions easily.
+Checks if `input:` contains the regular expression in `regex:`.\
+Visit [this site](https://regexr.com) to create regular expressions easily.
 
-To invert the requirement \(Check if the input doesn't contain the regular expression\) you can simply add the exclamation mark before the type name \(like this `type: "!regex matches"`\).
+To invert the requirement (Check if the input doesn't contain the regular expression) you can simply add the exclamation mark before the type name (like this `type: "!regex matches"`).
 
 ### **Comparators**
 
@@ -287,14 +291,14 @@ Compares `input:` with `output:`.
 
 #### Available options
 
-| Comparator | Description |
-| :--- | :--- |
-| `==` | `input:` equals to `output:` |
-| `>=` | `input:` greater than or equals to `output:` |
-| `<=` | `input:` less than or equals to `output:` |
-| `!=` | `input:` not equals to `output:` |
-| `>` | `input:` greater than `output:` |
-| `<` | `input:` less than `output:` |
+| Comparator | Description                                  |
+| ---------- | -------------------------------------------- |
+| `==`       | `input:` equals to `output:`                 |
+| `>=`       | `input:` greater than or equals to `output:` |
+| `<=`       | `input:` less than or equals to `output:`    |
+| `!=`       | `input:` not equals to `output:`             |
+| `>`        | `input:` greater than `output:`              |
+| `<`        | `input:` less than `output:`                 |
 
 ## Examples
 
@@ -352,4 +356,3 @@ click_requirement:
 click_commands:
 - "[message] &7You have 1 of the 2 permissions required."
 ```
-
