@@ -124,7 +124,11 @@ Allows you to create your custom banner (Used if the [material](item.md#material
 >
 > > * [Potion effects list.](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 
-Allows you to set effects (Used if the [material](item.md#material) is a potion or splash\_potion). For potion\_effects to work on potions you also need to give it a rgb value.
+Allows you to set effects (Used if the [material](item.md#material) is a potion or splash\_potion).
+
+{% hint style="info" %}
+For potion\_effects to work on potions you also need to give it an [RGB](item.md#rgb) value.
+{% endhint %}
 
 ## RGB <a href="rgb" id="rgb"></a>
 
@@ -140,7 +144,11 @@ Allows you to set effects (Used if the [material](item.md#material) is a potion 
 > >
 > > ![Image of what will be displayed](https://img.aboodyy.net/19.06.19\_01-07.png)
 
-Sets the RGB (Red, Green, Blue) color for leather armor, potions and splash\_potions (For rgb to work on potions you also need to give it a potion\_effect).
+Sets the RGB (Red, Green, Blue) color for leather armor, potions and splash\_potions
+
+{% hint style="info" %}
+For RGB option to work on potions you also need to give it at least one  [potion\_effect](item.md#potion-effects).
+{% endhint %}
 
 ## Display Name
 
