@@ -32,8 +32,8 @@ description: List of commands and permissions for the plugin
 
 | Permission                                 | Description                                                                     |
 | ------------------------------------------ | ------------------------------------------------------------------------------- |
-| deluxemenus.openrequirement.bypass.\*      | Bypasses all menu's open requirements.                                          |
-| deluxemenus.openrequirement.bypass.\<menu> | Bypasses the specified menu's open requirements.                                |
+| deluxemenus.openrequirement.bypass.\*      | Bypasses open requirements for every menu.                                      |
+| deluxemenus.openrequirement.bypass.\<menu> | Bypasses open requirements for a specified menu                                 |
 | deluxemenus.placeholdersfor.exempt         | Blocks other players from using you in this command `/DM Open <Menu> -p:<You>`. |
 
 {% hint style="info" %}
