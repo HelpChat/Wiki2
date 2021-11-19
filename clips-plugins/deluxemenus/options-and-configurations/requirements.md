@@ -115,26 +115,46 @@ To use a placeholder as a value for the amount, replace the `amount:` field with
 
 > ```yaml
 > type: has item
+> # material option supports material names, placeholders and arguments.
 > material: "TEXT"
 > data: #
+> # represents the CustomModelData the item should have.
+> modeldata: #
 > amount: #
 > name: "TEXT"
+> # lore can also be one single string: lore: "TEXT"
 > lore:
 >   - "TEXT"
+> # if this is enabled then the plugin will look for items that contain the value
+> # set at the option "name" in their name and not for the exact value
+> name_contains: boolean
+> # if this option is enabled then the plugin will check for the item name,
+> # without caring about the case.
+> name_ignorecase: boolean
+> # if this is enabled then the plugin will look for items that contain the value
+> # set at the option "lore" in their lore and not for the exact value
+> lore_contains: boolean
+> # if this option is enabled then the plugin will check for the item lore,
+> # without caring about the case.
+> name_ignorecase: boolean
+> # if this option is enabled, the plugin will consider only the items that 
+> # have no custom model data, no display name and no lore.
+> strict: boolean
+> # decides if the plugin should also check the armor slots of the player when
+> # looking for items
+> armor: boolean
+> # decides if the plugin should also check the off hand of the player when
+> # looking for items
+> offhand: boolean
 > ```
 >
 > > **Required fields:**
 > >
 > > * Material
-> > * Amount
 
 Checks if the player has the specified item in the inventory.
 
 To invert the requirement (Check if the player doesn't have the item) you can simply add the exclamation mark before the type name (like this `type: "!has item"`).
-
-{% hint style="info" %}
-You can use color/format codes in name and lore fields, but using `§` character instead of `&` character.
-{% endhint %}
 
 ### **Has Meta**
 
