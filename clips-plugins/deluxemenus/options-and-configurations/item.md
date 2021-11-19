@@ -141,8 +141,6 @@ For potion\_effects to work on potions you also need to give it an [RGB](item.md
 > > ```yaml
 > > rgb: 38,192,210
 > > ```
-> >
-> > ![Image of what will be displayed](https://img.aboodyy.net/19.06.19\_01-07.png)
 
 Sets the RGB (Red, Green, Blue) color for leather armor, potions and splash\_potions
 
