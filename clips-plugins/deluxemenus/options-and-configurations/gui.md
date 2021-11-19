@@ -174,7 +174,6 @@ args:
 * `{last}` returns `And the rest`
 
 {% hint style="info" %}
-* Argument placeholders can be used in [Placeholder-Material](item.md#material), [Display Name](item.md#display-name), [Lore](item.md#lore), and [Actions](item.md#shift-left-middle-right-click-commands) only.
 * It's highly recommended to add the [Args Usage Message](gui.md#args-usage-message) option.
 * Requires [Register Command](gui.md#register-command) to be true.
 {% endhint %}
