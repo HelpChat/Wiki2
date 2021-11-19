@@ -6,16 +6,17 @@ description: List of commands and permissions for the plugin
 
 ## Commands
 
-| **Command**                     | **Permission**              | Description                                                                                                                                                             |
-| ------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /dm                             | -                           | Displays some info about the plugin.                                                                                                                                    |
-| /dm open \<menu>                | deluxemenus.open            | Opens the specified menu.                                                                                                                                               |
-| /dm open \<menu> \<player>      | deluxemenus.open.others     | Opens the specified menu to the specified player.                                                                                                                       |
-| /dm open \<menu> -p:\<player>   | deluxemenus.placeholdersfor | Opens the specified menu for you, but the placeholders in it will be parsed as the specified player.                                                                    |
-| /dm list                        | deluxemenus.list            | Lists loaded menus.                                                                                                                                                     |
-| /dm execute \<player> \<action> | Player needs to be Op       | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info. |
-| /dm reload                      | deluxemenus.reload          | Reloads the plugin's files.                                                                                                                                             |
-| /dm reload \<menu>              | deluxemenus.reload          | Reload a menu.                                                                                                                                                          |
+| **Command**                            | **Permission**              | Description                                                                                                                                                             |
+| -------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /dm                                    | -                           | Displays some info about the plugin.                                                                                                                                    |
+| /dm open \<menu>                       | deluxemenus.open            | Opens the specified menu.                                                                                                                                               |
+| /dm open \<menu> \<player>             | deluxemenus.open.others     | Opens the specified menu to the specified player.                                                                                                                       |
+| /dm open \<menu> -p:\<target>          | deluxemenus.placeholdersfor | Opens the specified menu for you, but the placeholders in it will be parsed as the specified target.                                                                    |
+| /dm ope \<menu> \<viewer> -p:\<target> | deluxemenus.placeldersfor   | Opens the specified menu to the spcified player but the placeolders in it will be parsed as the specified target.                                                       |
+| /dm list                               | deluxemenus.list            | Lists loaded menus.                                                                                                                                                     |
+| /dm execute \<player> \<action>        | Player needs to be Op       | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info. |
+| /dm reload                             | deluxemenus.reload          | Reloads the plugin's files.                                                                                                                                             |
+| /dm reload \<menu>                     | deluxemenus.reload          | Reload a menu.                                                                                                                                                          |
 
 ### Command Aliases
 
