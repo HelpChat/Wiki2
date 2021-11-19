@@ -7,23 +7,18 @@ description: All GUI menu related options & configurations
 ## Syntax
 
 > ```yaml
-> gui_menus:
->   menuname:
->     menu_title: "TEXT"
->     open_command: COMMAND
->     open_requirement: EXPRESSION
->     open_commands:
->       - "[ACTIONTYPE] ACTION"
->       - "[ACTIONTYPE] ACTION"
->     inventory_type: "TEXT"
->     size: #
->     update_interval: #
->     items:
+> menuname:
+>   menu_title: "TEXT"
+>   open_command: COMMAND
+>   open_requirement: EXPRESSION
+>   open_commands:
+>     - "[ACTIONTYPE] ACTION"
+>     - "[ACTIONTYPE] ACTION"
+>   inventory_type: "TEXT"
+>   size: #
+>   update_interval: #
+>   items:
 > ```
-
-{% hint style="info" %}
-If you're using an external GUI-file \(separate `.yml` file\) your configuration will start at the `menu_title:` option.
-{% endhint %}
 
 ## Menu Title
 
@@ -72,7 +67,7 @@ Sets requirements a player should have to open the GUI menu. Check the [Requirem
 >   - "[ACTIONTYPE] ACTION"
 > ```
 
-Runs the command\(s\) you set when the player opens the menu.
+Runs the command(s) you set when the player opens the menu.
 
 ## Close Commands
 
@@ -82,7 +77,7 @@ Runs the command\(s\) you set when the player opens the menu.
 >   - "[ACTIONTYPE] ACTION"
 > ```
 
-Runs the command\(s\) you set when the player close the menu by clicking an item with close action \(`[close]`\).
+Runs the command(s) you set when the player close the menu by clicking an item with close action (`[close]`).
 
 ## Inventory Type
 
@@ -90,7 +85,7 @@ Runs the command\(s\) you set when the player close the menu by clicking an item
 > inventory_type: "TEXT"
 > ```
 >
-> > **Default value:** `CHEST`  
+> > **Default value:** `CHEST`\
 > > **Supported types:**
 > >
 > > * `ANVIL`
@@ -120,7 +115,7 @@ Allows you to define a different type of Inventory.
 > size: #
 > ```
 >
-> > **Default value:** `54`  
+> > **Default value:** `54`\
 > > **Supported values:**
 > >
 > > * `9`
@@ -148,7 +143,7 @@ Registers the open command with the server.
 Must be manually added to the menu.
 {% endhint %}
 
-### Args \(Arguments\) <a id="args"></a>
+### Args (Arguments) <a href="args" id="args"></a>
 
 > ```yaml
 > args:
@@ -157,13 +152,13 @@ Must be manually added to the menu.
 > - "TEXT"
 > ```
 >
-> > * **TEXT** The argument name \(Should be unique\).
+> > * **TEXT** The argument name (Should be unique).
 
-Gives you the ability to set arguments after the [open command](gui.md#open-command), and use them inside the menu by adding the argument placeholder \(the argument name inside curly braces `{TEXT}`\).
+Gives you the ability to set arguments after the [open command](gui.md#open-command), and use them inside the menu by adding the argument placeholder (the argument name inside curly braces `{TEXT}`).
 
 You can have multiple arguments, and they will be set in the same order in the open command.
 
-```text
+```
 /COMMAND FirstArg SecondArg And the rest
 ```
 
@@ -198,8 +193,8 @@ Sets the usage message for the menu. If the player didn't set the required argum
 > update_interval: #
 > ```
 
-This is for any items that use the `update:` option \(Check it [here](item.md#update)\).  
-The number defines the delay \(in seconds\) between each refresh of the placeholders in an item's lore/display name.
+This is for any items that use the `update:` option (Check it [here](item.md#update)).\
+The number defines the delay (in seconds) between each refresh of the placeholders in an item's lore/display name.
 
 **Note:** This refreshes/updates the placeholders only.
 
@@ -209,6 +204,5 @@ The number defines the delay \(in seconds\) between each refresh of the placehol
 > items:
 > ```
 
-This line should be left as is. It is merely telling the plugin you are about to begin defining items.  
+This line should be left as is. It is merely telling the plugin you are about to begin defining items.\
 Check the [**Item**](item.md) page for more information.
-
