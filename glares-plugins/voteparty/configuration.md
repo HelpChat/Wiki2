@@ -20,6 +20,12 @@ settings:
     counter:
         # How often to save the current amount of votes (in seconds)
         save-interval: 300
+    data:
+        # How often do we want to save the player data (in seconds)
+        save-interval: 300
+        # Do you want to save a player's data instantly on vote? This will happen along with the interval saving above.
+        # Some servers just prefer to save instantly to ensure all the data is there.
+        save-on-vote: false
     # Would you like to enable Brigadier command support? (I think it does more than just pretty colors) 1.13+
     brigadier: false
 # The hook part of the config allows you to configure which plugins you would like to hook into for votes.
@@ -86,6 +92,12 @@ party:
     - ''
     # Choose to allow offline votes count towards the party
     offline_votes: true
+    # There are 3 different ways that a party can work.
+    # 1) "everyone" - everyone can join the party whether they voted or not
+    # 2) "daily" - everyone who voted in the past 24 hours can join the party
+    # 3) "party" - everyone who voted in this specific party can join the party
+    # Set the mode below to one of the options above to specify how the party should function
+    party_mode: everyone
     # The amount of time (in seconds) the server will wait to start the party after the amount needed has been achieved
     start_delay: 15
     # The amount of time (in seconds) the server will wait between executing reward commands
@@ -96,18 +108,15 @@ party:
         enabled: true
         max_possible: 1
         commands: 
-        - chance: 50
+        - chance: 50.0
           command:
           - eco give %player_name% 100
-          - eco give %player_name% 50
-        - chance: 50
+        - chance: 50.0
           command:
           - give %player_name% DIAMOND 6
-          - eco give %player_name% 50
-        - chance: 50
+        - chance: 50.0
           command:
           - give %player_name% IRON_INGOT 12
-          - eco give %player_name% 50
     # Configuration for extra commands to be executed on players who have specific permission nodes when a party happens
     permission-rewards:
         enabled: true
@@ -115,7 +124,6 @@ party:
         - permission: my.special.permission
           commands:
           - eco give %player_name% 500
-          - eco give %player_name% 50
     # A list of rewards that will ALWAYS be given to a player during a party
     guaranteed_rewards:
         enabled: true
@@ -133,20 +141,20 @@ party:
         commands: 
         - broadcast A Vote Party has started!
 voting:
+    # If a player's inventory is full when voting, do you want to send the vote to a /vote claim?
+    claim_if_full: true
     # Configuration for chance rewards to be given for voting.
     # Add as many commands as you want, set their chance, and choose the max amount a player can earn!
     per_vote_rewards:
         enabled: true
         max_possible: 1
         commands: 
-        - chance: 50
+        - chance: 50.0
           command:
           - eco give %player_name% 100
-          - eco give %player_name% 50
-        - chance: 70
+        - chance: 70.0
           command:
           - give %player_name% STEAK 10
-          - eco give %player_name% 50
     # Configuration for extra commands to be executed on players who have specific permission nodes
     permission-rewards:
         enabled: true
@@ -154,7 +162,6 @@ voting:
         - permission: my.special.permission
           commands:
           - eco give %player_name% 500
-          - eco give %player_name% 50
     # A list of rewards that will ALWAYS be given to a player for voting
     guaranteed_rewards:
         enabled: true
@@ -180,7 +187,6 @@ voting:
         - serviceName: TestVote
           commands:
           - eco give %player_name% 500
-          - eco give %player_name% 50
     # Global commands (such as a broadcast message) to be executed when a player votes
     global_commands:
         enabled: true
@@ -201,35 +207,28 @@ voting:
             - votes: 5
               commands:
               - give %player_name% STEAK 10
-              - eco give %player_name% 50
         weekly:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
-              - eco give %player_name% 50
         monthly:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
-              - eco give %player_name% 50
         yearly:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
-              - eco give %player_name% 50
         total:
             enabled: false
             entries: 
             - votes: 5
               commands:
               - give %player_name% STEAK 10
-              - eco give %player_name% 50
-
 ```
-
