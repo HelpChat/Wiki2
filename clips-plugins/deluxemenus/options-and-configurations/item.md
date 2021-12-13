@@ -146,7 +146,7 @@ For potion\_effects to work on potions you also need to give it an [RGB](item.md
 > > rgb: 38,192,210
 > > ```
 
-Sets the RGB (Red, Green, Blue) color for leather armor, potions and splash\_potions
+Sets the RGB (Red, Green, Blue) color for leather armor, potions, splash potions, tipped arrows and firework stars
 
 {% hint style="info" %}
 For RGB option to work on potions you also need to give it at least one  [potion\_effect](item.md#potion-effects).
