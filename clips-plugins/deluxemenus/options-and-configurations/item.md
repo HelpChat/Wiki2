@@ -119,6 +119,18 @@ The nbt tags options support PlaceholderAPI placeholders now!
 
 Allows you to create your custom banner (Used if the [material](item.md#material) is a banner).
 
+## Item Flags
+
+> ```yaml
+> item_flags:
+> - <ItemFlag>
+> - <ItemFlag>
+> ```
+>
+> > * [Item Flags list.](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html)
+
+Allows you to set item flags.
+
 ## Potion Effects
 
 > ```yaml
@@ -129,10 +141,10 @@ Allows you to create your custom banner (Used if the [material](item.md#material
 >
 > > * [Potion effects list.](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 
-Allows you to set effects (Used if the [material](item.md#material) is a potion or splash\_potion).
+Allows you to set effects (Used if the [material](item.md#material) is a potion, splash\_potion and tipped arrows).
 
 {% hint style="info" %}
-For potion\_effects to work on potions and tipped arros you also need to give it an [RGB](item.md#rgb) value.
+For potion\_effects to work on potions and tipped arrows you also need to give it an [RGB](item.md#rgb) value.
 {% endhint %}
 
 ## RGB <a href="#rgb" id="rgb"></a>
