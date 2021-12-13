@@ -101,6 +101,10 @@ Sets the item's amount in the menu using a [placeholder](https://helpch.at/place
 
 Allows you to add custom nbt tags to your items like model data so you can display custom models provided by your server resource pack.
 
+{% hint style="success" %}
+The nbt tags options support PlaceholderAPI placeholders now!
+{% endhint %}
+
 ## Banner Meta
 
 > ```yaml
@@ -130,7 +134,7 @@ Allows you to set effects (Used if the [material](item.md#material) is a potion 
 For potion\_effects to work on potions you also need to give it an [RGB](item.md#rgb) value.
 {% endhint %}
 
-## RGB <a href="rgb" id="rgb"></a>
+## RGB <a href="#rgb" id="rgb"></a>
 
 > ```yaml
 > rgb: #,#,#
