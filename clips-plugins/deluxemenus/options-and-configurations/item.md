@@ -131,7 +131,7 @@ Allows you to create your custom banner (Used if the [material](item.md#material
 Allows you to set effects (Used if the [material](item.md#material) is a potion or splash\_potion).
 
 {% hint style="info" %}
-For potion\_effects to work on potions you also need to give it an [RGB](item.md#rgb) value.
+For potion\_effects to work on potions and tipped arros you also need to give it an [RGB](item.md#rgb) value.
 {% endhint %}
 
 ## RGB <a href="#rgb" id="rgb"></a>
@@ -149,7 +149,7 @@ For potion\_effects to work on potions you also need to give it an [RGB](item.md
 Sets the RGB (Red, Green, Blue) color for leather armor, potions, splash potions, tipped arrows and firework stars
 
 {% hint style="info" %}
-For RGB option to work on potions you also need to give it at least one  [potion\_effect](item.md#potion-effects).
+For RGB option to work on potions and tipped arrows you also need to give it at least one  [potion\_effect](item.md#potion-effects).
 {% endhint %}
 
 ## Display Name
