@@ -304,6 +304,10 @@ If set to true, it will hide the unbreakable tag if the "unbreakable:" option is
 
 If set to true, it will show the item to be at full durability.
 
+{% hint style="warning" %}
+Middle clicking was removed by Mojang in 1.18+ for the Survival gamemode!
+{% endhint %}
+
 ## (Shift) Left/Middle/Right click Commands
 
 > ```yaml
