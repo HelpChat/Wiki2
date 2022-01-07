@@ -28,7 +28,7 @@ description: The plugin's configuration files
 #     target_no_permission_message: <message to send when players do not have permission to specify a target to set placeholders for>
 #     target_message:
 #     - '[text]<You do not have to specify this option, only if you want separate messages when a target is defined>'
-#     - '{"text": "%player%'s stats:"}'
+#     - '{"text": "%player_name%'s stats:"}'
 #     - '{"text": "This message is only if you want a separate message defined when a"}&&{"text": " target player is specified in the command!"}'
 #     aliases:
 #     - 'somealiasforthiscommand'
@@ -36,6 +36,7 @@ description: The plugin's configuration files
 # You can now add a new entry to define different aliases per command!
 #  simply add the "aliases" option to the commands you would like to define aliases for!
 # DeluxeCommands will detect if you have DeluxeChat or PlaceholderAPI installed! You can use any placeholders you have enabled!
+# Note: To use %player_name% you need the Player expansion. This can be download via PlaceholderAPI with /papi ecloud download Player
 commands:
   somecustomcommand:
     permission: some.custom.permission
@@ -51,7 +52,7 @@ commands:
     target_message:
     - '{"text": "--------"}'
     - '{"text": "This message is optional if you want to show a different message
-      when"}&&{"text": " %player% is specified at the end of the command"}'
+      when"}&&{"text": " %player_name% is specified at the end of the command"}'
     - '{"text": "--------"}'
 ```
 {% endcode %}
