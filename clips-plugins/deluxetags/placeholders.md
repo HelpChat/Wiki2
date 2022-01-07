@@ -4,6 +4,10 @@ description: Plugin's placeholders
 
 # Placeholders
 
+{% hint style="info" %}
+All text between the less-than and greater-than signs (**<>**) is a placeholder/variable, replace it with the requested value without the less-than and greater-than signs (**<>**).
+{% endhint %}
+
 **DeluxeTags** plugin provides [**PlaceholderAPI** ](https://www.spigotmc.org/resources/6245/)placeholders that you can use in any plugin that supports [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/).
 
 | Placeholder                         | Return Value | Description                                                           |
@@ -27,7 +31,3 @@ To use these placeholders, you have to download **DeluxeTags Expansion**. You ca
 > `/papi reload`
 
 Or you can download it manually from the [eCloud](https://api.extendedclip.com/expansions/deluxetags/), and put it inside the `expansions` folder (folder path: `/plugins/PlaceholderAPI/expansions/`).&#x20;
-
-{% hint style="info" %}
-All text between the less-than and greater-than signs (**<>**) is a placeholder/variable, replace it with the requested value without the less-than and greater-than signs (**<>**).
-{% endhint %}
