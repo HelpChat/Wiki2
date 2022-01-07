@@ -8,35 +8,38 @@ description: The plugin's configuration files
 
 {% code title="config.yml" %}
 ```yaml
-# DeluxeTags version: 1.7.1 Main Configuration
-# 
+# DeluxeTags version: 1.8.2-Release Main Configuration
+#
 # Create your tags using the following format:
-# 
+#
 # deluxetags:
 #   VIP: 
 #     order: 1
 #     tag: '&7[&eVIP&7]'
 #     description: 'This tag is awarded by getting VIP'
-# 
-# Placeholders for your DeluxeChat formats config:
-# 
+#
+# Placeholders for your chat plugin that supports PlaceholderAPI (Including DeluxeChat)
+#
 # %deluxetags_identifier% - display the players active tag identifier
 # %deluxetags_tag% - display the players active tag
 # %deluxetags_description% - display the players active tag description
 # %deluxetags_amount% - display the amount of tags a player has access to
-# 
+#
 # Placeholders for your essentials/chat handling formats config:
-# 
+#
 # {deluxetags_identifier} - display the players active tag identifier
 # {deluxetags_tag} - display the players active tag
 # {deluxetags_description} - display the players active tag description
 # {deluxetags_amount} - display the amount of tags a player has access to
+
 force_tags: false
 check_updates: true
-deluxe_chat: true
+legacy_hex: false
+papi_chat: true
 format_chat:
-  enabled: true
+  enabled: false
   format: '{deluxetags_tag} <%1$s> %2$s'
+load_tag_on_join: true
 gui:
   name: '&6Available tags&f: &6%deluxetags_amount%'
   tag_select_item:
@@ -47,20 +50,20 @@ gui:
     - '%deluxetags_tag%'
     - '%deluxetags_description%'
   divider_item:
-    material: STAINED_GLASS_PANE
-    data: 15
+    material: BLACK_STAINED_GLASS_PANE
+    data: 0
     displayname: ''
     lore: []
   has_tag_item:
-    material: SKULL_ITEM
-    data: 3
+    material: PLAYER_HEAD
+    data: 0
     displayname: '&eCurrent tag&f: &6%deluxetags_identifier%'
     lore:
     - '%deluxetags_tag%'
     - Click to remove your current tag
   no_tag_item:
-    material: SKULL_ITEM
-    data: 3
+    material: PLAYER_HEAD
+    data: 0
     displayname: '&cYou don''t have a tag set!'
     lore:
     - '&7Click a tag above to select one!'
@@ -70,11 +73,25 @@ gui:
     displayname: '&cClick to exit'
     lore:
     - '&7Exit the tags menu'
+  next_page:
+    material: PAPER
+    data: 0
+    displayname: '&6Next page: %page%'
+    lore:
+    - '&7Move to the next page'
+  previous_page:
+    material: PAPER
+    data: 0
+    displayname: '&6Previous page: %page%'
+    lore:
+    - '&7Move to the previous page'
 deluxetags:
   example:
     order: 1
     tag: '&8[&bDeluxeTags&8]'
     description: '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.example
+
 ```
 {% endcode %}
 
@@ -84,12 +101,15 @@ deluxetags:
 ```yaml
 # DeluxeTags messages.yml
 # Edit the plugin messages to your liking!
+
 cmd:
   no_permission: '&cYou don''t have &7{0} &cto do that!'
   target_not_online: '&f{0} &cis not online!'
   no_tags_loaded: '&cThere are no tags loaded!'
   no_tags_available: '&cYou don''t have any tags available!'
   no_tags_available_target: '&f{0} &cdon''t have any tags available!'
+  tag_list_fail: '&cYou don''t have any tags loaded.'
+  tag_list_fail_target: '&c{0} has no tags loaded.'
   tags_list: '&f{0} &aavailable tags: &f{1}'
   tags_list_all: '&f{0} &atotal tags loaded: &f{1}'
   tags_list_others: '&f{0} &ahas &f{1} &atotal tags loaded: &f{2}'
@@ -107,6 +127,8 @@ cmd:
   help_admin_create: '&f&oCreate a new tag'
   help_admin_delete: '&f&oDelete an existing tag'
   help_admin_setdesc: '&f&oSet a description for a tag'
+  help_admin_setorder: '&f&oChange the order for a tag'
+  help_admin_setdisplay: '&f&oChange a tag''s display'
   help_version: '&f&oView DeluxeTags version and author information'
   help_reload: '&f&oReload the tags config'
   admin_set_incorrect_usage: '&cIncorrect usage! &7/tags set <player> <tag>'
@@ -129,12 +151,26 @@ cmd:
     <description>'
   admin_set_description_success: '{0} &adescription set to &7: &f{2}'
   admin_set_description_fail: '&f{0} &cis not a loaded tag name!'
+  admin_set_order_incorrect_usage: '&cIncorrect usage! &7/tags setorder <identifier>
+    <order>'
+  admin_set_order_success: '&aOrder &f{0}&a set for &7: &f{1}'
+  admin_set_order_fail: '&f{0} &cis not a loaded tag name!'
+  admin_set_order_not_a_number: '&f{0} &cis not a valid order! It should be a number.'
+  admin_set_order_already_exists: '&cOrder &f{0}&c is already in use.'
+  admin_set_display_incorrect_usage: '&cIncorrect usage! &7/tags setdisplay <identifier>
+    <display>'
+  admin_set_display_success: '{0} &adisplay set to &7: &f{1}'
+  admin_set_display_fail: '&f{0} &cis not a loaded tag name!'
   admin_reload: '&aConfiguration successfully reloaded! &f{0} &atags loaded!'
   incorrect_usage: '&cIncorrect usage! Use &7/tags help'
 gui:
+  placeholders:
+    tag:
+      available: '&aAvailable'
+      unavailable: '&cUnavailable'
   tag_selected: '&aYour tag has been set to &f{0} &7({1}&7)'
   tag_disabled: '&7Your tag has been disabled!'
   page_error: '&cThere was a problem getting the previous page number!'
+
 ```
 {% endcode %}
-
