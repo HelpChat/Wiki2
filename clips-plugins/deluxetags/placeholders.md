@@ -32,12 +32,16 @@ All text between the less-than and greater-than signs (**<>**) is a placeholder/
 
 **DeluxeTags** provides internal placeholders that you can use inside DeluxeTags's GUI and messages.
 
-| Placeholder               | Return Value | Description                                                                                          |
-| ------------------------- | ------------ | ---------------------------------------------------------------------------------------------------- |
-| %player%                  | Text         | Returns the player's name.                                                                           |
-| %displayname%             | Text         | Returns the player's display name.                                                                   |
-| %deluxetags\_tag%         | Text         | Returns the tag.                                                                                     |
-| %deluxetags\_identifier%  | Text         | Returns the tag's identifier.                                                                        |
-| %deluxetags\_description% | Text         | Returns the tag's description.                                                                       |
-| %deluxetags\_amount%      | Number       | Returns the tag's amount.                                                                            |
-| %deluxetags\_available%   | Text         | Returns the configured text (messages.yml) based on whether the player has access to the tag or not. |
+| Placeholder               | Return Value | Description                                                                                                     |
+| ------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------- |
+| %player%                  | Text         | Returns the player's name.                                                                                      |
+| %displayname%             | Text         | Returns the player's display name.                                                                              |
+| %deluxetags\_tag%         | Text         | Returns the tag.                                                                                                |
+| %deluxetags\_identifier%  | Text         | Returns the tag's identifier.                                                                                   |
+| %deluxetags\_description% | Text         | Returns the tag's description.                                                                                  |
+| %deluxetags\_amount%      | Number       | Returns the tag's amount.                                                                                       |
+| %deluxetags\_available%   | Text         | Returns the configured text (messages.yml) based on whether the player has access to the tag or not.            |
+| %previous\_page%          | Number       | Number of the previous page if there  is one (works inside the GUI only).                                       |
+| %current\_page%           | Number       | Number of the current page (works inside the GUI only).                                                         |
+| %next\_page%              | Number       | Number of the next page if there  is one (works inside the GUI only).                                           |
+| %page%                    | Number       | Number of next or previous page if there is one(Only works inside the gui on the next and previous page items). |
