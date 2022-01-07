@@ -24,10 +24,4 @@ All text between the less-than and greater-than signs (**<>**) is a placeholder/
 
 ## Download
 
-To use these placeholders, you have to download **DeluxeTags Expansion**. You can download it automatically by running:\
-
-
-> `/papi ecloud download DeluxeTags`\
-> `/papi reload`
-
-Or you can download it manually from the [eCloud](https://api.extendedclip.com/expansions/deluxetags/), and put it inside the `expansions` folder (folder path: `/plugins/PlaceholderAPI/expansions/`).&#x20;
+**There is no need to download the expansion anymore!** The expansion was moved inside the plugin itself in the 1.8.2 update which means less work for you! As long as you have PlaceholderAPI installed, the expansion will register automatically.
