@@ -304,10 +304,6 @@ If set to true, it will hide the unbreakable tag if the "unbreakable:" option is
 
 If set to true, it will show the item to be at full durability.
 
-{% hint style="danger" %}
-Middle clicking was removed by Mojang in 1.18 and newer!
-{% endhint %}
-
 ## (Shift) Left/Middle/Right click Commands
 
 > ```yaml
@@ -323,6 +319,10 @@ Middle clicking was removed by Mojang in 1.18 and newer!
 
 Sets the actions/commands that should be executed once the player clicks the item. they get executed in order from top to bottom.\
 Check [this](./#action-types) for all action types and action tags.
+
+{% hint style="danger" %}
+Middle clicking was removed by Mojang in 1.18 and newer!
+{% endhint %}
 
 ## (Shift) Left/Middle/Right click Requirement
 
