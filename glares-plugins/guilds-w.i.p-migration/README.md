@@ -1,10 +1,10 @@
 ---
-description: 'RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!'
+description: RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!
 ---
 
-# Guilds \[W.I.P Migration\]
+# Guilds \[W.I.P Migration]
 
-![](../../.gitbook/assets/assets_-ljvb1samgd8bcef8vll_-ljvj_mqe-jg2tyif8gr_-ljvjczthyzhl1ezc3td_logo.png)
+![](../../.gitbook/assets/assets\_-Ljvb1saMgD8bceF8vll\_-Ljvj\_MQe-jg2Tyif8gr\_-LjvjcZTHyzHl1ezC3tD\_logo.png)
 
 ## Description
 
@@ -12,19 +12,19 @@ description: 'RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!'
 
 ## **Features**
 
-* Per-Guild Hierarchy \(Roles\)
-* Tiers \(Includes perks of your choosing\)
-* Claims \(via WorldGuard\)
+* Per-Guild Hierarchy (Roles)
+* Tiers (Includes perks of your choosing)
+* Claims (via WorldGuard)
 * Banks
-* Vaults \(As many as your choose!\)
+* Vaults (As many as your choose!)
 * Buffs
 * Per-Guild Chat
-* Wars \(via Arenas that you make\)
+* Wars (via Arenas that you make)
 * Multilingual
 * **Tons** of GUIs!
 * JSON + MySQL + SQLite support!
 
-## Dependencies **\(soft\)**
+## Dependencies **(soft)**
 
 * [Vault](https://www.spigotmc.org/resources/34315/)
 * [MVdWPlaceholderAPI](https://www.spigotmc.org/resources/11182/)
@@ -38,11 +38,11 @@ You can read more about the dependencies in the plugin on the next page, or by c
 
 * Spigot
 * Paper
-* CatServer? \(I'm leaving this here because I've been told by multiple sources that this plugin seems to be working on whatever this is\).  Note: I've been told this works on cracked servers to an extend but it is not tested, nor is it fully supported.
+* CatServer? (I'm leaving this here because I've been told by multiple sources that this plugin seems to be working on whatever this is).\
+  \
+  Note: I've been told this works on cracked servers to an extend but it is not tested, nor is it fully supported.
 
 ## Translations
 
 In **Guilds**, we always try to support as many languages as we can in order to support more people! The plugin currently supports 20 languages, but not all of them are always up-to-date on the translations. If you speak a language fluently other than English and are interested in translating, please join our [discord](https://helpch.at/discord) and let us know so that we can give you information on how to do that!
-
-
 

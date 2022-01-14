@@ -27,7 +27,7 @@ gui_menus:
 
 ## Basics Menu
 
-{% code title="basics\_menu.yml" %}
+{% code title="basics_menu.yml" %}
 ```yaml
 #  A DeluxeMenus basic configuration guide for beginners
 #=========================================================
@@ -356,7 +356,7 @@ items:
 
 ## Advanced Menu
 
-{% code title="advanced\_menu.yml" %}
+{% code title="advanced_menu.yml" %}
 ```yaml
 #  A DeluxeMenus advanced configuration guide
 #=========================================================
@@ -481,7 +481,7 @@ items:
 
 ## Requirements Menu
 
-{% code title="requirements\_menu.yml" %}
+{% code title="requirements_menu.yml" %}
 ```yaml
 #
 # Requirements tutorial menu v1.0
@@ -724,4 +724,3 @@ items:
     - '[refresh]'
 ```
 {% endcode %}
-

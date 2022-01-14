@@ -256,7 +256,7 @@ worth_has_value: '&7Worth for: &f%material% &ex1/&a$&f%price_1% &ex64/&a$&f%pric
 
 ## Permission Multipliers
 
-{% code title="permission\_multipliers.yml" %}
+{% code title="permission_multipliers.yml" %}
 ```yaml
 # AutoSell permission_multipliers.yml file
 # This file allows you to create custom multipliers that can be attached to players or groups by permission
@@ -284,7 +284,7 @@ permission_multipliers:
 
 ## Shop Multipliers
 
-{% code title="shop\_multipliers.yml" %}
+{% code title="shop_multipliers.yml" %}
 ```yaml
 # AutoSell shop_multipliers.yml file
 # This file allows you to create custom multipliers that can be attached to players or groups by permission
@@ -316,4 +316,3 @@ shop_multipliers:
     - shop2
 ```
 {% endcode %}
-

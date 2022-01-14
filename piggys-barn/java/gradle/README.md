@@ -16,14 +16,14 @@ A build tool as the name suggests, is a tool that helps you build your projects.
 
 ### Installation
 
-First, ensure that you've got the JDK. If not, head over to [AdoptOpenJDK](https://adoptopenjdk.net/), download it, and install it. From here on out, the guide will split into 3 sections, for Windows, Linux, and MacOS.
+First, ensure that you've got the JDK. If not, head over to [AdoptOpenJDK](https://adoptopenjdk.net), download it, and install it. From here on out, the guide will split into 3 sections, for Windows, Linux, and MacOS.
 
 #### Windows
 
 To install gradle on windows, you'll want to download the gradle binary, from their [releases page](https://gradle.org/releases). Move the zip somewhere you'll remember, as we'll come back to it. You'll now want to go to where you wish to install gradle; for me, that's `C:`. Create a folder called gradle, and extract the contents of the binary zip into the folder. The directory structure should look like this:
 
 {% code title="tree -L 3" %}
-```text
+```
 .
 `-- gradle
     `-- gradle-6.5
@@ -38,41 +38,41 @@ To install gradle on windows, you'll want to download the gradle binary, from th
 
 In file explorer, right click `This PC`, and select `Properties`.
 
-![](../../../.gitbook/assets/properties.png)
+![](../../../.gitbook/assets/properties.PNG)
 
 A window will open, showing a brief overview of your computer's specifications. We're interested in the button on the left though, that says `Advanced system settings`. Click it.
 
-![](../../../.gitbook/assets/setings.png)
+![](../../../.gitbook/assets/setings.PNG)
 
 Another window will then open up, called `System Properties`. Ensure you're in the `Advanced` tab, and then click `Environment Variables...` in the bottom right corner.
 
-![](../../../.gitbook/assets/vars.png)
+![](../../../.gitbook/assets/vars.PNG)
 
 In the new window, under `System variables`, locate `Path`, and double click on it. Then, on the right side, click `New`, and write the path to your gradle installation, appending `\bin` onto the end.
 
-![](../../../.gitbook/assets/path.png)
+![](../../../.gitbook/assets/path.PNG)
 
-Now, traverse through all the windows you've opened, making sure to apply all changes you've made. In order, that's buttons:  `OK` -&gt; `OK` -&gt; `OK`. 
+Now, traverse through all the windows you've opened, making sure to apply all changes you've made. In order, that's buttons:  `OK` -> `OK` -> `OK`.&#x20;
 
 #### MacOS
 
 Unlike Windows, the installation process for gradle is far simpler on a mac, due to a nifty piece of software called homebrew. If you don't already have it, it's fairly simple to install. First off, open up a terminal, and execute the following command:
 
-```text
+```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Once brew is installed, installing gradle is as simple as running the following:
 
-```text
+```
 brew install gradle
 ```
 
 #### Linux
 
-Gradle may be available on your distro's official package manager \(apt, yum, etc\), but these are not official builds. Officially, gradle distributes to linux via SDKMAN!, and that's what we'll assume you'll use too. Like homebrew, SDKMAN! can be installed via a script, retrievable via curl \(so make sure you have curl installed!\). Run these commands to install SDKMAN!:
+Gradle may be available on your distro's official package manager (apt, yum, etc), but these are not official builds. Officially, gradle distributes to linux via SDKMAN!, and that's what we'll assume you'll use too. Like homebrew, SDKMAN! can be installed via a script, retrievable via curl (so make sure you have curl installed!). Run these commands to install SDKMAN!:
 
-```text
+```
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
@@ -83,7 +83,7 @@ The second command updates your current terminal session, telling it that sdkman
 
 To test if it's been installed correctly, run `sdk version`, and ensure the output is something like `sdkman 5.0.0+51`. To install gradle with sdkman, run:
 
-```text
+```
 sdk install gradle 6.5
 ```
 
@@ -96,7 +96,7 @@ At the time of writing, the latest gradle version is 6.5. Make sure to double ch
 To test if your gradle installation was successful, open your command prompt, and run `gradle -v`.
 
 {% code title="$ gradle -v" %}
-```text
+```
 ------------------------------------------------------------
 Gradle 6.5
 ------------------------------------------------------------
@@ -116,5 +116,4 @@ OS:           Windows 10 10.0 amd64
 
 Even though you just installed a local distribution of gradle, that's not actually the thing that's going to be building your projects. It's job is merely to provide the ability to initialise gradle projects, from there on though, the gradle wrapper takes over.
 
-The gradle wrapper is essentially a portable version of gradle. There's 2 scripts, `gradlew` and `gradlew.bat`, which handle platform dependence issues. These invoke, and pass arguments to the wrapper jar, which populates the `.gradle` directory, with settings, and the actual gradle binary \(downloads it if it's not there\). You may be asking, what's the point of this? Why can't I use the local installation I just spent ages installing? Well, as I mentioned before, the wrapper is a portable version of gradle, and that's important, because portability is a huge bonus on collaborative projects. It's very useful to be able to fork a project, and being able to build it without needing to manually install a bunch of third party dependencies.
-
+The gradle wrapper is essentially a portable version of gradle. There's 2 scripts, `gradlew` and `gradlew.bat`, which handle platform dependence issues. These invoke, and pass arguments to the wrapper jar, which populates the `.gradle` directory, with settings, and the actual gradle binary (downloads it if it's not there). You may be asking, what's the point of this? Why can't I use the local installation I just spent ages installing? Well, as I mentioned before, the wrapper is a portable version of gradle, and that's important, because portability is a huge bonus on collaborative projects. It's very useful to be able to fork a project, and being able to build it without needing to manually install a bunch of third party dependencies.
