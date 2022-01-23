@@ -1,8 +1,10 @@
 # Developer API
 
-## Build Tool Stuff <a id="hooking-into-the-api"></a>
+## Build Tool Stuff <a href="#hooking-into-the-api" id="hooking-into-the-api"></a>
 
-![](https://img.shields.io/badge/version-3.5.5.9-green)
+
+
+![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/me.glaremasters/guilds?server=https%3A%2F%2Frepo.glaremasters.me%2F)
 
 {% tabs %}
 {% tab title="Maven" %}
@@ -35,7 +37,7 @@ dependencies {
 {% endtab %}
 {% endtabs %}
 
-## Hooking Into the API <a id="hooking-into-the-api"></a>
+## Hooking Into the API <a href="#hooking-into-the-api" id="hooking-into-the-api"></a>
 
 Obtaining the instance of the API is pretty simple by using the singleton that provides static access to the class. You can obtain the instance of the API through the main `Guilds` class.
 
@@ -43,11 +45,11 @@ Obtaining the instance of the API is pretty simple by using the singleton that p
 GuildsAPI api = Guilds.getApi();
 ```
 
-## Using the API <a id="using-the-api"></a>
+## Using the API <a href="#using-the-api" id="using-the-api"></a>
 
 The API can be used for obtaining a bunch of information from the plugin. You can browse over the following section to see what all is provided.
 
-### Getting a Guild object <a id="getting-a-guild-object"></a>
+### Getting a Guild object <a href="#getting-a-guild-object" id="getting-a-guild-object"></a>
 
 We provide a few ways to obtain a Guild object, so feel free to use what is easiest for you.
 
@@ -93,7 +95,7 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
 {% endtab %}
 {% endtabs %}
 
-### Getting a Guild Vault <a id="getting-a-guild-vault"></a>
+### Getting a Guild Vault <a href="#getting-a-guild-vault" id="getting-a-guild-vault"></a>
 
 ```kotlin
    /**
@@ -107,7 +109,7 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
     }
 ```
 
-### Getting a GuildRole <a id="getting-a-guildrole"></a>
+### Getting a GuildRole <a href="#getting-a-guildrole" id="getting-a-guildrole"></a>
 
 ```kotlin
     /**
@@ -120,7 +122,7 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
     }
 ```
 
-### Getting the GuildHandler <a id="getting-the-guildhandler"></a>
+### Getting the GuildHandler <a href="#getting-the-guildhandler" id="getting-the-guildhandler"></a>
 
 The GuildHandler will give you access to anything you might need in the plugin. Please use caution with this method as the content it lets you access to can break the plugin if you use it incorrectly.
 
@@ -134,11 +136,11 @@ The GuildHandler will give you access to anything you might need in the plugin. 
     }
 ```
 
-## Custom Events <a id="custom-events"></a>
+## Custom Events <a href="#custom-events" id="custom-events"></a>
 
 In the plugin we offer a bunch of custom events that you can listen to and modify as you see fit.
 
-### Base GuildEvent <a id="base-guildevent"></a>
+### Base GuildEvent <a href="#base-guildevent" id="base-guildevent"></a>
 
 ```java
     /**
@@ -152,7 +154,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildAddAllyEvent <a id="guildaddallyevent"></a>
+### GuildAddAllyEvent <a href="#guildaddallyevent" id="guildaddallyevent"></a>
 
 ```java
     /**
@@ -167,7 +169,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildCreateEvent <a id="guildcreateevent"></a>
+### GuildCreateEvent <a href="#guildcreateevent" id="guildcreateevent"></a>
 
 ```java
     /**
@@ -180,7 +182,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildDepositMoneyEvent <a id="guilddepositmoneyevent"></a>
+### GuildDepositMoneyEvent <a href="#guilddepositmoneyevent" id="guilddepositmoneyevent"></a>
 
 ```java
     /**
@@ -195,7 +197,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildInviteEvent <a id="guildinviteevent"></a>
+### GuildInviteEvent <a href="#guildinviteevent" id="guildinviteevent"></a>
 
 ```java
     /**
@@ -210,7 +212,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildJoinEvent <a id="guildjoinevent"></a>
+### GuildJoinEvent <a href="#guildjoinevent" id="guildjoinevent"></a>
 
 ```java
     /**
@@ -223,7 +225,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildLeaveEvent <a id="guildleaveevent"></a>
+### GuildLeaveEvent <a href="#guildleaveevent" id="guildleaveevent"></a>
 
 ```java
     /**
@@ -253,7 +255,7 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
 }
 ```
 
-### GuildPrefixEvent <a id="guildprefixevent"></a>
+### GuildPrefixEvent <a href="#guildprefixevent" id="guildprefixevent"></a>
 
 ```java
     private String prefix;
@@ -274,7 +276,7 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
     }
 ```
 
-### GuildRemoveAllyEvent <a id="guildremoveallyevent"></a>
+### GuildRemoveAllyEvent <a href="#guildremoveallyevent" id="guildremoveallyevent"></a>
 
 ```java
     /**
@@ -289,7 +291,7 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
     }
 ```
 
-### GuildRemoveEvent <a id="guildremoveevent"></a>
+### GuildRemoveEvent <a href="#guildremoveevent" id="guildremoveevent"></a>
 
 ```java
     private String name;
@@ -312,7 +314,7 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
     }
 ```
 
-### GuildRenameEvent <a id="guildrenameevent"></a>
+### GuildRenameEvent <a href="#guildrenameevent" id="guildrenameevent"></a>
 
 ```java
     /**
@@ -329,7 +331,7 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
     }
 ```
 
-### GuildTransferEvent <a id="guildtransferevent"></a>
+### GuildTransferEvent <a href="#guildtransferevent" id="guildtransferevent"></a>
 
 ```java
 private Player newMaster;
@@ -350,7 +352,7 @@ private Player newMaster;
     }
 ```
 
-### GuildWithdrawMoneyEvent <a id="guildwithdrawmoneyevent"></a>
+### GuildWithdrawMoneyEvent <a href="#guildwithdrawmoneyevent" id="guildwithdrawmoneyevent"></a>
 
 ```java
     /**
@@ -442,4 +444,3 @@ class GuildWarStartEvent(val challenger: Guild, val defender: Guild) : Event() {
 }
 
 ```
-
