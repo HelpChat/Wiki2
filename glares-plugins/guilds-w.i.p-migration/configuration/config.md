@@ -311,10 +311,14 @@ guild:
         # This is the style used when a message sent in guild chat.
         # As of 3.4.7, this now supports {display-name} to show the display name of a player.
         chat: '&7&l[Guild Chat]&r &b[{role}&b]&r &b {player}: {message}'
+        # This is the style used when a message is sent to ally chat
+        ally-chat: '&7&l[Ally Chat]&r &b[{guild}&b]&r &b {player}: {message}'
         # Similar to the one above, just for the admins spying.
         spy: '&7&l[Guild Spy]&r &b[{guild}&b]&r &b[{role}&b]&r &b {player}: {message}'
         # Would you like to log the guild chat to console?
         log-guild-chat: false
+        # Would you like to log the ally chat to console?
+        log-ally-chat: false
         # Used for {GUILD_FORMATTED} and %guilds_formatted%
         placeholder-design:
             # The left bracket in the placeholder
@@ -330,11 +334,6 @@ guild:
         guild: false
         # Do we want allies to be able to damage each other?
         ally: false
-        # Do we want to respect WorldGuard flags for PVP deny?
-        # This will be checked first before checking same guild and ally.
-        # This is ONLY needed if you have either of the above two options to set true.
-        # ONLY PUT THIS ON TRUE IF YOU HAVE WORLDGUARD INSTALLED OR YOU WILL BREAK STUFF
-        respect-wg-pvp-flag: false
     # Would you like to send players their guild's motd on login?
     motd-on-login: true
 war:
@@ -354,6 +353,9 @@ war:
     join-time: 60
     # How long should we wait to teleport the players and start the war after everyone joined?
     ready-time: 60
+    # How would you like to notify the player about joining the war and the countdowns?
+    # Options: [actionbar, title, subtitle, none]
+    notify-type: actionbar
     post-challenge-commands:
         # Would you like to enable running commands after a challenge ends? (such as broadcasting)
         enabled: false
@@ -391,6 +393,8 @@ timers:
 cost:
     # How much should it cost to create a guild?
     creation: 0.0
+    # How much should it cost to rename a guild? (Leave at 0.0 to disable)
+    rename: 0.0
     # How much should it cost to set the cost of the guild home?
     sethome: 0.0
 # This section of the config will allow you to handle guild land claiming.
@@ -416,6 +420,8 @@ claims:
     # Second Line: WorldGuard Region Name
     # Third Line: Price
     claim-signs: false
+    # The text to look for on a sign for the guild claims
+    claim-sign-text: '[Guild Claim]'
     # Would you like to make it so that claims can only be aquired through the purchasing with signs?
     # This will disable the regular claim commands.
     force-claim-signs: false
@@ -436,4 +442,3 @@ codes:
     amount: 10
 
 ```
-

@@ -10,13 +10,13 @@ description: Easy-to-follow-steps on how to get started with the plugin!
 2. Put the **Guilds jar** file that you downloaded into your **plugins** folder.
 3. Download the [optional dependencies](./#dependencies-soft).
 4. **Start** your server.
-5. Modify the **config.yml**, **language files**, and all other files to your liking for your server. \(All found in `/plugins/Guilds/.`
+5. Modify the **config.yml**, **language files**, and all other files to your liking for your server. (All found in `/plugins/Guilds/.`
 
 ## Requirements
 
 ### Plugin Dependencies
 
-**Vault:** Is a soft dependency but **highly** recommended. It helps handling economy and permissions. It's also used by basically all other plugins that utilize economy.
+**Vault:** Is a soft dependency but **highly** recommended. It helps handle the economy and permissions. It's also used by basically all other plugins that utilize economy.
 
 **Economy Plugin:** An economy plugin is **highly** encouraged to help make the plugin work properly. Some popular ones are [EssentialsX](https://www.spigotmc.org/resources/9089/) and [TheNewEconomy](https://www.spigotmc.org/resources/7805/).
 
@@ -24,9 +24,9 @@ description: Easy-to-follow-steps on how to get started with the plugin!
 
 ### Server Dependencies
 
-**CPU:** The plugin will run just fine on basically any modern CPU. It's otpimized to be smooth and non-intensive to the server it runs on.
+**CPU:** The plugin will run just fine on basically any modern CPU. It's optimized to be smooth and non-intensive to the server it runs on.
 
-**RAM:** The project uses fairly little RAM. Via testing, the smallest it has ran fine on was about 256MB if you were to have about 100 guilds or so running on the server.
+**RAM:** The project uses fairly little RAM. Via testing, the smallest it has run fine on was about 256MB if you were to have about 100 guilds or so running on the server.
 
 **Disk Space:** The project uses very little space. It's optimized to keep itself clean and not bloat up your drive.
 
@@ -35,4 +35,3 @@ description: Easy-to-follow-steps on how to get started with the plugin!
 **MySQL:** If you choose to use MySQL, please make sure your database version is 5.7.8 or **higher**.
 
 **MariaDB:** If you choose to use MariaDB, please make sure your database version is 10.2.7 or **higher**.
-

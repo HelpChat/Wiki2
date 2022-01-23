@@ -8,7 +8,7 @@ description: RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!
 
 ## Description
 
-**Guilds** was created to offer an RPG-type system to servers. It was inspired by players like you who enjoy creating a fun, exciting, and adventurous environment for your server. **Guilds** allow players to join interactive groups of other players, make their own communities on your server, and have a general fun time!
+**Guilds** were created to offer an RPG-type system to servers. It was inspired by players like you who enjoy creating a fun, exciting, and adventurous environment for your server. **Guilds** allow players to join interactive groups of other players, make their own communities on your server, and have a general fun time!
 
 ## **Features**
 
@@ -27,7 +27,6 @@ description: RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!
 ## Dependencies **(soft)**
 
 * [Vault](https://www.spigotmc.org/resources/34315/)
-* [MVdWPlaceholderAPI](https://www.spigotmc.org/resources/11182/)
 * [WorldGuard](https://dev.bukkit.org/projects/worldguard)
 * [PlaceholderAPI](https://placeholderapi.com)
 * [Essentials](https://www.spigotmc.org/resources/9089/)
@@ -40,7 +39,7 @@ You can read more about the dependencies in the plugin on the next page, or by c
 * Paper
 * CatServer? (I'm leaving this here because I've been told by multiple sources that this plugin seems to be working on whatever this is).\
   \
-  Note: I've been told this works on cracked servers to an extend but it is not tested, nor is it fully supported.
+  Note: I've been told this works on cracked servers to an extent but it is not tested, nor is it fully supported.
 
 ## Translations
 
