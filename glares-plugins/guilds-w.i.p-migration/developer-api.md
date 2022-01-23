@@ -93,7 +93,35 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
     }
 ```
 {% endtab %}
+
+{% tab title="Player UUID" %}
+```kotlin
+    /**
+     * Get a guild by a player's uuid
+     *
+     * @param uuid the uuid of the player
+     * @return the guild of the player or null
+     */
+    fun getGuildByPlayerId(uuid: UUID): Guild? {
+        return guildHandler.getGuildByPlayerId(uuid)
+    }
+```
+{% endtab %}
 {% endtabs %}
+
+### Getting a GuildMember object <a href="#getting-a-guild-vault" id="getting-a-guild-vault"></a>
+
+```kotlin
+    /**
+     * Get a guild member by their uuid
+     *
+     * @param uuid the uuid of the player
+     * @return the guild member instance or null
+     */
+    fun getGuildMember(uuid: UUID): GuildMember? {
+        return guildHandler.getGuildMember(uuid)
+    }
+```
 
 ### Getting a Guild Vault <a href="#getting-a-guild-vault" id="getting-a-guild-vault"></a>
 
@@ -166,6 +194,21 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     public GuildAddAllyEvent(Player player, Guild guild, Guild ally) {
         super(player, guild);
         this.ally = ally;
+    }
+```
+
+### GuildBuffEvent <a href="#guildcreateevent" id="guildcreateevent"></a>
+
+```java
+    /**
+     * Called when a guild purchases a buff
+     * @param player the player purchasing the buff
+     * @param guild the guild the player is in
+     * @param buff the buff being purchased
+     */
+    public GuildBuffEvent(Player player, Guild guild, GuildBuff buff) {
+        super(player, guild);
+        this.buff = buff;
     }
 ```
 
@@ -331,6 +374,21 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
     }
 ```
 
+### GuildSetHomeEvent <a href="#guildtransferevent" id="guildtransferevent"></a>
+
+```java
+    /**
+     * Called when a guild sets their home
+     * @param player the player setting the home
+     * @param guild the guild the player is in
+     * @param location the location the home is being set at
+     */
+    public GuildSetHomeEvent(Player player, Guild guild, Location location) {
+        super(player, guild);
+        this.location = location;
+    }
+```
+
 ### GuildTransferEvent <a href="#guildtransferevent" id="guildtransferevent"></a>
 
 ```java
@@ -364,6 +422,21 @@ private Player newMaster;
         super(player, guild);
         this.amount = amount;
     }a
+```
+
+### GuildUpgradeEvent
+
+```java
+    /**
+     * Called when a guild upgrades their tier
+     * @param player the player upgrading the tier
+     * @param guild the guild the player is in
+     * @param tier the new guild tier for the guild
+     */
+    public GuildUpgradeEvent(Player player, Guild guild, GuildTier tier) {
+        super(player, guild);
+        this.tier = tier;
+    }
 ```
 
 ### GuildWarAcceptEvent
