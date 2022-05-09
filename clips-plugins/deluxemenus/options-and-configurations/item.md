@@ -165,6 +165,10 @@ Sets the RGB (Red, Green, Blue) color for leather armor, potions, splash potions
 For RGB option to work on potions and tipped arrows you also need to give it at least one  [potion\_effect](item.md#potion-effects).
 {% endhint %}
 
+{% hint style="success" %}
+You can find a list of default potion colors [`HERE`](https://minecraft.fandom.com/wiki/Effect\_colors/Potions\_table). You will have to use an online converter to convert the hex values to rgb.
+{% endhint %}
+
 ## Display Name
 
 > ```yaml
