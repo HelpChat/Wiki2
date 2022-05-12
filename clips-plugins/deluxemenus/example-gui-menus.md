@@ -66,7 +66,6 @@ To make this work fine you have to download the Player and CheckItem expansions 
 > /papi ecloud download CheckItem\
 > /papi ecloud download Vault\
 > /papi ecloud download TokenEnchant\
-> /papi ecloud download PlayerPoints\
 > /papi reload
 
 * [x] \*\*\*\*[**Vault**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L18-L59)\*\*\*\*
