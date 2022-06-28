@@ -51,12 +51,12 @@ guild-buffs:
 #      - FAST_DIGGING;0;60
     # The permission required to purchase the buff.
 #      permission: example.perm.here
-    # Would you like to execute commands on the player that bought the buff for the guild?
+    # Would you like to execute commands on the player that bought the buff for the guild? Supports {player}, {buyer}, {buff_name}.
 #      clicker:
 #        enabled: false
 #        commands:
 #        - ''
-    # Would you like to execute commands on the guild that bough the buff?
+    # Would you like to execute commands on the guild that bough the buff? Supports {player}, {buyer}, {buff_name}.
 #      guild:
 #        enabled: false
 #        commands:
@@ -307,4 +307,3 @@ guild-buffs:
         - ''
 
 ```
-
