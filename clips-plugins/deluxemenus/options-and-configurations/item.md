@@ -34,6 +34,7 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [EpicHeads](https://songoda.com/marketplace/product/26) (`heads-<ID>`).
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) (`hdb-<ID>`).
 > > * [Placeholder](https://helpch.at/placeholders) material (`placeholder-%player_item_in_hand%`).
+> > * [ItemsAdder item](htttps://www.spigotmc.org/resources/73355) (`itemsadder-<namespace:id>`).
 > > * Item in main hand (`main_hand`).
 > > * Item in off hand (`off_hand`).
 > > * Items in armor equipment slots (`armor_helmet`, `armor_chestplate`, `armor_leggings` and `armor_boots`)
