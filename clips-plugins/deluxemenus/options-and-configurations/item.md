@@ -31,8 +31,8 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [BaseHead](https://minecraft-heads.com) (`basehead-<base64 (Value field in the head's give command)>`).
 > > * Minecraft Texture (`texture-<id>`)\
 > >   \- The `id` is what's after `https://textures.minecraft.net/textures/`
-> > * [EpicHeads](https://songoda.com/marketplace/product/26) (`heads-<ID>`).
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) (`hdb-<ID>`).
+> > * [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) material (`itemsadder-namespace:name`)
 > > * [Placeholder](https://helpch.at/placeholders) material (`placeholder-%player_item_in_hand%`).
 > > * Item in main hand (`main_hand`).
 > > * Item in off hand (`off_hand`).
@@ -85,7 +85,16 @@ Sets the item's amount in the menu.
 
 Sets the item's amount in the menu using a [placeholder](https://helpch.at/placeholders).
 
-## NBT Tags / CustomModelData
+## Model Data
+
+> ```yaml
+> model_data: #
+> ```
+
+Allows you to set a CustomModelData for your item. Example of usage:\
+`model_data: 14`
+
+## NBT Tags
 
 > ```yaml
 > nbt_string: '<Key>:<StringValue>'
@@ -97,10 +106,12 @@ Sets the item's amount in the menu using a [placeholder](https://helpch.at/place
 > - '<Key>:<IntegerValue>'
 > - '<Key>:<IntegerValue>'
 > ```
->
-> Custom Model Data Example: `nbt_int: CustomModelData:1`
 
-Allows you to add custom nbt tags to your items like model data so you can display custom models provided by your server resource pack.
+Allows you to add custom NBT tags to your items like model data.
+
+{% hint style="danger" %}
+Deprecated! Should use the new [model\_data](item.md#model-data) option instead for CustomModelData. You can still use it for other tags tho.
+{% endhint %}
 
 {% hint style="success" %}
 The nbt tags options support PlaceholderAPI placeholders now!
