@@ -31,15 +31,20 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [BaseHead](https://minecraft-heads.com) (`basehead-<base64 (Value field in the head's give command)>`).
 > > * Minecraft Texture (`texture-<id>`)\
 > >   \- The `id` is what's after `https://textures.minecraft.net/textures/`
-> > * [EpicHeads](https://songoda.com/marketplace/product/26) (`heads-<ID>`).
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) (`hdb-<ID>`).
+> > * [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) material (`itemsadder-namespace:name`)
 > > * [Placeholder](https://helpch.at/placeholders) material (`placeholder-%player_item_in_hand%`).
 > > * Item in main hand (`main_hand`).
 > > * Item in off hand (`off_hand`).
 > > * Items in armor equipment slots (`armor_helmet`, `armor_chestplate`, `armor_leggings` and `armor_boots`)
 > > * Water bottle material is: `water_bottle`
+> > * Air material is: `air`
 
 Sets the material of the item in the menu.
+
+{% hint style="success" %}
+Now supports AIR as a valid material. The item will be an empty slot with just click commands and click requirements.
+{% endhint %}
 
 {% hint style="info" %}
 For version 1.12.2 or older:\
@@ -110,7 +115,7 @@ Allows you to set a CustomModelData for your item. Example of usage:\
 Allows you to add custom NBT tags to your items like model data.
 
 {% hint style="danger" %}
-Deprecated! Should use the new model\_data option instead for CustomModelData. You can still use it for other tags tho.
+Deprecated! Should use the new [model\_data](item.md#model-data) option instead for CustomModelData. You can still use it for other tags tho.
 {% endhint %}
 
 {% hint style="success" %}
@@ -128,7 +133,21 @@ The nbt tags options support PlaceholderAPI placeholders now!
 > > * [Dye colors list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
 > > * [Pattern types list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/banner/PatternType.html).
 
-Allows you to create your custom banner (Used if the [material](item.md#material) is a banner).
+Allows you to create your custom banners and shields.
+
+{% hint style="success" %}
+Now with support for SHIELDS! Make sure to also check the new [base\_color](item.md#base-color) option.
+{% endhint %}
+
+## Base Color
+
+> ```yaml
+> base_color: <dyecolor>
+> ```
+>
+> > * [Dye colors list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
+
+Allows you to specify base colors for shields and also for banners on 1.12.2 and lower versions.
 
 ## Item Flags
 
@@ -158,16 +177,26 @@ Allows you to set effects (Used if the [material](item.md#material) is a potion,
 For potion\_effects to work on potions and tipped arrows you also need to give it an [RGB](item.md#rgb) value.
 {% endhint %}
 
+## Entity Type
+
+> ```yaml
+> entity_type: <entitytype>
+> ```
+>
+> > * [Entity types list.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html)
+
+This is mainly targeted for 1.12.2 and lower servers and allows you to specify monster egg types and also monster spawner types.
+
 ## RGB <a href="#rgb" id="rgb"></a>
 
 > ```yaml
-> rgb: #,#,#
+> rgb: #, #, #
 > ```
 >
 > > **Example:**
 > >
 > > ```yaml
-> > rgb: 38,192,210
+> > rgb: 38, 192, 210
 > > ```
 
 Sets the RGB (Red, Green, Blue) color for leather armor, potions, splash potions, tipped arrows and firework stars
