@@ -38,8 +38,13 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * Item in off hand (`off_hand`).
 > > * Items in armor equipment slots (`armor_helmet`, `armor_chestplate`, `armor_leggings` and `armor_boots`)
 > > * Water bottle material is: `water_bottle`
+> > * Air material is: `air`
 
 Sets the material of the item in the menu.
+
+{% hint style="success" %}
+Now supports AIR as a valid material. The item will be an empty slot with just click commands and click requirements.
+{% endhint %}
 
 {% hint style="info" %}
 For version 1.12.2 or older:\
@@ -131,7 +136,7 @@ The nbt tags options support PlaceholderAPI placeholders now!
 Allows you to create your custom banners and shields.
 
 {% hint style="success" %}
-Now with support for SHIELDS! Make sure to also check the new base\_color option.
+Now with support for SHIELDS! Make sure to also check the new [base\_color](item.md#base-color) option.
 {% endhint %}
 
 ## Base Color
