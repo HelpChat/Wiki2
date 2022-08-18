@@ -177,16 +177,26 @@ Allows you to set effects (Used if the [material](item.md#material) is a potion,
 For potion\_effects to work on potions and tipped arrows you also need to give it an [RGB](item.md#rgb) value.
 {% endhint %}
 
+## Entity Type
+
+> ```yaml
+> entity_type: <entitytype>
+> ```
+>
+> > * [Entity types list.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html)
+
+This is mainly targeted for 1.12.2 and lower servers and allows you to specify monster egg types and also monster spawner types.
+
 ## RGB <a href="#rgb" id="rgb"></a>
 
 > ```yaml
-> rgb: #,#,#
+> rgb: #, #, #
 > ```
 >
 > > **Example:**
 > >
 > > ```yaml
-> > rgb: 38,192,210
+> > rgb: 38, 192, 210
 > > ```
 
 Sets the RGB (Red, Green, Blue) color for leather armor, potions, splash potions, tipped arrows and firework stars
