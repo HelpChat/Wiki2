@@ -128,7 +128,21 @@ The nbt tags options support PlaceholderAPI placeholders now!
 > > * [Dye colors list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
 > > * [Pattern types list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/banner/PatternType.html).
 
-Allows you to create your custom banner (Used if the [material](item.md#material) is a banner).
+Allows you to create your custom banners and shields.
+
+{% hint style="success" %}
+Now with support for SHIELDS! Make sure to also check the new base\_color option.
+{% endhint %}
+
+## Base Color
+
+> ```yaml
+> base_color: <dyecolor>
+> ```
+>
+> > * [Dye colors list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
+
+Allows you to specify base colors for shields and also for banners on 1.12.2 and lower versions.
 
 ## Item Flags
 
