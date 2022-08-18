@@ -19,6 +19,7 @@ description: List of commands and permissions for the plugin
 | /dm open \<menu> \<viewer> -p:\<target> | deluxemenus.placeholdersfor | Opens the specified menu to the specified player but the placeholders in it will be parsed as the specified target.                                                     |
 | /dm list                                | deluxemenus.list            | Lists loaded menus.                                                                                                                                                     |
 | /dm execute \<player> \<action>         | Player needs to be Op       | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info. |
+| /dm dump \<menu-name>                   | deluxemenus.admin           | Create a paste bin with the menu and also some other important debugging stuff like server version and java version.                                                    |
 | /dm reload                              | deluxemenus.reload          | Reloads the plugin's files.                                                                                                                                             |
 | /dm reload \<menu>                      | deluxemenus.reload          | Reload a menu.                                                                                                                                                          |
 

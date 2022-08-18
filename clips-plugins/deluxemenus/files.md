@@ -13,7 +13,7 @@ description: The plugin's configuration files
 # A full wiki on how to use this plugin can be found at:
 # https://github.com/help-chat/DeluxeMenus/wiki
 
-debug: false
+debug: HIGHEST
 check_updates: true
 gui_menus:
   basics_menu:

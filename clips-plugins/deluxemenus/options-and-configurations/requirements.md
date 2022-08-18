@@ -301,7 +301,7 @@ To invert the requirement (Check if the input doesn't contain the output) you ca
 > ```
 
 Checks if `input:` contains the regular expression in `regex:`.\
-Visit [this site](https://regexr.com) to create regular expressions easily.
+Visit [this site](https://regexr.com/) to create regular expressions easily.
 
 To invert the requirement (Check if the input doesn't contain the regular expression) you can simply add the exclamation mark before the type name (like this `type: "!regex matches"`).
 
@@ -314,6 +314,10 @@ To invert the requirement (Check if the input doesn't contain the regular expres
 > ```
 
 Compares `input:` with `output:`.
+
+{% hint style="success" %}
+Now both the input and the output support floating point values.
+{% endhint %}
 
 #### Available options
 
