@@ -123,9 +123,9 @@ Transfer a guild to another member by force
 **Permission**: guilds.command.admin \
 Force upgrade a guild's tier.
 
-`/guild admin vault <guild> <vault #>` \
+`/guild admin vault <guild>` \
 **Permission**: guilds.command.admin \
-Open any guild's vault
+Open any guild's vault GUI
 
 `/guild reload` \
 **Permission**: guilds.command.admin \
