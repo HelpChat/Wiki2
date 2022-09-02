@@ -33,3 +33,11 @@ If a player has access to multiple formats, the priority will decide what format
 {% hint style="info" %}
 Lower Number = Higher Priority
 {% endhint %}
+
+## Permissions
+
+Formats are given away to players using permissions. Every format has a similar permission and that is: `chatchat.format<format-name>`
+
+## Default Format
+
+In your `formats.yml` file, you can specify the name of the default format. You must also create a format in there with that name. The default format will be used when a user has no permission for any other format.
