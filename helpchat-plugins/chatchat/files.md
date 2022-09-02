@@ -1,5 +1,5 @@
 ---
-description: List of default plugin files.
+description: List of all the default files the plugin contains.
 ---
 
 # Files
