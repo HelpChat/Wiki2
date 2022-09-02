@@ -1,5 +1,5 @@
 ---
-description: All the info about formats, how they work, permissions they require, etc.
+description: Everything about formats, how they work, permissions they require, etc.
 ---
 
 # Formats
