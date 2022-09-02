@@ -6,6 +6,7 @@
 
 * [ChatChat](helpchat-plugins/chatchat/README.md)
   * [Commands](helpchat-plugins/chatchat/commands.md)
+  * [Permissions](helpchat-plugins/chatchat/permissions.md)
   * [Formats](helpchat-plugins/chatchat/formats.md)
   * [Channels](helpchat-plugins/chatchat/channels.md)
   * [API](helpchat-plugins/chatchat/api/README.md)
