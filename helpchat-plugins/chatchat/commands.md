@@ -26,4 +26,19 @@ description: List of all commands and the required permission that ChatChat has.
 
 ## Channel Commands
 
-In ChatChat, each channel can have open commands. Those commands can be set when creating the channels in `plugins/ChatChat/channels.yml` under the toggle-command option.
+In ChatChat, each channel can have open commands. Those commands can be set when creating the channels in `plugins/ChatChat/channels.yml` under the toggle-command option. Those commands are registered on every server restart.
+
+## Command Overriding
+
+If by any chance there are other plugins taking over a command that you want ChatChat to use, or the other way around you can select which one is going to be used in the `commands.yml` bukkit file.
+
+**Example:**\
+\
+Let's say you have a plugin that takes over the /msg command and you want ChatChat to take over. You open the `commands.yml` file and add the following code under `aliases:.`
+
+```yaml
+  msg:
+  - chatchat:msg $1-
+```
+
+After adding it don't forget to restart the server.
