@@ -6,6 +6,7 @@
 
 * [ChatChat](helpchat-plugins/chatchat/README.md)
   * [Commands](helpchat-plugins/chatchat/commands.md)
+  * [Formats](helpchat-plugins/chatchat/formats.md)
 
 ## Clip's Plugins
 
