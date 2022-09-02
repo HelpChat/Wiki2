@@ -16,7 +16,7 @@ A build tool as the name suggests, is a tool that helps you build your projects.
 
 ### Installation
 
-First, ensure that you've got the JDK. If not, head over to [AdoptOpenJDK](https://adoptopenjdk.net), download it, and install it. From here on out, the guide will split into 3 sections, for Windows, Linux, and MacOS.
+First, ensure that you've got the JDK. If not, head over to [AdoptOpenJDK](https://adoptopenjdk.net/), download it, and install it. From here on out, the guide will split into 3 sections, for Windows, Linux, and MacOS.
 
 #### Windows
 
