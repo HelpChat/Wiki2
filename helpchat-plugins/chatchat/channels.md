@@ -4,6 +4,8 @@ description: Everything about channels, how they work, permissions they require,
 
 # Channels
 
+## Channel
+
 Channels are made out of 6 components, some of which are optional.
 
 ### Channel Name
@@ -34,3 +36,17 @@ If a channel has a radius, the messages will only be sent to players within x bl
 
 The channel type option is used to determin the channel's type. By default, ChatChat registers one channel type caleld `default`. When it finds Towny installed it registers 2 new channel types: `towny_town` and `towny_nation`. Other plugins can also use the API to register new channel types.\
 **Default Value:** `default`
+
+## Permissions:
+
+Channels have 2 main permissions and some secondary ones:
+
+|              Permission              |                 Description                |
+| :----------------------------------: | :----------------------------------------: |
+| chatchat.channel.use.\<channel-name> |   Ability to send messages in a channel.   |
+| chatchat.channel.see.\<channel-name> | Ability to see messages sent in a channel. |
+|    chatchat.channel.bypass-radius    | Ability to bypass the radius in a channel. |
+
+## Default Channel
+
+In your `channels.yml` file, you can specify the name of the default channel. You must also create a channel in there with that name. The default channel will be given to players when they first join the server and also messages sent by people with no permission to other channels will be sent in the default channel.
