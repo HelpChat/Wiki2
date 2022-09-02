@@ -9,6 +9,7 @@
   * [Formats](helpchat-plugins/chatchat/formats.md)
   * [Channels](helpchat-plugins/chatchat/channels.md)
   * [Files](helpchat-plugins/chatchat/files.md)
+  * [API](helpchat-plugins/chatchat/api.md)
 
 ## Clip's Plugins
 
