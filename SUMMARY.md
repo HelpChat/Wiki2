@@ -2,6 +2,11 @@
 
 * [Welcome](README.md)
 
+## HelpChat Plugins
+
+* [ChatChat](helpchat-plugins/chatchat/README.md)
+  * [Commands](helpchat-plugins/chatchat/commands.md)
+
 ## Clip's Plugins
 
 * [AutoSell](clips-plugins/autosell/README.md)
@@ -126,7 +131,7 @@
   * [Gradle](piggys-barn/java/gradle/README.md)
     * [Argument](piggys-barn/java/gradle/argument.md)
     * [Tutorial](piggys-barn/java/gradle/tutorial.md)
-  * [How to run your minecraft server\(s\) in IntelliJ](piggys-barn/java/how-to-run-your-minecraft-server-s-in-intellij.md)
+  * [How to run your minecraft server(s) in IntelliJ](piggys-barn/java/how-to-run-your-minecraft-server-s-in-intellij.md)
   * [How to run your program in IntelliJ](piggys-barn/java/how-to-run-your-program-in-intellij.md)
   * [Hot Swapping](piggys-barn/java/hot-swapping.md)
   * [Cheat Sheet](piggys-barn/java/cheat-sheet.md)
@@ -137,4 +142,3 @@
 * [Paste](https://paste.helpch.at/)
 * [YAML Parser](https://yaml.helpch.at/)
 * [Java Docs](https://helpch.at/docs)
-
