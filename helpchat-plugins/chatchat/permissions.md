@@ -5,7 +5,7 @@ description: A list of all permissions used by the plugin and a simple descripti
 # Permissions
 
 {% hint style="info" %}
-Some permissions might have limited descriptions on this page but might have more detailed descriptions on other pages. This page is just for listing all commands.
+Some permissions might have limited descriptions on this page but might have more detailed descriptions on other pages. This page is just for listing all permissions.
 {% endhint %}
 
 |                Permission                |                                                               Description                                                              |
