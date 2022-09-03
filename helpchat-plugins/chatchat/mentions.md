@@ -22,6 +22,14 @@ The user's name will be highlighted in the message to both the sender and the me
 
 If the mentioned user has their personal mentions turned off and the person mentioning them doesn't have the bypass permission the receiver will still see the highlighted name but they won't hear the sound. Also the sender won't see the highlighted name.
 
+### Permissions:
+
+|                Permission                |                                       Description                                       |
+| :--------------------------------------: | :-------------------------------------------------------------------------------------: |
+|         chatchat.mention.personal        |               Get access to mention other online users in public messages.              |
+|      chatchat.mention.personal.block     |                    Get access to toggle personal mentions on or off.                    |
+| chatchat.mention.personal.block.override | Get access to mention any online users even if they turned their personal mentions off. |
+
 ### Channel Mentions
 
 These are used to mention all the viewers of the channel the message is sent in.
@@ -35,3 +43,11 @@ To use them you just type in chat the mention prefix that you can modify in the 
 The mention will be highlighted in the message to both the sender and the users that receive messages in that channel. The recipients will also hear a sound. The sound is customizable.
 
 If there are receivers that have their channel mentions turned off and the sender does not have the the bypass permission, they will not see the highlighted mention and will not hear sound but everyone else will.
+
+### Permissions:
+
+|             Permission            |                                          Description                                         |
+| :-------------------------------: | :------------------------------------------------------------------------------------------: |
+|      chatchat.mention.channel     |                                Get access to mention channels.                               |
+|   chatchat.mention.channel.block  |                       Get access to toggle channel mentions on or off.                       |
+| chatchat.mention.channel.override | Get access to mention channels including people that have turned their channel mentions off. |
