@@ -9,5 +9,5 @@ You can find more information about the API by reading the javadocs! (TO BE ADDE
 {% endhint %}
 
 {% hint style="danger" %}
-Currently the API is going thru constant changes so we are not going to post anything until we feel that it is in a stable state.
+Currently the API is going thru constant changes so information here might be missing or outdated!
 {% endhint %}
