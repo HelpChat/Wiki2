@@ -9,6 +9,7 @@
   * [Permissions](helpchat-plugins/chatchat/permissions.md)
   * [Formats](helpchat-plugins/chatchat/formats.md)
   * [Channels](helpchat-plugins/chatchat/channels.md)
+  * [Mentions](helpchat-plugins/chatchat/mentions.md)
   * [API](helpchat-plugins/chatchat/api/README.md)
     * [Events](helpchat-plugins/chatchat/api/events.md)
   * [Files](helpchat-plugins/chatchat/files.md)
