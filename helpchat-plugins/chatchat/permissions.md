@@ -18,7 +18,7 @@ Some permissions might have limited descriptions on this page but might have mor
 |            chatchat.socialspy            |                                             Get access to spy on other's private messages.                                             |
 |              chatchat.ignore             |                                                       Get access to ignore users.                                                      |
 |          chatchat.ignore.bypass          |                                                   Get access to bypass user ignores.                                                   |
-|               chatchat.utf               |       Get access to send any UTF-8 characters in chat. (Default only get access to [0-127 and 248](https://www.asciitable.com/)).      |
+|               chatchat.utf               |  Get access to send any UTF-8 characters in chat. (by default, users only get access to [0-127 and 248](https://www.asciitable.com/)). |
 |               chatchat.url               |                                               Get access to send clickable URLs in chat.                                               |
 |   chatchat.channel.see.\<channel-name>   |                                                Get access to send messages in a channel.                                               |
 |   chatchat.channel.use.\<channel-name>   |                                              Get access to see messages sent in a channel.                                             |
