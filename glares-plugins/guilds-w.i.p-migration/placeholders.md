@@ -19,14 +19,16 @@ format: '<{GUILD} {DISPLAYNAME}> {MESSAGE}'
 
 ### Leaderboard Placeholders
 
-| PlaceholderAPI                   | Description                                  |   |
-| -------------------------------- | -------------------------------------------- | - |
-| %guilds\_top\_wins\_name\_#%     | Name of guild with wins in # place           |   |
-| %guilds\_top\_wins\_amount\_#%   | Amount of wins the guild in # place has      |   |
-| %guilds\_top\_losses\_name\_#%   | Name of guild with losses in # place         |   |
-| %guilds\_top\_losses\_amount\_#% | Amount of losses the guild in # place has    |   |
-| %guilds\_top\_wlr\_name\_#%      | Name of guild with win/loss ratio in # place |   |
-| %guilds\_top\_wlr\_amount\_#%    | The win/loss ratio of the guild in # place   |   |
+| PlaceholderAPI                   | Description                                  |
+| -------------------------------- | -------------------------------------------- |
+| %guilds\_top\_wins\_name\_#%     | Name of guild with wins in # place           |
+| %guilds\_top\_wins\_amount\_#%   | Amount of wins the guild in # place has      |
+| %guilds\_top\_losses\_name\_#%   | Name of guild with losses in # place         |
+| %guilds\_top\_losses\_amount\_#% | Amount of losses the guild in # place has    |
+| %guilds\_top\_wlr\_name\_#%      | Name of guild with win/loss ratio in # place |
+| %guilds\_top\_wlr\_amount\_#%    | The win/loss ratio of the guild in # place   |
+
+### Regular Placeholders
 
 | PlaceholderAPI             | MVdWPlaceholderAPI                         | EssentialsXChat           |
 | -------------------------- | ------------------------------------------ | ------------------------- |
