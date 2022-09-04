@@ -2,9 +2,7 @@
 
 ## Build Tool Stuff <a href="#hooking-into-the-api" id="hooking-into-the-api"></a>
 
-
-
-![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/me.glaremasters/guilds?server=https%3A%2F%2Frepo.glaremasters.me%2F)
+<figure><img src="https://img.shields.io/nexus/r/me.glaremasters/guilds?nexusVersion=3&#x26;server=https%3A%2F%2Frepo.glaremasters.me" alt=""><figcaption><p>Sonatype Nexus (Releases)</p></figcaption></figure>
 
 {% tabs %}
 {% tab title="Maven" %}
