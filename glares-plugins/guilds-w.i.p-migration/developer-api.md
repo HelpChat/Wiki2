@@ -33,6 +33,18 @@ dependencies {
 }
 ```
 {% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+repositories {    
+    maven("https://repo.glaremasters.me/repository/public/")
+}
+
+dependencies {
+    compileOnly("me.glaremasters:guilds:versions")
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ## Hooking Into the API <a href="#hooking-into-the-api" id="hooking-into-the-api"></a>
