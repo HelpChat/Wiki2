@@ -4,7 +4,7 @@ description: Few examples to help you make your own!
 
 # Example GUI menus
 
-## [**Kits**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/kits.yml)
+## [**Kits**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/kits.yml)
 
 A simple example to show you how you can make a Kits menu that displays 3 different items for each kit, when the kit is available to claim, when it's on cooldown and when it's unavailable (Locked).
 
@@ -13,7 +13,7 @@ To make this work fine you have to download [Essentials](https://ci.ender.zone/j
 > /papi ecloud download Essentials\
 > /papi reload
 
-## [**Mines**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/mines.yml)
+## ****[**Mines**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/mines.yml)****
 
 A simple example to show you how you can make a Mines menu that displays 3 items for each mine, when the mine is unlocked, when it's the current mine and when it's locked.
 
@@ -23,7 +23,7 @@ To make this work fine you have to download [EzRanksPro](https://www.spigotmc.or
 > /papi ecloud download EzRanksPro\
 > /papi reload
 
-## ****[**Ranks**](https://github.com/HelpChat/DeluxeMenus/blob/master/gui\_menus/ranks.yml)****
+## ****[**Ranks**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/ranks.yml)****
 
 A simple example to show you how you can make a Ranks menu that displays 2 items for each rank, when the rank is not purchased and when the rank or a higher rank is purchased
 
@@ -33,7 +33,7 @@ To make this work fine you have to download [LuckPerms](https://www.spigotmc.org
 > /papi ecloud download LuckPerms\
 > /papi reload
 
-## [**Server Selector**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/serverselector.yml)
+## ****[**Server Selector**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/serverselector.yml)****
 
 A simple example to show you how you can make a Server Selector menu that displays 2 different items for each server, when the server is online and when it's offline.
 
@@ -56,7 +56,7 @@ So now we can show a different item, if the server is offline. But keep in mind 
 
 The second item is easier. Because we are already connected, so we just need to send a message. And we can show the amount of players on the server with the **%server\_online%** placeholder.
 
-## [**Store**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml)
+## ****[**Store**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/store.yml)****
 
 A simple example to show you how you can make a Store/Shop menu that you can buy/sell items from using various economic systems.
 
@@ -73,6 +73,6 @@ To make this work fine you have to download the Player and CheckItem expansions 
 * [x] \*\*\*\*[**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L108-L150)\*\*\*\*
 * [x] [**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L152-L195)\*\*\*\*
 
-## [**Meta**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/meta.yml)
+## ****[**Meta**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/meta.yml)****
 
 A simple example to show you how [meta](options-and-configurations/#actions-types) works.
