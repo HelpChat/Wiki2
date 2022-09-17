@@ -66,10 +66,14 @@ It has **GUI** options to manage the GUI menu, and **Item** options to manage ev
 
 These tags can be added with the action (e.g. `- '[message] example<delay=20>'`).
 
-| Tag                 | Description                                                                    |
-| ------------------- | ------------------------------------------------------------------------------ |
-| `<delay=<time>>`    | Executes the action after the specified delay (in ticks, 20 ticks = 1 second). |
-| `<chance=<chance>>` | Sets a chance to execute the action.                                           |
+| Tag                 | Description                                                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<delay=<time>>`    | Executes the action after the specified delay (in ticks, 20 ticks = 1 second).                                                                   |
+| `<chance=<chance>>` | Sets a chance to execute the action. Can be from 0 to 100 where 0 means that the action will never execute and 100 means it will always execute. |
+
+{% hint style="danger" %}
+To note is that chance tags are per action. So if you have 2 action, both with a 50% chance, there won't be just 1 of the actions that execute but instead it will could be none, 1 or both.
+{% endhint %}
 
 ## RGB/Hex
 
