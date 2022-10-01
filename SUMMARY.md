@@ -5,6 +5,7 @@
 ## HelpChat Plugins
 
 * [ChatChat](helpchat-plugins/chatchat/README.md)
+  * [Placeholders](helpchat-plugins/chatchat/placeholders.md)
   * [Commands](helpchat-plugins/chatchat/commands.md)
   * [Permissions](helpchat-plugins/chatchat/permissions.md)
   * [Formats](helpchat-plugins/chatchat/formats.md)
