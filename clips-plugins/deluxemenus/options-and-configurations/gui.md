@@ -6,19 +6,17 @@ description: All GUI menu related options & configurations
 
 ## Syntax
 
-> ```yaml
-> menuname:
->   menu_title: "TEXT"
->   open_command: COMMAND
->   open_requirement: EXPRESSION
->   open_commands:
->     - "[ACTIONTYPE] ACTION"
->     - "[ACTIONTYPE] ACTION"
->   inventory_type: "TEXT"
->   size: #
->   update_interval: #
->   items:
-> ```
+> <pre class="language-yaml"><code class="lang-yaml"><strong>menu_title: "TEXT"
+> </strong>open_command: COMMAND
+> open_requirement: EXPRESSION
+> open_commands:
+>   - "[ACTIONTYPE] ACTION"
+>   - "[ACTIONTYPE] ACTION"
+> inventory_type: "TEXT"
+> size: #
+> update_interval: #
+> items:
+> </code></pre>
 
 ## Menu Title
 
@@ -143,7 +141,7 @@ Registers the open command with the server.
 Must be manually added to the menu.
 {% endhint %}
 
-### Args (Arguments) <a href="args" id="args"></a>
+### Args (Arguments) <a href="#args" id="args"></a>
 
 > ```yaml
 > args:
