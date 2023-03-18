@@ -2,6 +2,26 @@
 
 ## VoteParty Changelogs
 
+{% content-ref url="v2.24.md" %}
+[v2.24.md](v2.24.md)
+{% endcontent-ref %}
+
+{% content-ref url="v2.24-1.md" %}
+[v2.24-1.md](v2.24-1.md)
+{% endcontent-ref %}
+
+{% content-ref url="v2.24-2.md" %}
+[v2.24-2.md](v2.24-2.md)
+{% endcontent-ref %}
+
+{% content-ref url="v2.24-3.md" %}
+[v2.24-3.md](v2.24-3.md)
+{% endcontent-ref %}
+
+{% content-ref url="v2.24-4.md" %}
+[v2.24-4.md](v2.24-4.md)
+{% endcontent-ref %}
+
 {% content-ref url="v2.24-5.md" %}
 [v2.24-5.md](v2.24-5.md)
 {% endcontent-ref %}
