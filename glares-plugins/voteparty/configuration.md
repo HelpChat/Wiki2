@@ -35,8 +35,15 @@ settings:
 # You will be required to do everything manually.
 # Over time, more plugins may become supported!
 hooks:
-    # Would you like to listen to NuVotifier for incoming votes?
-    nuvotifier: true
+    # This property represents whether or not to listen to NuVotifier for incoming votes.
+    # If the backend is set to true, it assumes that the NuVotifier plugin is already enabled on the backend Spigot server,
+    # and pluginMessaging does not need to be enabled. If the backend is disabled, pluginMessaging should be enabled to allow
+    # NuVotifier to work on the proxy server. Additionally, make sure that the channel specified here matches the one set in
+    # your NuVotifier configuration, and that the "method" in your NuVotifier config is set to "pluginMessaging".
+    votifier:
+        backend: true
+        pluginMessaging: false
+        pluginMessageChannel: nuvotifier:votes
 crate:
     enabled: true
     lore: 
@@ -141,6 +148,19 @@ party:
         commands: 
         - broadcast A Vote Party has started!
 voting:
+    # Would you like to validate the usernames being sent from voting sites?
+    validate_names: false
+    # This is the regex for username checking. The default should apply to most accounts, but you are given access to modify in case you need to.
+    name_regex: ^[a-zA-Z0-9_]{2,16}$
+    # This is how long (in hours) the plugin should check that it has been since a user has voted before reminding them to vote.
+    reminder_interval: 24
+    # This is how many votes the plugin should check that a user has in the last X amount of time (defined above) before reminding them to vote.
+    # For example, if you set the reminder interval to 24 hours, and the reminder threshold to 3, the plugin will check if the user has voted 3 times in the last 24 hours.
+    # If they have, they will not be reminded to vote until they have voted 3 times in the last 24 hours.
+    reminder_threshold: 3
+    # How often in seconds should players be reminded to vote? (Default is 10 minutes)
+    # Note: A FULL reboot is required for this to take effect if changed after the plugin has been loaded.
+    reminder_interval_seconds: 600
     # If a player's inventory is full when voting, do you want to send the vote to a /vote claim?
     claim_if_full: true
     # Configuration for chance rewards to be given for voting.
@@ -231,4 +251,5 @@ voting:
             - votes: 5
               commands:
               - give %player_name% STEAK 10
+
 ```

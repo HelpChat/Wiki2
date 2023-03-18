@@ -1,6 +1,5 @@
 ---
 description: Let your players spit like Llamas
-coverY: 20.129805292061906
 ---
 
 # Spit
