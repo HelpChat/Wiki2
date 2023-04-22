@@ -8,7 +8,7 @@ Hot swapping (in relation to software) refers to the process of seamlessly swapp
 
 The default JVM (HotSpot) actually has support for this out of the box, albeit a severely limited implementation. You're only able to swap out method bodies, which while still better than nothing, is really not all that useful.
 
-Thomas Wuerthinger (who you may know from [GraalVM](https://www.graalvm.org)) proposed a solution in [JEP 159](https://openjdk.java.net/jeps/159); enhanced class redefinition. While it didn't completely solve the lacklustre hot swap implementation in HotSpot, it significantly improved upon it. The JEP proposed the ability to hot swap the following things, along with method bodies (this logic was to be untouched):
+Thomas Wuerthinger (who you may know from [GraalVM](https://www.graalvm.org/)) proposed a solution in [JEP 159](https://openjdk.java.net/jeps/159); enhanced class redefinition. While it didn't completely solve the lacklustre hot swap implementation in HotSpot, it significantly improved upon it. The JEP proposed the ability to hot swap the following things, along with method bodies (this logic was to be untouched):
 
 * Adding/removing methods
 * Adding/removing static and instance fields

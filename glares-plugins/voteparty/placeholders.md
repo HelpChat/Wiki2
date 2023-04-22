@@ -24,7 +24,7 @@ Example: {placeholderapi\_voteparty\_votes\_recorded}
 | %voteparty\_totalparties\_TYPE%         | Text         | Returns the total amount of parties the server has had in a given time-frame based on the type provided. |
 
 **Type**\
-The type placeholder refers to the list of placeholders above that contain `TYPE` in them. The options for these are `daily`, `weekly`, `monthly`, `annually` and `alltime`.
+The type placeholder refers to the list of placeholders above that contain `TYPE` in them. The options for these are `daily`, `weekly`, `monthly`, `lastmonth`, `annually` and `alltime`.
 
 **Info**\
 The info placeholder refers to the list of placeholders above that contain `INFO` in them. The options for these can be `name` or `votes`.\

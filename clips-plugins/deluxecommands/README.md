@@ -22,7 +22,7 @@ This can be used for awesome info-packed /vote command, or even a cool /stats co
 
 ## Creating JSON message
 
-**JSON** message is the kind of messages that have hovering tooltips and clicking actions, you can simply create them from [minecraftjson.com](http://minecraftjson.com) (or any **JSON** creation website).\
+**JSON** message is the kind of messages that have hovering tooltips and clicking actions, you can simply create them from [minecraftjson.com](http://minecraftjson.com/) (or any **JSON** creation website).\
 Follow the steps below to create your **JSON** message and use it in **DeluxeCommands**:
 
 1. Create the **JSON** message using the website you like.

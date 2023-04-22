@@ -23,6 +23,7 @@ description: List of commands and permissions for the plugin
 | /vp totalvotes \<player>                       | voteparty.command.admin | Get the total amount of votes a player has.                            |
 | /vp resetvotes \<player>                       | voteparty.command.admin | Reset the amount of votes a player has.                                |
 | /vp setcounter \<amount>                       | voteparty.command.admin | Set the current vote counter.                                          |
+| /vp top \<type> \[page]                        | voteparty.command.admin | List top voters                                                        |
 | /vp startparty                                 | voteparty.command.admin | Force launch a Vote Party.                                             |
 | /vp giveparty \<player>                        | voteparty.command.admin | Host a private Vote Party for a player.                                |
 | /vp reload                                     | voteparty.command.admin | Reloads the config file.                                               |
