@@ -141,6 +141,10 @@ Registers the open command with the server.
 Must be manually added to the menu.
 {% endhint %}
 
+{% hint style="info" %}
+Server will need to be restarted.
+{% endhint %}
+
 ### Args (Arguments) <a href="#args" id="args"></a>
 
 > ```yaml
