@@ -4,7 +4,7 @@ description: Send Raw Messages to a player or the server with PlaceholderApi Sup
 
 # RawMsg
 
-![](../../.gitbook/assets/Title.png)
+![](<../../.gitbook/assets/title (4).png>)
 
 Just a simple plugin to send a raw message (No Prefix) from in game or console with [PlaceholderApi ](https://www.spigotmc.org/resources/placeholderapi.6245/)placeholders to either a single player or broadcast it to the whole server.
 

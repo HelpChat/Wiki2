@@ -4,7 +4,7 @@ description: The most customizable /rankup plugin
 
 # EzRanksPro
 
-![](<../../.gitbook/assets/Title (5).png>)
+![](<../../.gitbook/assets/title (5).png>)
 
 ## Description
 

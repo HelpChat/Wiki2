@@ -20,7 +20,7 @@ This will download the latest 1.15.2 build of Paper, and populate the eula.txt. 
 
 Time to actually tell IntelliJ how to run the server. In the top right corner of IntelliJ, there's be a highlighted button, called `ADD CONFIGURATION`, usually at least. If you've used Gradle on the project, any tasks you've ran will also appear there. That's irrelevant though, the point is there's a button there, and you need to click it. Upon doing so, either a window will open up, or a dropdown.
 
-![](../../.gitbook/assets/configuration.PNG)
+![](../../.gitbook/assets/configuration.png)
 
 {% hint style="info" %}
 If you get the dropdown instead, simply click the `Edit Configurations...` button at the top.
@@ -28,11 +28,11 @@ If you get the dropdown instead, simply click the `Edit Configurations...` butto
 
 Click the blue + in the top left corner of the popup, and select `JAR Application` from the dropdown.
 
-![](../../.gitbook/assets/selection.PNG)
+![](../../.gitbook/assets/selection.png)
 
 Then proceed with filling out the following fields of the configuration: `Path to JAR:`, and `Working directory:` with their corresponding values. That is, path to jar, being the path of your server jar, and working directory, being the path of the directory your server jar is contained in (will be `server` if you followed this guide exactly). Here's mine:
 
-![](../../.gitbook/assets/filled.PNG)
+![](../../.gitbook/assets/filled.png)
 
 {% hint style="info" %}
 * If using spigot itself (not a fork), you may also want to add `-DIReallyKnowWhatIAmDoingISwear` to the `VM options`. This will prevent the update checker from running, and potentially hindering your productivity as you have to wait 30 seconds for the server to start.

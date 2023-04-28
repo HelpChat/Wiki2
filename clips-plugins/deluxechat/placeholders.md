@@ -16,7 +16,7 @@ description: Plugin's placeholders
 ## PlaceholderAPI placeholders
 
 **DeluxeChat** plugin provides [**PlaceholderAPI** ](https://www.spigotmc.org/resources/6245/)placeholders that you can use in any plugin that supports [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/).\
-You can also use any [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/) **** placeholder in **DeluxeChat** plugin. ([PlaceholderAPI placeholders list](https://helpch.at/placeholders))
+You can also use any [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/) placeholder in **DeluxeChat** plugin. ([PlaceholderAPI placeholders list](https://helpch.at/placeholders))
 
 ### Placeholders
 

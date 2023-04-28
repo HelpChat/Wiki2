@@ -4,7 +4,7 @@ description: RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!
 
 # Guilds \[W.I.P Migration]
 
-![](../../.gitbook/assets/assets\_-Ljvb1saMgD8bceF8vll\_-Ljvj\_MQe-jg2Tyif8gr\_-LjvjcZTHyzHl1ezC3tD\_logo.png)
+![](../../.gitbook/assets/assets\_-ljvb1samgd8bcef8vll\_-ljvj\_mqe-jg2tyif8gr\_-ljvjczthyzhl1ezc3td\_logo.png)
 
 ## Description
 

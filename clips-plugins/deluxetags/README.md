@@ -23,31 +23,39 @@ description: Allow players to select chat tags that can be awarded by permission
 
 (Plugins that support PlaceholderAPI placeholders)
 
-1. Put the **DeluxeTags jar** file you downloaded in your **plugins** folder.
-2. Restart the server.
-3. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
-4. Enable **PAPI Chat** option in `config.yml` file\
+1. Stop the server.
+2. Put the **DeluxeTags jar** file you downloaded in your **plugins** folder.
+3. Start the server.
+4. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
+5. Enable **PAPI Chat** option in `config.yml` file\
    `papi_chat: true`
-5. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).
-6. Restart the server.
-7. Give tag permissions to your players `deluxetags.tag.<identifier>`.
-8. Select your tag from `/tags` and enjoy!!
-
-### Almost any other chat (including EssentialsX Chat)
-
-1. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
-2. Restart the server.
-3. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
-4. Disable **papi\_chat** option in `config.yml` file.\
-   `papi_chat: false`
-5. Disable **Format Chat** option in `config.yml` file.\
-   `format_chat:`\
-   &#x20; `enabled: false`
-6. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).\
-   **Note:** You'll have to use `{}` for the placeholders instead of `%%`.
+6. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).
 7. Restart the server.
 8. Give tag permissions to your players `deluxetags.tag.<identifier>`.
 9. Select your tag from `/tags` and enjoy!!
+
+### Almost any other chat (including EssentialsX Chat)
+
+1. Stop the server.
+2. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
+3. Start the server.
+4. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
+5. Disable **papi\_chat** option in `config.yml` file.\
+   `papi_chat: false`
+6. Disable **Format Chat** option in `config.yml` file.\
+   `format_chat:`\
+   &#x20; `enabled: false`
+7. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).\
+   **Note:** You'll have to use `{}` for the placeholders instead of `%%`.\
+   **Example:** `{deluxetags_tag}`.
+8. Restart the server.
+9. Give tag permissions to your players `deluxetags.tag.<identifier>`.
+10. Select your tag from `/tags` and enjoy!!
+
+{% hint style="danger" %}
+For older versions of DeluxeTags (1.8.1 and older) you need to edit your DeluxeTags config.yml to replace all `%placeholders%` to `{placeholders}`.\
+**Example:** %deluxetags\_tag% to {deluxetags\_tag}
+{% endhint %}
 
 ### DeluxeTags's own chat formatter
 

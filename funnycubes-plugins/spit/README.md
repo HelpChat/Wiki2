@@ -4,7 +4,7 @@ description: Let your players spit like Llamas
 
 # Spit
 
-![](<../../.gitbook/assets/Title (3).png>)
+![](../../.gitbook/assets/title.png)
 
 Let your players spit like Llamas using the /spit command, this will fire spit from the player in the direction they are looking in.
 

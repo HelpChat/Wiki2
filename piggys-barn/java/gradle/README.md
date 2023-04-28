@@ -38,19 +38,19 @@ To install gradle on windows, you'll want to download the gradle binary, from th
 
 In file explorer, right click `This PC`, and select `Properties`.
 
-![](../../../.gitbook/assets/properties.PNG)
+![](../../../.gitbook/assets/properties.png)
 
 A window will open, showing a brief overview of your computer's specifications. We're interested in the button on the left though, that says `Advanced system settings`. Click it.
 
-![](../../../.gitbook/assets/setings.PNG)
+![](../../../.gitbook/assets/setings.png)
 
 Another window will then open up, called `System Properties`. Ensure you're in the `Advanced` tab, and then click `Environment Variables...` in the bottom right corner.
 
-![](../../../.gitbook/assets/vars.PNG)
+![](../../../.gitbook/assets/vars.png)
 
 In the new window, under `System variables`, locate `Path`, and double click on it. Then, on the right side, click `New`, and write the path to your gradle installation, appending `\bin` onto the end.
 
-![](../../../.gitbook/assets/path.PNG)
+![](../../../.gitbook/assets/path.png)
 
 Now, traverse through all the windows you've opened, making sure to apply all changes you've made. In order, that's buttons:  `OK` -> `OK` -> `OK`.&#x20;
 

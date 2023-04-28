@@ -29,5 +29,5 @@ To use these placeholders, you have to download **AutoSell Expansion**. You can 
 Or you can download it manually from the [eCloud](https://api.extendedclip.com/expansions/autosell/), and put it inside the `expansions` folder (folder path: `/plugins/PlaceholderAPI/expansions/`).&#x20;
 
 {% hint style="info" %}
-You have to have [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/) **** plugin to be able to use these placeholders.
+You have to have [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/) plugin to be able to use these placeholders.
 {% endhint %}
