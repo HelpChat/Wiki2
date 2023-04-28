@@ -14,9 +14,17 @@ The event is fired whenever a public chat message is being processed and about t
 
 The event is fired when a private message is being processed and about to be sent.
 
+## ChannelMentionEvent
+
+The event is fired when a user is mentioned in a public message using a channel mention such as: @here, @everyone, @channel
+
+## PersonalMentionEvent
+
+The event is fired when a user is mentioned in a public message using a direct mention such as: @BlitzOffline
+
 ## MentionEvent
 
-The event is fired when a user is mentioned either directly or thru a channel mention in a public message.&#x20;
+The event is fired whenever a user is mentioned in a public message thru a channel mention or a direct mention.
 
 ## Example
 
