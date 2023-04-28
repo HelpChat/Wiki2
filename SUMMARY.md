@@ -13,6 +13,7 @@
   * [Placeholders](helpchat-plugins/chatchat/placeholders.md)
   * [API](helpchat-plugins/chatchat/api/README.md)
     * [Getting Started](helpchat-plugins/chatchat/api/getting-started.md)
+    * [ChatChatAPI](helpchat-plugins/chatchat/api/chatchatapi.md)
     * [Events](helpchat-plugins/chatchat/api/events.md)
   * [Files](helpchat-plugins/chatchat/files.md)
 
