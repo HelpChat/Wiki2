@@ -90,13 +90,18 @@ There is one available placeholder from DeluxeMenus:
 ### Debug
 
 > ```yaml
-> debug: BOOLEAN
+> debug: STRING
 > ```
 >
-> > **Default value:** `false`
+> > **Default value:** `HIGHEST`\
+> > **Available values:**\
+> > `LOWEST`, `LOW`, `MEDIUM`, `HIGH`, `HIGHEST`
 
-Enables/Disables debug mode.\
-Sends debug messages to the console.
+Determines which debug messages are going to be shown in console based on their importance.
+
+`HIGHEST` LEVEL = only debug messages with highest priority are shown\
+`LOWEST` LEVEL = every debug messages are shown\
+[Stacktraces](https://rollbar.com/blog/java-stack-trace) are only displayed when the debug level is set to MEDIUM, HIGH or HIGHER.
 
 ### Check updates
 
