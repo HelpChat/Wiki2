@@ -31,12 +31,11 @@ Priority formats have everything that Basic Formats have but they also have a pr
 If a player has access to multiple formats, the priority will decide what format will be used when they sends a message in chat.
 
 {% hint style="info" %}
-Lower Number = Higher Priority
-{% endhint %}
+The `addons.deluxechat.inverse_priorities` setting in `extensions.yml` dictates if the lowest or the highest number has priority. If this setting is true, lower numbers have higher priority. If this setting is false, it is the other way around.{% endhint %}
 
 ## Permissions
 
-Formats are given away to players using permissions. Every format has a similar permission and that is: `chatchat.format<format-name>`
+Formats are given away to players using permissions. Every format has a similar permission and that is: `chatchat.format.<format-name>`
 
 ## Default Format
 
