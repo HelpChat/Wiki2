@@ -69,8 +69,8 @@ To make this work fine you have to download the Player and CheckItem expansions 
 
 * [x] \*\*\*\*[**Vault**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L18-L59)\*\*\*\*
 * [x] \*\*\*\*[**Token Enchant**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L61-L106)\*\*\*\*
-* [x] \*\*\*\*[**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L108-L150)\*\*\*\*
-* [x] [**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L152-L195)\*\*\*\*
+* [x] \*\*\*\*[**Player Points**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L105-L147)\*\*\*\*
+* [x] \*\*\*\*[**Player XP**](https://github.com/help-chat/DeluxeMenus/blob/master/gui\_menus/store.yml#L149-L192)\*\*\*\*
 
 ## [**Meta**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/meta.yml)
 
