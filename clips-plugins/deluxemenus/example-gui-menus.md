@@ -13,16 +13,6 @@ To make this work fine you have to download [Essentials](https://ci.ender.zone/j
 > /papi ecloud download Essentials\
 > /papi reload
 
-## [**Mines**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/mines.yml)
-
-A simple example to show you how you can make a Mines menu that displays 3 items for each mine, when the mine is unlocked, when it's the current mine and when it's locked.
-
-To make this work fine you have to download [EzRanksPro](https://www.spigotmc.org/resources/10731/) and download Player and EzRanksPro expansions using:
-
-> /papi ecloud download Player\
-> /papi ecloud download EzRanksPro\
-> /papi reload
-
 ## [**Ranks**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/ranks.yml)
 
 A simple example to show you how you can make a Ranks menu that displays 2 items for each rank, when the rank is not purchased and when the rank or a higher rank is purchased
@@ -44,7 +34,7 @@ To make this work fine you have to download Pinger and (optional) Server expansi
 
 In this example, we have 2 different servers on one BungeeCord: **vanilla** and **games**. We are on the server **games** in this example.
 
-If we want the player to connect to the **vanilla** server, we need to setup the right functions in the `left_click_commands:` _\*\*_section\
+If we want the player to connect to the **vanilla** server, we need to setup the click functions in the `click_commands:` _\*\*_section\
 In our example, we will first close the menu with `[close]`, send a message to the player with `[message]` and finally connect him to the server with `[connect]`.
 
 To show, how many players are on the server vanilla, we will use the placeholder **%pinger\_players\_\<ip>:\<port>%**\
@@ -75,3 +65,5 @@ To make this work fine you have to download the Player and CheckItem expansions 
 ## [**Meta**](https://github.com/HelpChat/DeluxeMenus-Wiki/blob/master/gui\_menus/meta.yml)
 
 A simple example to show you how [meta](options-and-configurations/#actions-types) works.
+
+The Meta GUI is a calculator where you can track emerald, diamond, and gold values. You can perform addition, subtraction, deletion of all values, and switch between viewing these three blocks.

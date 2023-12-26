@@ -40,11 +40,7 @@ From here, you can use the new "arg" placeholders in any of your "click commands
 >     - '&8» &bTime&8: &7{time}'
 >     - '&8» &bPunishment&8: &7{reason}'
 >     - '&r'
->     left_click_commands:
->     - '[player] warn {target} {reason}'
->     - '[close]'
->     - '[broadcast] &b{target}&7 has been warned for&8: &b{reason}'
->     right_click_commands:
+>     click_commands:
 >     - '[player] warn {target} {reason}'
 >     - '[close]'
 >     - '[broadcast] &b{target}&7 has been warned for&8: &b{reason}'
