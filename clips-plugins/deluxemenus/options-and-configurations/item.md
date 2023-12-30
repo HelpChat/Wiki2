@@ -237,21 +237,21 @@ Sets the item's lore (the text shown under the item's name). You can use [placeh
 > >
 > > ```yaml
 > > slots:
-> >   - `1`
-> >   - `2`
-> >   - `3`
+> >   - 1
+> >   - 2
+> >   - 3
 > >   
 > > # OR
 > >   
 > > slots:
-> >   - `1-3`
-> >   - `4-10`
+> >   - 1-3
+> >   - 4-10
 > >
 > > # OR
-> > slots: `[1,2,3,4]`
+> > slots: [1,2,3,4]
 > >
 > > # OR
-> > slots: `[1-5,6-9]`
+> > slots: [1-5,6-9]
 > > ```
 
 Sets in which slot the item should be inside the menu.
