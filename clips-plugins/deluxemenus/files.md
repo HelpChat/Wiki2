@@ -371,7 +371,7 @@ open_command: # This is the command that will open this menu
 register_command: true # Optional: Register the command (/dmadvancedmenu) on your server. Requires server restart.
 open_commands: # These actions will be executed once you open this menu
 - '[sound] BLOCK_CHEST_OPEN' # The sound list can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
-- '[message] &6&lDeluxe&emenus &8» &7Opening &aAdvanced &7example menu. &7Config reworked by &ekristophergeou&7.'
+- '[message] &6&lDeluxe&emenus &8» &7Opening &aAdvanced &7example menu.
 inventory_type: CHEST # Optional: Change the inventory type of your menu, No need to add this to your config if you use CHEST. 
 update_interval: 1 # This option will update every items that have update: true, every 1 second
 open_requirement: # Optional: Use the Open Requirement setting to limit the access of the users that have access to this menu.
