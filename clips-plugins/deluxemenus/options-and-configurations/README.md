@@ -84,6 +84,7 @@ If you want to use RGB/Hex colors in DeluxeMenus on 1.16+ you can use the follow
 There is one available placeholder from DeluxeMenus:
 
 * `%deluxemenus_meta_<key>_<dataType>_<default_value>%`
+* `%deluxemenus_meta_has_value_<key>_<dataType>%`
 
 ## General options
 

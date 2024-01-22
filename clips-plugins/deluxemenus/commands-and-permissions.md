@@ -20,6 +20,7 @@ description: List of commands and permissions for the plugin
 | /dm list                                | deluxemenus.list            | Lists loaded menus.                                                                                                                                                     |
 | /dm execute \<player> \<action>         | Player needs to be Op       | Executes any action for a player. Check out the [Action Type](https://wiki.helpch.at/clips-plugins/deluxemenus/options-and-configurations#actions-types) for more info. |
 | /dm dump \<menu-name>                   | deluxemenus.admin           | Create a paste bin with the menu and also some other important debugging stuff like server version and java version.                                                    |
+| /dm dump config                         | deluxemenus.admin           | Create a paste bin with the config.yml and some other important debugging stuff such as server version and java version                                                 |
 | /dm reload                              | deluxemenus.reload          | Reloads the plugin's files.                                                                                                                                             |
 | /dm reload \<menu>                      | deluxemenus.reload          | Reload a menu.                                                                                                                                                          |
 

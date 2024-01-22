@@ -26,13 +26,14 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > >
 > > * [Material name](./#useful-links) (`STONE`).
 > > * Player head (`head-extended_clip`).
-> > * Placeholder head (`head-%player_name%`).
+> >   * Placeholder head (`head-%player_name%`, `basehead-%player_basehead_placeholder%`, etc.).
 > > * Argument placeholder head (`head-{target}`).
 > > * [BaseHead](https://minecraft-heads.com) (`basehead-<base64 (Value field in the head's give command)>`).
 > > * Minecraft Texture (`texture-<id>`)\
 > >   \- The `id` is what's after `https://textures.minecraft.net/textures/`
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) (`hdb-<ID>`).
 > > * [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) material (`itemsadder-namespace:name`)
+> > * [Oraxen](https://www.spigotmc.org/resources/72448/) material (`oraxen-oraxen_item_id`)
 > > * [Placeholder](https://helpch.at/placeholders) material (`placeholder-%player_item_in_hand%`).
 > > * Item in main hand (`main_hand`).
 > > * Item in off hand (`off_hand`).
@@ -43,10 +44,14 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 Sets the material of the item in the menu.
 
 {% hint style="success" %}
-Now supports AIR as a valid material. The item will be an empty slot with just click commands and click requirements.
+AIR is a valid material. The item will be an empty slot with click commands and click requirements working.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="success" %}
+Placeholders are supported for head, basehead, texture, hdb, itemsadder, oraxen and placeholder materials!
+{% endhint %}
+
+{% hint style="warning" %}
 For version 1.12.2 or older:\
 Check [Data](item.md#data) option to specify the data of the item (the number after the colon `:`). e.g. Lime Wool would be
 
@@ -173,8 +178,8 @@ Allows you to set item flags.
 
 Allows you to set effects (Used if the [material](item.md#material) is a potion, splash\_potion and tipped arrows).
 
-{% hint style="info" %}
-For potion\_effects to work on potions and tipped arrows you also need to give it an [RGB](item.md#rgb) value.
+{% hint style="success" %}
+Potion Effects no longer require the [RGB](item.md#rgb) option to be set to work!
 {% endhint %}
 
 ## Entity Type
@@ -185,7 +190,11 @@ For potion\_effects to work on potions and tipped arrows you also need to give i
 >
 > > * [Entity types list.](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html)
 
-This is mainly targeted for 1.12.2 and lower servers and allows you to specify monster egg types and also monster spawner types.
+This is mainly targeted for 1.12.2 and lower server versions and allows you to specify monster egg types and monster spawner types.
+
+{% hint style="danger" %}
+Option was removed in versions 1.14.0 and newer of the plugin due to versions 1.13.1 and lower of Minecraft no longer being supported.
+{% endhint %}
 
 ## RGB <a href="#rgb" id="rgb"></a>
 
