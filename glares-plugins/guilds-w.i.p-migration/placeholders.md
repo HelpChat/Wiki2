@@ -19,14 +19,7 @@ format: '<{GUILD} {DISPLAYNAME}> {MESSAGE}'
 
 ### Leaderboard Placeholders
 
-| PlaceholderAPI                   | Description                                  |
-| -------------------------------- | -------------------------------------------- |
-| %guilds\_top\_wins\_name\_#%     | Name of guild with wins in # place           |
-| %guilds\_top\_wins\_amount\_#%   | Amount of wins the guild in # place has      |
-| %guilds\_top\_losses\_name\_#%   | Name of guild with losses in # place         |
-| %guilds\_top\_losses\_amount\_#% | Amount of losses the guild in # place has    |
-| %guilds\_top\_wlr\_name\_#%      | Name of guild with win/loss ratio in # place |
-| %guilds\_top\_wlr\_amount\_#%    | The win/loss ratio of the guild in # place   |
+<table><thead><tr><th width="319">PlaceholderAPI</th><th>Description</th></tr></thead><tbody><tr><td>%guilds_top_wins_name_#%</td><td>Name of guild with wins in # place</td></tr><tr><td>%guilds_top_wins_amount_#%</td><td>Amount of wins the guild in # place has</td></tr><tr><td>%guilds_top_losses_name_#%</td><td>Name of guild with losses in # place</td></tr><tr><td>%guilds_top_losses_amount_#%</td><td>Amount of losses the guild in # place has</td></tr><tr><td>%guilds_top_wlr_name_#%</td><td>Name of guild with win/loss ratio in # place</td></tr><tr><td>%guilds_top_wlr_amount_#%</td><td>The win/loss ratio of the guild in # place</td></tr></tbody></table>
 
 ### Regular Placeholders
 

@@ -8,57 +8,98 @@ description: >-
 
 ## Clip's Plugins
 
-{% page-ref page="clips-plugins/autosell/" %}
+{% content-ref url="clips-plugins/autosell/" %}
+[autosell](clips-plugins/autosell/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/actionannouncer/" %}
+{% content-ref url="clips-plugins/actionannouncer/" %}
+[actionannouncer](clips-plugins/actionannouncer/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/chatreaction/" %}
+{% content-ref url="clips-plugins/chatreaction/" %}
+[chatreaction](clips-plugins/chatreaction/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/deluxechat/" %}
+{% content-ref url="clips-plugins/deluxechat/" %}
+[deluxechat](clips-plugins/deluxechat/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/deluxecommands/" %}
+{% content-ref url="clips-plugins/deluxecommands/" %}
+[deluxecommands](clips-plugins/deluxecommands/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/deluxejoin/" %}
+{% content-ref url="clips-plugins/deluxejoin/" %}
+[deluxejoin](clips-plugins/deluxejoin/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/deluxetags/" %}
+{% content-ref url="helpchat-plugins/deluxetags/" %}
+[deluxetags](helpchat-plugins/deluxetags/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/deluxemenus/" %}
+{% content-ref url="helpchat-plugins/deluxemenus/" %}
+[deluxemenus](helpchat-plugins/deluxemenus/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/ezprestige/" %}
+{% content-ref url="clips-plugins/ezprestige/" %}
+[ezprestige](clips-plugins/ezprestige/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/ezrankspro/" %}
+{% content-ref url="clips-plugins/ezrankspro/" %}
+[ezrankspro](clips-plugins/ezrankspro/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/messageannouncer/" %}
+{% content-ref url="clips-plugins/messageannouncer/" %}
+[messageannouncer](clips-plugins/messageannouncer/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/minecrates/" %}
+{% content-ref url="clips-plugins/minecrates/" %}
+[minecrates](clips-plugins/minecrates/)
+{% endcontent-ref %}
 
-{% page-ref page="clips-plugins/noflyzone/" %}
+{% content-ref url="clips-plugins/noflyzone/" %}
+[noflyzone](clips-plugins/noflyzone/)
+{% endcontent-ref %}
 
 ## Funnycube's Plugins
 
-{% page-ref page="funnycubes-plugins/cowpunch/" %}
+{% content-ref url="funnycubes-plugins/cowpunch/" %}
+[cowpunch](funnycubes-plugins/cowpunch/)
+{% endcontent-ref %}
 
-{% page-ref page="funnycubes-plugins/fireworkchests/" %}
+{% content-ref url="funnycubes-plugins/fireworkchests/" %}
+[fireworkchests](funnycubes-plugins/fireworkchests/)
+{% endcontent-ref %}
 
-{% page-ref page="funnycubes-plugins/fishslapper/" %}
+{% content-ref url="funnycubes-plugins/fishslapper/" %}
+[fishslapper](funnycubes-plugins/fishslapper/)
+{% endcontent-ref %}
 
-{% page-ref page="funnycubes-plugins/rawmsg/" %}
+{% content-ref url="funnycubes-plugins/rawmsg/" %}
+[rawmsg](funnycubes-plugins/rawmsg/)
+{% endcontent-ref %}
 
-{% page-ref page="funnycubes-plugins/spit/" %}
+{% content-ref url="funnycubes-plugins/spit/" %}
+[spit](funnycubes-plugins/spit/)
+{% endcontent-ref %}
 
-{% page-ref page="funnycubes-plugins/tempmotd/" %}
+{% content-ref url="funnycubes-plugins/tempmotd/" %}
+[tempmotd](funnycubes-plugins/tempmotd/)
+{% endcontent-ref %}
 
 ## Glare's Plugins
 
-{% page-ref page="glares-plugins/guilds-w.i.p-migration/" %}
+{% content-ref url="glares-plugins/guilds-w.i.p-migration/" %}
+[guilds-w.i.p-migration](glares-plugins/guilds-w.i.p-migration/)
+{% endcontent-ref %}
 
-{% page-ref page="glares-plugins/voteparty/" %}
+{% content-ref url="glares-plugins/voteparty/" %}
+[voteparty](glares-plugins/voteparty/)
+{% endcontent-ref %}
 
 {% hint style="info" %}
-**Something Missing?**  
+**Something Missing?**\
 Let us know shooting us a message on our [_Discord_](https://helpch.at/discord).
 
-**Did you know our wiki is open source?**  
+**Did you know our wiki is open source?**\
 [Contribute Here!](https://github.com/helpchat/wiki2)
 {% endhint %}
-
