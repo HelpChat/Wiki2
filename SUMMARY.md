@@ -16,6 +16,7 @@
     * [ChatChatAPI](helpchat-plugins/chatchat/api/chatchatapi.md)
     * [Events](helpchat-plugins/chatchat/api/events.md)
   * [Files](helpchat-plugins/chatchat/files.md)
+* [PlaceholderAPI](https://wiki.helpch.at/)
 
 ## Clip's Plugins
 
