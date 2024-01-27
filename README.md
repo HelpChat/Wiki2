@@ -6,15 +6,7 @@ description: >-
 
 # Welcome
 
-
-
 ## HelpChat's Plugins
-
-{% embed url="https://wiki.placeholderapi.com" %}
-
-{% content-ref url="https://wiki.placeholderapi.com" %}
-[placeholderapi]([helpchat-plugins/chatchat/](https://wiki.placeholderapi.com))
-{% endcontent-ref %}
 
 {% content-ref url="helpchat-plugins/chatchat/" %}
 [chatchat](helpchat-plugins/chatchat/)
@@ -27,6 +19,8 @@ description: >-
 {% content-ref url="clips-plugins/deluxetags/" %}
 [deluxetags](clips-plugins/deluxetags/)
 {% endcontent-ref %}
+
+{% embed url="https://wiki.placeholderapi.com" fullWidth="false" %}
 
 ## Clip's Plugins
 
@@ -102,8 +96,8 @@ description: >-
 
 ## Glare's Plugins
 
-{% content-ref url="glares-plugins/guilds-w.i.p-migration/" %}
-[guilds-w.i.p-migration](glares-plugins/guilds-w.i.p-migration/)
+{% content-ref url="glares-plugins/guilds-w.i.p-migration" %}
+[guilds-w.i.p-migration](glares-plugins/guilds-w.i.p-migration)
 {% endcontent-ref %}
 
 {% content-ref url="glares-plugins/voteparty/" %}
