@@ -6,6 +6,20 @@ description: >-
 
 # Welcome
 
+
+
+## HelpChat's Plugins
+
+{% embed url="https://wiki.placeholderapi.com" %}
+
+{% content-ref url="clips-plugins/deluxemenus/" %}
+[deluxemenus](clips-plugins/deluxemenus/)
+{% endcontent-ref %}
+
+{% content-ref url="clips-plugins/deluxetags/" %}
+[deluxetags](clips-plugins/deluxetags/)
+{% endcontent-ref %}
+
 ## Clip's Plugins
 
 {% content-ref url="clips-plugins/autosell/" %}
@@ -30,14 +44,6 @@ description: >-
 
 {% content-ref url="clips-plugins/deluxejoin/" %}
 [deluxejoin](clips-plugins/deluxejoin/)
-{% endcontent-ref %}
-
-{% content-ref url="helpchat-plugins/deluxetags/" %}
-[deluxetags](helpchat-plugins/deluxetags/)
-{% endcontent-ref %}
-
-{% content-ref url="helpchat-plugins/deluxemenus/" %}
-[deluxemenus](helpchat-plugins/deluxemenus/)
 {% endcontent-ref %}
 
 {% content-ref url="clips-plugins/ezprestige/" %}

@@ -31,7 +31,7 @@ description: RPG, GUIs, Land Claims, Arenas, Guild Wars, MySQL and more!
 * [PlaceholderAPI](https://placeholderapi.com)
 * [Essentials](https://www.spigotmc.org/resources/9089/)
 
-You can read more about the dependencies in the plugin on the next page, or by clicking [here](../../helpchat-plugins/deluxemenus/options-and-configurations/requirements.md).
+You can read more about the dependencies in the plugin on the next page, or by clicking [here](../../clips-plugins/deluxemenus/options-and-configurations/requirements.md).
 
 ## Supported Platforms
 

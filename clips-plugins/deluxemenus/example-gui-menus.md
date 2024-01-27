@@ -44,7 +44,7 @@ To make this work fine you have to download Pinger and (optional) Server expansi
 
 In this example, we have 2 different servers on one BungeeCord: **vanilla** and **games**. We are on the server **games** in this example.
 
-If we want the player to connect to the **vanilla** server, we need to setup the right functions in the `left_click_commands:` _\*\*_section\
+If we want the player to connect to the **vanilla** server, we need to setup the right functions in the `left_click_commands:` \_\*\*\_section\
 In our example, we will first close the menu with `[close]`, send a message to the player with `[message]` and finally connect him to the server with `[connect]`.
 
 To show, how many players are on the server vanilla, we will use the placeholder **%pinger\_players\_\<ip>:\<port>%**\
