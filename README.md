@@ -12,6 +12,14 @@ description: >-
 
 {% embed url="https://wiki.placeholderapi.com" %}
 
+{% content-ref url="https://wiki.placeholderapi.com" %}
+[placeholderapi]([helpchat-plugins/chatchat/](https://wiki.placeholderapi.com))
+{% endcontent-ref %}
+
+{% content-ref url="helpchat-plugins/chatchat/" %}
+[chatchat](helpchat-plugins/chatchat/)
+{% endcontent-ref %}
+
 {% content-ref url="clips-plugins/deluxemenus/" %}
 [deluxemenus](clips-plugins/deluxemenus/)
 {% endcontent-ref %}
