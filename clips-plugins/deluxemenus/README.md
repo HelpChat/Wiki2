@@ -19,6 +19,12 @@ You can create GUI menus that open with custom commands that will show stats or 
 * Highly customizable.
 * [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) support.
 
-## Dependencies
+## Required Dependencies
 
 * [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/).
+
+## Optional Dependencies
+
+* [HeadDatabase](https://www.spigotmc.org/resources/14280/) - Use custom heads inside menus - [documentation](options-and-configurations/item.md#material)
+* [ItemsAdder](https://www.spigotmc.org/resources/73355/) - Use custom items inside menus - [documentation](options-and-configurations/item.md#material)
+* [Oraxen](https://www.spigotmc.org/resources/%E2%80%8D%E2%9C%85-20-%E2%98%84%EF%B8%8F-oraxen-custom-items-blocks-emotes-furniture-resourcepack-and-gui-1-18-1-20-4.72448/) - Use custom items inside menus - [documentation](options-and-configurations/item.md#material)
