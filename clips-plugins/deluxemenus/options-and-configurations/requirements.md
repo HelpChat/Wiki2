@@ -92,7 +92,7 @@ ex: `type: "!has permission"`
 > permission: TEXT
 > ```
 
-Checks if the player has the specified permission.
+Checks if the player has the specified permission ([Vault](https://www.spigotmc.org/resources/34315/) is required).
 
 To invert the requirement (Check if the player doesn't have the permission) you can simply add the exclamation mark before the type name (like this `type: "!has permission"`).
 
