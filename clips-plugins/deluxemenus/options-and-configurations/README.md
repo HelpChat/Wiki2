@@ -85,6 +85,9 @@ There is one available placeholder from DeluxeMenus:
 
 * `%deluxemenus_meta_<key>_<dataType>_<default_value>%`
 * `%deluxemenus_meta_has_value_<key>_<dataType>%`
+* `%deluxemenus_is_in_menu%`
+* `%deluxemenus_opened_menu%`
+* `%deluxemenus_last_menu%`
 
 ## General options
 
