@@ -34,6 +34,9 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) (`hdb-<ID>`).
 > > * [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) material (`itemsadder-namespace:name`)
 > > * [Oraxen](https://www.spigotmc.org/resources/72448/) material (`oraxen-oraxen_item_id`)
+> > * [ExecutableItems](https://www.spigotmc.org/resources/custom-items-plugin-executable-items.77578/) material (`executableitems-item_id`)
+> > * [ExecutableBlocks](https://www.spigotmc.org/resources/custom-blocks-plugin-executable-blocks.93406/) material (`executableblocks-item_id`)
+> > * [MMOItems] (https://www.spigotmc.org/resources/mmoitems.39267/) material (`mmoitems-item_id`)
 > > * [Placeholder](https://helpch.at/placeholders) material (`placeholder-%player_item_in_hand%`).
 > > * Item in main hand (`main_hand`).
 > > * Item in off hand (`off_hand`).
@@ -102,7 +105,7 @@ Sets the item's amount in the menu using a [placeholder](https://helpch.at/place
 > ```
 
 Allows you to set a CustomModelData for your item. Example of usage:\
-`model_data: 14`
+`model_data: 14` (Can also support negative value)
 
 ## NBT Tags
 
@@ -153,6 +156,22 @@ Now with support for SHIELDS! Make sure to also check the new [base\_color](item
 > > * [Dye colors list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
 
 Allows you to specify base colors for shields and also for banners on 1.12.2 and lower versions.
+
+## Armor Trims
+
+> ```yaml
+> trim_material: <trim>
+> trim_pattern: <pattern>
+> ```
+>
+> > * [Trim material list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/meta/trim/TrimMaterial.html).
+> > * [Trim pattern list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/meta/trim/TrimPattern.html).
+
+Allows you to set a trim and a pattern to an armor piece
+
+{% hint style="success" %}
+These options are case-sensitive and support placeholders and arguments.
+{% endhint %}
 
 ## Item Flags
 
