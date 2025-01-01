@@ -77,6 +77,10 @@ Runs the command(s) you set when the player opens the menu.
 
 Runs the command(s) you set when the player close the menu by clicking an item that have the close action (`[close]`).
 
+{% hint style="warning" %}
+At the moment, it is not possible to run these actions when a menu is closed by other means such as pressing the "ESC" key.
+{% endhint %}
+
 ## Inventory Type
 
 > ```yaml
@@ -176,8 +180,8 @@ args:
 * `{last}` returns `And the rest`
 
 {% hint style="info" %}
-* It's highly recommended to add the [Args Usage Message](gui.md#args-usage-message) option.
-* Requires [Register Command](gui.md#register-command) to be true.
+- It's highly recommended to add the [Args Usage Message](gui.md#args-usage-message) option.
+- Requires [Register Command](gui.md#register-command) to be true.
 {% endhint %}
 
 ### Args Usage Message
