@@ -15,5 +15,5 @@ You can use **\<n>** in the message to add a new line. To add a blank line just 
 \
 &#x20;**For 1.16+ Users:**\
 \#\<??????> for custom hex colours\
-_Replace ?'s with hex value eg #\<ffffff>_
+&#xNAN;_&#x52;eplace ?'s with hex value eg #\<ffffff>_
 {% endhint %}

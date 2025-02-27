@@ -23,7 +23,7 @@
     * [Item](clips-plugins/deluxemenus/options-and-configurations/item.md)
     * [Requirements](clips-plugins/deluxemenus/options-and-configurations/requirements.md)
     * [Command Registration](clips-plugins/deluxemenus/options-and-configurations/command-registration.md)
-  * [Meta (Metadata)](helpchat-plugins/deluxemenus/meta-metadata.md)
+  * [Meta (Metadata)](helpchat-plugins/deluxemenus/metadata.md)
   * [External menus](clips-plugins/deluxemenus/external-menus.md)
   * [Example GUI menus](clips-plugins/deluxemenus/example-gui-menus.md)
   * [Plugin's files](clips-plugins/deluxemenus/files.md)
