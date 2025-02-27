@@ -41,4 +41,9 @@ Checking that the player has a value is no harder:
 1. You can use the PlaceholderAPI placeholder `%deluxemenus_meta_has_<key>_<data-type>%`.
 2. You can use the `has meta` requirement which you can read more about [here](../../clips-plugins/deluxemenus/options-and-configurations/requirements.md#has-meta).
 
+### What else must I know?
+
+* Values are stored with a prefix (namespace) even if you don't set one. If you don't specify a namespace, `deluxemenus:` is used.
+* Keys (including namespaces) are **case-insensitive**. This means that `my_key` will work the same as `MY_Key` and `MY_KEY`.
+
 If you want a more in-depth description of PDC, we recommend this amazing post from the PaperMC team: [https://docs.papermc.io/paper/dev/pdc](https://docs.papermc.io/paper/dev/pdc)
