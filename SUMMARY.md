@@ -31,7 +31,7 @@
   * [Commands & Permissions](clips-plugins/deluxetags/commands-and-permissions.md)
   * [Placeholders](clips-plugins/deluxetags/placeholders.md)
   * [Plugin's files](clips-plugins/deluxetags/files.md)
-* [PlaceholderAPI](https://wiki.helpch.at/)
+* [PlaceholderAPI](https://wiki.placeholderapi.com/)
 
 ## Clip's Plugins
 
