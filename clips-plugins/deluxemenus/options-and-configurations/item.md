@@ -96,7 +96,24 @@ Sets the item's amount in the menu using a [placeholder](https://helpch.at/place
 > ```
 
 Allows you to set a CustomModelData for your item. Example of usage:\
-`model_data: 14`
+`model_data: 14`&#x20;
+
+{% hint style="danger" %}
+**DEPRECATED!**\
+Starting with 1.21.4, the new model\_data\_component should be used!
+{% endhint %}
+
+## Model Data Component
+
+> ```yaml
+> model_data_component:
+>   strings: ["string1", "string2"]
+>   floats: [1, 2, 3]
+>   flags: ["true", "false", "true"]
+>   colors: ["255, 255, 255", "0, 0, 0"]
+> ```
+
+Allows you to set custom model data component. This is the new replacement for custom model data added by Mojang.
 
 ## NBT Tags
 
