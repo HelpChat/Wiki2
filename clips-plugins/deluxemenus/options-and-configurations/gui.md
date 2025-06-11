@@ -57,6 +57,20 @@ To disable the open command, simply delete the line of this option.
 
 Sets requirements a player should have to open the GUI menu. Check the [Requirements](requirements.md) page for more info.
 
+## Placeholders Support Arguments
+
+> ```yaml
+> arguments_support_placeholders: true
+> ```
+
+In version 1.14.1 of DeluxeMenus, the order of placeholders and arguments being parsed was changed for security reasons. If you know there is no security risk for you, the old order can be reverted by adding this option.
+
+{% hint style="warning" %}
+**Security Warning!**
+
+Some placeholders do more than returning values. To prevent user input from being used directly into placeholders, this option is disabled by default. If you know the placeholders you use inside menus are not doing such things, feel free to enable this option!
+{% endhint %}
+
 ## Open Commands
 
 > ```yaml
