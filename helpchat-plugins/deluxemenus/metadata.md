@@ -27,8 +27,8 @@ While PDC allows storage of a wide range of data types and even allows custom im
 
 Setting a value is pretty easy:
 
-1. You can use the `[meta]` action which you can read more about [here](../../clips-plugins/deluxemenus/options-and-configurations/#actions-types).
-2. You can use the `/dm meta <player> <set/remove/add/subtract/switch>` command which you can read more about [here](../../clips-plugins/deluxemenus/commands-and-permissions.md#commands).
+1. You can use the `[meta]` action which you can read more about [here](options-and-configurations/actions.md#actions-types).
+2. You can use the `/dm meta <player> <set/remove/add/subtract/switch>` command which you can read more about [here](../../clips-plugins/deluxemenus/commands-and-permissions.md#meta-commands).
 
 Retrieving a value is just as easy:
 
