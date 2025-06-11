@@ -34,6 +34,11 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [HeadDatabase](https://www.spigotmc.org/resources/14280/) (`hdb-<ID>`).
 > > * [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) material (`itemsadder-namespace:name`)
 > > * [Oraxen](https://www.spigotmc.org/resources/72448/) material (`oraxen-oraxen_item_id`)
+> > * [Nexo](https://polymart.org/product/6901/nexo) material (`nexo-nexo_item_id`)
+> > * [MMOItems](https://www.spigotmc.org/resources/mmoitems.39267/) material (`mmoitems-item_type:item_id`)
+> > * [ExecutableItems](https://www.spigotmc.org/resources/%E2%9A%94%EF%B8%8Fexecutableitems-%E2%AD%90-customize-all-items-add-abilities-%E2%AD%90-ai-items-generation-on-the-discord-%E2%9C%85.83070/) material (`executableitems-item_id`)
+> > * [ExecutableBlocks](https://www.spigotmc.org/resources/%E2%AD%90-executable-blocks-%E2%AD%90-add-activators-on-your-blocks.94696/) material (`executableblocks-item_id`)
+> > * [SimpleItemGenerator](https://www.spigotmc.org/resources/simpleitemgenerator-1-8-1-21-4-free.121339/) material (`simpleitemgenerator-item_id`)
 > > * [Placeholder](https://helpch.at/placeholders) material (`placeholder-%player_item_in_hand%`).
 > > * Item in main hand (`main_hand`).
 > > * Item in off hand (`off_hand`).
@@ -48,35 +53,24 @@ AIR is a valid material. The item will be an empty slot with click commands and 
 {% endhint %}
 
 {% hint style="success" %}
-Placeholders are supported for head, basehead, texture, hdb, itemsadder, oraxen and placeholder materials!
+Placeholders are supported for head, basehead, texture, hdb, itemsadder, oraxen and all other custom materials!
 {% endhint %}
 
-{% hint style="warning" %}
-For version 1.12.2 or older:\
-Check [Data](item.md#data) option to specify the data of the item (the number after the colon `:`). e.g. Lime Wool would be
-
-```yaml
-material: WOOL
-data: 5
-```
-{% endhint %}
-
-## Data
+## Damage
 
 > ```yaml
-> data: #
+> damage: #
 > ```
 >
-> > **Supported data values:**
+> > **Supported damage values:**
 > >
 > > * Number (`1`).
 > > * Placeholder that returns a number (`placeholder-%player_item_in_hand_data%`).
 
 Sets the durability of the item (depends on the [Material](item.md#material) option).
 
-{% hint style="info" %}
-For version 1.12.2 or older:\
-This option will specify the [data value](https://minecraft-el.gamepedia.com/Data_values) (the number after the colon `:`) of the item or the item's durability (depends on the [Material](item.md#material) option).
+{% hint style="danger" %}
+The old `data` option was changed to `damage`. Please use the new option as the old one will be removed in the future.
 {% endhint %}
 
 ## Amount
