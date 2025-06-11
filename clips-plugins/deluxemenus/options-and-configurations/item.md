@@ -100,16 +100,24 @@ Allows you to set a CustomModelData for your item. Example of usage:\
 
 ## NBT Tags
 
-> ```yaml
-> nbt_string: '<Key>:<StringValue>'
-> nbt_strings:
-> - '<Key>:<StringValue>'
-> - '<Key>:<StringValue>'
-> nbt_int: '<Key>:<IntegerValue>'
-> nbt_ints:
-> - '<Key>:<IntegerValue>'
-> - '<Key>:<IntegerValue>'
-> ```
+```yaml
+nbt_string: '<Key>:<StringValue>'
+nbt_strings:
+- '<Key>:<StringValue>'
+- '<Key>:<StringValue>'
+nbt_int: '<Key>:<IntegerValue>'
+nbt_ints:
+- '<Key>:<IntegerValue>'
+- '<Key>:<IntegerValue>'
+nbt_short: '<Key>:<ShortValue>'
+nbt_shorts:
+- '<Key>:<ShortValue>'
+- '<Key>:<ShortValue>'
+nbt_byte: '<Key>:<ByteValue>'
+nbt_bytes:
+- '<Key>:<ByteValue>'
+- '<Key>:<ByteValue>'
+```
 
 Allows you to add custom NBT tags to your items like model data.
 
