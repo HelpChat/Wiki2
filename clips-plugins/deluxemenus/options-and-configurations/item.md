@@ -76,7 +76,7 @@ Sets the durability of the item (depends on the [Material](item.md#material) opt
 
 {% hint style="info" %}
 For version 1.12.2 or older:\
-This option will specify the [data value](https://minecraft-el.gamepedia.com/Data\_values) (the number after the colon `:`) of the item or the item's durability (depends on the [Material](item.md#material) option).
+This option will specify the [data value](https://minecraft-el.gamepedia.com/Data_values) (the number after the colon `:`) of the item or the item's durability (depends on the [Material](item.md#material) option).
 {% endhint %}
 
 ## Amount
@@ -120,11 +120,8 @@ Allows you to set a CustomModelData for your item. Example of usage:\
 Allows you to add custom NBT tags to your items like model data.
 
 {% hint style="danger" %}
-Deprecated! Should use the new [model\_data](item.md#model-data) option instead for CustomModelData. You can still use it for other tags tho.
-{% endhint %}
-
-{% hint style="success" %}
-The nbt tags options support PlaceholderAPI placeholders now!
+Deprecated! Should use the new [model\_data](item.md#model-data) option instead for CustomModelData.\
+**This option no longer works on 1.21.4 and newer versions!**
 {% endhint %}
 
 ## Banner Meta
@@ -215,7 +212,7 @@ For RGB option to work on potions and tipped arrows you also need to give it at 
 {% endhint %}
 
 {% hint style="success" %}
-You can find a list of default potion colors [`HERE`](https://minecraft.fandom.com/wiki/Effect\_colors/Potions\_table). You will have to use an online converter to convert the hex values to rgb.
+You can find a list of default potion colors [`HERE`](https://minecraft.fandom.com/wiki/Effect_colors/Potions_table). You will have to use an online converter to convert the hex values to rgb.
 {% endhint %}
 
 ## Display Name
@@ -325,6 +322,11 @@ Some items cannot have the enchanting glow effect
 If set to true, it will hide the enchantments you set for the item using the [enchantments](item.md#enchantments) option from the item's tooltip (lore).\
 Used to add the enchanting glow effect to the item without showing the enchantments text.
 
+{% hint style="danger" %}
+**DEPRECATED!**\
+**Please use the item\_flags options instead! This option will be removed.**
+{% endhint %}
+
 ## Hide Attributes
 
 > ```yaml
@@ -333,13 +335,10 @@ Used to add the enchanting glow effect to the item without showing the enchantme
 
 If set to true, it will hide the vanilla attributes of an item/armor (e.g. **7 Attack Damage**).
 
-## Hide Effects
-
-> ```yaml
-> hide_effects: BOOLEAN # true or false
-> ```
-
-If set to true, it will hide the potion's effect text beneath the item name.
+{% hint style="danger" %}
+**DEPRECATED!**\
+**Please use the item\_flags options instead! This option will be removed.**
+{% endhint %}
 
 ## Hide Unbreakable
 
@@ -348,6 +347,11 @@ If set to true, it will hide the potion's effect text beneath the item name.
 > ```
 
 If set to true, it will hide the unbreakable tag if the "unbreakable:" option is enabled.
+
+{% hint style="danger" %}
+**DEPRECATED!**\
+**Please use the item\_flags options instead! This option will be removed.**
+{% endhint %}
 
 ## Unbreakable
 
