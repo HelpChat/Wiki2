@@ -27,8 +27,8 @@ While PDC allows storage of a wide range of data types and even allows custom im
 
 Setting a value is pretty easy:
 
-1. You can use the `[meta]` action which you can read more about [here](options-and-configurations/actions.md#actions-types).
-2. You can use the `/dm meta <player> <set/remove/add/subtract/switch>` command which you can read more about [here](../../clips-plugins/deluxemenus/commands-and-permissions.md#meta-commands).
+1. You can use the `[meta]` action which you can read more about [here](actions.md#actions-types).
+2. You can use the `/dm meta <player> <set/remove/add/subtract/switch>` command which you can read more about [here](../../../clips-plugins/deluxemenus/commands-and-permissions.md#meta-commands).
 
 Retrieving a value is just as easy:
 
@@ -39,7 +39,7 @@ Retrieving a value is just as easy:
 Checking that the player has a value is no harder:
 
 1. You can use the PlaceholderAPI placeholder `%deluxemenus_meta_has_<key>_[data-type]%`.
-2. You can use the `has meta` requirement which you can read more about [here](../../clips-plugins/deluxemenus/options-and-configurations/requirements.md#has-meta).
+2. You can use the `has meta` requirement which you can read more about [here](../../../clips-plugins/deluxemenus/options-and-configurations/requirements.md#has-meta).
 
 ### What else must I know?
 
