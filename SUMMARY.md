@@ -21,6 +21,7 @@
   * [Options & Configurations](clips-plugins/deluxemenus/options-and-configurations/README.md)
     * [GUI](clips-plugins/deluxemenus/options-and-configurations/gui.md)
     * [Item](clips-plugins/deluxemenus/options-and-configurations/item.md)
+    * [Actions](helpchat-plugins/deluxemenus/options-and-configurations/actions.md)
     * [Requirements](clips-plugins/deluxemenus/options-and-configurations/requirements.md)
     * [Command Registration](clips-plugins/deluxemenus/options-and-configurations/command-registration.md)
   * [Meta (Metadata)](helpchat-plugins/deluxemenus/metadata.md)
