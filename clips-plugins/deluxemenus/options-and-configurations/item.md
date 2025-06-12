@@ -115,6 +115,30 @@ Starting with 1.21.4, the new model\_data\_component should be used!
 
 Allows you to set custom model data component. This is the new replacement for custom model data added by Mojang.
 
+## Item Model
+
+> ```yaml
+> item_model: # Namespaced key. Example minecraft:item_model
+> ```
+
+Allows you to set a custom Item Model for your item.
+
+{% hint style="success" %}
+This option only works on versions 1.21.2 and higher!
+{% endhint %}
+
+## Tooltip Style
+
+> ```yaml
+> tooltip_style: # Namespaced key. Example minecraft:custom_tooltip
+> ```
+
+Allows you to set a custom tooltip for your item.
+
+{% hint style="success" %}
+This option only works on versions 1.21.2 and higher!
+{% endhint %}
+
 ## NBT Tags
 
 ```yaml
@@ -280,6 +304,21 @@ Sets the item's display name. You can use [placeholders](https://helpch.at/place
 > ```
 
 Sets the item's lore (the text shown under the item's name). You can use [placeholders](https://helpch.at/placeholders) and color/format codes and the new line character (`\n`) in this option.
+
+## Lore Append Mode
+
+> ```yaml
+> lore_append_mode: # STRING
+> ```
+
+Sets a lore append mode. When using custom materials such as `material: mmoitems-type:id`, some of the items have their own lore. This option allows you to combine that lore with the one specified by you using `lore` or completely override it. Default value is `OVERRIDE`
+
+Valid options:
+
+* IGNORE - ignores the `lore` option and only uses the lore specified by the custom item
+* OVERRIDE - ignores the lore from the custom item and uses the one specified in `lore`
+* BOTTOM - appends the lore specified in `lore` option at the bottom of the one from the custom item
+* TOP - appends the lore specified in `lore` option at the top of the one from the custom item
 
 ## Slot
 
