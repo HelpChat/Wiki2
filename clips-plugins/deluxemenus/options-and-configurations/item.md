@@ -162,13 +162,42 @@ Now with support for SHIELDS! Make sure to also check the new [base\_color](item
 
 ## Base Color
 
-> ```yaml
-> base_color: <dyecolor>
-> ```
+> <pre class="language-yaml"><code class="lang-yaml"><strong>base_color: &#x3C;dyecolor>
+> </strong></code></pre>
 >
 > > * [Dye colors list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
 
 Allows you to specify base colors for shields and also for banners on 1.12.2 and lower versions.
+
+## Light Level
+
+> ```yaml
+> light_level: <lightlevel>
+> ```
+
+Allows to set light level for the new `light` item. The value can be a number between 1 and 15.
+
+## Trim Material
+
+> <pre class="language-yaml"><code class="lang-yaml"><strong>trim_material: &#x3C;trimmaterial>
+> </strong></code></pre>
+>
+> > * [Trim materials list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/meta/trim/TrimMaterial.html).
+
+Allows you to specify the trim pattern for armors.
+
+## Trim Pattern
+
+> <pre class="language-yaml"><code class="lang-yaml"><strong>trim_pattern: &#x3C;trimpattern>
+> </strong></code></pre>
+>
+> > * [Trim patterns list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/meta/trim/TrimPattern.html).
+
+Allows you to specify the trim material for armors.
+
+{% hint style="warning" %}
+Both options (trim\_material and trim\_pattern) are required for the trim to work!
+{% endhint %}
 
 ## Item Flags
 
@@ -330,6 +359,44 @@ Enchants the item with the specified enchantments. (Check the [hide enchantments
 
 {% hint style="warning" %}
 Some items cannot have the enchanting glow effect
+{% endhint %}
+
+## Hide Tooltip
+
+> ```yaml
+> hide_tooltip: BOOLEAN # true or false
+> ```
+
+If set to true, it will hide the tooltip for the item.
+
+{% hint style="success" %}
+This option only works on versions 1.20.5 and higher!
+{% endhint %}
+
+## Enchantment Glint Override
+
+> ```yaml
+> enchantment_glint_override: BOOLEAN # true or false
+> ```
+
+If set to true, it will add a glint to the item, as if the item is enchanted, even if it is not enchanted.
+
+{% hint style="success" %}
+This option only works on versions 1.20.5 and higher!
+{% endhint %}
+
+## Rarity
+
+> ```yaml
+> rarity: STRING
+> ```
+>
+> > * [Rarities list](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemRarity.html)
+
+Change the item rarity. As far as we understand it, this will only affect the default name color.
+
+{% hint style="success" %}
+This option only works on versions 1.20.5 and higher!
 {% endhint %}
 
 ## Hide Enchantments
