@@ -163,7 +163,7 @@ Must be manually added to the menu.
 Server will need to be restarted.
 {% endhint %}
 
-### Args (Arguments) <a href="#args" id="args"></a>
+## Arguments <a href="#args" id="args"></a>
 
 > ```yaml
 > args:
@@ -175,6 +175,8 @@ Server will need to be restarted.
 > > * **TEXT** The argument name (Should be unique).
 
 Gives you the ability to set arguments after the [open command](gui.md#open-command), and use them inside the menu by adding the argument placeholder (the argument name inside curly braces `{TEXT}`).
+
+Arguments can also be specified when the `[openguimenu]` action is used.
 
 You can have multiple arguments, and they will be set in the same order in the open command.
 
@@ -193,18 +195,20 @@ args:
 * `{second}` returns `SecondArg`
 * `{last}` returns `And the rest`
 
-{% hint style="info" %}
+{% hint style="success" %}
 - It's highly recommended to add the [Args Usage Message](gui.md#args-usage-message) option.
-- Requires [Register Command](gui.md#register-command) to be true.
+- **Requires** [**Register Command**](gui.md#register-command) **to be enabled!**
 {% endhint %}
 
-### Args Usage Message
+## Arguments Wrong Usage Message
 
 > ```yaml
 > args_usage_message: "TEXT"
 > ```
 
-Sets the usage message for the menu. If the player didn't set the required arguments. It will be sent to the player if he didn't set the arguments. You can use color and formatting codes here. Requires [Arguments](gui.md#args) to be defined.
+Custom message to be sent to a player when he uses a command to open a menu but does not specify the required arguments. Colors and formatters can be used in this message.
+
+&#x20;Requires [Arguments](gui.md#args) to be defined.
 
 ## Update Interval
 
