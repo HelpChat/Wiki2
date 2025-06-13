@@ -78,6 +78,60 @@ Requirements allow you to restrict certain actions or even an entire menu and on
 * If you set multiple requirements, all of them should be met (Use [JavaScript type](requirements.md#javascript) or minimum\_requirements to add optional requirements).
 {% endhint %}
 
+## Deny Commands
+
+Deny commands are used to execute actions when players don't meet requirements. These actions can be set per requirement or per requirement list.
+
+> ```yaml
+> click_requirement:
+>   requirements:
+>     requirement_name:
+>       type: TYPE
+>       deny_commands:
+>       - "[message] This is a deny command per requirement"
+>   deny_commands:
+>     - "[message] This is deny command per requirements list"
+> ```
+
+## Success Commands
+
+Similar to deny commands, Success commands are used to execute actions when players meet requirements. These actions can be set per requirement or per requirement list.
+
+> ```yaml
+> click_requirement:
+>   requirements:
+>     requirement_name:
+>       type: TYPE
+>       success_commands:
+>       - "[message] This is a success command per requirement"
+>   success_commands:
+>     - "[message] This is success command per requirements list"
+> ```
+
+{% hint style="danger" %}
+For click requirements, having success\_commands is not enough! Click commands are also needed.
+{% endhint %}
+
+## Minimum Requirements
+
+If this option is used, not all requirements that have `optional: true` will be checked. Instead, it will stop when enough requirements are met.
+
+> ```yaml
+> minimum_requirements: # Number
+> ```
+
+{% hint style="success" %}
+This option only works for requirements that have `optional: true`. All the other requirements will still be checked
+{% endhint %}
+
+## Stop At Success
+
+When mimimum requirements is used, the requirement validation will not stop when enough requirements are met. Instead it will continue with all requirements check. If this option is enabled, when the number of minimum requirements is met, validation for all remaining requirements will stop.
+
+> ```yaml
+> stop_at_success: # TRUE or FALSE
+> ```
+
 ## Requirement types
 
 {% hint style="warning" %}
