@@ -97,6 +97,20 @@ Checks if the player has the specified permission ([Vault](https://www.spigotmc.
 
 To invert the requirement (Check if the player doesn't have the permission) you can simply add the exclamation mark before the type name (like this `type: "!has permission"`).
 
+### **Has permissions**
+
+> ```yaml
+> type: has permissions
+> permissions:
+> - TEXT
+> - TEXT
+> minimum: # Number
+> ```
+
+Checks if the player has all the specified permissions ([Vault](https://www.spigotmc.org/resources/34315/) is required). If `minimum: #` is specified, it checks if the player has at least # permissions from the list.
+
+To invert the requirement (Check if the player doesn't have the permissions) you can simply add the exclamation mark before the type name (like this `type: "!has permissions"`).
+
 ### **Has money**
 
 > ```yaml
