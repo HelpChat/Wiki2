@@ -210,6 +210,35 @@ Custom message to be sent to a player when he uses a command to open a menu but 
 
 &#x20;Requires [Arguments](gui.md#args) to be defined.
 
+## Argument Requirements
+
+Arguments can have their own requirements and they are checked before the menu is opened.
+
+> ```yaml
+> args:
+>   player:
+>    requirements:
+>      regex:
+>        type: "regex matches"
+>        input: "{player}"
+>        regex: "^[a-zA-Z]{2,16}$"
+>        deny_commands:
+>          - "[message] That's not a valid player!"
+>      length:
+>        type: "string length"
+>        input: "{player}"
+>        min: 2
+>        max: 32
+>        deny_commands:
+>          - "[message] Player must be between 2 and 32 characters long."
+>      player:
+>        type: "is object"
+>        input: "{player}"
+>        object: "player"
+>        deny_commands:
+>          - "[message] Must be a player's username or UUID."
+> ```
+
 ## Update Interval
 
 > ```yaml
