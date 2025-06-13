@@ -4,9 +4,10 @@ description: Everything about DeluxeMenus requirements!
 
 # Requirements
 
-{% hint style="warning" %}
-**IMPORTANT!**\
-\&#xNAN;**`left/right/shift_left/shift_right/middle`** click requirements won't work unless you also have their respective click commands. This is true even if you have set the **`success_commands`** option
+{% hint style="danger" %}
+**IMPORTANT!**
+
+**Click requirements do not work without their click commands counterparts! Having success\_commands set up will not be enough!**
 {% endhint %}
 
 ## Syntax
@@ -295,6 +296,57 @@ To invert the requirement (Check if the input doesn't match the output) you can 
 Checks if `input:` contains `output:` (Case sensitive).
 
 To invert the requirement (Check if the input doesn't contain the output) you can simply add the exclamation mark before the type name (like this `type: "!string contains"`).
+
+### **String Length**
+
+> ```yaml
+> type: string length
+> input: "TEXT"
+> min: # Number
+> max: # Number
+> ```
+>
+> > **Example:**
+> >
+> > ```yaml
+> > type: string length
+> > input: "%player_name%"
+> > min: 3
+> > max: 14
+> > ```
+
+Checks if `input:` is longer than or equal to `min:` and shorter than or equal to `max:`.
+
+{% hint style="danger" %}
+This requirement does not have a negative counterpart: `!string length`&#x20;
+{% endhint %}
+
+### **Is Object**
+
+> ```yaml
+> type: is object
+> input: "TEXT"
+> object: # INT, DOUBLE, PLAYER or UUID
+> ```
+>
+> > **Example:**
+> >
+> > ```yaml
+> > type: string length
+> > input: "Notch"
+> > object: player
+> > ```
+
+Checks if `input:` can be mapped to the Java Object you specified.
+
+* INT - checks if the input can be mapped to an integer
+* DOUBLE - checks if the input can be mapped to a double-precision floating point number
+* UUID - checks if the input can be mapped to a UUID
+* PLAYER - checks if the input matches a player's name or a player's uuid
+
+{% hint style="danger" %}
+This requirement does not have a negative counterpart: `!string length`&#x20;
+{% endhint %}
 
 ### Regex matches
 
