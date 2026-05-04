@@ -365,6 +365,26 @@ Checks if `input:` contains `output:` (Case sensitive).
 
 To invert the requirement (Check if the input doesn't contain the output) you can simply add the exclamation mark before the type name (like this `type: "!string contains"`).
 
+### **String Contains Ignore Case**
+
+> ```yaml
+> type: string contains ignorecase
+> input: "TEXT"
+> output: "TEXT"
+> ```
+>
+> > **Example:**
+> >
+> > ```yaml
+> > type: string contains ignorecase
+> > input: "%server_name%"
+> > output: "chat"
+> > ```
+
+Checks if `input:` contains `output:` (Case insensitive).
+
+To invert the requirement (Check if the input doesn't contain the output) you can simply add the exclamation mark before the type name (like this `type: "!string contains ignorecase"`).
+
 ### **String Length**
 
 > ```yaml
