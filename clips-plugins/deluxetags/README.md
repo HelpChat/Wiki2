@@ -6,71 +6,78 @@ description: Allow players to select chat tags that can be awarded by permission
 
 ## Description
 
-**DeluxeTags** gives players the ability to have an extra tag in chat, tab and everywhere else! Tags can be given to players by permissions so you have several ways of giving them to the players. Also, players can have access to multiple tags! they can switch between them using a GUI menu.
+**DeluxeTags** gives players an extra tag that can be displayed in chat, tab lists, scoreboards, and any other plugin that supports PlaceholderAPI. Tags are permission based, so a player can unlock multiple tags and select the one they want from a configurable GUI.
 
 ## Features
 
-* Ability to create unlimited tags.
-* Highly customizable.
-* Players can have access to multiple tags.
-* Permission-based tags.
-* Force tag.
-* Supports almost any chat plugin.
+* Create an unlimited number of permission-based tags.
+* Organize tags into configurable categories.
+* Automatically skip the category selector when a player can only see tags in one category.
+* Configure the display name, lore, material, and data value of every tag item.
+* Use legacy color codes, hex colors, or MiniMessage formatting.
+* Customize the GUI layout, navigation buttons, and modern item model data.
+* Grant tags as selectable, visible-only, forced, or default tags.
+* Use built-in PlaceholderAPI placeholders with almost any chat plugin.
+* Receive update notifications sourced from Modrinth.
+* Use DeluxeTags' own chat formatter when no separate chat plugin is installed.
+
+## Documentation
+
+{% content-ref url="categories-and-gui.md" %}
+[categories-and-gui.md](categories-and-gui.md)
+{% endcontent-ref %}
+
+{% content-ref url="formatting.md" %}
+[formatting.md](formatting.md)
+{% endcontent-ref %}
+
+{% content-ref url="commands-and-permissions.md" %}
+[commands-and-permissions.md](commands-and-permissions.md)
+{% endcontent-ref %}
+
+{% content-ref url="placeholders.md" %}
+[placeholders.md](placeholders.md)
+{% endcontent-ref %}
+
+{% content-ref url="files.md" %}
+[files.md](files.md)
+{% endcontent-ref %}
 
 ## Setup
 
-### PAPI Chat Plugins
-
-(Plugins that support PlaceholderAPI placeholders)
+### Chat plugins with PlaceholderAPI support
 
 1. Stop the server.
-2. Put the **DeluxeTags jar** file you downloaded in your **plugins** folder.
-3. Start the server.
-4. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
-5. Enable **PAPI Chat** option in `config.yml` file\
-   `papi_chat: true`
-6. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).
+2. Place the DeluxeTags JAR in the server's `plugins` folder.
+3. Start the server once to generate the configuration files.
+4. Edit `/plugins/DeluxeTags/config.yml` and `/plugins/DeluxeTags/messages.yml`.
+5. Set `papi_chat: true` in `config.yml`.
+6. Add the required [DeluxeTags placeholders](placeholders.md) to the chat plugin's format.
 7. Restart the server.
-8. Give tag permissions to your players `deluxetags.tag.<identifier>`.
-9. Select your tag from `/tags` and enjoy!!
+8. Grant players `deluxetags.tag.<identifier>` for each tag they may select.
+9. Players can now open `/tags` and select a tag.
 
-### Almost any other chat (including EssentialsX Chat)
+### Other chat plugins, including EssentialsX Chat
 
 1. Stop the server.
-2. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
-3. Start the server.
-4. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
-5. Disable **papi\_chat** option in `config.yml` file.\
-   `papi_chat: false`
-6. Disable **Format Chat** option in `config.yml` file.\
-   `format_chat:`\
-   &#x20; `enabled: false`
-7. Add the placeholders you want to your chat format. **DeluxeTags placeholders** can be found [here](placeholders.md).\
-   **Note:** You'll have to use `{}` for the placeholders instead of `%%`.\
-   **Example:** `{deluxetags_tag}`.
+2. Place the DeluxeTags JAR in the server's `plugins` folder.
+3. Start the server once to generate the configuration files.
+4. Edit `/plugins/DeluxeTags/config.yml` and `/plugins/DeluxeTags/messages.yml`.
+5. Set `papi_chat: false`.
+6. Keep `format_chat.enabled: false` when another plugin handles the chat format.
+7. Add the required placeholders to that plugin's format using braces, for example `{deluxetags_tag}`.
 8. Restart the server.
-9. Give tag permissions to your players `deluxetags.tag.<identifier>`.
-10. Select your tag from `/tags` and enjoy!!
+9. Grant players `deluxetags.tag.<identifier>` for each tag they may select.
 
-{% hint style="danger" %}
-For older versions of DeluxeTags (1.8.1 and older) you need to edit your DeluxeTags config.yml to replace all `%placeholders%` to `{placeholders}`.\
-**Example:** %deluxetags\_tag% to {deluxetags\_tag}
+### DeluxeTags' built-in chat formatter
+
+1. Place the DeluxeTags JAR in the server's `plugins` folder and start the server once.
+2. Set `papi_chat: false` in `config.yml`.
+3. Set `format_chat.enabled: true`.
+4. Customize `format_chat.format`. The default is `{deluxetags_tag} <%1$s> %2$s`.
+5. Make sure another plugin is not also changing the chat format.
+6. Restart the server.
+
+{% hint style="warning" %}
+Back up `config.yml` before upgrading. DeluxeTags 1.9 automatically migrates existing tag GUI settings to the new per-tag format and places uncategorized tags in the `general` category.
 {% endhint %}
-
-### DeluxeTags's own chat formatter
-
-1. Put **DeluxeTags jar** file you downloaded in your **plugins** folder.
-2. Restart the server.
-3. Modify the **config.yml** and **messages.yml** files that were generated to fit your server's layout (Files path: `/plugins/DeluxeTags/`).
-4. Disable **PAPI Chat** option in `config.yml` file.\
-   papi`_chat: false`
-5. Enable **Format Chat** option in `config.yml` file.\
-   `format_chat:`\
-   &#x20; `enabled: true`
-6. Change the chat format in `config.yml` file.\
-   `format_chat:`\
-   &#x20; `format: '{deluxetags_tag} <%1$s> %2$s'`
-7. Make sure that you don't have other chat formatting plugins installed.
-8. Restart the server.
-9. Give tag permissions to your players `deluxetags.tag.name`.
-10. Select your tag from `/tags` and enjoy!!

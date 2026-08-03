@@ -29,6 +29,8 @@
   * [Example GUI menus](clips-plugins/deluxemenus/example-gui-menus.md)
   * [Plugin's files](clips-plugins/deluxemenus/files.md)
 * [DeluxeTags](clips-plugins/deluxetags/README.md)
+  * [Categories & GUI](clips-plugins/deluxetags/categories-and-gui.md)
+  * [Formatting](clips-plugins/deluxetags/formatting.md)
   * [Commands & Permissions](clips-plugins/deluxetags/commands-and-permissions.md)
   * [Placeholders](clips-plugins/deluxetags/placeholders.md)
   * [Plugin's files](clips-plugins/deluxetags/files.md)
