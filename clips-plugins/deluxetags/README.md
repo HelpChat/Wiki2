@@ -57,18 +57,6 @@ description: Allow players to select chat tags that can be awarded by permission
 8. Grant players `deluxetags.tag.<identifier>` for each tag they may select.
 9. Players can now open `/tags` and select a tag.
 
-### Other chat plugins, including EssentialsX Chat
-
-1. Stop the server.
-2. Place the DeluxeTags JAR in the server's `plugins` folder.
-3. Start the server once to generate the configuration files.
-4. Edit `/plugins/DeluxeTags/config.yml` and `/plugins/DeluxeTags/messages.yml`.
-5. Set `papi_chat: false`.
-6. Keep `format_chat.enabled: false` when another plugin handles the chat format.
-7. Add the required placeholders to that plugin's format using braces, for example `{deluxetags_tag}`.
-8. Restart the server.
-9. Grant players `deluxetags.tag.<identifier>` for each tag they may select.
-
 ### DeluxeTags' built-in chat formatter
 
 1. Place the DeluxeTags JAR in the server's `plugins` folder and start the server once.
