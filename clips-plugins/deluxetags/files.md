@@ -8,30 +8,53 @@ description: The plugin's configuration files
 
 {% code title="config.yml" %}
 ```yaml
-# DeluxeTags version: 1.8.2-Release Main Configuration
+# DeluxeTags version: 1.9.0-Release Main Configuration
+#
+# Formatting options:
+# legacy_hex: false # Use '#RRGGBB' for raw hex colors
+# legacy_hex: true  # Use '&#RRGGBB' for raw hex colors
+# use_minimessage: false # Enable tags such as <red> and <gradient:#ff0000:#00ff00>
 #
 # Create your tags using the following format:
 #
 # deluxetags:
-#   VIP: 
+#   VIP:
 #     order: 1
+#     category: general
 #     tag: '&7[&eVIP&7]'
-#     description: 'This tag is awarded by getting VIP'
+#     displayname: '&6Tag&f: &6%deluxetags_identifier%'
+#     description:
+#       - 'This tag is awarded by getting VIP'
+#       - '%deluxetags_available%'
+#     item: NAME_TAG
+#     data: 0
 #
-# Placeholders for your chat plugin that supports PlaceholderAPI (Including DeluxeChat)
+# Create categories using the following format:
+#
+# categories:
+#   general:
+#     order: 1
+#     item: NAME_TAG
+#     name: '&6General'
+#     lore:
+#       - '&7Click to view general tags'
+#     gui_name: '&6General tags &8%deluxetags_category_amount% available'
+#
+# The reserved 'all' category configures the automatic all-tags selector item.
+#
+# Placeholders for your chat plugin that supports PlaceholderAPI:
 #
 # %deluxetags_identifier% - display the players active tag identifier
 # %deluxetags_tag% - display the players active tag
 # %deluxetags_description% - display the players active tag description
 # %deluxetags_amount% - display the amount of tags a player has access to
 #
-# Placeholders for your essentials/chat handling formats config:
+# Placeholders for the tags GUI:
 #
-# {deluxetags_identifier} - display the players active tag identifier
-# {deluxetags_tag} - display the players active tag
-# {deluxetags_description} - display the players active tag description
-# {deluxetags_amount} - display the amount of tags a player has access to
+# %deluxetags_available% - display whether the player can select the displayed tag
+# %deluxetags_category_amount% - display the amount of tags the player can select in the current category
 
+use_minimessage: false
 force_tags: false
 check_updates: true
 legacy_hex: false
@@ -41,19 +64,23 @@ format_chat:
   format: '{deluxetags_tag} <%1$s> %2$s'
 load_tag_on_join: true
 gui:
-  name: '&6Available tags&f: &6%deluxetags_amount%'
-  tag_select_item:
-    material: NAME_TAG
+  tag_availability_placeholder:
+    has_permission: '&aTag unlocked! Click to select'
+    no_permission: '&cTag locked '
+  name: '&3Select a category:'
+  size: 54
+  tag_slots:
+  - 0-35
+  tag_visible_item:
+    material: BARRIER
     data: 0
-    displayname: '&6Tag&f: &6%deluxetags_identifier%'
-    lore:
-    - '%deluxetags_tag%'
-    - '%deluxetags_description%'
   divider_item:
     material: BLACK_STAINED_GLASS_PANE
     data: 0
-    displayname: ''
+    displayname: '&0'
     lore: []
+    slots:
+    - 36-44
   has_tag_item:
     material: PLAYER_HEAD
     data: 0
@@ -61,39 +88,100 @@ gui:
     lore:
     - '%deluxetags_tag%'
     - Click to remove your current tag
+    slot: 49
   no_tag_item:
     material: PLAYER_HEAD
     data: 0
     displayname: '&cYou don''t have a tag set!'
     lore:
     - '&7Click a tag above to select one!'
+    slot: 49
   exit_item:
     material: IRON_DOOR
     data: 0
     displayname: '&cClick to exit'
     lore:
     - '&7Exit the tags menu'
+    slots:
+    - 48
+    - 50
+  category_back_item:
+    material: ARROW
+    data: 0
+    displayname: '&6Back to categories'
+    lore:
+    - '&7Return to category selection'
+    slot: 47
   next_page:
     material: PAPER
     data: 0
     displayname: '&6Next page: %page%'
     lore:
     - '&7Move to the next page'
+    slot: 53
   previous_page:
     material: PAPER
     data: 0
     displayname: '&6Previous page: %page%'
     lore:
     - '&7Move to the previous page'
+    slot: 45
+categories:
+  all:
+    order: 0
+    item: BOOK
+    name: '&3All Tags'
+    lore:
+    - '&7Click to view all available tags'
+    gui_name: '&3All Tags &8%deluxetags_category_amount% available'
+  general:
+    order: 1
+    item: NAME_TAG
+    name: '&6General'
+    lore:
+    - '&7Click to view general tags'
+    gui_name: '&6General tags &8%deluxetags_category_amount% available'
+  epic:
+    order: 2
+    item: BLAZE_POWDER
+    name: '&3Epic Tags'
+    lore:
+    - '&9Click to view epic tags'
+    gui_name: '&3Epic Tags &8%deluxetags_category_amount% available'
 deluxetags:
   example:
     order: 1
+    category: general
     tag: '&8[&bDeluxeTags&8]'
-    description: '&cAwarded for using DeluxeTags!'
+    displayname: '&6Tag&f: &6%deluxetags_identifier%'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    - '%deluxetags_available%'
+    item: NAME_TAG
+    data: 0
     permission: deluxetags.tag.example
+  epic:
+    order: 2
+    category: epic
+    tag: '&8[&3Epic&8]'
+    displayname: '&6Tag&f: &6%deluxetags_identifier%'
+    description:
+    - '&9Awarded for using categories'
+    - '%deluxetags_available%'
+    item: BLAZE_POWDER
+    data: 0
+    permission: deluxetags.tag.epic
 
 ```
 {% endcode %}
+
+For detailed explanations and additional examples, see [Categories & GUI](categories-and-gui.md) and [Formatting](formatting.md).
+
+When `check_updates: true`, DeluxeTags checks Modrinth for new releases and notifies players with `deluxetags.updates`.
+
+{% hint style="warning" %}
+Back up `config.yml` before upgrading. DeluxeTags 1.9 automatically migrates `gui.tag_select_item` values to individual tags, converts tag descriptions to lore lists, moves the legacy `tag_availability_placeholder` section under `gui`, and assigns uncategorized tags to `general`.
+{% endhint %}
 
 ## Messages
 

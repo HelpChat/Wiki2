@@ -6,36 +6,58 @@ description: List of commands and permissions for the plugin
 
 ## Commands
 
-| Command                              | Permission                | Description                                                |
-| ------------------------------------ | ------------------------- | ---------------------------------------------------------- |
-| /Tags                                | DeluxeTags.GUI            | <p>Opens the tags GUI <br>to select a tag.</p>             |
-| /Tags List                           | DeluxeTags.List           | Lists your available tags.                                 |
-| /Tags List All                       | DeluxeTags.List.All       | Lists all loaded tags.                                     |
-| /Tags List \<Player>                 | DeluxeTags.List.Player    | Lists the specified player's available tags.               |
-| /Tags Select \<TagID>                | DeluxeTags.Select         | Selects the specified tag.                                 |
-| /Tags Set \<Player> \<TagID>         | DeluxeTags.Set            | <p>Sets the specified tag <br>to the specified player.</p> |
-| /Tags Clear \<Player>                | DeluxeTags.Clear          | Clears the player's tag.                                   |
-| /Tags Create \<TagID> \<Tag>         | DeluxeTags.Create         | Creates new tag.                                           |
-| /Tags Delete \<TagID>                | DeluxeTags.Delete         | Deletes the specified tag.                                 |
-| /Tags SetOrder \<TagID> \<Order>     | DeluxeTags.SetOrder       | Sets the specified tag's order.                            |
-| /Tags SetDisplay \<TagID> \<Display> | DeluxeTags.SetDisplay     | Sets the specified tag's display.                          |
-| /Tags SetDesc \<TagID> \<Desc>       | DeluxeTags.SetDescription | <p>Sets the specified <br>tag's description.</p>           |
-| /Tags Reload                         | DeluxeTags.Reload         | Reloads the plugin's files.                                |
-| /Tags Version                        | -                         | Displays the plugin's version.                             |
-| /Tags Help                           | -                         | Displays the player's available commands.                  |
+| Command | Permission | Description |
+| --- | --- | --- |
+| `/tags` | `deluxetags.gui` | Opens the tag selection GUI. |
+| `/tags list` | `deluxetags.list` | Lists the sender's available tags. |
+| `/tags list all` | `deluxetags.list.all` | Lists all loaded tags. |
+| `/tags list <player>` | `deluxetags.list.player` | Lists the specified player's available tags. |
+| `/tags select <tag>` | `deluxetags.select` | Selects an available tag. |
+| `/tags set <player> <tag>` | `deluxetags.set` | Sets an available tag for another player. |
+| `/tags clear <player>` | `deluxetags.clear` | Clears another player's active tag. |
+| `/tags create <identifier> <tag>` | `deluxetags.create` | Creates a tag. New tags are placed in `general`. |
+| `/tags delete <identifier>` | `deluxetags.delete` | Deletes a tag. |
+| `/tags setorder <identifier> <order>` | `deluxetags.setorder` | Changes a tag's display order. |
+| `/tags setdisplay <identifier> <display>` | `deluxetags.setdisplay` | Changes the value returned for a tag's display. |
+| `/tags setdesc <identifier> <description>` | `deluxetags.setdescription` | Changes a tag's description. |
+| `/tags reload` | `deluxetags.reload` | Reloads the plugin's files, categories, tags, GUI, and formatting options. |
+| `/tags version` | `deluxetags.version` | Displays the plugin's version. |
+| `/tags help` | None | Lists only the commands the sender has permission to use. |
 
-## Permissions
+## Tag permissions
+
+| Permission | Description |
+| --- | --- |
+| `deluxetags.tag.<identifier>` | Allows the player to see and select the tag. This is the default permission when a custom `permission` is not configured for the tag. |
+| `deluxetags.see.<identifier>` | Allows the player to see the tag in `/tags` without selecting it. |
+| `deluxetags.see.all` | Allows the player to see every tag in `/tags` without selecting them. |
+| `deluxetags.forcetag.<identifier>` | Forces this tag when `force_tags: true`. The tag with the lowest order wins when multiple forced-tag permissions are granted. |
+| `deluxetags.defaulttag.<identifier>` | Uses this tag when the player has no forced, selected, or saved tag. The tag with the lowest order wins when multiple default-tag permissions are granted. |
 
 {% hint style="info" %}
-People with DeluxeTags.Tag.\<TagID> will still be able to see the tags in the GUI without the DeluxeTags.See.\<TagID> permission.
+A player can see a category when they can see or select at least one tag inside it. The category selector is only displayed when the player can see tags in two or more real categories; otherwise, DeluxeTags opens the single available category directly.
 {% endhint %}
 
-| DeluxeTags.See.\<TagID>                   | Gives access to see the specified tag in the /tags GUI without being able to select it. |
-| ----------------------------------------- | --------------------------------------------------------------------------------------- |
-| DeluxeTags.See.All                        | Gives access to see all tags in the /tags GUI without being able to select them.        |
-| <p></p><p>DeluxeTags.Tag.&#x3C;TagID></p> | Gives access to the specified tag.                                                      |
-| DeluxeTags.ForceTag.\<TagID>              | Force the specified tag to the player if `force_tags:` option is enabled.               |
+## Other permissions
+
+| Permission | Description |
+| --- | --- |
+| `deluxetags.gui` | Opens the tag selection GUI. |
+| `deluxetags.select` | Selects a tag by command. |
+| `deluxetags.list` | Lists the sender's available tags. |
+| `deluxetags.list.all` | Lists every loaded tag. |
+| `deluxetags.list.player` | Lists another player's available tags. |
+| `deluxetags.set` | Sets another player's tag. |
+| `deluxetags.clear` | Clears another player's active tag. |
+| `deluxetags.create` | Creates tags. |
+| `deluxetags.delete` | Deletes tags. |
+| `deluxetags.setorder` | Changes tag order. |
+| `deluxetags.setdisplay` | Changes tag display text. |
+| `deluxetags.setdescription` | Changes tag descriptions. |
+| `deluxetags.reload` | Reloads DeluxeTags. |
+| `deluxetags.version` | Views version information. |
+| `deluxetags.updates` | Receives update notifications. |
 
 {% hint style="info" %}
-All text between the less-than and greater-than signs (**<>**) is a placeholder/variable, replace it with the requested value without the less-than and greater-than signs (**<>**).
+Replace `<identifier>` with the tag's identifier without the angle brackets. Permission names are case-insensitive, but lowercase is recommended.
 {% endhint %}

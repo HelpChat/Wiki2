@@ -5,43 +5,47 @@ description: Plugin's placeholders
 # Placeholders
 
 {% hint style="info" %}
-All text between the less-than and greater-than signs (**<>**) is a placeholder/variable, replace it with the requested value without the less-than and greater-than signs (**<>**).
+Replace `<identifier>` with the tag's identifier without the angle brackets.
 {% endhint %}
 
-### PlaceholderAPI Placeholders
+## PlaceholderAPI placeholders
 
-**DeluxeTags** plugin provides [**PlaceholderAPI** ](https://www.spigotmc.org/resources/6245/)placeholders that you can use in any plugin that supports [**PlaceholderAPI**](https://www.spigotmc.org/resources/6245/).
+DeluxeTags includes its own [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) expansion. No separate eCloud download is required.
 
-| Placeholder                         | Return Value | Description                                                           |
-| ----------------------------------- | ------------ | --------------------------------------------------------------------- |
-| %deluxetags\_tag%                   | Text         | Returns the player's current tag.                                     |
-| %deluxetags\_amount%                | Number       | Returns the total of the player's available tags.                     |
-| %deluxetags\_order%                 | Number       | Returns the player's current tag's order.                             |
-| %deluxetags\_description%           | Text         | Returns the player's current tag's description.                       |
-| %deluxetags\_identifier%            | Text         | Returns the player's current tag's identifier.                        |
-| %deluxetags\_tag\_\<TagID>%         | Text         | Returns the specified tag.                                            |
-| %deluxetags\_order\_\<TagID>%       | Number       | Returns the specified tag's order.                                    |
-| %deluxetags\_description\_\<TagID>% | Text         | Returns the specified tag's description.                              |
-| %deluxetags\_has\_tag\_\<TagID>%    | Boolean      | Returns whether if the player has access to the specified tag or not. |
+| Placeholder | Return value | Description |
+| --- | --- | --- |
+| `%deluxetags_tag%` | Text | The player's active tag display. |
+| `%deluxetags_identifier%` | Text | The player's active tag identifier. |
+| `%deluxetags_description%` | Text | The player's active tag description. |
+| `%deluxetags_order%` | Number | The player's active tag order. |
+| `%deluxetags_amount%` | Number | The number of tags the player has permission to select. |
+| `%deluxetags_tag_<identifier>%` | Text | The configured display of a specific tag. |
+| `%deluxetags_description_<identifier>%` | Text | The configured description of a specific tag. |
+| `%deluxetags_order_<identifier>%` | Number | The configured order of a specific tag. |
+| `%deluxetags_has_tag_<identifier>%` | Boolean | Whether the player has permission to select a specific tag. |
 
-### **Download**
+## Internal placeholders
 
-**There is no need to download the expansion anymore!** The expansion was moved inside the plugin itself in the 1.8.2 update which means less work for you! As long as you have PlaceholderAPI installed, the expansion will register automatically.
+Internal placeholders can be used in DeluxeTags' GUI text, item names, lore, and other supported configuration strings. Both percent and brace forms are supported, for example `%deluxetags_tag%` and `{deluxetags_tag}`.
 
-### **Internal Placeholders**
+| Placeholder | Return value | Description |
+| --- | --- | --- |
+| `%player%` | Text | The player's username. |
+| `%displayname%` | Text | The player's display name. |
+| `%deluxetags_tag%` | Text | The displayed tag's value, or the active tag where appropriate. |
+| `%deluxetags_identifier%` | Text | The displayed tag's identifier. |
+| `%deluxetags_description%` | Text | The displayed tag's description. |
+| `%deluxetags_amount%` | Number | The total number of tags the player can select. |
+| `%deluxetags_category_amount%` | Number | The number of tags the player can select in the current category. In `all`, this is the total available tag count. |
+| `%deluxetags_available%` | Text | The configured `gui.tag_availability_placeholder` value for the displayed tag. |
 
-**DeluxeTags** provides internal placeholders that you can use inside DeluxeTags's GUI and messages.
+## GUI page placeholders
 
-| Placeholder               | Return Value | Description                                                                                                     |
-| ------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------- |
-| %player%                  | Text         | Returns the player's name.                                                                                      |
-| %displayname%             | Text         | Returns the player's display name.                                                                              |
-| %deluxetags\_tag%         | Text         | Returns the tag.                                                                                                |
-| %deluxetags\_identifier%  | Text         | Returns the tag's identifier.                                                                                   |
-| %deluxetags\_description% | Text         | Returns the tag's description.                                                                                  |
-| %deluxetags\_amount%      | Number       | Returns the tag's amount.                                                                                       |
-| %deluxetags\_available%   | Text         | Returns the configured text (messages.yml) based on whether the player has access to the tag or not.            |
-| %previous\_page%          | Number       | Number of the previous page if there  is one (works inside the GUI only).                                       |
-| %current\_page%           | Number       | Number of the current page (works inside the GUI only).                                                         |
-| %next\_page%              | Number       | Number of the next page if there  is one (works inside the GUI only).                                           |
-| %page%                    | Number       | Number of next or previous page if there is one(Only works inside the gui on the next and previous page items). |
+| Placeholder | Description |
+| --- | --- |
+| `%previous_page%` | Previous page number, or an empty value on the first page. |
+| `%current_page%` | Current page number. |
+| `%next_page%` | Next page number, or an empty value on the last page. |
+| `%page%` | Destination page number when used on the next or previous page item. Kept for compatibility with older configurations. |
+
+The brace forms `{previous_page}`, `{current_page}`, `{next_page}`, and `{page}` are also supported.
