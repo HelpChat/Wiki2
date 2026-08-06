@@ -35,6 +35,7 @@ Each item will have a name, in this example our item is called **`ItemName`.** T
 > > * [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) material (`itemsadder-namespace:name`)
 > > * [Oraxen](https://www.spigotmc.org/resources/72448/) material (`oraxen-oraxen_item_id`)
 > > * [Nexo](https://polymart.org/product/6901/nexo) material (`nexo-nexo_item_id`)
+> > * [CraftEngine](https://modrinth.com/plugin/craftengine) material (`craftengine-namespace:path`)
 > > * [MMOItems](https://www.spigotmc.org/resources/mmoitems.39267/) material (`mmoitems-item_type:item_id`)
 > > * [ExecutableItems](https://www.spigotmc.org/resources/%E2%9A%94%EF%B8%8Fexecutableitems-%E2%AD%90-customize-all-items-add-abilities-%E2%AD%90-ai-items-generation-on-the-discord-%E2%9C%85.83070/) material (`executableitems-item_id`)
 > > * [ExecutableBlocks](https://www.spigotmc.org/resources/%E2%AD%90-executable-blocks-%E2%AD%90-add-activators-on-your-blocks.94696/) material (`executableblocks-item_id`)
