@@ -259,6 +259,12 @@ gui:
   tag_selected: '&aYour tag has been set to &f{0} &7({1}&7)'
   tag_disabled: '&7Your tag has been disabled!'
   page_error: '&cThere was a problem getting the previous page number!'
+storage:
+  unavailable: '&cTag storage is unavailable. Please try again shortly.'
+  loading: '&eYour tag selection is still loading. Please try again shortly.'
+  busy: '&eA tag change is already being saved. Please wait.'
+  restart_required: '&eStorage settings changed. Restart the server to apply them; the current storage remains active.'
+  config_error: '&cCould not load mysql.yml. Check its settings and file permissions; the current storage remains active.'
 
 ```
 {% endcode %}
