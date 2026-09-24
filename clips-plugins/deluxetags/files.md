@@ -262,3 +262,34 @@ gui:
 
 ```
 {% endcode %}
+
+## Storage
+
+{% hint style="warning" %}
+Storage selection is available only in DeluxeTags v1.10.0 and newer.
+{% endhint %}
+
+`mysql.yml` controls where player tag selections are stored. YAML is the default and stores selections locally in `userdata/player_tags.yml`. MySQL stores them in a shared database, allowing servers using the same database and table prefix to share selections. Tag definitions and permissions remain local to each server.
+
+{% code title="mysql.yml" %}
+    storage:
+      type: yaml # yaml or mysql
+      sync-interval-seconds: 5
+      mysql:
+        host: localhost
+        port: 3306
+        database: deluxetags
+        username: deluxetags
+        password: 'your-password'
+        table-prefix: deluxetags_
+{% endcode %}
+
+Create the database before selecting MySQL. Restart the server after changing storage settings.
+
+### Storage files
+
+| File | Purpose |
+| --- | --- |
+| `mysql.yml` | Selects YAML or MySQL and contains the storage settings. |
+| `userdata/player_tags.yml` | Stores local selections with YAML; valid selections are imported once when MySQL is first initialized. |
+| `storage-installation-id` | Generated for each MySQL installation. Keep it across restarts and use a unique ID for each server. |
