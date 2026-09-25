@@ -1,51 +1,43 @@
 ---
-description: >-
-  ChatChat triggers a few events. You can find a list with all the events on
-  this page.
+description: Events fired by ChatChat and the changes listeners can make.
 ---
 
 # Events
 
-## ChatChatEvent
+## Public chat
 
-The event is fired whenever a public chat message is being processed and about to be sent.
+`ChatChatEvent` is fired while a public message is processed and before it is delivered. It is cancellable. A listener can inspect or change the sender, channel, format, message, and recipient set.
 
-## PMSendEvent
+## Private messages
 
-The event is fired when a private message is being processed and about to be sent.
+`PMSendEvent` is fired before a local private message is sent. It is cancellable and exposes the sender, recipient, message, reply state, and sender and recipient formats.
 
-## ChannelMentionEvent
+`CrossServerPMSendEvent` is fired after ChatChat finds a remote recipient and before it forwards a cross-server private message. It is cancellable and exposes the recipient UUID and name, reply state, message, and sender, recipient, and social-spy formats.
 
-The event is fired when a user is mentioned in a public message using a channel mention such as: @here, @everyone, @channel
+## Mentions
 
-## PersonalMentionEvent
+`MentionEvent` is the base event for a mention processed in a public message. It is cancellable and exposes the sender, target, channel, and whether the mention sound should play.
 
-The event is fired when a user is mentioned in a public message using a direct mention such as: @BlitzOffline
-
-## MentionEvent
-
-The event is fired whenever a user is mentioned in a public message thru a channel mention or a direct mention.
+- `PersonalMentionEvent` is fired for a direct player mention.
+- `ChannelMentionEvent` is fired for a channel-wide mention such as `@here`, `@everyone`, or `@channel`.
 
 ## Example
 
-Example of a class listening to the ChatChatEvent and canceling it if the sender's name is BlitzOffline.
+Cancel a public message from a selected player:
 
 ```java
-package at.helpch.example.listener;
-
 import at.helpch.chatchat.api.event.ChatChatEvent;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
-public class ChatChatEventListener implements Listener {
-
+public final class ChatListener implements Listener {
     @EventHandler(ignoreCancelled = true)
-    public void onChatChatEvent(final ChatChatEvent event) {
-        if (event.user().player().getName().equals("BlitzOffline")) {
+    public void onChatChat(final ChatChatEvent event) {
+        if (event.user().player().map(player -> player.getName().equals("Example")).orElse(false)) {
             event.setCancelled(true);
-            return;
         }
     }
 }
-
 ```
+
+`ChatChatEvent` follows Bukkit's synchronous or asynchronous event contract based on the chat processing context. Listeners should handle it on the appropriate thread.

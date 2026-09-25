@@ -1,19 +1,21 @@
 ---
-description: Get started using the ChatChat API.
+description: Add the ChatChat API dependency and obtain the registered service.
 ---
 
-# Getting Started
+# Getting started
 
-### Declare the ChatChat API repository and dependency in your build files
+Declare the HelpChat snapshots repository and API dependency in your plugin build.
 
-#### Maven
+## Maven
 
 ```xml
 <repositories>
     <repository>
+        <id>helpchat-snapshots</id>
         <url>https://repo.helpch.at/snapshots/</url>
     </repository>
 </repositories>
+
 <dependencies>
     <dependency>
         <groupId>at.helpch</groupId>
@@ -24,60 +26,35 @@ description: Get started using the ChatChat API.
 </dependencies>
 ```
 
-#### Gradle
+## Gradle
 
 ```kotlin
 repositories {
     maven("https://repo.helpch.at/snapshots/")
 }
+
 dependencies {
     compileOnly("at.helpch:chat-chat-api:1.0.0-SNAPSHOT")
 }
 ```
 
-## Get an instance of the ChatChatAPI
+## Get the API service
 
-The ChatChatAPI interface is how you can access and modify most functionalities of ChatChat.
+ChatChat registers `ChatChatAPI` with Bukkit's services manager. Check that ChatChat is enabled before looking up the provider.
 
 ```java
-package at.helpch.example;
-
 import at.helpch.chatchat.api.ChatChatAPI;
 import org.bukkit.plugin.RegisteredServiceProvider;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
 
-public class ExamplePlugin extends JavaPlugin {
+RegisteredServiceProvider<ChatChatAPI> registration =
+    getServer().getServicesManager().getRegistration(ChatChatAPI.class);
 
-    private ChatChatAPI chatChatAPI;
-
-    @Override
-    public void onEnable() {
-        if (!getServer().getPluginManager().isPluginEnabled("ChatChat")) {
-            getLogger().severe("Could not find ChatChat! Disabling plugin...");
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
-
-        RegisteredServiceProvider<ChatChatAPI> registeredServiceProvider = getServer().getServicesManager().getRegistration(ChatChatAPI.class);
-        if (registeredServiceProvider == null) {
-            getLogger().severe("Could not find the ChatChatAPI! Disabling plugin...");
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
-
-        chatChatAPI = registeredServiceProvider.getProvider();
-    }
-
-    @Override
-    public void onDisable() {
-        getLogger().info("Disabling plugin...");
-        chatChatAPI = null;
-    }
-
-    public @NotNull ChatChatAPI getChatChatAPI() {
-        return chatChatAPI;
-    }
+if (registration == null) {
+    getLogger().severe("ChatChat API is unavailable");
+    return;
 }
 
+ChatChatAPI chatChatAPI = registration.getProvider();
 ```
+
+Use `softdepend: [ChatChat]` in your plugin metadata if your plugin can run without ChatChat. Disable your integration when the service is unavailable.

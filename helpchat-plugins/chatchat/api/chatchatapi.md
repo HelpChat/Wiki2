@@ -1,35 +1,18 @@
 ---
-description: The main way to interact with the plugin
+description: The managers exposed by ChatChatAPI and what they provide.
 ---
 
 # ChatChatAPI
 
-{% hint style="info" %}
-You can see more detailed documentation about each holder and manager in the JavaDocs.
-{% endhint %}
+`ChatChatAPI` is registered as a Bukkit service. It exposes the following managers:
 
-The ChatChatAPI interface provides access to multiple Holders and Managers.
+| Method | Use |
+| --- | --- |
+| `usersHolder()` | Find, create, unload, and save ChatChat user objects. |
+| `hookManager()` | Register hooks and access loaded basic and vanish hooks. |
+| `channelTypeRegistry()` | Register channel types that implement custom routing or membership. |
+| `ruleManager()` | Register or access rules used to validate public and private messages. |
+| `mentionsManager()` | Register and access mention types. |
+| `miniPlaceholdersManager()` | Register MiniMessage placeholders, inspect registered placeholders, and compile their tag resolvers. |
 
-## UsersHolder
-
-A way to get existent user instances, create new user instances, unload existent user instances and save existent user instances to file.
-
-## HookManager
-
-A way to load new Hooks into ChatChat or get any already loaded hooks.
-
-## ChannelTypeRegistry
-
-A way to add new Channel types to ChatChat.
-
-## RuleManager
-
-A way to add new Rules into ChatChat or get any already loaded rules.
-
-## MentionManager
-
-A way to add new Mention types to ChatChat or get any already loaded mention types.
-
-## MiniPlaceholderManager
-
-A way to register new MiniPlaceholders in ChatChat, get any already loaded mini placeholders or compile all the MiniPlaceholders into a [TagResolver](https://jd.advntr.dev/text-minimessage/4.13.1/net/kyori/adventure/text/minimessage/tag/resolver/TagResolver.html).
+The API also includes channel, format, user, hook, mention, placeholder, rule, and event interfaces. Read the Javadocs for method signatures and nullability details.

@@ -1,50 +1,58 @@
 ---
-description: List of all commands and the required permission that ChatChat has.
+description: ChatChat commands, aliases, permissions, and channel command setup.
 ---
 
 # Commands
 
-## Admin Commands
+## Plugin commands
 
-|                  Command                 |      Permission      |                                     Description                                    |
-| :--------------------------------------: | :------------------: | :--------------------------------------------------------------------------------: |
-|        /chatchat dump \[filename]        |     chatchat.dump    | Creates and posts a dump containing all files of the plugin or the file specified. |
-| /chatchat test \<format-name> \<message> | chatchat.test.format |                    Sends the message using the specified format.                   |
-|             /chatchat reload             |    chatchat.admin    |                          Reload the ChatChat configuration                         |
+| Command | Aliases | Permission | Description |
+| --- | --- | --- | --- |
+| `/chatchat` | — | None | Shows the plugin name and version. |
+| `/chatchat reload` | — | `chatchat.admin` | Reloads ChatChat configuration and locale files. |
+| `/chatchat test <format> <message>` | — | `chatchat.test.format` | Previews a configured global format. |
+| `/chatdump [file]` | — | `chatchat.dump` | Creates and uploads a diagnostic dump, optionally limited to one file. |
+| `/togglechat` | — | `chatchat.togglechat` | Toggles your ability to send and receive public chat. |
+| `/rangedchat` | — | `chatchat.rangedchat` | Toggles radius filtering for your own reception when you have radius bypass. |
+| `/separate <player1> <player2>` | — | `chatchat.separate` | Prevents two players from seeing one another in public chat and private messages. |
+| `/unseparate <player1> <player2>` | — | `chatchat.unseparate` | Removes a staff-enforced separation. |
+| `/ignore <player>` | — | `chatchat.ignore` | Adds a player to your ignore list. |
+| `/unignore <player>` | — | `chatchat.ignore` | Removes a player from your ignore list. |
+| `/ignorelist` | — | `chatchat.ignorelist` | Lists players you ignore and players separated from you by staff. |
 
-## Player Commands
+## Private messaging commands
 
-|            Command            |             Aliases            |            Permission           |                               Description                              |
-| :---------------------------: | :----------------------------: | :-----------------------------: | :--------------------------------------------------------------------: |
-| /whisper \<player> \<message> | /tell, /w, /msg, /message, /pm |           chatchat.pm           |                 Send a private message to another user.                |
-|       /reply \<message>       |               /r               |           chatchat.pm           | Send a reply to the last user that you messaged or sent you a message. |
-|           /togglemsg          |     /toggledms, /togglepms     |        chatchat.pm.toggle       |                Toggle your private messages on and off.                |
-|       /ignore \<player>       |                -               |         chatchat.ignore         |                             Ignore a user.                             |
-|      /socialspy \[on/off]     |       /sspy, /pmspy, /spy      |        chatchat.socialspy       |                   Turn your own social spy on or off.                  |
-|    /togglemention personal    |      /toggleping personal      | chatchat.mention.personal.block |             Toggle if you receive personal mentions or not.            |
-|     /togglemention channel    |       /toggleping channel      |  chatchat.mention.channel.block |             Toggle if you receive channel mentions or not.             |
+These commands are registered only when `private-messages.enabled` is `true`. See [Private messaging](private-messaging.md).
 
-## Channel Commands
+| Command | Aliases | Permission | Description |
+| --- | --- | --- | --- |
+| `/whisper <player> <message>` | `/tell`, `/w`, `/msg`, `/message`, `/pm` | `chatchat.pm` | Sends a private message. |
+| `/reply <message>` | `/r` | `chatchat.pm` | Replies to the most recent private conversation. |
+| `/togglemsg` | `/toggledms`, `/togglepms` | `chatchat.pm.toggle` | Toggles whether you can receive private messages. |
+| `/socialspy [on\|off]` | `/sspy`, `/pmspy`, `/spy` | `chatchat.socialspy` | Enables or disables private-message social spy. |
 
-In ChatChat, each channel can have its own commands. Those commands can be set when creating the channels in `plugins/ChatChat/channels.yml` under the toggle-command option.
+## Mention command
 
-{% hint style="danger" %}
-To make sure channel commands are properly registered, restart the server after any modifications to them.
-{% endhint %}
+| Command | Alias | Permission | Description |
+| --- | --- | --- | --- |
+| `/togglemention <personal\|channel>` | `/toggleping` | `chatchat.mention.personal.block` or `chatchat.mention.everyone.block` | Toggles the selected kind of mention. |
 
-## Command Overriding
+## Channel commands
 
-If by any chance there are other plugins taking over a command that you want ChatChat to use, or vice versa, you can select which one is going to be used in the `commands.yml` bukkit file.
+Each channel can register one or more commands through its `toggle-command` list in `channels.yml`. For a channel named `staff`, a configured command such as `staffchat` lets a player use `/staffchat` to switch channels or `/staffchat <message>` to send a message directly. The default channel does not require a channel-use permission; other channels require `chatchat.channel.use.<channel-name>`.
 
-**Example:**\
-\
-Let's say you have a plugin that takes over the /msg command and you want ChatChat to take over. You open the `commands.yml` file and add the following under the `aliases:` option:
+Channel command names are registered when ChatChat starts. Restart the server after changing `toggle-command`.
+
+A `message-prefix` is a separate quick-send option. For example, with `message-prefix: '#'`, a player can type `#message` without switching channels.
+
+## Command conflicts
+
+If another plugin owns an alias such as `/msg`, use Bukkit's `commands.yml` to route it to ChatChat. For example:
 
 ```yaml
+aliases:
   msg:
-  - chatchat:msg $1-
+    - chatchat:msg $1-
 ```
 
-{% hint style="danger" %}
-Restart the server after modifying the `commands.yml` file to make sure all changes are properly applied!
-{% endhint %}
+Restart after editing `commands.yml`.

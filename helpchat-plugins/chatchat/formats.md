@@ -1,42 +1,54 @@
 ---
-description: Everything about formats, how they work, permissions they require, etc.
+description: Configure global and channel-specific ChatChat message formats.
 ---
 
 # Formats
 
-In ChatChat there are 2 types of formats: **BasicFormat** and **PriorityFormat.**
+ChatChat formats public messages with MiniMessage, PlaceholderAPI, and ChatChat's internal tags. Global priority formats live in `formats.yml`; a channel can also define its own formats in `channels.yml`.
 
-## **Basic Format**
+## Format structure
 
-In ChatChat, every format is a BasicFormat. Basic formats have 2 components: Name and Parts.\
-These formats are usually used for: private messaging, social spy, mentions, etc.
+Each priority format has a name, a numeric `priority`, and a `parts` mapping. Every part is a list of strings; ChatChat joins the strings and renders the result as one message. Use `<message>` where the player's processed message should appear.
 
-### Format Name
+```yaml
+default-format: default
 
-The format name is also the format identifier. This is what you use to find formats, it's also the name you use when giving people permission to formats. Multiple formats should not have the same name.
+formats:
+  default:
+    priority: 1
+    parts:
+      channel:
+        - '%chatchat_channel_prefix% '
+      name:
+        - '<white>%player_displayname%'
+      divider:
+        - ' <gray>» '
+      message:
+        - '<message>'
+```
 
-### Format Parts
+The `default-format` is used when a player has no permission for another available format. The console uses the separate `console-format`.
 
-The format parts are made out of a key (the name) and a list of strings (the part).\
-\
-\- the **key** is the part's name and is going to be completely ignored by the plugin. It was added at the requested of the users as it makes the config look a lot more cleaner.\
-\- the **part** is the actual format that will be used. ChatChat will just take the list of strings and append them together into one big string and then parse it to a message.
+## Priority and permissions
 
-## Priority Format
+Players with more than one eligible format use the one with the highest priority according to `extensions.yml`:
 
-Priority formats have everything that Basic Formats have but they also have a priority. These formats are the ones used in `formats.yml` for example.
+- `addons.deluxechat.inverse_priorities: false` (default): the larger number wins.
+- `addons.deluxechat.inverse_priorities: true`: the smaller number wins, matching DeluxeChat's priority direction.
 
-### Priority
+A channel format with a matching permission is selected before any global format, regardless of global format priority.
 
-If a player has access to multiple formats, the priority will decide what format will be used when they sends a message in chat.
+| Format type | Permission |
+| --- | --- |
+| Global format named `staff` | `chatchat.format.staff` |
+| `staff` format on channel `team` | `chatchat.channel.format.team.staff` |
 
-{% hint style="info" %}
-The `addons.deluxechat.inverse_priorities` setting in `extensions.yml` dictates if the lowest or the highest number has priority. If this setting is true, lower numbers have higher priority. If this setting is false, it is the other way around.{% endhint %}
+The configured default format needs no permission. See [Permissions](permissions.md).
 
-## Permissions
+## Placeholders and tags
 
-Formats are given away to players using permissions. Every format has a similar permission and that is: `chatchat.format.<format-name>`
+Formats support PlaceholderAPI placeholders in percent form, such as `%player_name%`, and the `<papi:...>` and `<recipient:...>` tags. `<message>` inserts the processed player message. For private-message formats, the sender and recipient contexts are available.
 
-## Default Format
+ChatChat also supports MiniMessage formatting tags and configured MiniPlaceholders. See [Placeholders](placeholders.md) and [MiniMessage tags in chat](tags.md).
 
-In your `formats.yml` file, you can specify the name of the default format. You must also create a format in there with that name. The default format will be used when a user has no permission for any other format.
+`console-format` uses a limited parser on Spigot. Tags such as keybind, translation, fonts, and selectors may not work there, and extra percent signs can break the format. Paper handles these console-format limitations more reliably. Avoid tags that need a player recipient context.

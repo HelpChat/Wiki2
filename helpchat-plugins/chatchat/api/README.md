@@ -1,13 +1,13 @@
 ---
-description: All the documentation required to start using the API provided by ChatChat.
+description: Developer documentation for the ChatChat API.
 ---
 
 # API
 
-{% hint style="success" %}
-You can find more information about the API by reading the javadocs! (TO BE ADDED)
-{% endhint %}
+ChatChat exposes a Bukkit service named `ChatChatAPI` for plugins that need to integrate with its chat system.
 
-{% hint style="danger" %}
-Currently the API is going thru constant changes so information here might be missing or outdated!
-{% endhint %}
+- [Getting started](getting-started.md) explains the dependency and service lookup.
+- [ChatChatAPI](chatchatapi.md) lists the API managers and holders.
+- [Events](events.md) describes the events ChatChat fires.
+
+The API Javadocs are available at [helpch.at/docs](https://helpch.at/docs).

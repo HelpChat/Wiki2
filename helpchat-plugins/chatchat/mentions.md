@@ -1,53 +1,37 @@
 ---
-description: Everything you need to know about mentions.
+description: Configure personal and channel mentions, mention formats, sounds, and permissions.
 ---
 
 # Mentions
 
-Mentions are a way to get someone's attention to your messages. Messages only work in public messages. Mentions are also highly customizable and can be modified in the settings.yml file.
+ChatChat can mention online players in public messages and notify the receivers with a sound. Mention settings and formats are in `settings.yml`.
 
-By default ChatChat registers 2 mention types but other plugins can register their own mention types. The default types are: personal and channel mentions.
+## Mention types
 
-## Personal Mentions
+| Type | Example | What it matches |
+| --- | --- | --- |
+| Personal | `@Alex` | The configured prefix followed by an online player's name. |
+| Channel | `@here`, `@everyone`, `@channel` | A notice to eligible receivers of the current channel. |
 
-These are used to directly mention one specific user.&#x20;
+Plugins can register additional mention types through the [API](api/README.md). The default prefix is `@`. Set `mentions.prefix` to a different string to change it; set it to an empty string to disable mentions.
 
-### How they work:
+Personal mentions require `chatchat.mention.personal`. Channel mentions require `chatchat.mention.everyone`. A receiver can opt out using `/togglemention personal` or `/togglemention channel` if they have the corresponding `.block` permission. The matching `.block.override` permission lets a sender mention opted-out users.
 
-To use them you just type in chat the mention prefix that you can modify in the settings which by default is `@` followed by the user's name. E.g. `@BlitzOffline`. You also need to have the personal mention usage permission and the block bypass permission in case the mentioned user had turned their mentions off.
+Mention visibility and sound are resolved for each eligible receiver, respecting the channel's recipient rules. Mention formatting uses `mentions.personal-format` or `mentions.channel-format`; each format can use `<mention>` for the matched text.
 
-### What these mentions do:
+## Sound and private messages
 
-The user's name will be highlighted in the message to both the sender and the mentioned person and also the mentioned person will hear a sound. The sound is customizable.
+The `mentions.sound` setting controls the sound for mentions. Configure the Adventure sound `name`, `source`, `pitch`, and `volume`. The `mentions.private-message` setting controls whether receiving a private message also plays this sound.
 
-If the mentioned user has their personal mentions turned off and the person mentioning them doesn't have the bypass permission the receiver will still see the highlighted name but they won't hear the sound. Also the sender won't see the highlighted name.
+## Permissions
 
-### Permissions:
+| Permission | Grants |
+| --- | --- |
+| `chatchat.mention.personal` | Use personal mentions. |
+| `chatchat.mention.everyone` | Use `@here`, `@everyone`, and `@channel`. |
+| `chatchat.mention.personal.block` | Toggle receiving personal mentions. |
+| `chatchat.mention.everyone.block` | Toggle receiving channel mentions. |
+| `chatchat.mention.personal.block.override` | Mention a player who opted out of personal mentions. |
+| `chatchat.mention.everyone.block.override` | Include a player who opted out of channel mentions. |
 
-|                Permission                |                                       Description                                       |
-| :--------------------------------------: | :-------------------------------------------------------------------------------------: |
-|         chatchat.mention.personal        |               Get access to mention other online users in public messages.              |
-|      chatchat.mention.personal.block     |                    Get access to toggle personal mentions on or off.                    |
-| chatchat.mention.personal.block.override | Get access to mention any online users even if they turned their personal mentions off. |
-
-### Channel Mentions
-
-These are used to mention all the viewers of the channel the message is sent in.
-
-### How they work:
-
-To use them you just type in chat the mention prefix that you can modify in the settings which by default is `@` follwed by `channel`, `here`, or `everyone`. E.g. `@here`. You also need to have the channel mention usage permission.
-
-### What these mentions do:
-
-The mention will be highlighted in the message to both the sender and the users that receive messages in that channel. The recipients will also hear a sound. The sound is customizable.
-
-If there are receivers that have their channel mentions turned off and the sender does not have the the bypass permission, they will not see the highlighted mention and will not hear sound but everyone else will.
-
-### Permissions:
-
-|             Permission            |                                          Description                                         |
-| :-------------------------------: | :------------------------------------------------------------------------------------------: |
-|      chatchat.mention.channel     |                                Get access to mention channels.                               |
-|   chatchat.mention.channel.block  |                       Get access to toggle channel mentions on or off.                       |
-| chatchat.mention.channel.override | Get access to mention channels including people that have turned their channel mentions off. |
+The permission node contains `everyone` for channel mentions, while the toggle command uses the word `channel`. See [Permissions](permissions.md).

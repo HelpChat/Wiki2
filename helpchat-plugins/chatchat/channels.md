@@ -1,52 +1,68 @@
 ---
-description: Everything about channels, how they work, permissions they require, etc.
+description: Configure ChatChat channels, message routing, channel permissions, and cross-server chat.
 ---
 
 # Channels
 
-## Channel
+Channels control who can send and receive a public message, how players switch channels, and how messages are displayed. Channels are defined in `channels.yml`. The channel map key is its identifier and the suffix used in channel permissions; give each channel a unique name.
 
-Channels are made out of 6 components, some of which are optional.
+## Channel options
 
-### Channel Name
+| Option | Purpose |
+| --- | --- |
+| `default-channel` | Channel selected for new players and used as the fallback channel. The named channel must exist. |
+| `channels.<name>.toggle-command` | Command names and aliases that switch to the channel. A command can also send a message directly. |
+| `channels.<name>.message-prefix` | Prefix typed before a message to send it to this channel without switching. Leave empty to disable. |
+| `channels.<name>.channel-prefix` | Display text for the channel. Use `%chatchat_channel_prefix%` in a format to show it. |
+| `channels.<name>.radius` | Maximum horizontal distance in blocks between sender and receiver. Use `-1` for no radius limit. Radius channels only reach players in the same world. |
+| `channels.<name>.type` | Channel implementation. Defaults to `default`; optional Towny types are `TOWNY_TOWN` and `TOWNY_NATION` when enabled. |
+| `channels.<name>.cross-server` | Forwards this channel's public messages to ChatChat on other servers connected to the same supported proxy. Defaults to false. |
+| `channels.<name>.formats` | Optional priority formats for this channel. A matching channel format takes precedence over global formats. |
 
-The channel name is also the channel identifier. This is what you use to find channels, it's also the name you use when giving people permission to see or send messages in a channel. Multiple channels should not have the same name.
+Example:
 
-### Message Prefix (optional)
+```yaml
+default-channel: global
 
-Also known as a quick prefix, the message prefix option is used to quickly send messages in different channels without having to switch to that channel before.\
-**Default Value:** `empty`
+channels:
+  global:
+    toggle-command:
+      - global
+    message-prefix: ''
+    channel-prefix: '[global]'
+    radius: -1
 
-### Channel Prefix (optional)
+  staff:
+    toggle-command:
+      - staffchat
+      - sc
+    message-prefix: '#'
+    channel-prefix: '[STAFF]'
+    radius: -1
+```
 
-Also known as a channel display name, is used for display purposes only. Currently the only use is inside the `%chatchat_channel_prefix% placeholder.`\
-**Default Value:** `empty`
+Using `/staffchat` switches to the staff channel. `/staffchat Hello` sends `Hello` there immediately. Typing `#Hello` also sends to the channel while leaving the player's selected channel unchanged.
 
-### Channel Commands (optional)
+Channel commands are registered at startup, so restart after editing `toggle-command`. Other changes can be loaded with `/chatchat reload`.
 
-Are commands that can be used to switch to the respective channel or to directly send a message in that channel. If for example, you have a staff-chat channel and you add the `staff` command as a channel command, users with access to the staff-chat channel can use `/staff` to switch to the staff-chat channel or they can use `/staff <message>` to send a message  in the staff-chat channel.\
-**Default Value:** `empty list`
+## Send and receive permissions
 
-### Channel Radius (optional)
+| Permission | Grants |
+| --- | --- |
+| `chatchat.channel.use.<channel-name>` | Send messages in the channel and switch to it. |
+| `chatchat.channel.see.<channel-name>` | Receive messages from the channel. |
+| `chatchat.channel.bypass-radius` | Receive radius-limited channel messages outside the radius. `/rangedchat` opts the holder back into radius checks. |
 
-If a channel has a radius, the messages will only be sent to players within x blocks from the sender. Set radius to -1 to mark the channel as global instead.\
-**Default Value:** `-1`
+The configured default channel does not require channel-use or channel-see permissions. Other channels require the corresponding permission for each action.
 
-### Channel Type (optional)
+## Cross-server public chat
 
-The channel type option is used to determin the channel's type. By default, ChatChat registers one channel type caleld `default`. When it finds Towny installed it registers 2 new channel types: `towny_town` and `towny_nation`. Other plugins can also use the API to register new channel types.\
-**Default Value:** `default`
+Set `cross-server: true` on the channel in `channels.yml` on every backend server that should exchange its messages. Use the same channel name on those servers. Cross-server channels must use the `default` channel type and `radius: -1`; ChatChat rejects other combinations.
 
-## Permissions:
+ChatChat sends these messages across the supported BungeeCord/Velocity proxy messaging connection. Each receiving server still applies its own channel recipients and local ChatChat behavior. Personal and channel mentions in forwarded messages are processed for recipients on each receiving server.
 
-Channels have 2 main permissions and some secondary ones:
+For proxy-wide private messages, see [Private messaging](private-messaging.md).
 
-|              Permission              |                 Description                |
-| :----------------------------------: | :----------------------------------------: |
-| chatchat.channel.use.\<channel-name> |   Ability to send messages in a channel.   |
-| chatchat.channel.see.\<channel-name> | Ability to see messages sent in a channel. |
-|    chatchat.channel.bypass-radius    | Ability to bypass the radius in a channel. |
+## Towny channel types
 
-## Default Channel
-
-In your `channels.yml` file, you can specify the name of the default channel. You must also create a channel in there with that name. The default channel will be given to players when they first join the server and also messages sent by people with no permission to other channels will be sent in the default channel.
+Towny channels are optional. Set `addons.towny.channels: true` in `extensions.yml`, restart, then define a channel using `type: TOWNY_TOWN` or `type: TOWNY_NATION`. Players must belong to the relevant Towny group to use its channel. Other plugins can register channel types through the [API](api/README.md). See [Optional integrations](extensions.md).

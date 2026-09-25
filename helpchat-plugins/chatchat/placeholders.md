@@ -1,38 +1,53 @@
 ---
-description: A list of internal and PlaceholderAPI placeholders provided by ChatChat.
+description: ChatChat PlaceholderAPI placeholders, internal tags, and configurable MiniPlaceholders.
 ---
 
 # Placeholders
 
-## PlaceholderAPI
+ChatChat provides a PlaceholderAPI expansion and internal MiniMessage tags for use in formats and configured placeholders.
 
-PlaceholderAPI placeholders that can be used both in ChatChat but also in any other plugin that supports PlaceholderAPI placeholders.
+## PlaceholderAPI placeholders
 
-<table><thead><tr><th width="398" align="center">Placeholder</th><th align="center">Description</th></tr></thead><tbody><tr><td align="center"><code>%chatchat_channel_name%</code></td><td align="center">Get the name of the channel that the user is currently in.</td></tr><tr><td align="center"><code>%chatchat_channel_prefix%</code></td><td align="center">Get the prefix of the channel that the user is currently in.</td></tr><tr><td align="center"><code>%chatchat_channel_message_prefix%</code></td><td align="center">Get the message prefix of the channel that the user is currently in.</td></tr><tr><td align="center"><code>%chatchat_social_spy_enabled%</code></td><td align="center">Get whether or not this user has social spy enabled.</td></tr><tr><td align="center"><code>%chatchat_private_messages_enabled%</code></td><td align="center">Get whether or not this user has private messages enabled.</td></tr><tr><td align="center"><code>%chatchat_private_messages_recipient%</code></td><td align="center">Get the player that this user has last had a private conversation with. (This user expires after 5 minutes by default but can be configured in <code>settings.yml</code>)</td></tr></tbody></table>
+ChatChat registers its own `chatchat` expansion. No separate eCloud download is needed.
 
-## Internal
+| Placeholder | Return value | Description |
+| --- | --- | --- |
+| `%chatchat_channel_name%` | Text | The player's current channel name. |
+| `%chatchat_channel_prefix%` | Text | The display prefix of the player's current channel. |
+| `%chatchat_channel_message_prefix%` | Text | The quick-send prefix of the player's current channel. |
+| `%chatchat_social_spy_enabled%` | Boolean | Whether social spy is enabled for the player. |
+| `%chatchat_private_messages_enabled%` | Boolean | Whether the player accepts private messages. |
+| `%chatchat_private_messages_recipient%` | Text | Name of the last private-message conversation target, or an empty string when there is none. |
+| `%chatchat_ranged_chat_enabled%` | Boolean | Whether the player has ranged-chat filtering enabled. |
 
-Placeholders that can be used inside ChatChat itself but nowhere else.
+The last-message target expires after `last-messaged-cache-duration` seconds by default. A negative value disables expiration.
 
-ChatChat has a few internal placeholders, or more so tags that give users more freedom to customise their chats. These are tags you can only use in ChatChat, and sometimes only in some parts of ChatChat.
+## Tags for formats
 
-### \<recipient:PAPI-PLACEHOLDER>
+These tags are available in ChatChat formats. MiniMessage tag names are case-insensitive.
 
-This tag let's your parse PlaceholderAPI placeholders for the recipient of a message. This tag will work with both: private messages and public messages.
+| Tag | Example | Result |
+| --- | --- | --- |
+| `<papi:...>` | `<papi:player_name>` | Parses a PlaceholderAPI placeholder for the sender. |
+| `<papi:closing:...>` | `<papi:closing:player_displayname>` | Parses a sender placeholder without allowing legacy color formatting to continue past the inserted value. |
+| `<papi:inserting:...>` | `<papi:inserting:player_displayname>` | Parses a sender placeholder and lets its formatting continue after the inserted value. |
+| `<papi-rel:...>` | `<papi-rel:rel_factionsuuid_relation>` | Parses a relational PlaceholderAPI placeholder for the sender and recipient. The placeholder name must begin with `rel_`. |
+| `<recipient:...>` | `<recipient:player_name>` | Parses a PlaceholderAPI placeholder for the message recipient. |
+| `<message>` | `<message>` | Inserts the processed chat or private message into a format. |
 
-**Example of usage: `<recipient:player_name>`.** This would parse the `%player_name%` placeholder for the recipient of the message.
+Use the PAPI placeholder name without `%` inside these tags. The regular `%placeholder%` syntax is also available in configured formats. Recipient and relational tags need a recipient context, such as a private-message format or a per-recipient public format. Cross-server private-message formats support `<recipient:player_name>` for the remote recipient.
 
-{% hint style="warning" %}
-A thing to note is that you don't use the percent sign (%) for the PAPI placeholders inside this tag.
-{% endhint %}
+## Configured MiniPlaceholders
 
-### \<papi:PAPI-PLACEHOLDER>
+Define custom tags in `placeholders.yml`. A configured tag named `greeting` is used as `<greeting>`. The tag name must match `[!?#]?[a-z0-9_-]*`. Players need `chatchat.tag.placeholder.greeting` to use it in their own messages; configured formats can use the tag without that player-message permission.
 
-This tag let's you parse PlaceholderAPI placeholders for the sender of a message. This tag will work with both: private messages and public messages.
+| Option | Purpose |
+| --- | --- |
+| `name` | Tag name used between angle brackets. |
+| `message` | Text inserted by the tag. |
+| `requires-recipient` | When `parse-mini` and `parse-papi` are enabled, allows recipient and relational placeholders and requires a player recipient context. |
+| `parse-mini` | Parses MiniMessage tags inside the configured message. |
+| `parse-papi` | Parses supported PlaceholderAPI tags when `parse-mini` is enabled. |
+| `closing` | When true, closes formatting from the inserted content. When false, inserted formatting can continue into the surrounding format. |
 
-Since ChatChat already supports PlaceholderAPI placeholders using the normal format (%placeholder\_name%), this tag does have some special features:
-
-* ChatChat doesn't support the legacy formatting anymore but most placeholders still return strings using those formats. This tag will translate those legacy colors to the new ones for you.
-* Because of how legacy formatting works, it will bleed into the message but this tag gives you the ability to stop this. You can add a special argument that will determin if the formatting bleeds into the message or not. The argument is either `inserting` -it will bleed into the rest of the message- or `closing` -it will not bleed into the rest of the message-.
-
-Example of usage: `<papi:player_displayname>`, `<papi:closing:player_displayname>` and `<papi:inserting:player_displayname>`. All of these will show the sender's display name but with the colors translated to MiniMessage. The first 2 tags will make the formatting of the display name not bleed into the message, while the last one will let it bleed.
+See [MiniMessage tags in chat](tags.md) for the tags players can use in public messages.
