@@ -18,7 +18,16 @@ ChatChat only parses the MiniMessage tags that the sender has permission to use.
 | `<newline>` | `chatchat.tag.newline` | Operator |
 | `<rainbow>` | `chatchat.tag.rainbow` | Operator |
 | `<reset>` | `chatchat.tag.reset` | Operator |
-| `<lang>` / `<lang_or>` | `chatchat.tag.translatable` | Operator |
+| `<lang>` | `chatchat.tag.translatable` | Operator |
+| `<lang_or>` | `chatchat.tag.translatable-fallback` | Operator |
+| `<head>` | `chatchat.tag.head` | Operator |
+| `<shadow>` | `chatchat.tag.shadow` | Operator |
+| `<transition>` | `chatchat.tag.transition` | Operator |
+| `<pride>` | `chatchat.tag.pride` | Operator |
+| `<selector>` | `chatchat.tag.selector` | Operator |
+| `<score>` | `chatchat.tag.score` | Operator |
+| `<nbt>` | `chatchat.tag.nbt` | Operator |
+| `<sprite>` | `chatchat.tag.sprite` | Operator |
 | `<obfuscated>` | `chatchat.tag.obfuscated` | Operator |
 | `<bold>` | `chatchat.tag.bold` | Operator |
 | `<strikethrough>` | `chatchat.tag.strikethrough` | Operator |
@@ -26,7 +35,9 @@ ChatChat only parses the MiniMessage tags that the sender has permission to use.
 | `<italic>` | `chatchat.tag.italic` | Operator |
 | `<item>` | `chatchat.tag.item` | Operator |
 
-The MiniMessage tag syntax is documented in the [MiniMessage reference](https://docs.papermc.io/adventure/minimessage/format/). The tag syntax is `<insert>`; its permission is named `chatchat.tag.insertion`. The `chatchat.tag.translatable` permission enables `<lang>` and `<lang_or>`.
+The MiniMessage tag syntax and arguments are documented in the [MiniMessage reference](https://docs.papermc.io/adventure/minimessage/format/). For example, `<sprite:blocks:block/stone>` inserts a resource-pack sprite, and `<head:entity/player/wide/steve>` displays a player head. The `<sprite>` and `<head>` tags require Paper 1.21.9 or later (Adventure 4.25.0).
+
+The tag syntax is `<insert>`; its permission is named `chatchat.tag.insertion`. The `chatchat.tag.translatable` permission enables `<lang>`, while `chatchat.tag.translatable-fallback` enables the `<lang_or>` fallback form.
 
 ## URLs and item display
 

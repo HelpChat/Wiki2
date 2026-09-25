@@ -6,6 +6,8 @@ description: ChatChat feature overview and setup guide.
 
 ChatChat is a configurable chat plugin for Paper servers. It provides public chat channels, message formats, private messages, mentions, chat controls, and an API for integrations.
 
+ChatChat requires Paper 1.21.9 or later and Adventure 4.25.0. The `<sprite>` and `<head>` player-message tags also require Paper 1.21.9 or later.
+
 ## Features
 
 - Public channels with permissions, optional chat radius, quick message prefixes, channel commands, and proxy-wide forwarding.

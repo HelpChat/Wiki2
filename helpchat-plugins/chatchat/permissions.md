@@ -67,6 +67,15 @@ The permission node uses `everyone` for channel-wide mentions, even though the t
 | `chatchat.tag.rainbow` | Operator | Use rainbow tags. |
 | `chatchat.tag.reset` | Operator | Use reset tags. |
 | `chatchat.tag.translatable` | Operator | Use translatable tags. |
+| `chatchat.tag.translatable-fallback` | Operator | Use the translatable fallback tag `<lang_or>`. |
+| `chatchat.tag.head` | Operator | Use the `<head>` tag. |
+| `chatchat.tag.shadow` | Operator | Use the `<shadow>` tag. |
+| `chatchat.tag.transition` | Operator | Use the `<transition>` tag. |
+| `chatchat.tag.pride` | Operator | Use the `<pride>` tag. |
+| `chatchat.tag.selector` | Operator | Use the `<selector>` tag. |
+| `chatchat.tag.score` | Operator | Use the `<score>` tag. |
+| `chatchat.tag.nbt` | Operator | Use the `<nbt>` tag. |
+| `chatchat.tag.sprite` | Operator | Use the `<sprite>` tag. |
 | `chatchat.tag.obfuscated` | Operator | Use obfuscated text. |
 | `chatchat.tag.bold` | Operator | Use bold text. |
 | `chatchat.tag.strikethrough` | Operator | Use strikethrough text. |
