@@ -45,6 +45,8 @@ A channel format with a matching permission is selected before any global format
 
 The configured default format needs no permission. See [Permissions](permissions.md).
 
+The default `staff` format uses a dark-gray bracketed red `STAFF` badge: `<dark_gray>[</dark_gray><red>STAFF</red><dark_gray>]</dark_gray>`.
+
 ## Placeholders and tags
 
 Formats support PlaceholderAPI placeholders in percent form, such as `%player_name%`, and the `<papi:...>` and `<recipient:...>` tags. `<message>` inserts the processed player message. For private-message formats, the sender and recipient contexts are available.

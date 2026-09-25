@@ -13,7 +13,7 @@ Channels control who can send and receive a public message, how players switch c
 | `default-channel` | Channel selected for new players and used as the fallback channel. The named channel must exist. |
 | `channels.<name>.toggle-command` | Command names and aliases that switch to the channel. A command can also send a message directly. |
 | `channels.<name>.message-prefix` | Prefix typed before a message to send it to this channel without switching. Leave empty to disable. |
-| `channels.<name>.channel-prefix` | Display text for the channel. Use `%chatchat_channel_prefix%` in a format to show it. |
+| `channels.<name>.channel-prefix` | Display text for the channel. It supports MiniMessage formatting. Use `%chatchat_channel_prefix%` in a format to show it. |
 | `channels.<name>.radius` | Maximum horizontal distance in blocks between sender and receiver. Use `-1` for no radius limit. Radius channels only reach players in the same world. |
 | `channels.<name>.type` | Channel implementation. Defaults to `default`; optional Towny types are `TOWNY_TOWN` and `TOWNY_NATION` when enabled. |
 | `channels.<name>.cross-server` | Forwards this channel's public messages to ChatChat on other servers connected to the same supported proxy. Defaults to false. |
@@ -29,7 +29,7 @@ channels:
     toggle-command:
       - global
     message-prefix: ''
-    channel-prefix: '[global]'
+    channel-prefix: '<dark_gray>[</dark_gray><aqua>global</aqua><dark_gray>]</dark_gray>'
     radius: -1
 
   staff:
@@ -37,7 +37,7 @@ channels:
       - staffchat
       - sc
     message-prefix: '#'
-    channel-prefix: '[STAFF]'
+    channel-prefix: '<dark_gray>[</dark_gray><red>STAFF</red><dark_gray>]</dark_gray>'
     radius: -1
 ```
 
