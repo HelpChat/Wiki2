@@ -8,17 +8,17 @@ ChatChat only parses the MiniMessage tags that the sender has permission to use.
 
 | Tag | Permission | Default |
 | --- | --- | --- |
-| `<click>` | `chatchat.tag.click` | Not granted |
+| `<click>` | `chatchat.tag.click` | Operator |
 | `<color>` | `chatchat.tag.color` | Operator |
-| `<font>` | `chatchat.tag.font` | Not granted |
+| `<font>` | `chatchat.tag.font` | Operator |
 | `<gradient>` | `chatchat.tag.gradient` | Operator |
 | `<hover>` | `chatchat.tag.hover` | Operator |
-| `<insert>` | `chatchat.tag.insertion` | Not granted |
-| `<key>` | `chatchat.tag.keybind` | Not granted |
+| `<insert>` | `chatchat.tag.insertion` | Operator |
+| `<key>` | `chatchat.tag.keybind` | Operator |
 | `<newline>` | `chatchat.tag.newline` | Operator |
 | `<rainbow>` | `chatchat.tag.rainbow` | Operator |
 | `<reset>` | `chatchat.tag.reset` | Operator |
-| `<lang>` / `<lang_or>` | `chatchat.tag.translatable` | Not granted |
+| `<lang>` / `<lang_or>` | `chatchat.tag.translatable` | Operator |
 | `<obfuscated>` | `chatchat.tag.obfuscated` | Operator |
 | `<bold>` | `chatchat.tag.bold` | Operator |
 | `<strikethrough>` | `chatchat.tag.strikethrough` | Operator |
@@ -30,10 +30,10 @@ The MiniMessage tag syntax is documented in the [MiniMessage reference](https://
 
 ## URLs and item display
 
-`chatchat.url` automatically makes URLs in chat messages clickable. It is not granted by default.
+`chatchat.url` automatically makes URLs in chat messages clickable. It defaults to operators.
 
 The `<item>` tag displays the item in the sender's main hand in a chat message. `item-format` and `item-format-info` in `settings.yml` control its display and hover text. The item format must include `<item>`; `<amount>` is also available inside that format.
 
 ## Configured tags
 
-Custom tags can be defined in `placeholders.yml`. Players need `chatchat.tag.placeholder.<name>` to use those tags in their own messages. See [Placeholders](placeholders.md).
+Custom tags can be defined in `placeholders.yml`. Players need `chatchat.tag.placeholder.<name>` to use those tags in their own messages; this permission defaults to operators. See [Placeholders](placeholders.md).
