@@ -96,8 +96,8 @@ description: >-
 
 ## Glare's Plugins
 
-{% content-ref url="glares-plugins/guilds-w.i.p-migration" %}
-[guilds-w.i.p-migration](glares-plugins/guilds-w.i.p-migration)
+{% content-ref url="glares-plugins/guilds" %}
+[guilds](glares-plugins/guilds)
 {% endcontent-ref %}
 
 {% content-ref url="glares-plugins/voteparty/" %}

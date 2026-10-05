@@ -12,6 +12,11 @@ description: Example configuration for the config.yml file
 # Spigot: https://www.spigotmc.org/resources/66176/
 # Wiki: https://wiki.glaremasters.me/
 # Discord: https://glaremasters.me/discord
+experimental:
+    # The following are experimental features that are not fully tested. Use at your own risk. Feedback is appreciated.
+    # Enable this to use member skulls instead of player heads for the guild member list.
+    # This is experimental because large amounts of members may cause lag.
+    member-skulls: false
 settings:
     announcements:
         # This is used for the Guild's Announcement System, which allow me (The Author) to communicate to you guys without updating.
@@ -30,9 +35,6 @@ settings:
     # What would you like the command aliases for the plugin to be?
     # You can have as many as your want, just separate each with | and NO SPACES.
     plugin-aliases: guild|guilds|g
-    # Change this to whatever you change it to above, this will handle the changes within <>
-    # Keep in mind you should only set it to ONE thing. Such as guild, town, etc.
-    syntax-name: guild
     # Would you like to run vault permission changes async? (Will be less stress on the main thread and prevent lag)
     # Async is used by LuckPerms.
     # Set this to false if you are using PEx.
@@ -56,6 +58,7 @@ storage:
         # Define the credentials for the database. (Doesn't apply to SQLite)
         username: root
         password: ''
+        utf8: true
         # Sets whether or not to use SSL for the remote SQL database connection (Doesn't apply to SQLite)
         enable-ssl: false
         # These settings change the SQL connection pool.
@@ -281,6 +284,14 @@ guis:
             online: '&aOnline'
             # What do you want to be what shows when a member is offline?
             offline: '&cOffline'
+        # Set the name and material for the navigation buttons
+        nav:
+            next:
+                material: EMPTY_MAP
+                name: Next
+            previous:
+                material: EMPTY_MAP
+                name: Previous
 guild:
     requirements:
         # With the default RegEx currently set, the minimum length of the prefix is 1 and the maximum is 64.
@@ -300,7 +311,9 @@ guild:
     blacklist:
         # Do we want to enable the blacklist?
         enabled: true
-        # Do we want the blacklist to be case sensitive?
+        # How should these words be matched against a guild name?
+        # true  = the guild name must CONTAIN one of these words (the word is lower-cased, the name is used as typed)
+        # false = the guild name must EQUAL one of these words, ignoring case
         case-sensitive: true
         # What words would you like to blacklist from being used?
         words: 
@@ -343,6 +356,13 @@ war:
     defend-cooldown: 1440
     # Would you like to block commands while a player is in the war?
     disable-commands: false
+    # Would you like to have the players keep their inventory when they die in the arena?
+    keep-inventory: true
+    # Would you like to have the players keep their experience when they die in the arena?
+    keep-exp: true
+    # Would you like to clear the drops when a player dies in the arena?
+    # This is typically paired with keeping inventory true so that you can prevent duplication.
+    clear-drops: true
     # How long does a defending guild have to accept a war challenge? (In seconds)
     accept-time: 120
     # What is the min number of players needed on each side for a war to start?
@@ -371,6 +391,13 @@ war:
         # Would you like to give rewards to the winning guild?
         enabled: false
         # What rewards (commands) would you like to run for the winning Guild?
+        # Current supports {player}.
+        rewards: 
+        - ''
+    loser-rewards:
+        # Would you like to give rewards to the losing guild?
+        enabled: false
+        # What rewards (commands) would you like to run for the losing Guild?
         # Current supports {player}.
         rewards: 
         - ''
@@ -426,6 +453,8 @@ claims:
     # This will disable the regular claim commands.
     force-claim-signs: false
 tickets:
+    # Do you want to enable guild upgrade tickets?
+    enabled: true
     # What do you want the name of the upgrade ticket to be?
     name: '&bGuild Upgrade Ticket'
     # What do you want the lore of the ticket to be?
