@@ -1,6 +1,6 @@
 # Developer API
 
-## Build Tool Stuff <a href="#hooking-into-the-api" id="hooking-into-the-api"></a>
+## Build Tool Stuff <a href="#build-tool-stuff" id="build-tool-stuff"></a>
 
 <figure><img src="https://img.shields.io/nexus/r/me.glaremasters/guilds?nexusVersion=3&#x26;server=https%3A%2F%2Frepo.glaremasters.me" alt=""><figcaption><p>Sonatype Nexus (Releases)</p></figcaption></figure>
 
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("me.glaremasters:guilds:versions")
+    compileOnly("me.glaremasters:guilds:VERSION")
 }
 ```
 {% endtab %}
@@ -54,6 +54,21 @@ Obtaining the instance of the API is pretty simple by using the singleton that p
 ```java
 GuildsAPI api = Guilds.getApi();
 ```
+
+The API object is only created at the very end of the plugin's startup. `getApi()` returns `null` for most of that window, so null-check it before you use it if your plugin might load early.
+
+## Packages <a href="#packages" id="packages"></a>
+
+Everything you need is under `me.glaremasters.guilds.api`. There are two sub-packages worth knowing about:
+
+| Import | Holds |
+| ------ | ---- |
+| `me.glaremasters.guilds.api` | `GuildsAPI`, the entry point |
+| `me.glaremasters.guilds.api.events` | Most events |
+| `me.glaremasters.guilds.api.events.base` | `GuildEvent`, which all the others extend |
+| `me.glaremasters.guilds.api.events.challenges` | The guild war events |
+
+Supporting types live outside that package: `Guild`, `GuildMember`, `GuildRole`, `GuildTier` and `GuildHandler` are all in `me.glaremasters.guilds.guild`, and `GuildBuff` is in `me.glaremasters.guilds.conf.objects`.
 
 ## Using the API <a href="#using-the-api" id="using-the-api"></a>
 
@@ -119,7 +134,7 @@ We provide a few ways to obtain a Guild object, so feel free to use what is easi
 {% endtab %}
 {% endtabs %}
 
-### Getting a GuildMember object <a href="#getting-a-guild-vault" id="getting-a-guild-vault"></a>
+### Getting a GuildMember object <a href="#getting-a-guildmember-object" id="getting-a-guildmember-object"></a>
 
 ```kotlin
     /**
@@ -166,12 +181,18 @@ The GuildHandler will give you access to anything you might need in the plugin. 
 
 ```java
     /**
-     * Get a copy of the guild handler
+     * Get the guild handler
      * @return guild handler
      */
-    public GuildHandler getGuildHandler() {
-        return guildHandler;
-    }
+    GuildHandler guildHandler = api.getGuildHandler();
+```
+
+### Getting the CooldownHandler <a href="#getting-the-cooldownhandler" id="getting-the-cooldownhandler"></a>
+
+The CooldownHandler holds the command cooldowns for every guild. It is exposed on the same API instance.
+
+```java
+    CooldownHandler cooldownHandler = api.getCooldownHandler();
 ```
 
 ## Custom Events <a href="#custom-events" id="custom-events"></a>
@@ -180,15 +201,26 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
 
 ### Base GuildEvent <a href="#base-guildevent" id="base-guildevent"></a>
 
-```java
+`GuildEvent` lives in `me.glaremasters.guilds.api.events.base` and every guild event below extends it. It extends Bukkit's `PlayerEvent`, so `getPlayer()` comes for free.
+
+Every `GuildEvent` implements `Cancellable`. Calling `setCancelled(true)` in your listener stops the action the event was fired for.
+
+```kotlin
     /**
      * Base guild event
      * @param player player in event
      * @param guild guild in the event
      */
-    public GuildEvent(Player player, Guild guild) {
-        super(player);
-        this.guild = guild;
+    open class GuildEvent(player: Player, val guild: Guild) : PlayerEvent(player), Cancellable {
+        var isCancelled: Boolean = false
+        override fun isCancelled(): Boolean = isCancelled
+        override fun setCancelled(cancelled: Boolean) { isCancelled = cancelled }
+        override fun getHandlers(): HandlerList = handlerList
+
+        companion object {
+            @JvmStatic
+            val handlerList = HandlerList()
+        }
     }
 ```
 
@@ -207,19 +239,18 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
     }
 ```
 
-### GuildBuffEvent <a href="#guildcreateevent" id="guildcreateevent"></a>
+### GuildBuffEvent <a href="#guildbuffevent" id="guildbuffevent"></a>
 
-```java
+The buff on this event is mutable, so a listener can replace it with `setBuff(GuildBuff)` before the purchase is processed.
+
+```kotlin
     /**
      * Called when a guild purchases a buff
      * @param player the player purchasing the buff
      * @param guild the guild the player is in
      * @param buff the buff being purchased
      */
-    public GuildBuffEvent(Player player, Guild guild, GuildBuff buff) {
-        super(player, guild);
-        this.buff = buff;
-    }
+    class GuildBuffEvent(player: Player, guild: Guild, var buff: GuildBuff) : GuildEvent(player, guild)
 ```
 
 ### GuildCreateEvent <a href="#guildcreateevent" id="guildcreateevent"></a>
@@ -293,7 +324,7 @@ In the plugin we offer a bunch of custom events that you can listen to and modif
 
 ### GuildKickEvent
 
-```java
+```kotlin
 /**
 * Called when a player is kicked from the guild
 * @param player the player executing the event
@@ -347,8 +378,6 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
 ### GuildRemoveEvent <a href="#guildremoveevent" id="guildremoveevent"></a>
 
 ```java
-    private String name;
-    
     /**
      * Called when a guild is removed
      * @param player the player removing the guild
@@ -360,12 +389,18 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
         this.cause = cause;
     }
 
+    public Cause getCause() {
+        return cause;
+    }
+
     public enum Cause {
         MASTER_LEFT,
         PLAYER_DELETED,
         ADMIN_DELETED
     }
 ```
+
+The `Cause` enum is a nested type, so from Java you reference it as `GuildRemoveEvent.Cause`.
 
 ### GuildRenameEvent <a href="#guildrenameevent" id="guildrenameevent"></a>
 
@@ -384,40 +419,30 @@ class GuildKickEvent(player: Player, guild: Guild, val kicked: OfflinePlayer, va
     }
 ```
 
-### GuildSetHomeEvent <a href="#guildtransferevent" id="guildtransferevent"></a>
+### GuildSetHomeEvent <a href="#guildsethomeevent" id="guildsethomeevent"></a>
 
-```java
+```kotlin
     /**
      * Called when a guild sets their home
      * @param player the player setting the home
      * @param guild the guild the player is in
      * @param location the location the home is being set at
      */
-    public GuildSetHomeEvent(Player player, Guild guild, Location location) {
-        super(player, guild);
-        this.location = location;
-    }
+    class GuildSetHomeEvent(player: Player, guild: Guild, val location: Location) : GuildEvent(player, guild)
 ```
 
 ### GuildTransferEvent <a href="#guildtransferevent" id="guildtransferevent"></a>
 
-```java
-private Player newMaster;
+`newMaster` is an `OfflinePlayer`, so check `isOnline()` before assuming you have a `Player` instance.
 
+```kotlin
     /**
      * Base guild event
      *  @param player player in event
      * @param guild  guild in the event
-     * @param newMaster
+     * @param newMaster the guild's new master
      */
-    public GuildTransferEvent(Player player, Guild guild, Player newMaster) {
-        super(player, guild);
-        this.newMaster = newMaster;
-    }
-
-    public Player getNewMaster() {
-        return newMaster;
-    }
+    class GuildTransferEvent(player: Player, guild: Guild, val newMaster: OfflinePlayer) : GuildEvent(player, guild)
 ```
 
 ### GuildWithdrawMoneyEvent <a href="#guildwithdrawmoneyevent" id="guildwithdrawmoneyevent"></a>
@@ -431,7 +456,7 @@ private Player newMaster;
     public GuildWithdrawMoneyEvent(Player player, Guild guild, double amount) {
         super(player, guild);
         this.amount = amount;
-    }a
+    }
 ```
 
 ### GuildUpgradeEvent
@@ -460,6 +485,8 @@ private Player newMaster;
  */
 class GuildWarAcceptEvent(player: Player, val challenger: Guild, val defender: Guild) : GuildEvent(player, defender)
 ```
+
+The parameters here are declared in the order shown, but the plugin's own call site passes them the other way round, so at runtime `challenger` holds the defending guild and `defender` holds the challenging one. `getGuild()` comes from the third argument, so it points at the challenger. If you depend on which side is which, check against `GuildWarChallengeEvent` instead, which is fired correctly.
 
 ### GuildWarChallengeEvent
 
@@ -522,6 +549,33 @@ class GuildWarStartEvent(val challenger: Guild, val defender: Guild) : Event() {
     }
 
     companion object {
+        @JvmStatic
+        val handlerList = HandlerList()
+    }
+}
+
+```
+
+### GuildWarPlayerJoinEvent
+
+This one fires when a player joins a war, not when the war is set up. It extends Bukkit's `Event` directly rather than `GuildEvent`, so it is not cancellable.
+
+```kotlin
+/**
+ * Called when a player joins a guild war
+ * @param challenger the guild who initiated the request
+ * @param defender the guild the request was sent to
+ * @param player the player who joined the war
+ * @param side the side the player joined
+ */
+class GuildWarPlayerJoinEvent(val challenger: Guild, val defender: Guild, val player: Player, val side: String): Event() {
+
+    override fun getHandlers(): HandlerList {
+        return handlerList
+    }
+
+    companion object {
+        @JvmStatic
         val handlerList = HandlerList()
     }
 }

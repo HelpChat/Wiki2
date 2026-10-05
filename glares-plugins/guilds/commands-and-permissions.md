@@ -45,11 +45,19 @@ Admin command to view a guild's bank balance.
 
 `/guild admin bank deposit <guild> <amount>` \
 **Permission**: guilds.command.admin \
-Admin command to put money into a guild's ban.
+Admin command to put money into a guild's bank.
 
 `/guild admin bank withdraw <guild> <amount>` \
 **Permission**: guilds.command.admin \
-Admin command to put money into a guild's ban.
+Admin command to take money out of a guild's bank.
+
+`/guild admin claim <guild>` \
+**Permission**: guilds.command.admin \
+Create a claim for a guild, using the claim points set in the config.
+
+`/guild admin unclaim <guild>` \
+**Permission**: guilds.command.admin \
+Remove a guild's claim.
 
 `/guild admin delhome <guild>` \
 **Permission**: guilds.command.admin \
@@ -85,7 +93,7 @@ Allows you to remove a guild as a whole by force.
 
 `/guild admin removeplayer <player>` \
 **Permission**: guilds.command.admin \
-Allows you to remove a player from their guild by force.
+Removes a player from their guild by force. This refuses to remove a guild's own master. Transfer the guild to somebody else, or delete it.
 
 `/guild admin rename <guild> <new name>` \
 **Permission**: guilds.command.admin \
@@ -123,9 +131,9 @@ Transfer a guild to another member by force
 **Permission**: guilds.command.admin \
 Force upgrade a guild's tier.
 
-`/guild admin vault <guild>` \
+`/guild admin vault <guild> [number]` \
 **Permission**: guilds.command.admin \
-Open any guild's vault GUI
+Open any guild's vault GUI. Pass a number to open that vault directly and skip the picker.
 
 `/guild reload` \
 **Permission**: guilds.command.admin \
@@ -237,10 +245,6 @@ Allows you to redeem an invite code!
 
 These are commands that are only to be ran from console because they do important operations that typical players shouldn't be doing.
 
-`/guild console update-languages` \
-**Permission**: guilds.command.admin \
-Update language files for the plugin
-
 `/guild console backup` \
 **Permission**: guilds.command.admin \
 Create a backup of all plugin data
@@ -249,7 +253,7 @@ Create a backup of all plugin data
 **Permission:** guilds.command.admin \
 Migrate all the plugin data from one type of storage to another
 
-`/guild console unclaim-all` \
+`/guild console unclaimall` \
 **Permission:** guilds.command.admin \
 Remove all claim data from the plugin
 
@@ -267,13 +271,17 @@ Opens the guild list GUI.
 **Permission**: guilds.command.members \
 Opens the member list GUI.
 
-`/guild vault` \
+`/guild vault [number]` \
 **Permission**: guilds.command.vault \
-Opens a guild vault GUI.
+Opens a guild vault GUI. Pass a number to open that vault directly and skip the picker.
 
 `/guild info` \
 **Permission**: guilds.command.info \
 Opens up the guild info GUI.
+
+`/guild help` \
+**Permission**: guilds.command.help \
+Opens the in-game help menu.
 
 ## ​Homes Commands <a href="#homes-commands" id="homes-commands"></a>
 
@@ -301,7 +309,7 @@ Deletes your current guild.
 
 `/guild kick <player>` \
 **Permission**: guilds.command.boot \
-Kicks a player from your guild.
+Kicks a player from your guild. Also available as `/guild boot`.
 
 `/guild prefix <prefix>` \
 **Permission**: guilds.command.prefix \
@@ -335,7 +343,7 @@ Accepted a guild invite from a guild.
 **Permission**: guilds.command.check \
 Checks to see if a user has any pending guild invites.
 
-`/ guild decline <name>` \
+`/guild decline <name>` \
 **Permission**: guilds.command.decline \
 Declines a pending guild invite from a guild.
 
@@ -379,9 +387,13 @@ Remove the MOTD of your guild.
 
 Random commands that haven't been categorized yet.
 
-`/guild chat` \
+`/gc [message]` \
 **Permission**: guilds.command.chat \
-Toggles the guild chat.
+Send a message to your guild's chat, or run it with no message to toggle guild chat on and off.
+
+`/ac [message]` \
+**Permission**: guilds.command.chat \
+Send a message to your allies, or run it with no message to toggle ally chat on and off.
 
 `/guild request <guild>` \
 **Permission**: guilds.command.request \

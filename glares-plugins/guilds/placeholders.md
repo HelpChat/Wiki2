@@ -35,14 +35,20 @@ format: '<{GUILD} {DISPLAYNAME}> {MESSAGE}'
 | %guilds\_tier%             | {placeholderapi\_guilds\_tier}             |                           |
 | %guilds\_balance%          | {placeholderapi\_guilds\_balance}          |                           |
 | %guilds\_balance\_raw%     |                                            |                           |
-| %guilds\_tier\_name%       | {placeholderapi\_guilds\_tier\_name}       |                           |
-| %guilds\_role\_node%       | {placeholderapi\_guilds\_role\_node}       |                           |
+| %guilds\_tier\_name%       | {placeholderapi\_guilds\_tier\_name}       | {GUILD\_TIER\_NAME}      |
 | %guilds\_id%               | {placeholderapi\_guilds\_id}               |                           |
 | %guilds\_code\_amount%     | {placeholderapi\_guilds\_code\_amount}     |                           |
 | %guilds\_max\_members%     | {placeholderapi\_guilds\_max\_members}     |                           |
-| %guilds\_max\_balance%     | {placeholderapi\_guilds\_max\_blanace}     |                           |
+| %guilds\_max\_balance%     | {placeholderapi\_guilds\_max\_balance}     |                           |
 | %guilds\_formatted%        | {placeholderapi\_guilds\_formatted}        | {GUILD\_FORMATTED}        |
 | %guilds\_challenge\_wins%  | {placeholderapi\_guilds\_challenge\_wins}  | {GUILD\_CHALLENGE\_WINS}  |
 | %guilds\_challenge\_loses% | {placeholderapi\_guilds\_challenge\_loses} | {GUILD\_CHALLENGE\_LOSES} |
 | %guilds\_motd%             | {placeholderapi\_guilds\_motd}             |                           |
+| %guilds\_spying%            | {placeholderapi\_guilds\_spying}            |                           |
+
+### Member Placeholders
+
+`%guilds_member_#%` returns the name of the member in that position on the guild's member list, counting from 1. For example, `%guilds_member_1%` is the guild master and `%guilds_member_2%` is the next member.
+
+These are separate from `%guilds_member_count%`, which gives you the total number of members. Positions past the end of the list return an empty string.
 
