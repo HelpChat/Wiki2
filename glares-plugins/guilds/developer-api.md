@@ -486,7 +486,7 @@ The `Cause` enum is a nested type, so from Java you reference it as `GuildRemove
 class GuildWarAcceptEvent(player: Player, val challenger: Guild, val defender: Guild) : GuildEvent(player, defender)
 ```
 
-The parameters here are declared in the order shown, but the plugin's own call site passes them the other way round, so at runtime `challenger` holds the defending guild and `defender` holds the challenging one. `getGuild()` comes from the third argument, so it points at the challenger. If you depend on which side is which, check against `GuildWarChallengeEvent` instead, which is fired correctly.
+`getGuild()` returns the defending guild here, since this event is fired from the accepting side.
 
 ### GuildWarChallengeEvent
 
