@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: HelpChat Wiki
+  structure:
+    - type: space
+      key: space-1
+      title: HelpChat Wiki
+      path: helpchat
+      default: true
+      content:
+        directory: ./helpchat
